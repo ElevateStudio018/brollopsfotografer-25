@@ -16,8 +16,8 @@ export function ProcessTimeline() {
     const update = () => {
       frame = 0;
       const rect = el.getBoundingClientRect();
-      const anchor = window.innerHeight * 0.62;
-      const raw = (anchor - rect.top) / Math.max(rect.height, 1);
+      const anchor = window.innerHeight * 0.55;
+      const raw = ((anchor - rect.top) / Math.max(rect.height, 1)) * 1.6;
       setProgress(Math.min(1, Math.max(0, raw)));
     };
     const onScroll = () => {
