@@ -23,7 +23,7 @@ export const company = {
   aboutText:
     "Flottsunds Bygg AB är ett byggföretag med sitt säte i Uppsala. Vi arbetar med byggentreprenader och ROT-arbeten. Vi samarbetar med duktiga och pålitliga underleverantörer och kan på så vis utföra totalentreprenader. Flottsunds Bygg AB är ett byggföretag med över 35 års erfarenhet inom branschen. Vi strävar alltid för att uppnå högsta kvalité samtidigt som vi är flexibla och lyhörda för kundens önskemål. Flottsunds Bygg AB grundades 2006 och har idag cirka 10 anställda. Du är varmt välkommen att kontakta oss!",
   heroImage: heroImg,
-  heroVideo: "/media/hero-loop.mp4",
+  heroVideo: "/__l5e/assets-v1/c0f6f6c0-5a49-46c8-be88-0a63b9e13adf/hero-loop.mp4",
   aboutImage: aboutImg,
   areas: ["Uppsala", "Uppsalas omnejd", "Flottsund", "Sävja", "Gottsunda", "Storvreta"],
   mapEmbed:
