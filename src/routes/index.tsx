@@ -1,14 +1,15 @@
 import { useRef, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ChevronDown, ClipboardList, Hammer, HomeIcon, Phone } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { QuoteButton } from "@/components/site/QuoteButton";
 import { QuoteForm } from "@/components/site/QuoteForm";
 import { ProjectGrid } from "@/components/site/ProjectGrid";
+import { ProcessTimeline } from "@/components/site/ProcessTimeline";
 import { Reveal } from "@/components/site/Reveal";
 import { CountUp } from "@/components/site/CountUp";
 import { useQuote } from "@/components/site/QuoteContext";
-import { company, faq, processSteps, projects } from "@/lib/site-data";
+import { company, faq, projects } from "@/lib/site-data";
 
 const title = "Flottsunds Bygg AB — byggföretag och snickare i Uppsala";
 const description =
