@@ -122,8 +122,7 @@ export function Navbar({ showTopBar = false }: { showTopBar?: boolean }) {
             aria-expanded={menuOpen}
             onClick={() => setMenuOpen((v) => !v)}
           >
-            {menuOpen ? <Menu className="h-6 w-6" aria-hidden="true" /> : <Menu className="h-6 w-6" aria-hidden="true" />}
-            {menuOpen ? <X className="sr-only" aria-hidden="true" /> : null}
+            {menuOpen ? <X className="h-6 w-6" aria-hidden="true" /> : <Menu className="h-6 w-6" aria-hidden="true" />}
           </button>
         </div>
 
