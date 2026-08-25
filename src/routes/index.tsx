@@ -77,14 +77,21 @@ function Hero() {
         <source src={company.heroVideo} type="video/mp4" />
       </video>
       <div className="absolute inset-0 bg-[rgba(3,15,39,0.58)]" />
-      <div className="container-site relative z-10 flex flex-col items-center text-center">
-        <h1 className="h1-hero max-w-[900px] text-white">
-          Ditt byggföretag i {company.city}
-        </h1>
-        <div className="mt-10">
-          <QuoteButton />
+        <div className="container-site relative z-10 flex flex-col items-center text-center">
+          <h1 className="h1-hero max-w-[900px] text-white">
+            Ditt byggföretag i {company.city}
+          </h1>
+          <div className="mt-10 flex w-full flex-col items-center justify-center gap-4 sm:flex-row">
+            <QuoteButton className="btn-base btn-yellow w-full sm:w-auto sm:min-w-[200px]" />
+            <a
+              href={company.phoneHref}
+              className="btn-base btn-outline-light w-full text-center sm:w-auto sm:min-w-[200px]"
+              aria-label={`Ring ${company.phoneDisplay}`}
+            >
+              Ring oss
+            </a>
+          </div>
         </div>
-      </div>
     </section>
   );
 }
