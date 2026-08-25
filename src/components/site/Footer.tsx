@@ -1,3 +1,4 @@
+import logo from "@/assets/flottsunds-bygg-logo.png.asset.json";
 import { Link } from "@tanstack/react-router";
 import { company, services } from "@/lib/site-data";
 

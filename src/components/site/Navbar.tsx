@@ -1,3 +1,4 @@
+import logoWhite from "@/assets/flottsunds-bygg-logo-white.png.asset.json";
 import { useEffect, useRef, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { ChevronDown, Menu, X } from "lucide-react";
