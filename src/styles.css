@@ -16,6 +16,7 @@
   --color-muted-foreground: var(--muted-foreground);
   --color-border: var(--border);
   --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-brand: "Montserrat", "Poppins", ui-sans-serif, system-ui, sans-serif;
 }
 
 :root {
