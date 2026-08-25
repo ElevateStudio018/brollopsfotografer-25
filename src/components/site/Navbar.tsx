@@ -61,7 +61,7 @@ export function Navbar({ showTopBar = false }: { showTopBar?: boolean }) {
               alt={`${company.name} logotyp`}
               width={2053}
               height={501}
-              className="h-8 w-auto lg:h-9"
+              className="h-7 w-auto lg:h-8"
             />
           </Link>
 
