@@ -161,8 +161,6 @@ function Projects() {
   );
 }
 
-const stepIcons = [Phone, HomeIcon, ClipboardList, Hammer];
-
 function Process() {
   return (
     <section className="bg-white pb-20 lg:pb-28">
@@ -170,22 +168,7 @@ function Process() {
         <Reveal>
           <h2 className="h2-section">Så går det till</h2>
         </Reveal>
-        <div className="mt-12 grid gap-8 lg:grid-cols-4">
-          {processSteps.map((step, index) => {
-            const Icon = stepIcons[index] ?? Phone;
-            return (
-              <Reveal key={step.title} delay={index * 80} className="h-full">
-                <div className="flex h-full flex-col border border-[rgba(3,15,39,0.12)] p-6">
-                  <Icon className="h-7 w-7 text-navy" strokeWidth={1.5} aria-hidden="true" />
-                  <h3 className="mt-6 text-[18px] font-bold text-navy">
-                    {index + 1}. {step.title}
-                  </h3>
-                  <p className="mt-3 text-[16px]">{step.text}</p>
-                </div>
-              </Reveal>
-            );
-          })}
-        </div>
+        <ProcessTimeline />
       </div>
     </section>
   );
