@@ -33,7 +33,7 @@ export function Navbar({ showTopBar = false }: { showTopBar?: boolean }) {
     return () => document.removeEventListener("click", onClick);
   }, []);
 
-  const navLink = "font-brand not-italic text-[15px] font-semibold text-white/90 transition-colors hover:text-[color:var(--yellow)]";
+  const navLink = "font-brand not-italic text-[15px] font-extrabold text-white/90 transition-colors hover:text-[color:var(--yellow)]";
 
   return (
     <header className="fixed inset-x-0 top-0 z-50">
@@ -89,7 +89,7 @@ export function Navbar({ showTopBar = false }: { showTopBar?: boolean }) {
                       key={service.slug}
                       to="/tjanster/$slug"
                       params={{ slug: service.slug }}
-                      className="font-brand not-italic block px-6 py-3 text-[15px] font-medium text-white/90 transition-colors hover:bg-white/5 hover:text-[color:var(--yellow)]"
+                      className="font-brand not-italic block px-6 py-3 text-[15px] font-bold text-white/90 transition-colors hover:bg-white/5 hover:text-[color:var(--yellow)]"
                       onClick={() => setServicesOpen(false)}
                     >
                       {service.name}
@@ -132,12 +132,12 @@ export function Navbar({ showTopBar = false }: { showTopBar?: boolean }) {
         {menuOpen ? (
           <div className="border-t border-white/10 bg-navy lg:hidden">
             <div className="container-site flex flex-col gap-2 py-6">
-              <Link to="/" className="font-brand not-italic py-3 text-[16px] font-semibold text-white" onClick={() => setMenuOpen(false)}>
+              <Link to="/" className="font-brand not-italic py-3 text-[16px] font-extrabold text-white" onClick={() => setMenuOpen(false)}>
                 Hem
               </Link>
               <button
                 type="button"
-                className="font-brand not-italic flex items-center justify-between py-3 text-left text-[16px] font-semibold text-white"
+                className="font-brand not-italic flex items-center justify-between py-3 text-left text-[16px] font-extrabold text-white"
                 aria-expanded={mobileServicesOpen}
                 onClick={() => setMobileServicesOpen((v) => !v)}
               >
@@ -154,7 +154,7 @@ export function Navbar({ showTopBar = false }: { showTopBar?: boolean }) {
                       key={service.slug}
                       to="/tjanster/$slug"
                       params={{ slug: service.slug }}
-                      className="font-brand not-italic py-3 text-[15px] font-medium text-white/85"
+                      className="font-brand not-italic py-3 text-[15px] font-bold text-white/85"
                       onClick={() => setMenuOpen(false)}
                     >
                       {service.name}
@@ -164,7 +164,7 @@ export function Navbar({ showTopBar = false }: { showTopBar?: boolean }) {
               ) : null}
               <Link
                 to="/projekt"
-                className="font-brand not-italic py-3 text-[16px] font-semibold text-white"
+                className="font-brand not-italic py-3 text-[16px] font-extrabold text-white"
                 onClick={() => setMenuOpen(false)}
               >
                 Projekt
@@ -172,7 +172,7 @@ export function Navbar({ showTopBar = false }: { showTopBar?: boolean }) {
               <Link
                 to="/"
                 hash="om-oss"
-                className="font-brand not-italic py-3 text-[16px] font-semibold text-white"
+                className="font-brand not-italic py-3 text-[16px] font-extrabold text-white"
                 onClick={() => setMenuOpen(false)}
               >
                 Om oss
@@ -180,7 +180,7 @@ export function Navbar({ showTopBar = false }: { showTopBar?: boolean }) {
               <Link
                 to="/"
                 hash="kontakt"
-                className="font-brand not-italic py-3 text-[16px] font-semibold text-white"
+                className="font-brand not-italic py-3 text-[16px] font-extrabold text-white"
                 onClick={() => setMenuOpen(false)}
               >
                 Kontakt
