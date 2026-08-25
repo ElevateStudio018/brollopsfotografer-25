@@ -1,3 +1,4 @@
+import logo from "@/assets/flottsunds-bygg-logo.png.asset.json";
 import { Link } from "@tanstack/react-router";
 import { company, services } from "@/lib/site-data";
 
@@ -6,7 +7,14 @@ export function Footer() {
     <footer className="border-t border-[rgba(3,15,39,0.12)] bg-white">
       <div className="container-site grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-4 lg:py-20">
         <div>
-          <p className="text-[18px] font-bold text-navy">{company.name}</p>
+          <img
+            src={logo.url}
+            alt={`${company.name} logotyp`}
+            width={2053}
+            height={501}
+            loading="lazy"
+            className="h-9 w-auto"
+          />
           <p className="mt-4 text-[16px]">{company.description}</p>
         </div>
 

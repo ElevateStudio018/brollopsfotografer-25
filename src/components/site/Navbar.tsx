@@ -1,3 +1,4 @@
+import logoWhite from "@/assets/flottsunds-bygg-logo-white.png.asset.json";
 import { useEffect, useRef, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { ChevronDown, Menu, X } from "lucide-react";
@@ -54,12 +55,14 @@ export function Navbar({ showTopBar = false }: { showTopBar?: boolean }) {
 
       <nav className="bg-navy" aria-label="Huvudmeny">
         <div className="container-site flex h-[72px] items-center justify-between gap-4">
-          <Link
-            to="/"
-            className="text-[17px] font-bold tracking-tight text-white"
-            onClick={() => setMenuOpen(false)}
-          >
-            {company.name}
+          <Link to="/" className="flex items-center" onClick={() => setMenuOpen(false)}>
+            <img
+              src={logoWhite.url}
+              alt={`${company.name} logotyp`}
+              width={2053}
+              height={501}
+              className="h-8 w-auto lg:h-9"
+            />
           </Link>
 
           <div className="hidden items-center gap-8 lg:flex">
