@@ -1,3 +1,4 @@
+import { ElevateCredit } from "./ElevateCredit";
 import logo from "@/assets/flottsunds-bygg-logo.png.asset.json";
 import { Link } from "@tanstack/react-router";
 import { company, services } from "@/lib/site-data";
@@ -75,6 +76,7 @@ export function Footer() {
         <p className="text-[13px]">
           © {new Date().getFullYear()} {company.name}, ditt byggföretag i {company.city}
         </p>
+        <ElevateCredit />
       </div>
     </footer>
   );
