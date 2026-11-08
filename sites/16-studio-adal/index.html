@@ -199,7 +199,7 @@ function onS(){const r=hero.getBoundingClientRect(),tot=hero.offsetHeight-innerH
  big.style.opacity=1-e*1.4;big.style.transform='scale('+(1+e*.25)+')';hint.style.opacity=1-e*3;hcap.classList.toggle('on',p>.85);}
 addEventListener('scroll',onS,{passive:true});addEventListener('resize',onS);onS();
 // scatter
-const sc=[['brollop-17',4,6,30,40,-4],['brollop-16',38,0,22,48,3],['brollop-20',64,10,32,36,-2],['familj-15',8,52,24,30,2],['brollop-42',36,56,30,40,-3],['foretag-15',70,52,22,28,4],['brollop-22',14,86,20,30,-2],['brollop-23',60,84,34,34,2]];
+const sc=[['brollop-17',4,6,30,40,-4],['brollop-16',38,0,22,44,3],['brollop-20',64,10,32,36,-2],['familj-15',8,42,24,28,2],['brollop-42',36,48,26,24,-3],['foretag-15',70,44,22,26,4],['brollop-22',14,74,20,24,-2],['brollop-23',60,76,34,22,2]];
 const S=document.getElementById('scatter');
 sc.forEach(([f,x,y,w,h,r],i)=>{const im=new Image();im.src=P+f+'.jpg';im.alt='Bröllopsbild';im.loading='lazy';im.className='fly';im.style.cssText=`left:${x}%;top:${y}%;width:${w}%;height:${h}%;--r:${r}deg;transition-delay:${(i%3)*.1}s`;S.appendChild(im)});
 const wl=['brollop-00','brollop-04','brollop-01','brollop-05','brollop-03','brollop-07','brollop-06','brollop-08','brollop-09','brollop-10','brollop-11','brollop-18','brollop-13','brollop-19','brollop-14','brollop-21','brollop-25','brollop-24','brollop-26','brollop-28','brollop-27','brollop-32','brollop-29','brollop-30','brollop-33','brollop-31','brollop-35','brollop-34','brollop-37','brollop-36','foretag-40','brollop-38','foretag-65','brollop-39'];
