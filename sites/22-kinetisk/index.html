@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RÖRELSE — Viktor Ekdahl Bröllopsfoto, Malmö</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0a0a;--fg:#f2f2ec;--acid:#d4ff00;--mut:#7a7a72}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--fg);overflow-x:hidden}
+body{font:400 15px/1.55 "Space Mono",monospace}
+.big{font-family:Anton,Impact,sans-serif;text-transform:uppercase;line-height:.82;letter-spacing:-.01em;margin:0;font-weight:400}
+img{display:block;max-width:100%}
+a{color:var(--acid)}
+.back{position:fixed;top:14px;left:14px;z-index:60;color:var(--bg);background:var(--acid);text-decoration:none;font:700 12px "Space Mono";padding:6px 10px;text-transform:uppercase}
+nav.top{position:fixed;top:14px;right:14px;z-index:60;display:flex;gap:14px;mix-blend-mode:difference}
+nav.top a{color:#fff;text-decoration:none;font:700 12px "Space Mono";text-transform:uppercase}
+nav.top a:hover{color:var(--acid)}
+
+/* HERO: video through letters */
+.hero{height:100vh;min-height:560px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:center}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero .mask{position:absolute;inset:0;background:var(--bg);mix-blend-mode:multiply;display:flex;align-items:center;justify-content:center}
+.hero .mask span{font-family:Anton,sans-serif;color:#fff;font-size:31vw;line-height:.8;text-transform:uppercase;letter-spacing:-.02em}
+.hero .meta{position:absolute;left:14px;right:14px;bottom:18px;display:flex;justify-content:space-between;gap:10px;font-size:12px;text-transform:uppercase;z-index:2}
+.hero .meta b{color:var(--acid)}
+
+/* marquee */
+.marq{overflow:hidden;border-block:2px solid var(--acid);background:var(--acid);color:var(--bg);white-space:nowrap}
+.marq .tr{display:inline-flex;animation:mq 22s linear infinite}
+.marq span{font:400 64px/1.1 Anton;text-transform:uppercase;padding:0 24px}
+.marq.rev{background:var(--bg);color:var(--fg)}
+.marq.rev .tr{animation-direction:reverse}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* scroll-scaled statement */
+.state{padding:18vh 14px;position:relative}
+.state .line{display:block;font-size:clamp(48px,13vw,220px);white-space:nowrap;will-change:transform;transform:translateX(var(--x,0))}
+.state .line.o{-webkit-text-stroke:2px var(--fg);color:transparent}
+.state .line.a{color:var(--acid)}
+.state p{max-width:520px;margin:6vh 0 0 auto;color:var(--mut)}
+.state p b{color:var(--fg)}
+
+/* horizontal scroll */
+.hz{height:var(--h,400vh);position:relative}
+.hz .stick{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;align-items:center}
+.hz .track{display:flex;gap:4vw;padding:0 8vw;will-change:transform;align-items:center}
+.card{flex:0 0 auto;position:relative}
+.card img{height:64vh;width:auto;object-fit:cover}
+.card.l img{width:min(70vw,980px);height:56vh}
+.card .n{position:absolute;top:-.55em;left:-.1em;font:400 clamp(70px,10vw,160px)/1 Anton;color:var(--acid);mix-blend-mode:difference;pointer-events:none}
+.card figcaption{margin-top:10px;font-size:12px;text-transform:uppercase;color:var(--mut)}
+.hz .title{flex:0 0 auto;font-size:clamp(90px,18vw,300px);color:transparent;-webkit-text-stroke:2px var(--fg)}
+
+/* image in letters */
+.fill{padding:12vh 14px;text-align:center}
+.fill .big{font-size:clamp(80px,24vw,420px);background:url(../../media/img/brollop-46.jpg) center/cover;-webkit-background-clip:text;background-clip:text;color:transparent;background-position:center var(--py,50%)}
+.fill .big.b2{background-image:url(../../media/img/brollop-27.jpg)}
+.fill small{display:block;color:var(--mut);text-transform:uppercase;margin-top:12px}
+
+/* word-swap story */
+.swap{display:grid;grid-template-columns:1fr 1fr;gap:4vw;padding:14vh 14px;align-items:center;max-width:1400px;margin:0 auto}
+.swap h2{font-size:clamp(50px,8vw,130px)}
+.swap h2 .w{color:var(--acid);display:inline-block;min-width:3ch}
+.swap img{width:100%;aspect-ratio:3/4;object-fit:cover;filter:grayscale(1) contrast(1.1);transition:filter .5s}
+.swap img:hover{filter:none}
+.swap p{color:#cfcfc8}
+
+/* packages: type scale */
+.pk{padding:10vh 14px;border-top:2px solid var(--fg)}
+.pkrow{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:end;padding:22px 0;border-bottom:2px solid #333;cursor:default;transition:padding .3s}
+.pkrow .big{font-size:clamp(54px,10vw,170px);transition:color .2s,transform .4s;transform-origin:left bottom}
+.pkrow:hover .big{color:var(--acid);transform:skewX(-8deg)}
+.pkrow .det{text-align:right;font-size:13px;text-transform:uppercase;max-width:300px}
+.pkrow .det b{font:400 40px/1 Anton;display:block;color:var(--acid)}
+
+.grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;padding:0 14px 10vh}
+.grid img{width:100%;height:100%;object-fit:cover;aspect-ratio:1;filter:grayscale(1);transition:filter .3s}
+.grid img:hover{filter:none}
+.grid .p{grid-row:span 2;aspect-ratio:auto}
+
+.voices{padding:12vh 14px}
+.voice{font:400 clamp(30px,5vw,80px)/.95 Anton;text-transform:uppercase;margin:0 0 6vh;max-width:1200px}
+.voice:nth-child(even){margin-left:auto;text-align:right;color:var(--acid)}
+.voice cite{display:block;font:400 13px "Space Mono";color:var(--mut);margin-top:12px;text-transform:none}
+
+.also{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:10px;padding:0 14px 12vh;align-items:end}
+.also h3{font:400 clamp(40px,6vw,90px)/.85 Anton;text-transform:uppercase;margin:0}
+.also figure{margin:0}.also img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.also figcaption{font-size:12px;text-transform:uppercase;margin-top:6px;color:var(--mut)}
+
+.kontakt{padding:12vh 14px 16vh;background:var(--acid);color:var(--bg)}
+.kontakt .big{font-size:clamp(70px,16vw,280px)}
+.kontakt form{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:6vh;max-width:1100px}
+.kontakt input,.kontakt textarea{background:transparent;border:0;border-bottom:3px solid var(--bg);font:400 clamp(24px,3vw,44px) Anton;text-transform:uppercase;padding:14px 4px;color:var(--bg);width:100%;border-radius:0}
+.kontakt input::placeholder,.kontakt textarea::placeholder{color:rgba(10,10,10,.45)}
+.kontakt textarea{grid-column:1/-1;resize:vertical}
+.kontakt button{grid-column:1/-1;justify-self:start;margin-top:30px;background:var(--bg);color:var(--acid);border:0;font:400 36px Anton;padding:12px 32px;text-transform:uppercase;cursor:pointer}
+.kontakt button:hover{background:#fff;color:var(--bg)}
+.kontakt .ok{font:700 15px "Space Mono";margin-top:14px;min-height:1.4em}
+footer{padding:20px 14px 30px;font-size:12px;color:var(--mut);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+@media (max-width:800px){
+ .swap{grid-template-columns:1fr}
+ .grid{grid-template-columns:repeat(3,1fr)}
+ .also{grid-template-columns:1fr 1fr}
+ .also h3{grid-column:1/-1}
+ .pkrow{grid-template-columns:1fr}.pkrow .det{text-align:left}
+ .kontakt form{grid-template-columns:1fr}
+ nav.top{display:none}
+ .marq span{font-size:40px}
+ /* horizontal becomes native swipe */
+ .hz{height:auto!important}
+ .hz .stick{position:relative;height:auto;overflow-x:auto;padding:8vh 0;scroll-snap-type:x mandatory}
+ .hz .track{transform:none!important;padding:0 14px}
+ .card{scroll-snap-align:center}
+ .card img{height:58vh}.card.l img{width:86vw;height:auto;aspect-ratio:3/2}
+}
+@media (prefers-reduced-motion:reduce){
+ .marq .tr{animation:none}
+ .state .line{transform:none!important}
+ .hz{height:auto!important}
+ .hz .stick{position:relative;height:auto;overflow-x:auto;padding:8vh 0}
+ .hz .track{transform:none!important}
+ .pkrow .big{transition:none}
+}
+</style>
+</head>
+<body>
+<a class="back" href="../../index.html">← Alla 25</a>
+<nav class="top"><a href="#arbete">Arbete</a><a href="#paket">Paket</a><a href="#kontakt">Kontakt</a></nav>
+
+<header class="hero">
+ <video src="../../media/hero.mp4" autoplay muted loop playsinline aria-label="Bröllopsfilm som syns genom bokstäverna"></video>
+ <div class="mask" aria-hidden="true"><span>Ja!</span></div>
+ <h1 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Rörelse – Viktor Ekdahl, bröllopsfotograf i Malmö</h1>
+ <div class="meta"><span><b>Rörelse</b> / Viktor Ekdahl</span><span>Bröllop i rörelse — Malmö &amp; hela Skåne</span><span>Scrolla ↓</span></div>
+</header>
+
+<div class="marq" aria-hidden="true"><div class="tr"><span>Inga stela gruppbilder</span><span>✕</span><span>Bara det som händer</span><span>✕</span><span>Inga stela gruppbilder</span><span>✕</span><span>Bara det som händer</span><span>✕</span></div></div>
+
+<section class="state" id="state">
+ <span class="line big" data-s="-0.35">Ett bröllop</span>
+ <span class="line big o" data-s="0.3">står aldrig</span>
+ <span class="line big a" data-s="-0.25">stilla.</span>
+ <p><b>Jag heter Viktor.</b> Jag har fotograferat bröllop sedan 2014, oftast springande. Mina bilder är skarpa där det spelar roll och suddiga där det dansas. Jag letar efter ögonblicket precis före – och precis efter – det ni tror är bilden.</p>
+</section>
+
+<section class="hz" id="arbete">
+ <div class="stick">
+  <div class="track">
+   <div class="title big" aria-hidden="true">Arbete→</div>
+   <figure class="card"><span class="n">01</span><img src="../../media/img/brollop-21.jpg" alt="Brudparet springer över en äng" loading="lazy"><figcaption>Amira &amp; Jonas — Österlen</figcaption></figure>
+   <figure class="card l"><span class="n">02</span><img src="../../media/img/brollop-00.jpg" alt="Gäster kastar ris vid kyrkan" loading="lazy"><figcaption>Lovisa &amp; Theo — Lund</figcaption></figure>
+   <figure class="card"><span class="n">03</span><img src="../../media/img/brollop-07.jpg" alt="Bruden skrattar under slöjan" loading="lazy"><figcaption>Hanna &amp; Ali — Ystad</figcaption></figure>
+   <figure class="card l"><span class="n">04</span><img src="../../media/img/brollop-25.jpg" alt="Middag i växthus" loading="lazy"><figcaption>Elin &amp; Saga — Malmö</figcaption></figure>
+   <figure class="card"><span class="n">05</span><img src="../../media/img/brollop-46.jpg" alt="Brudpar i närbild" loading="lazy"><figcaption>Nora &amp; Filip — Kivik</figcaption></figure>
+   <figure class="card l"><span class="n">06</span><img src="../../media/img/brollop-42.jpg" alt="Dansgolvet sent på kvällen" loading="lazy"><figcaption>Ida &amp; Marcus — Helsingborg</figcaption></figure>
+   <figure class="card"><span class="n">07</span><img src="../../media/img/brollop-37.jpg" alt="Brudgummens reaktion" loading="lazy"><figcaption>Maja &amp; Oskar — Torekov</figcaption></figure>
+  </div>
+ </div>
+</section>
+
+<div class="marq rev" aria-hidden="true"><div class="tr"><span>Skratt</span><span>●</span><span>Tårar</span><span>●</span><span>Konfetti</span><span>●</span><span>Svett</span><span>●</span><span>Skratt</span><span>●</span><span>Tårar</span><span>●</span><span>Konfetti</span><span>●</span><span>Svett</span><span>●</span></div></div>
+
+<section class="fill"><div class="big par" aria-hidden="true">Kärlek</div><small>Bilden syns bara genom bokstäverna — precis som minnet</small></section>
+
+<section class="swap">
+ <div>
+  <h2 class="big">Jag fotar <br><span class="w" id="w">kyssen</span></h2>
+  <p>Inte för att det är fint – för att det är sant. Jag jobbar med ljuset som finns, rör mig mycket och säger lite. Ni får hela dagen, i ordning, som en film i stillbilder.</p>
+ </div>
+ <img src="../../media/img/portratt-17.jpg" alt="Viktor Ekdahl, fotografen" loading="lazy">
+</section>
+
+<div class="grid">
+ <img class="p" src="../../media/img/brollop-05.jpg" alt="Brud i trappa" loading="lazy">
+ <img src="../../media/img/brollop-13.jpg" alt="Skål vid bordet" loading="lazy">
+ <img src="../../media/img/brollop-17.jpg" alt="Paret i solnedgång" loading="lazy">
+ <img class="p" src="../../media/img/brollop-35.jpg" alt="Brudbukett i närbild" loading="lazy">
+ <img src="../../media/img/brollop-39.jpg" alt="Gäster som dansar" loading="lazy">
+ <img src="../../media/img/brollop-43.jpg" alt="Vigselringar" loading="lazy">
+ <img src="../../media/img/brollop-50.jpg" alt="Kyss under bar himmel" loading="lazy">
+ <img src="../../media/img/brollop-54.jpg" alt="Tal under middagen" loading="lazy">
+ <img src="../../media/img/brollop-57.jpg" alt="Sista dansen" loading="lazy">
+ <img src="../../media/img/brollop-11.jpg" alt="Brudföljet" loading="lazy">
+</div>
+
+<section class="fill" style="padding-top:0"><div class="big b2 par" aria-hidden="true">Fest</div></section>
+
+<section class="pk" id="paket">
+ <div class="pkrow"><div class="big">Kort</div><div class="det"><b>13 500 kr</b>3 tim · vigsel + porträtt · 250 bilder</div></div>
+ <div class="pkrow"><div class="big">Hel dag</div><div class="det"><b>24 900 kr</b>9 tim · förberedelser till dansgolv · 600+ bilder</div></div>
+ <div class="pkrow"><div class="big">Film+foto</div><div class="det"><b>36 000 kr</b>Hel dag · 4-minuters film · andra fotograf</div></div>
+</section>
+
+<section class="voices">
+ <blockquote class="voice">”Det känns som att man är där igen.”<cite>— Amira &amp; Jonas, Österlen</cite></blockquote>
+ <blockquote class="voice">”Vi märkte knappt att han var där.”<cite>— Lovisa &amp; Theo, Lund</cite></blockquote>
+ <blockquote class="voice">”Den suddiga dansbilden är vår favorit.”<cite>— Ida &amp; Marcus, Helsingborg</cite></blockquote>
+</section>
+
+<section class="also">
+ <h3>Också<br><span style="color:var(--acid)">i rörelse</span></h3>
+ <figure><img src="../../media/img/familj-21.jpg" alt="Familj som leker utomhus" loading="lazy"><figcaption>Familj</figcaption></figure>
+ <figure><img src="../../media/img/foretag-10.jpg" alt="Företagskonferens" loading="lazy"><figcaption>Event</figcaption></figure>
+ <figure><img src="../../media/img/foretag-60.jpg" alt="Personalporträtt" loading="lazy"><figcaption>Företag</figcaption></figure>
+ <figure style="grid-column:2/-1"><img src="../../media/img/foretag-35.jpg" alt="Lansering med publik" loading="lazy" style="aspect-ratio:3/1"><figcaption>Lanseringar &amp; konferenser</figcaption></figure>
+</section>
+
+<section class="kontakt" id="kontakt">
+ <h2 class="big">Skriv.<br>Nu.</h2>
+ <form id="f">
+  <input placeholder="Namn" required aria-label="Namn">
+  <input type="email" placeholder="E-post" required aria-label="E-post">
+  <input placeholder="Datum" aria-label="Datum">
+  <input placeholder="Plats" aria-label="Plats">
+  <textarea rows="2" placeholder="Berätta" aria-label="Meddelande"></textarea>
+  <button>Skicka →</button>
+  <div class="ok" aria-live="polite"></div>
+ </form>
+ <p style="margin-top:6vh;font-weight:700">viktor@rorelsefoto.se · 073-501 22 90 · Möllevången, Malmö</p>
+</section>
+<footer><span>© Rörelse / Viktor Ekdahl 2026</span><span>Fotograferat i rörelse, byggt i svart och syra.</span></footer>
+
+<script>
+const rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const words=['kyssen','skrattet','tårarna','dansen','blicken','kaoset'];let wi=0;const w=document.getElementById('w');
+if(!rm)setInterval(()=>{wi=(wi+1)%words.length;w.textContent=words[wi]},1400);
+const lines=document.querySelectorAll('.state .line'),st=document.getElementById('state');
+const hz=document.querySelector('.hz'),track=hz.querySelector('.track');
+const pars=document.querySelectorAll('.par');
+function sizeHz(){if(innerWidth<=800||rm){hz.style.removeProperty('--h');return}
+ const d=track.scrollWidth-innerWidth;hz.style.setProperty('--h',(innerHeight+d)+'px')}
+function onScroll(){
+ if(rm)return;
+ const r=st.getBoundingClientRect(),p=(innerHeight-r.top)/(innerHeight+r.height);
+ lines.forEach(l=>l.style.setProperty('--x',((p-.5)*parseFloat(l.dataset.s)*innerWidth)+'px'));
+ if(innerWidth>800){const hr=hz.getBoundingClientRect(),d=track.scrollWidth-innerWidth;
+  const t=Math.min(Math.max(-hr.top,0),d);track.style.transform=`translateX(${-t}px)`}
+ pars.forEach(e=>{const b=e.getBoundingClientRect();const q=(b.top+b.height/2)/innerHeight;e.style.setProperty('--py',(Math.min(Math.max(q,0),1)*100)+'%')});
+}
+addEventListener('scroll',onScroll,{passive:true});addEventListener('resize',()=>{sizeHz();onScroll()});
+addEventListener('load',()=>{sizeHz();onScroll()});sizeHz();onScroll();
+document.getElementById('f').onsubmit=e=>{e.preventDefault();e.target.querySelector('.ok').textContent='MOTTAGET. Jag hör av mig inom 48 timmar.';e.target.reset()};
+</script>
+</body>
+</html>

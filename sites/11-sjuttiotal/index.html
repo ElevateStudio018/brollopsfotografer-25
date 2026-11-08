@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solgården Foto – bröllopsfotograf i Jönköping</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Righteous&family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#f4e3c1;--paper:#efd6a6;--brown:#4a2a17;--rust:#c2541c;--orange:#e8822a;--mustard:#d9a42b;--olive:#7d7a2c;--deep:#2e1a0e}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--brown);font-family:'DM Serif Text',Georgia,serif;font-size:19px;line-height:1.55;overflow-x:hidden}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:99;opacity:.22;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .3 0 0 0 0 .18 0 0 0 0 .08 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:'Shrikhand',cursive;font-weight:400;line-height:.95;letter-spacing:.01em}
+.back{position:fixed;left:14px;bottom:14px;z-index:100;font-family:'Righteous';font-size:13px;background:var(--brown);color:var(--cream);padding:7px 14px;border-radius:99px;text-decoration:none;box-shadow:3px 3px 0 var(--orange)}
+.back:hover{background:var(--rust)}
+/* stripes */
+.stripes{height:54px;background:linear-gradient(var(--mustard) 0 25%,var(--orange) 25% 50%,var(--rust) 50% 75%,var(--brown) 75%)}
+.stripes.thin{height:28px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 5vw;font-family:'Righteous';text-transform:uppercase;letter-spacing:.08em;font-size:14px}
+nav .logo{font-family:'Shrikhand';text-transform:none;font-size:26px;letter-spacing:0;color:var(--rust)}
+nav ul{display:flex;gap:26px;list-style:none}
+nav a{text-decoration:none}
+nav a:hover{color:var(--rust)}
+/* hero */
+.hero{position:relative;padding:30px 5vw 90px;display:grid;grid-template-columns:1.1fr .9fr;gap:5vw;align-items:center}
+.hero h1{font-size:clamp(64px,10vw,150px);color:var(--rust);text-shadow:4px 4px 0 var(--mustard),8px 8px 0 var(--brown)}
+.hero h1 span{display:block;color:var(--orange)}
+.hero p.lead{font-size:23px;max-width:30ch;margin:34px 0 26px;font-style:italic}
+.btn{display:inline-block;font-family:'Righteous';text-transform:uppercase;letter-spacing:.07em;font-size:16px;background:var(--orange);color:var(--deep);padding:16px 30px;border-radius:99px;text-decoration:none;border:3px solid var(--brown);box-shadow:5px 5px 0 var(--brown);transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--brown)}
+.tv{position:relative;background:var(--brown);border-radius:48px;padding:28px 28px 70px;box-shadow:10px 12px 0 var(--rust)}
+.tv video{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:38% / 30%;filter:sepia(.35) saturate(1.25) contrast(1.05);display:block}
+.tv .knobs{position:absolute;bottom:20px;left:34px;right:34px;display:flex;justify-content:space-between;align-items:center;color:var(--paper);font-family:'Righteous';font-size:13px;letter-spacing:.2em}
+.tv .knobs i{display:inline-block;width:26px;height:26px;border-radius:50%;background:var(--mustard);margin-left:10px;border:3px solid var(--paper)}
+.sun{position:absolute;right:3vw;top:-10px;width:170px;height:170px;border-radius:50%;background:repeating-linear-gradient(var(--mustard) 0 14px,transparent 14px 22px);z-index:-1}
+/* marquee */
+.ticker{background:var(--brown);color:var(--mustard);font-family:'Shrikhand';font-size:34px;white-space:nowrap;overflow:hidden;padding:12px 0}
+.ticker div{display:inline-block;animation:tick 30s linear infinite}
+@keyframes tick{to{transform:translateX(-50%)}}
+/* about */
+section{padding:100px 5vw}
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:6vw;align-items:center}
+.arch{border-radius:999px 999px 30px 30px;overflow:hidden;border:10px solid var(--orange);outline:10px solid var(--mustard);aspect-ratio:3/4}
+.arch img{width:100%;height:100%;object-fit:cover;filter:sepia(.25) saturate(1.2)}
+.about h2{font-size:clamp(46px,6vw,84px);color:var(--brown)}
+.about p{margin-top:20px;max-width:52ch}
+.sig{font-family:'Shrikhand';color:var(--rust);font-size:30px;margin-top:22px}
+/* gallery */
+.gal{background:var(--brown);color:var(--cream)}
+.gal h2{font-size:clamp(50px,8vw,110px);color:var(--mustard);text-align:center}
+.gal .sub{text-align:center;font-style:italic;margin:12px 0 50px;color:var(--paper)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:22px}
+.grid figure{overflow:hidden;cursor:zoom-in;border-radius:40px;border:6px solid var(--mustard);position:relative;background:var(--deep)}
+.grid figure:nth-child(3n+2){border-color:var(--orange);border-radius:120px 120px 40px 40px}
+.grid figure:nth-child(5n){border-color:var(--rust);border-radius:50%}
+.grid img{width:100%;height:100%;object-fit:cover;filter:sepia(.3) saturate(1.25) contrast(1.05);transition:transform .5s}
+.grid figure:hover img{transform:scale(1.06)}
+.tall{grid-row:span 2}.wide{grid-column:span 2}
+/* packages */
+.pk h2{font-size:clamp(50px,7vw,100px);color:var(--rust);text-align:center}
+.pk .sub{text-align:center;font-style:italic;margin:10px 0 60px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:34px;max-width:1200px;margin:auto}
+.card{border-radius:50px 50px 50px 50px;padding:44px 34px 38px;border:4px solid var(--brown);position:relative}
+.card:nth-child(1){background:var(--mustard)}
+.card:nth-child(2){background:var(--orange);transform:translateY(-20px)}
+.card:nth-child(3){background:var(--rust);color:var(--cream)}
+.card h3{font-size:42px}
+.card .price{font-family:'Righteous';font-size:34px;margin:14px 0 18px}
+.card ul{list-style:none}
+.card li{padding:8px 0;border-top:2px dashed currentColor}
+.card .badge{position:absolute;top:-28px;right:20px;width:80px;height:80px;border-radius:50%;background:var(--brown);color:var(--mustard);display:grid;place-items:center;font-family:'Righteous';font-size:12px;text-align:center;line-height:1.1;transform:rotate(12deg)}
+/* also */
+.also{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;align-items:end}
+.also figure{text-align:center}
+.also img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:50%;border:8px solid var(--paper);box-shadow:0 0 0 6px var(--olive);filter:sepia(.3)}
+.also figcaption{font-family:'Righteous';text-transform:uppercase;letter-spacing:.1em;font-size:14px;margin-top:16px}
+.also-h{font-size:clamp(40px,5vw,70px);color:var(--olive);margin-bottom:40px}
+/* quotes */
+.quotes{background:var(--mustard);position:relative}
+.quotes h2{font-size:clamp(44px,6vw,80px);color:var(--brown);margin-bottom:40px}
+.q{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+blockquote{background:var(--cream);border-radius:40px 40px 40px 6px;padding:30px;border:3px solid var(--brown);font-style:italic}
+blockquote cite{display:block;font-style:normal;font-family:'Righteous';margin-top:16px;color:var(--rust)}
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:6vw}
+.contact h2{font-size:clamp(54px,8vw,120px);color:var(--rust);text-shadow:4px 4px 0 var(--mustard)}
+form{display:grid;gap:16px}
+label{font-family:'Righteous';text-transform:uppercase;font-size:13px;letter-spacing:.1em}
+input,textarea,select{width:100%;font:inherit;font-size:18px;padding:14px 20px;border-radius:30px;border:3px solid var(--brown);background:var(--paper);color:var(--brown);margin-top:6px}
+textarea{border-radius:24px;min-height:120px}
+.ok{font-family:'Shrikhand';color:var(--olive);font-size:26px;min-height:1em}
+footer{background:var(--deep);color:var(--paper);text-align:center;padding:40px 5vw 70px;font-family:'Righteous';letter-spacing:.06em;font-size:14px}
+/* lightbox */
+.lb{position:fixed;inset:0;background:rgba(46,26,14,.94);display:none;place-items:center;z-index:98;padding:20px}
+.lb.on{display:grid}
+.lb img{max-height:86vh;border-radius:40px;border:8px solid var(--mustard)}
+.lb button{position:absolute;top:20px;right:24px;background:var(--orange);border:3px solid var(--cream);border-radius:50%;width:52px;height:52px;font-size:26px;cursor:pointer;color:var(--deep)}
+@media (max-width:860px){
+ nav ul{display:none}
+ .hero,.about,.contact{grid-template-columns:1fr}
+ .grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:160px;gap:12px}
+ .wide{grid-column:span 2}
+ .cards,.q{grid-template-columns:1fr}.card:nth-child(2){transform:none}
+ .also{grid-template-columns:repeat(2,1fr)}
+ section{padding:70px 6vw}
+ .tv{padding:16px 16px 56px;border-radius:32px}
+ .sun{width:110px;height:110px}
+}
+@media (prefers-reduced-motion:reduce){.ticker div{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<a class="back" href="../../index.html">← Alla 25</a>
+<div class="stripes"></div>
+<nav><span class="logo">Solgården Foto</span>
+<ul><li><a href="#bilder">Bilder</a></li><li><a href="#om">Om oss</a></li><li><a href="#paket">Paket</a></li><li><a href="#kontakt">Boka</a></li></ul></nav>
+
+<header class="hero">
+ <div class="sun"></div>
+ <div>
+  <h1>Kärlek<span>i färg</span></h1>
+  <p class="lead">Varma, korniga bröllopsbilder från Jönköping – som om de legat i en skokartong hos mormor sedan 1974.</p>
+  <a class="btn" href="#kontakt">Kolla om vi är lediga</a>
+ </div>
+ <div class="tv">
+  <video src="../../media/hero.mp4" autoplay muted loop playsinline poster="../../media/img/brollop-13.jpg"></video>
+  <div class="knobs"><span>KANAL 7 · BRÖLLOP</span><span><i></i><i></i></span></div>
+ </div>
+</header>
+
+<div class="ticker" aria-hidden="true"><div>midsommarkänsla ✿ brudbuketter ✿ dansgolv till sent ✿ gräsmatta och tårta ✿ farbror Bengts tal ✿ midsommarkänsla ✿ brudbuketter ✿ dansgolv till sent ✿ gräsmatta och tårta ✿ farbror Bengts tal ✿ </div></div>
+
+<section class="about" id="om">
+ <div class="arch"><img src="../../media/img/portratt-06.jpg" alt="Porträtt av fotografen Lotta Sundqvist" loading="lazy"></div>
+ <div>
+  <h2>Hej, vi heter Lotta &amp; Kjell!</h2>
+  <p>Vi träffades på en loppis i Huskvarna, båda med handen på samma gamla Pentax. Sedan dess har vi fotograferat över 300 bröllop – i lador, på kyrktrappor och en gång på en flotte mitt i Vättern.</p>
+  <p>Vi älskar det lite ofokuserade, det skrattande och det som händer när ingen tittar. Vi redigerar varmt, med riktig kornighet och färger som påminner om sommarkvällar på landet. Inga stela uppställningar – bara ni, som ni är.</p>
+  <p class="sig">– Lotta &amp; Kjell</p>
+ </div>
+</section>
+
+<div class="stripes thin"></div>
+<section class="gal" id="bilder">
+ <h2>Ur albumet</h2>
+ <p class="sub">Klicka på en bild för att se den större.</p>
+ <div class="grid">
+  <figure class="wide"><img src="../../media/img/brollop-00.jpg" alt="Brudpar i kvällsljus" loading="lazy"></figure>
+  <figure class="tall"><img src="../../media/img/brollop-35.jpg" alt="Brud med bukett" loading="lazy"></figure>
+  <figure><img src="../../media/img/brollop-10.jpg" alt="Detalj från bröllopsdagen" loading="lazy"></figure>
+  <figure><img src="../../media/img/brollop-06.jpg" alt="Gäster som skrattar" loading="lazy"></figure>
+  <figure class="tall"><img src="../../media/img/brollop-04.jpg" alt="Brudgum i kostym" loading="lazy"></figure>
+  <figure class="wide"><img src="../../media/img/brollop-17.jpg" alt="Brudparet går genom ett fält" loading="lazy"></figure>
+  <figure><img src="../../media/img/brollop-09.jpg" alt="Vigselringar" loading="lazy"></figure>
+  <figure class="tall"><img src="../../media/img/brollop-15.jpg" alt="Brud vid fönster" loading="lazy"></figure>
+  <figure><img src="../../media/img/brollop-20.jpg" alt="Bröllopsfest" loading="lazy"></figure>
+  <figure class="wide"><img src="../../media/img/brollop-23.jpg" alt="Brudpar kysser varandra" loading="lazy"></figure>
+  <figure><img src="../../media/img/brollop-25.jpg" alt="Middag i ladan" loading="lazy"></figure>
+  <figure class="tall"><img src="../../media/img/brollop-21.jpg" alt="Brudpar i solnedgång" loading="lazy"></figure>
+  <figure><img src="../../media/img/brollop-29.jpg" alt="Första dansen" loading="lazy"></figure>
+  <figure class="wide"><img src="../../media/img/brollop-31.jpg" alt="Gäster kastar ris" loading="lazy"></figure>
+  <figure><img src="../../media/img/brollop-40.jpg" alt="Bröllopstårta" loading="lazy"></figure>
+  <figure><img src="../../media/img/brollop-44.jpg" alt="Brudpar på trappa" loading="lazy"></figure>
+  <figure class="tall"><img src="../../media/img/brollop-47.jpg" alt="Brudklänning i detalj" loading="lazy"></figure>
+  <figure class="wide"><img src="../../media/img/brollop-50.jpg" alt="Brudparet i landskap" loading="lazy"></figure>
+  <figure><img src="../../media/img/brollop-54.jpg" alt="Skål vid middagen" loading="lazy"></figure>
+ </div>
+</section>
+<div class="stripes thin"></div>
+
+<section class="pk" id="paket">
+ <h2>Välj ert paket</h2>
+ <p class="sub">Alla paket inkluderar ett handgjort tryckt album med fotohörn.</p>
+ <div class="cards">
+  <div class="card"><h3>Lilla Disco</h3><div class="price">14 900 kr</div><ul><li>4 timmars fotografering</li><li>Vigsel &amp; porträtt</li><li>ca 250 redigerade bilder</li><li>Onlinegalleri</li></ul></div>
+  <div class="card"><span class="badge">MEST<br>BOKAD</span><h3>Hela Kalaset</h3><div class="price">24 500 kr</div><ul><li>8 timmar, från förberedelser</li><li>Två fotografer</li><li>ca 600 redigerade bilder</li><li>Album 30×30 cm</li></ul></div>
+  <div class="card"><h3>Ända Till Gryningen</h3><div class="price">32 000 kr</div><ul><li>Obegränsad tid samma dag</li><li>Super 8-filmsnutt</li><li>Förlovningsfotografering</li><li>Två album till föräldrarna</li></ul></div>
+ </div>
+</section>
+
+<section style="padding-top:20px">
+ <h2 class="also-h">Vi gör också…</h2>
+ <div class="also">
+  <figure><img src="../../media/img/familj-10.jpg" alt="Familj i gräset" loading="lazy"><figcaption>Familj</figcaption></figure>
+  <figure><img src="../../media/img/familj-35.jpg" alt="Barn som leker" loading="lazy"><figcaption>Nyfödda &amp; barn</figcaption></figure>
+  <figure><img src="../../media/img/portratt-31.jpg" alt="Porträtt utomhus" loading="lazy"><figcaption>Porträtt</figcaption></figure>
+  <figure><img src="../../media/img/foretag-24.jpg" alt="Företagsevent" loading="lazy"><figcaption>Företagsfester</figcaption></figure>
+ </div>
+</section>
+
+<section class="quotes">
+ <h2>Det säger brudparen</h2>
+ <div class="q">
+  <blockquote>”Bilderna ser ut som de är tagna på min mammas bröllop – fast det är vi! Alla gäster har frågat vem fotografen var.”<cite>Josefin &amp; Ali, Gränna</cite></blockquote>
+  <blockquote>”Kjell fick till och med morfar att dansa. Och sen fotade han det. Ovärderligt.”<cite>Maja &amp; Oskar, Tenhult</cite></blockquote>
+  <blockquote>”Albumet ligger framme på soffbordet och alla som kommer hem till oss bläddrar i det.”<cite>Hanna &amp; Petra, Habo</cite></blockquote>
+ </div>
+</section>
+
+<section class="contact" id="kontakt">
+ <div>
+  <h2>Hör av er!</h2>
+  <p style="margin-top:24px;max-width:36ch">Berätta om ert datum, era planer och vad ni drömmer om. Vi svarar inom två dagar – oftast snabbare.</p>
+  <p style="margin-top:20px;font-family:Righteous">hej@solgardenfoto.se<br>036-12 34 56<br>Östra Storgatan 14, Jönköping</p>
+  <img src="../../media/img/foretag-49.jpg" alt="Kameror och utrustning i studion" loading="lazy" style="margin-top:30px;border-radius:40px;border:6px solid var(--orange);aspect-ratio:16/10;object-fit:cover;filter:sepia(.35)">
+ </div>
+ <form id="f">
+  <label>Era namn<input required name="n"></label>
+  <label>E-post<input type="email" required name="e"></label>
+  <label>Datum<input type="date" name="d"></label>
+  <label>Paket<select name="p"><option>Lilla Disco</option><option>Hela Kalaset</option><option>Ända Till Gryningen</option><option>Vet inte än</option></select></label>
+  <label>Berätta lite<textarea name="m"></textarea></label>
+  <button class="btn" type="submit">Skicka</button>
+  <p class="ok" id="ok" aria-live="polite"></p>
+ </form>
+</section>
+<div class="stripes"></div>
+<footer>© 2026 Solgården Foto · Jönköping · Fotograferat med kärlek och Kodak</footer>
+
+<div class="lb" id="lb"><button aria-label="Stäng">×</button><img alt=""></div>
+<script>
+const lb=document.getElementById('lb'),li=lb.querySelector('img');
+document.querySelectorAll('.grid img').forEach(i=>i.parentElement.addEventListener('click',()=>{li.src=i.src;li.alt=i.alt;lb.classList.add('on')}));
+lb.addEventListener('click',e=>{if(e.target!==li)lb.classList.remove('on')});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('on')});
+document.getElementById('f').addEventListener('submit',e=>{e.preventDefault();document.getElementById('ok').textContent='Tack! Vi hörs snart, frid &amp; kärlek!';e.target.reset()});
+</script>
+</body>
+</html>

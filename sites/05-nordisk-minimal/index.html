@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ingrid Fors – fotografi, Leksand</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Karla:wght@300;400&display=swap" rel="stylesheet">
+<style>
+:root{--oat:#efe9df;--linen:#e5ddd0;--sand:#cfc4b2;--stone:#8b8174;--ink:#3d3832}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--oat);color:var(--ink);font-family:"Cormorant Garamond",Georgia,serif;font-weight:300;font-size:20px;line-height:1.6;overflow-x:hidden}
+img,video{display:block;width:100%;height:100%;object-fit:cover}
+a{color:inherit;text-decoration:none}
+.small{font:300 12px Karla,sans-serif;letter-spacing:.22em;text-transform:lowercase;color:var(--stone)}
+header{position:fixed;top:0;left:0;right:0;display:flex;justify-content:space-between;padding:28px 6vw;z-index:10;mix-blend-mode:multiply}
+header nav a{margin-left:32px}header nav a:hover{color:var(--ink)}
+.intro{height:100vh;min-height:560px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:0 6vw}
+.intro h1{font-weight:300;font-size:clamp(40px,6vw,88px);line-height:1.05;letter-spacing:-.01em}
+.intro h1 i{color:var(--stone)}
+.intro p{margin-top:40px}
+.film{margin:0 6vw;height:82vh;overflow:hidden;background:var(--linen)}
+.space{height:28vh}
+.one{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;padding:0 6vw}
+.word{font-size:clamp(26px,2.6vw,36px);line-height:1.4;font-style:italic}
+.a1{grid-column:2/7;aspect-ratio:2/3}
+.a2{grid-column:8/12;align-self:end}
+.b1{grid-column:5/13;aspect-ratio:3/2}
+.b2{grid-column:1/4;align-self:start;padding-top:10vh}
+.c1{grid-column:1/5;aspect-ratio:2/3}
+.c2{grid-column:6/9;aspect-ratio:2/3;margin-top:20vh}
+.c3{grid-column:10/13;aspect-ratio:2/3;margin-top:8vh}
+.d1{grid-column:3/11;aspect-ratio:3/2}
+.cap{font:300 12px Karla;letter-spacing:.18em;color:var(--stone);margin-top:12px}
+.fig{display:flex;flex-direction:column}
+.fig>div{flex:1;overflow:hidden;background:var(--linen)}
+.center{text-align:center;padding:0 6vw}
+.center h2{font-weight:300;font-size:clamp(32px,4vw,56px);line-height:1.15}
+.offer{display:grid;grid-template-columns:repeat(3,1fr);gap:6vw;padding:0 12vw;text-align:center}
+.offer h3{font-weight:300;font-size:30px;font-style:italic}
+.offer p{font-size:18px;color:var(--stone);margin-top:10px}
+.offer b{display:block;font-weight:400;font-size:22px;margin-top:18px}
+.row{display:flex;gap:24px;padding:0 6vw;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+.row::-webkit-scrollbar{display:none}
+.row figure{flex:0 0 28vw;scroll-snap-align:start}
+.row figure div{aspect-ratio:2/3;overflow:hidden;background:var(--linen)}
+.row figure.l{flex-basis:44vw}.row figure.l div{aspect-ratio:3/2}
+.voice{max-width:760px;margin:0 auto;text-align:center;padding:0 6vw}
+.voice p{font-size:clamp(24px,2.4vw,32px);font-style:italic;line-height:1.45}
+.voice .small{margin-top:24px;display:block}
+.voice .dots{margin-top:40px;display:flex;justify-content:center;gap:14px}
+.voice .dots button{width:7px;height:7px;border-radius:50%;border:0;background:var(--sand);cursor:pointer;padding:0}
+.voice .dots button.on{background:var(--ink)}
+.q{transition:opacity 1.6s}
+.me{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;padding:0 6vw;align-items:center}
+.me .p{grid-column:2/6;aspect-ratio:4/5}
+.me .t{grid-column:7/12}
+.me .t p+p{margin-top:1em}
+.kont{text-align:center;padding:0 6vw}
+.kont a.mail{font-size:clamp(28px,4vw,54px);font-style:italic;border-bottom:1px solid var(--sand)}
+.kont form{max-width:520px;margin:64px auto 0;text-align:left}
+.kont label{display:block;font:300 12px Karla;letter-spacing:.2em;color:var(--stone);margin-bottom:28px}
+.kont input,.kont textarea{display:block;width:100%;background:transparent;border:0;border-bottom:1px solid var(--sand);font:300 22px "Cormorant Garamond",serif;color:var(--ink);padding:6px 0;border-radius:0}
+.kont input:focus,.kont textarea:focus{outline:0;border-color:var(--ink)}
+.kont textarea{min-height:80px;resize:vertical}
+.kont button{background:none;border:1px solid var(--ink);font:300 13px Karla;letter-spacing:.24em;padding:14px 34px;color:var(--ink);cursor:pointer;transition:background .6s,color .6s}
+.kont button:hover{background:var(--ink);color:var(--oat)}
+.ok{display:none;font-style:italic;font-size:24px;margin-top:40px}
+footer{padding:20vh 6vw 40px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.back{position:fixed;left:6vw;bottom:24px;z-index:10;font:300 12px Karla;letter-spacing:.2em;color:var(--stone)}
+.back:hover{color:var(--ink)}
+.fade{opacity:0;transform:translateY(14px);transition:opacity 2.2s ease,transform 2.2s ease}
+.fade.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.fade{opacity:1;transform:none;transition:none}.q{transition:none}}
+@media (max-width:800px){
+ body{font-size:18px}
+ header{padding:20px 24px}header nav{display:none}
+ .intro,.center,.kont,.voice{padding-left:24px;padding-right:24px}
+ .film{margin:0 24px;height:60vh}
+ .one,.me{grid-template-columns:repeat(6,1fr);gap:16px;padding:0 24px}
+ .a1{grid-column:1/6}.a2{grid-column:2/7;margin-top:8vh}
+ .b1{grid-column:1/7}.b2{grid-column:1/6;padding-top:6vh;order:2}
+ .c1{grid-column:1/5}.c2{grid-column:3/7;margin-top:6vh}.c3{grid-column:1/4;margin-top:6vh}
+ .d1{grid-column:1/7}
+ .offer{grid-template-columns:1fr;gap:56px;padding:0 24px}
+ .row{padding:0 24px}.row figure{flex-basis:62vw}.row figure.l{flex-basis:84vw}
+ .me .p{grid-column:1/6}.me .t{grid-column:1/7;margin-top:24px}
+ .space{height:18vh}
+ .back{left:24px}
+}
+</style>
+</head>
+<body>
+<header><a href="#" class="small">ingrid fors</a><nav class="small"><a href="#bilder">bilder</a><a href="#om">om</a><a href="#kontakt">kontakt</a></nav></header>
+
+<section class="intro">
+ <h1 class="fade">Stilla bilder<br><i>av en stor dag.</i></h1>
+ <p class="small fade">bröllopsfotografi · leksand, dalarna</p>
+</section>
+
+<div class="film fade"><video src="../../media/hero.mp4" autoplay muted loop playsinline poster="../../media/img/brollop-29.jpg" aria-label="Kort film från ett bröllop vid Siljan"></video></div>
+
+<div class="space"></div>
+<section class="one" id="bilder">
+ <figure class="fig a1 fade"><div><img src="../../media/img/brollop-04.jpg" alt="Brud i kvällsljus vid sjön" loading="lazy"></div><figcaption class="cap">siljan, juli</figcaption></figure>
+ <p class="word a2 fade">Jag fotograferar långsamt.<br>Ljuset får bestämma.</p>
+</section>
+
+<div class="space"></div>
+<section class="one">
+ <p class="word b2 fade">Det som händer<br>mellan det planerade.</p>
+ <figure class="fig b1 fade"><div><img src="../../media/img/brollop-29.jpg" alt="Brudpar som går över en äng" loading="lazy"></div><figcaption class="cap">tällberg, juni</figcaption></figure>
+</section>
+
+<div class="space"></div>
+<section class="one">
+ <figure class="fig c1 fade"><div><img src="../../media/img/brollop-55.jpg" alt="Brud med vildblommor" loading="lazy"></div></figure>
+ <figure class="fig c2 fade"><div><img src="../../media/img/brollop-07.jpg" alt="Brud i fönsterljus" loading="lazy"></div></figure>
+ <figure class="fig c3 fade"><div><img src="../../media/img/brollop-21.jpg" alt="Händer som håller varandra" loading="lazy"></div></figure>
+</section>
+
+<div class="space"></div>
+<section class="one">
+ <figure class="fig d1 fade"><div><img src="../../media/img/brollop-54.jpg" alt="Långbord i en lada med levande ljus" loading="lazy"></div><figcaption class="cap">en lada utanför rättvik, augusti</figcaption></figure>
+</section>
+
+<div class="space"></div>
+<div class="row fade" aria-label="Fler bilder, scrolla i sidled">
+ <figure><div><img src="../../media/img/brollop-15.jpg" alt="Förberedelser på morgonen" loading="lazy"></div></figure>
+ <figure class="l"><div><img src="../../media/img/brollop-13.jpg" alt="Bukett på ett linnebord" loading="lazy"></div></figure>
+ <figure><div><img src="../../media/img/brollop-19.jpg" alt="Brudgum som väntar" loading="lazy"></div></figure>
+ <figure class="l"><div><img src="../../media/img/brollop-44.jpg" alt="Gäster i skymningen" loading="lazy"></div></figure>
+ <figure><div><img src="../../media/img/brollop-33.jpg" alt="Kyss i kyrkan" loading="lazy"></div></figure>
+ <figure class="l"><div><img src="../../media/img/brollop-57.jpg" alt="Brudpar på väg hem" loading="lazy"></div></figure>
+ <figure><div><img src="../../media/img/brollop-41.jpg" alt="Brud på en trappa" loading="lazy"></div></figure>
+ <figure class="l"><div><img src="../../media/img/brollop-09.jpg" alt="Dans sent på natten" loading="lazy"></div></figure>
+ <figure><div><img src="../../media/img/brollop-46.jpg" alt="Brudpar i björkskog" loading="lazy"></div></figure>
+</div>
+
+<div class="space"></div>
+<section class="center fade"><h2>Tre sätt.</h2></section>
+<div style="height:10vh"></div>
+<section class="offer">
+ <div class="fade"><h3>En stund</h3><p>Vigseln och en promenad efteråt. Två timmar.</p><b>11 000 kr</b></div>
+ <div class="fade"><h3>En dag</h3><p>Från morgon till första dans. Allt däremellan.</p><b>28 000 kr</b></div>
+ <div class="fade"><h3>Två dagar</h3><p>Dagen före, dagen, och morgonen efter.</p><b>42 000 kr</b></div>
+</section>
+
+<div class="space"></div>
+<section class="one">
+ <figure class="fig c1 fade"><div><img src="../../media/img/familj-04.jpg" alt="Mor och barn i ett ljust rum" loading="lazy"></div><figcaption class="cap">även familj</figcaption></figure>
+ <figure class="fig c2 fade"><div><img src="../../media/img/portratt-25.jpg" alt="Porträtt i dagsljus" loading="lazy"></div><figcaption class="cap">och porträtt</figcaption></figure>
+ <figure class="fig c3 fade"><div><img src="../../media/img/foretag-43.jpg" alt="Hantverkare i sin verkstad" loading="lazy"></div><figcaption class="cap">och hantverk</figcaption></figure>
+</section>
+<div style="height:10vh"></div>
+<section class="one">
+ <figure class="fig d1 fade"><div><img src="../../media/img/familj-29.jpg" alt="Familj på en brygga" loading="lazy"></div></figure>
+</section>
+
+<div class="space"></div>
+<section class="voice fade" aria-live="polite">
+ <div class="q" id="q"><p>”Det kändes som att hon inte var där. Och sedan fanns allt där, i bilderna.”</p><span class="small">frida &amp; anton, tällberg</span></div>
+ <div class="dots" id="dots"></div>
+</section>
+
+<div class="space"></div>
+<section class="me" id="om">
+ <figure class="p fade"><img src="../../media/img/portratt-00.jpg" alt="Ingrid Fors, fotograf" loading="lazy"></figure>
+ <div class="t fade">
+  <p class="small">om</p>
+  <p>Jag heter Ingrid. Jag bor i ett gammalt timmerhus vid Siljan och fotograferar ett tjugotal bröllop om året. Inte fler.</p>
+  <p>Jag arbetar i dagsljus, säger inte mycket, och redigerar varsamt. Bilderna kommer inom fem veckor, med ett tryckt urval i linnebox.</p>
+  <figure style="margin-top:40px;aspect-ratio:3/2;overflow:hidden"><img src="../../media/img/foretag-18.jpg" alt="Arbetsbord med fotoalbum" loading="lazy"></figure>
+ </div>
+</section>
+
+<div class="space"></div>
+<section class="kont" id="kontakt">
+ <p class="small fade">kontakt</p>
+ <p style="margin:24px 0" class="fade"><a class="mail" href="mailto:hej@ingridfors.se">hej@ingridfors.se</a></p>
+ <form id="f" class="fade">
+  <label>namn<input required name="n"></label>
+  <label>e-post<input type="email" required name="e"></label>
+  <label>datum och plats<input name="d"></label>
+  <label>några ord<textarea name="m"></textarea></label>
+  <button type="submit">skicka</button>
+ </form>
+ <p class="ok" id="ok">Tack. Jag hör av mig i lugn och ro. (Demo, inget skickades.)</p>
+</section>
+
+<footer class="small"><span>ingrid fors fotografi · leksand</span><span>© 2026 · fiktiv</span></footer>
+<a class="back" href="../../index.html">← alla 25</a>
+<script>
+(function(){
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+ document.querySelectorAll('.fade').forEach(function(e){io.observe(e)});
+ var qs=[["”Det kändes som att hon inte var där. Och sedan fanns allt där, i bilderna.”","frida & anton, tällberg"],["”Vi har ett enda foto på väggen. Det räcker.”","maria & johan, rättvik"],["”Lugnet hon hade smittade av sig på hela dagen.”","alva & selma, leksand"]],i=0,q=document.getElementById('q'),d=document.getElementById('dots');
+ qs.forEach(function(_,k){var b=document.createElement('button');b.setAttribute('aria-label','Citat '+(k+1));if(!k)b.className='on';b.onclick=function(){show(k)};d.appendChild(b)});
+ function show(k){i=k;q.style.opacity=0;setTimeout(function(){q.querySelector('p').textContent=qs[k][0];q.querySelector('span').textContent=qs[k][1];q.style.opacity=1},matchMedia('(prefers-reduced-motion: reduce)').matches?0:900);d.querySelectorAll('button').forEach(function(b,j){b.className=j===k?'on':''})}
+ setInterval(function(){show((i+1)%qs.length)},9000);
+ document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();this.style.display='none';document.getElementById('ok').style.display='block'});
+})();
+</script>
+</body>
+</html>

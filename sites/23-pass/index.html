@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Avresa Kärlek – Destinationsbröllop med Ellen Strand, Göteborg</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Oswald:wght@400;600&family=Libre+Caslon+Text:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f3ecdc;--paper2:#e8dcc2;--navy:#1d2c4c;--navy2:#0f1a30;--red:#c2402f;--teal:#2c7a7b;--ink:#20232a;--gold:#c99a3b}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#2b3a5a;color:var(--ink);font:400 16px/1.55 "Courier Prime",monospace;overflow-x:hidden;
+ background-image:radial-gradient(rgba(255,255,255,.05) 1px,transparent 1px);background-size:14px 14px}
+h1,h2,h3{font-family:Oswald,sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.04em;margin:0}
+img{display:block;max-width:100%}
+.back{position:fixed;right:12px;bottom:12px;z-index:50;background:var(--paper);color:var(--navy);border:2px dashed var(--navy);text-decoration:none;font:700 13px "Courier Prime";padding:6px 12px;border-radius:4px;transform:rotate(-2deg)}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+
+/* split flap */
+.board{background:#111;color:#f5d36b;padding:26px 0 30px;border-bottom:6px solid #000}
+.board .wrap{display:grid;gap:12px}
+.bh{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;color:#ddd;font:600 14px Oswald;letter-spacing:.2em}
+.bh strong{color:#f5d36b;font-size:22px}
+.rows{display:grid;gap:6px}
+.row{display:grid;grid-template-columns:70px 1.6fr 1fr 110px 120px;gap:10px;align-items:center}
+.row.hd{font:400 11px Oswald;letter-spacing:.2em;color:#888}
+.cells{display:flex;gap:2px;flex-wrap:nowrap;overflow:hidden}
+.c{width:1.15em;height:1.6em;background:#1e1e1e;border-radius:2px;display:inline-flex;align-items:center;justify-content:center;font:700 18px "Courier Prime";position:relative;flex:0 0 auto}
+.c::after{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:#000}
+.st{font:600 13px Oswald;letter-spacing:.1em}
+.st.g{color:#6fe08a}.st.b{color:#ff7a5c;animation:blink 1.2s steps(2) infinite}
+@keyframes blink{50%{opacity:.2}}
+
+/* passport hero */
+.hero{padding:60px 0 80px}
+.passport{display:grid;grid-template-columns:1fr 1fr;background:var(--paper);border-radius:14px;box-shadow:0 30px 60px rgba(0,0,0,.4);position:relative;overflow:hidden}
+.passport::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:30px;transform:translateX(-50%);background:linear-gradient(90deg,transparent,rgba(0,0,0,.14),transparent);pointer-events:none}
+.page{padding:38px 40px;position:relative;min-height:540px;
+ background-image:repeating-linear-gradient(45deg,rgba(44,122,123,.06) 0 2px,transparent 2px 12px),repeating-linear-gradient(-45deg,rgba(194,64,47,.05) 0 2px,transparent 2px 12px)}
+.page .hd{font:600 12px Oswald;letter-spacing:.3em;color:var(--teal);display:flex;justify-content:space-between}
+.id{display:grid;grid-template-columns:160px 1fr;gap:22px;margin-top:22px}
+.id img{width:160px;height:210px;object-fit:cover;filter:sepia(.25);border:1px solid #aaa}
+.f{margin-bottom:10px}.f small{display:block;font:400 10px Oswald;letter-spacing:.2em;color:#777;text-transform:uppercase}
+.f b{font-size:17px}
+.page h1{font-size:clamp(34px,4.6vw,62px);line-height:.95;color:var(--navy);margin-top:26px}
+.page h1 i{font-family:"Libre Caslon Text",serif;text-transform:none;font-weight:400;color:var(--red)}
+.mrz{position:absolute;left:0;right:0;bottom:0;padding:14px 40px;font:700 15px/1.35 "Courier Prime";letter-spacing:.18em;background:rgba(255,255,255,.4);word-break:break-all;color:#333}
+.stamps{position:relative;height:100%}
+.stamp{position:absolute;border:3px solid currentColor;padding:10px 14px;text-align:center;font:600 13px Oswald;letter-spacing:.14em;text-transform:uppercase;opacity:.85;mix-blend-mode:multiply;border-radius:6px}
+.stamp b{display:block;font-size:22px;letter-spacing:.06em}
+.stamp.round{border-radius:50%;width:150px;height:150px;display:flex;flex-direction:column;justify-content:center;border-style:double;border-width:6px}
+.stamp.s1{color:var(--red);top:20px;left:10px;transform:rotate(-12deg)}
+.stamp.s2{color:var(--teal);top:40px;right:20px;transform:rotate(9deg)}
+.stamp.s3{color:var(--navy);top:220px;left:90px;transform:rotate(4deg)}
+.stamp.s4{color:#7a4fa0;bottom:90px;right:30px;transform:rotate(-18deg)}
+.stamp.s5{color:var(--red);bottom:70px;left:10px;transform:rotate(14deg)}
+@media (prefers-reduced-motion:no-preference){
+ .stamp{animation:thump .5s cubic-bezier(.3,1.6,.6,1) backwards}
+ .s1{animation-delay:.3s}.s2{animation-delay:.6s}.s3{animation-delay:.9s}.s4{animation-delay:1.2s}.s5{animation-delay:1.5s}
+ @keyframes thump{from{opacity:0;transform:scale(2.2) rotate(0)}}
+}
+.cta{display:inline-block;background:var(--red);color:#fff;text-decoration:none;font:600 16px Oswald;letter-spacing:.14em;text-transform:uppercase;padding:12px 22px;margin-top:20px;border-radius:3px}
+
+section{padding:80px 0}
+.sh{color:var(--paper);margin-bottom:36px;display:flex;align-items:end;gap:20px;flex-wrap:wrap}
+.sh h2{font-size:clamp(34px,5vw,60px);line-height:1}
+.sh span{font-size:14px;letter-spacing:.2em;color:var(--gold);text-transform:uppercase}
+
+/* map */
+.mapbox{background:var(--paper);border-radius:10px;padding:20px;position:relative}
+.mapbox svg{width:100%;height:auto;display:block}
+.route{stroke-dasharray:8 8;fill:none;stroke:var(--red);stroke-width:2.5}
+@media (prefers-reduced-motion:no-preference){.route{animation:dash 30s linear infinite}@keyframes dash{to{stroke-dashoffset:-400}}}
+.pin text{font:700 14px "Courier Prime"}
+.legend{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;margin-top:10px}
+
+/* boarding passes */
+.passes{display:grid;gap:26px}
+.bp{display:grid;grid-template-columns:1fr 260px;background:var(--paper);border-radius:12px;overflow:hidden;position:relative;box-shadow:0 14px 30px rgba(0,0,0,.3)}
+.bp .main{padding:24px 28px;display:grid;grid-template-columns:200px 1fr;gap:24px}
+.bp .main img{width:200px;height:100%;min-height:200px;object-fit:cover;border-radius:6px}
+.bp .top{display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid var(--navy);padding-bottom:8px;margin-bottom:14px}
+.bp .top h3{font-size:26px;color:var(--navy)}
+.bp .top .cls{background:var(--navy);color:var(--paper);font:600 12px Oswald;letter-spacing:.2em;padding:4px 10px}
+.legs{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.legs b{font:600 40px Oswald;color:var(--navy);line-height:1}
+.legs .pl{flex:1;border-top:2px dashed #999;position:relative;min-width:40px}
+.legs .pl::after{content:"✈";position:absolute;left:50%;top:-14px;transform:translateX(-50%);color:var(--red);font-size:20px}
+.kv{display:grid;grid-template-columns:repeat(3,1fr);gap:8px 16px;font-size:14px}
+.kv small{display:block;font:400 10px Oswald;letter-spacing:.2em;color:#777;text-transform:uppercase}
+.stub{border-left:3px dashed var(--navy);padding:24px;background:var(--paper2);display:flex;flex-direction:column;justify-content:space-between;position:relative}
+.stub::before,.stub::after{content:"";position:absolute;left:-14px;width:24px;height:24px;border-radius:50%;background:#2b3a5a}
+.stub::before{top:-12px}.stub::after{bottom:-12px}
+.stub .price{font:600 38px Oswald;color:var(--red)}
+.barcode{height:54px;background:repeating-linear-gradient(90deg,#111 0 2px,transparent 2px 4px,#111 4px 7px,transparent 7px 8px,#111 8px 9px,transparent 9px 12px)}
+.stub button{font:600 14px Oswald;letter-spacing:.14em;text-transform:uppercase;background:var(--navy);color:#fff;border:0;padding:10px;cursor:pointer;border-radius:3px}
+
+/* luggage tag gallery */
+.tags{display:grid;grid-template-columns:repeat(4,1fr);gap:28px 22px}
+.tag{background:var(--gold);padding:12px 12px 16px;border-radius:30px 30px 8px 8px;position:relative;cursor:zoom-in;transform:rotate(var(--r,0deg));transition:transform .3s;margin:0}
+.tag:hover{transform:rotate(0) translateY(-6px)}
+.tag::before{content:"";position:absolute;top:12px;left:50%;width:18px;height:18px;margin-left:-9px;background:#2b3a5a;border-radius:50%;box-shadow:0 0 0 4px #e6d8b6}
+.tag::after{content:"";position:absolute;top:-34px;left:50%;width:2px;height:48px;background:#e6d8b6;transform:rotate(14deg)}
+.tag img{margin-top:38px;width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:4px}
+.tag.l img{aspect-ratio:4/3}
+.tag figcaption{font:700 13px "Courier Prime";margin-top:8px;display:flex;justify-content:space-between}
+
+/* about */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.postcard{background:var(--paper);padding:28px;border-radius:6px;display:grid;grid-template-columns:1.3fr 1fr;gap:24px;position:relative}
+.postcard .addr{border-left:1px solid #aaa;padding-left:20px;font-size:14px;position:relative}
+.postcard .addr .ln{border-bottom:1px solid #bbb;padding:8px 0}
+.postage{width:80px;height:96px;border:4px dotted var(--paper);outline:2px solid var(--red);background:var(--red);color:#fff;font:600 12px Oswald;display:flex;align-items:center;justify-content:center;text-align:center;margin-left:auto;margin-bottom:16px}
+.postcard p{font-family:"Libre Caslon Text",serif;font-style:italic;font-size:17px}
+.photo-pc{background:var(--paper);padding:14px;border-radius:6px;transform:rotate(2deg)}
+.photo-pc img{width:100%;height:100%;object-fit:cover;max-height:520px}
+
+.visa{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.visa blockquote{margin:0;background:var(--paper);padding:26px;border-radius:6px;position:relative;border:2px solid var(--teal)}
+.visa blockquote::before{content:"VISUM";position:absolute;top:10px;right:12px;font:600 11px Oswald;letter-spacing:.3em;color:var(--teal)}
+.visa p{font-family:"Libre Caslon Text",serif;font-size:17px;margin-top:20px}
+.visa cite{font-style:normal;font-weight:700;font-size:13px}
+
+.side{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.side figure{margin:0;background:var(--paper);padding:10px 10px 14px}
+.side img{width:100%;aspect-ratio:1;object-fit:cover}
+.side figcaption{font-size:13px;margin-top:6px}
+
+.form{background:var(--paper);border-radius:12px;padding:34px;display:grid;grid-template-columns:repeat(2,1fr);gap:18px;max-width:900px}
+.form h3{grid-column:1/-1;font-size:28px;color:var(--navy);border-bottom:2px solid var(--navy);padding-bottom:8px}
+.form label{font:400 11px Oswald;letter-spacing:.2em;text-transform:uppercase;color:#555;display:flex;flex-direction:column;gap:4px}
+.form input,.form select,.form textarea{font:700 17px "Courier Prime";border:0;border-bottom:2px dotted var(--navy);background:transparent;padding:6px 2px;color:var(--ink)}
+.form .full{grid-column:1/-1}
+.form button{grid-column:1/-1;justify-self:start;font:600 18px Oswald;letter-spacing:.14em;background:var(--red);color:#fff;border:0;padding:12px 26px;cursor:pointer;text-transform:uppercase}
+.form .ok{grid-column:1/-1;font-weight:700;color:var(--teal);min-height:1.4em}
+footer{color:var(--paper2);text-align:center;padding:30px 20px 70px;font-size:13px}
+
+dialog{border:0;padding:12px;background:var(--paper);max-width:94vw}
+dialog img{max-height:80vh;width:auto}
+dialog::backdrop{background:rgba(15,26,48,.85)}
+dialog p{margin:8px 0 0;font-weight:700}
+
+@media (max-width:900px){
+ .passport{grid-template-columns:minmax(0,1fr)}.passport::before{display:none}
+ .page{min-height:auto;padding:28px 22px 120px}
+ .stamps{height:420px}
+ .bp{grid-template-columns:1fr}.stub{border-left:0;border-top:3px dashed var(--navy)}
+ .stub::before,.stub::after{display:none}
+ .bp .main{grid-template-columns:1fr}.bp .main img{width:100%;height:200px}
+ .tags{grid-template-columns:repeat(2,1fr)}
+ .about,.postcard,.visa{grid-template-columns:1fr}
+ .side{grid-template-columns:repeat(2,1fr)}
+ .row{grid-template-columns:52px 1fr 80px}
+ .row>:nth-child(3),.row>:nth-child(4){display:none}
+ .c{font-size:13px}
+}
+@media (max-width:520px){
+ .id{grid-template-columns:110px 1fr}.id img{width:110px;height:150px}
+ .mrz{font-size:11px;padding:10px 22px}
+ .form{grid-template-columns:1fr;padding:22px}
+ .kv{grid-template-columns:repeat(2,1fr)}
+ .stamp.round{width:120px;height:120px}
+ .stamp.s3{left:40px}
+}
+</style>
+</head>
+<body>
+<a class="back" href="../../index.html">← Alla 25</a>
+
+<div class="board" aria-label="Avgångstavla med kommande bröllop">
+ <div class="wrap">
+  <div class="bh"><strong>AVGÅNGAR · DEPARTURES</strong><span id="clk">GOT 00:00</span></div>
+  <div class="rows" id="rows">
+   <div class="row hd"><span>DATUM</span><span>DESTINATION</span><span>PAR</span><span>GATE</span><span>STATUS</span></div>
+  </div>
+ </div>
+</div>
+
+<header class="hero">
+ <div class="wrap">
+  <div class="passport">
+   <div class="page">
+    <div class="hd"><span>PASS · PASSPORT</span><span>SVERIGE</span></div>
+    <div class="id">
+     <img src="../../media/img/portratt-18.jpg" alt="Fotografen Ellen Strand">
+     <div>
+      <div class="f"><small>Efternamn / Surname</small><b>STRAND</b></div>
+      <div class="f"><small>Förnamn / Given names</small><b>ELLEN</b></div>
+      <div class="f"><small>Yrke / Occupation</small><b>Bröllopsfotograf</b></div>
+      <div class="f"><small>Hemmahamn</small><b>Göteborg</b></div>
+      <div class="f"><small>Antal stämplar</small><b>143 bröllop · 19 länder</b></div>
+     </div>
+    </div>
+    <h1>Avresa <i>kärlek</i><br>Destinationsbröllop</h1>
+    <p>Ni väljer platsen – Toscana, Lofoten, Mallorca eller Marstrand. Jag packar kameran, flyger med och dokumenterar hela resan.</p>
+    <a class="cta" href="#boka">Boka er avgång</a>
+    <div class="mrz" aria-hidden="true">P&lt;SWESTRAND&lt;&lt;ELLEN&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;<br>AVRESA&lt;KARLEK&lt;&lt;2026&lt;GOT&lt;&lt;&lt;&lt;&lt;&lt;</div>
+   </div>
+   <div class="page">
+    <div class="hd"><span>VISERINGAR · VISAS</span><span>SID 06</span></div>
+    <div class="stamps" aria-label="Stämplar från tidigare bröllop">
+     <div class="stamp s1">Ankomst<b>FIRENZE</b>14 JUN 2025</div>
+     <div class="stamp round s2">Svolvær<b>✦ LOFOTEN ✦</b>02 AUG</div>
+     <div class="stamp s3">Utresa<b>PALMA</b>MALLORCA · 21 SEP</div>
+     <div class="stamp round s4">Ja!<b>SANTORINI</b>11·05·24</div>
+     <div class="stamp s5">Gästhamn<b>MARSTRAND</b>VÄSTKUSTEN</div>
+    </div>
+   </div>
+  </div>
+ </div>
+</header>
+
+<section id="karta">
+ <div class="wrap">
+  <div class="sh"><h2>Rutter 2025–2027</h2><span>Ellens färdplan</span></div>
+  <div class="mapbox">
+   <svg viewBox="0 0 1000 520" role="img" aria-label="Karta över Europa med rutter från Göteborg till bröllopsdestinationer">
+    <rect width="1000" height="520" fill="#d9e6e3"/>
+    <g fill="#efe5cc" stroke="#b9a988" stroke-width="1.5">
+     <path d="M440 40 L520 30 L560 70 L540 130 L560 190 L520 250 L470 230 L455 170 L470 110Z"/>
+     <path d="M560 40 L640 20 L700 60 L690 140 L640 180 L590 150 L580 90Z"/>
+     <path d="M340 200 L470 230 L520 250 L600 240 L680 270 L700 330 L640 360 L560 340 L520 380 L470 360 L420 400 L330 420 L280 380 L300 300Z"/>
+     <path d="M520 380 L545 400 L570 470 L555 480 L530 420Z"/>
+     <path d="M250 330 L310 330 L300 420 L200 460 L170 410 L200 350Z"/>
+     <path d="M300 170 L330 180 L320 240 L290 250 L280 210Z"/>
+     <path d="M640 360 L720 360 L760 420 L700 450 L660 410Z"/>
+    </g>
+    <g class="pin"><circle cx="455" cy="205" r="7" fill="#1d2c4c"/><text x="380" y="200">GÖTEBORG</text></g>
+    <path class="route" d="M455 205 Q520 120 570 70"/>
+    <path class="route" d="M455 205 Q500 320 535 395"/>
+    <path class="route" d="M455 205 Q350 300 320 410"/>
+    <path class="route" d="M455 205 Q640 260 715 430"/>
+    <path class="route" d="M455 205 Q470 225 462 232"/>
+    <g class="pin"><circle cx="570" cy="70" r="6" fill="#c2402f"/><text x="582" y="74">LOFOTEN</text></g>
+    <g class="pin"><circle cx="535" cy="395" r="6" fill="#c2402f"/><text x="548" y="399">TOSCANA</text></g>
+    <g class="pin"><circle cx="320" cy="410" r="6" fill="#c2402f"/><text x="200" y="445">MALLORCA</text></g>
+    <g class="pin"><circle cx="715" cy="430" r="6" fill="#c2402f"/><text x="728" y="434">SANTORINI</text></g>
+    <g class="pin"><circle cx="462" cy="232" r="5" fill="#2c7a7b"/><text x="474" y="252">MARSTRAND</text></g>
+    <g transform="translate(900 450)" stroke="#1d2c4c" fill="none"><circle r="34"/><path d="M0 -40 L6 0 L0 40 L-6 0Z" fill="#1d2c4c"/><text y="-46" text-anchor="middle" font-family="Oswald" font-size="14" fill="#1d2c4c" stroke="none">N</text></g>
+   </svg>
+   <div class="legend"><span><b style="color:var(--red)">- - -</b> Flygrutt</span><span><b style="color:var(--teal)">●</b> Hemmaplan, ingen resekostnad</span></div>
+  </div>
+ </div>
+</section>
+
+<section id="paket">
+ <div class="wrap">
+  <div class="sh"><h2>Välj er biljett</h2><span>Boarding passes</span></div>
+  <div class="passes">
+   <article class="bp">
+    <div class="main">
+     <img src="../../media/img/brollop-22.jpg" alt="Brudpar på en klippa vid havet" loading="lazy">
+     <div>
+      <div class="top"><h3>Weekend</h3><span class="cls">ECONOMY</span></div>
+      <div class="legs"><b>GOT</b><span class="pl"></span><b>EU</b></div>
+      <div class="kv"><div><small>Längd</small>1 dag</div><div><small>Timmar</small>8 tim</div><div><small>Bilder</small>500+</div><div><small>Bagage</small>Webbgalleri</div><div><small>Resa</small>Ingår i Europa</div><div><small>Sits</small>12A</div></div>
+     </div>
+    </div>
+    <div class="stub"><div><small>PRIS FRÅN</small><div class="price">32 000 kr</div></div><div class="barcode" aria-hidden="true"></div><button data-pkg="Weekend">Välj biljett</button></div>
+   </article>
+   <article class="bp">
+    <div class="main">
+     <img src="../../media/img/brollop-47.jpg" alt="Brud i medelhavsljus" loading="lazy">
+     <div>
+      <div class="top"><h3>Hela resan</h3><span class="cls">BUSINESS</span></div>
+      <div class="legs"><b>GOT</b><span class="pl"></span><b>EU</b></div>
+      <div class="kv"><div><small>Längd</small>3 dagar</div><div><small>Ingår</small>Välkomstmiddag</div><div><small>Bilder</small>Obegränsat</div><div><small>Bagage</small>Album 40 sid</div><div><small>Extra</small>Dagen-efter-session</div><div><small>Sits</small>2C</div></div>
+     </div>
+    </div>
+    <div class="stub"><div><small>PRIS FRÅN</small><div class="price">54 000 kr</div></div><div class="barcode" aria-hidden="true"></div><button data-pkg="Hela resan">Välj biljett</button></div>
+   </article>
+   <article class="bp">
+    <div class="main">
+     <img src="../../media/img/brollop-28.jpg" alt="Elopement-par i bergen" loading="lazy">
+     <div>
+      <div class="top"><h3>Rymning</h3><span class="cls">CHARTER</span></div>
+      <div class="legs"><b>GOT</b><span class="pl"></span><b>???</b></div>
+      <div class="kv"><div><small>Gäster</small>Bara ni två</div><div><small>Timmar</small>4 tim</div><div><small>Bilder</small>250+</div><div><small>Bagage</small>Vigselförrättare-tips</div><div><small>Resa</small>Ingår i Norden</div><div><small>Sits</small>1A</div></div>
+     </div>
+    </div>
+    <div class="stub"><div><small>PRIS FRÅN</small><div class="price">19 500 kr</div></div><div class="barcode" aria-hidden="true"></div><button data-pkg="Rymning">Välj biljett</button></div>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section id="bilder">
+ <div class="wrap">
+  <div class="sh"><h2>Bagageband</h2><span>Bilder från resorna — klicka på en lapp</span></div>
+  <div class="tags" id="tags">
+   <figure class="tag" style="--r:-3deg"><img src="../../media/img/brollop-16.jpg" alt="Brud på en terrass i Toscana" loading="lazy"><figcaption><span>FLR</span><span>Toscana</span></figcaption></figure>
+   <figure class="tag l" style="--r:2deg"><img src="../../media/img/brollop-01.jpg" alt="Långbord i olivlund" loading="lazy"><figcaption><span>FLR</span><span>Toscana</span></figcaption></figure>
+   <figure class="tag" style="--r:-1deg"><img src="../../media/img/brollop-19.jpg" alt="Paret vid fjorden" loading="lazy"><figcaption><span>EVE</span><span>Lofoten</span></figcaption></figure>
+   <figure class="tag l" style="--r:4deg"><img src="../../media/img/brollop-30.jpg" alt="Vigsel vid havet" loading="lazy"><figcaption><span>PMI</span><span>Mallorca</span></figcaption></figure>
+   <figure class="tag l" style="--r:3deg"><img src="../../media/img/brollop-34.jpg" alt="Gäster på strandfest" loading="lazy"><figcaption><span>PMI</span><span>Mallorca</span></figcaption></figure>
+   <figure class="tag" style="--r:-4deg"><img src="../../media/img/brollop-41.jpg" alt="Brudpar bland vita hus" loading="lazy"><figcaption><span>JTR</span><span>Santorini</span></figcaption></figure>
+   <figure class="tag l" style="--r:1deg"><img src="../../media/img/brollop-44.jpg" alt="Solnedgång över havet" loading="lazy"><figcaption><span>JTR</span><span>Santorini</span></figcaption></figure>
+   <figure class="tag" style="--r:-2deg"><img src="../../media/img/brollop-52.jpg" alt="Kyss på bryggan" loading="lazy"><figcaption><span>GOT</span><span>Marstrand</span></figcaption></figure>
+   <figure class="tag l" style="--r:2deg"><img src="../../media/img/brollop-06.jpg" alt="Båtfärd till ön" loading="lazy"><figcaption><span>GOT</span><span>Marstrand</span></figcaption></figure>
+   <figure class="tag" style="--r:-3deg"><img src="../../media/img/brollop-55.jpg" alt="Brud i vinden" loading="lazy"><figcaption><span>EVE</span><span>Lofoten</span></figcaption></figure>
+   <figure class="tag l" style="--r:3deg"><img src="../../media/img/brollop-36.jpg" alt="Dans under ljusslingor" loading="lazy"><figcaption><span>FLR</span><span>Toscana</span></figcaption></figure>
+   <figure class="tag l" style="--r:-1deg"><img src="../../media/img/brollop-09.jpg" alt="Paret i en vingård" loading="lazy"><figcaption><span>FLR</span><span>Toscana</span></figcaption></figure>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="wrap about">
+  <div class="postcard">
+   <div>
+    <h2 style="font-size:30px;color:var(--navy);margin-bottom:12px">Hälsningar från Ellen</h2>
+    <p>Jag började fotografera bröllop i Göteborg 2013, och första gången ett par frågade om jag kunde följa med till Sicilien sa jag ja innan de hunnit avsluta meningen. Sedan dess har jag haft en packad väska i hallen.</p>
+    <p>Jag hjälper till med mer än bilderna: tidsplan efter solnedgången, lokala vigselförrättare, vilka platser som är fina klockan sju på kvällen. Ni ska kunna vara gäster på ert eget bröllop.</p>
+   </div>
+   <div class="addr">
+    <div class="postage">FRIMÄRKE<br>SVERIGE<br>12 kr</div>
+    <div class="ln">Till: Er som ska gifta er</div>
+    <div class="ln">Någonstans vackert</div>
+    <div class="ln">Snart</div>
+   </div>
+  </div>
+  <div class="photo-pc"><img src="../../media/img/familj-22.jpg" alt="Familj på resa vid havet" loading="lazy"></div>
+ </div>
+</section>
+
+<section>
+ <div class="wrap">
+  <div class="sh"><h2>Viseringar</h2><span>Omdömen från resenärer</span></div>
+  <div class="visa">
+   <blockquote><p>”Ellen visste exakt var ljuset skulle vara i Positano. Vi bara följde efter.”</p><cite>Frida &amp; Anton · Amalfi</cite></blockquote>
+   <blockquote><p>”Hon fixade till och med en båt när färjan ställdes in. Bilderna är magiska.”</p><cite>Leila &amp; Kristoffer · Lofoten</cite></blockquote>
+   <blockquote><p>”Bästa resesällskapet vi haft. Mormor vill att hon fotar hennes 90-årsdag också.”</p><cite>Emma &amp; Rasmus · Mallorca</cite></blockquote>
+  </div>
+ </div>
+</section>
+
+<section style="padding-top:0">
+ <div class="wrap">
+  <div class="sh"><h2>Mellanlandningar</h2><span>Även porträtt, familj &amp; företag</span></div>
+  <div class="side">
+   <figure><img src="../../media/img/foretag-11.jpg" alt="Konferens utomlands" loading="lazy"><figcaption>Konferensresor</figcaption></figure>
+   <figure><img src="../../media/img/foretag-36.jpg" alt="Företagsevent" loading="lazy"><figcaption>Kickoffer</figcaption></figure>
+   <figure><img src="../../media/img/foretag-61.jpg" alt="Hotellmiljö" loading="lazy"><figcaption>Hotell &amp; resmål</figcaption></figure>
+   <figure><img src="../../media/img/brollop-32.jpg" alt="Förlovningsporträtt" loading="lazy"><figcaption>Förlovning</figcaption></figure>
+  </div>
+ </div>
+</section>
+
+<section id="boka">
+ <div class="wrap">
+  <div class="sh"><h2>Incheckning</h2><span>Fyll i ert resekort</span></div>
+  <form class="form" id="f">
+   <h3>Inreseformulär · Arrival card</h3>
+   <label>Namn<input required></label>
+   <label>E-post<input type="email" required></label>
+   <label>Destination<input placeholder="t.ex. Toscana"></label>
+   <label>Datum<input type="date"></label>
+   <label>Biljett<select id="pk"><option>Vet ej</option><option>Weekend</option><option>Hela resan</option><option>Rymning</option></select></label>
+   <label>Antal gäster<input type="number" min="2" value="60"></label>
+   <label class="full">Övrigt att deklarera<textarea rows="3"></textarea></label>
+   <button>Checka in</button>
+   <div class="ok" aria-live="polite"></div>
+  </form>
+  <p style="color:var(--paper);margin-top:24px">ellen@avresakarlek.se · 076-488 10 35 · Linnégatan 21, Göteborg</p>
+ </div>
+</section>
+<footer>Avresa Kärlek AB · Ellen Strand · Ingen riktig pass- eller flygmyndighet har stämplat något här.</footer>
+
+<dialog id="lb"><img alt=""><p></p></dialog>
+<script>
+const flights=[['14.03','REYKJAVIK','SARA+NIKLAS','A12','BOARDING'],['26.04','PARIS','MOA+DAVID','B04','I TID'],['07.06','SANTORINI','LINN+ADAM','C21','I TID'],['21.06','FÅRÖ','TOVE+ELSA','A03','I TID'],['16.08','TOSCANA','JULIA+OMAR','D08','FULLBOKAD'],['12.09','LOFOTEN','ALVA+ERIK','B17','I TID']];
+const rows=document.getElementById('rows');const rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const CH='ABCDEFGHIJKLMNOPQRSTUVWXYZÅÄÖ0123456789+.';
+function cells(txt,n){const d=document.createElement('span');d.className='cells';for(let i=0;i<n;i++){const c=document.createElement('span');c.className='c';c.dataset.t=txt[i]||' ';c.textContent=rm?(txt[i]||' '):' ';d.appendChild(c)}return d}
+flights.forEach(f=>{const r=document.createElement('div');r.className='row';
+ r.append(cells(f[0],5),cells(f[1],10),cells(f[2],11));
+ const g=document.createElement('span');g.className='st';g.textContent=f[3];r.append(g);
+ const s=document.createElement('span');s.className='st '+(f[4]==='BOARDING'?'b':'g');s.textContent=f[4];r.append(s);rows.append(r)});
+if(!rm){document.querySelectorAll('.c').forEach((c,i)=>{let k=0;const max=8+Math.floor(Math.random()*14);
+ setTimeout(()=>{const t=setInterval(()=>{if(k++>=max||c.dataset.t===' '){c.textContent=c.dataset.t;clearInterval(t);return}c.textContent=CH[Math.floor(Math.random()*CH.length)]},50)},i*8)})}
+const clk=document.getElementById('clk');const tick=()=>{const d=new Date();clk.textContent='GOT '+String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0')};tick();setInterval(tick,10000);
+const lb=document.getElementById('lb');
+document.querySelectorAll('.tag').forEach(t=>t.onclick=()=>{const i=t.querySelector('img');lb.querySelector('img').src=i.src;lb.querySelector('img').alt=i.alt;lb.querySelector('p').textContent=i.alt+' — '+t.querySelector('figcaption span:last-child').textContent;lb.showModal()});
+lb.onclick=()=>lb.close();
+document.querySelectorAll('.stub button').forEach(b=>b.onclick=()=>{document.getElementById('pk').value=b.dataset.pkg;document.getElementById('boka').scrollIntoView()});
+document.getElementById('f').onsubmit=e=>{e.preventDefault();e.target.querySelector('.ok').textContent='Incheckad! Boardingkort skickas till er e-post inom 24 timmar.';e.target.reset()};
+</script>
+</body>
+</html>

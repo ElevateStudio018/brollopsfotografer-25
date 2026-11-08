@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hallgren Bröllopsfoto – Göteborg</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--r:#e2001a;--k:#111;--w:#fff;--g:#ececec;--col:calc((100% - 11*20px)/12)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Helvetica Neue",Helvetica,Archivo,Arial,sans-serif;color:var(--k);background:var(--w);font-size:16px;line-height:1.4;overflow-x:hidden}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:inherit;text-decoration:none}
+.g{display:grid;grid-template-columns:repeat(12,1fr);column-gap:20px;padding:0 40px}
+.gridlines{position:fixed;inset:0;pointer-events:none;z-index:100;padding:0 40px;display:none}
+.gridlines.on{display:grid}
+.gridlines div{background:rgba(226,0,26,.08);border-left:1px solid rgba(226,0,26,.3);border-right:1px solid rgba(226,0,26,.3)}
+.top{border-bottom:2px solid var(--k);padding-top:20px;padding-bottom:14px;align-items:end;position:sticky;top:0;background:var(--w);z-index:30}
+.top .b{grid-column:1/5;font-weight:700;font-size:15px;letter-spacing:-.01em}
+.top nav{grid-column:5/11;display:flex;gap:28px;font-size:14px}
+.top nav a:hover{color:var(--r)}
+.top .t{grid-column:11/13;text-align:right;font-size:13px}
+.top button{font:inherit;background:none;border:0;cursor:pointer;color:var(--r);font-size:13px}
+.hero{padding-top:40px;padding-bottom:40px}
+.hero .no{grid-column:1/3;font-weight:700;font-size:15px;color:var(--r)}
+.hero h1{grid-column:3/13;font-weight:700;font-size:clamp(56px,11vw,184px);line-height:.86;letter-spacing:-.055em}
+.hero h1 span{color:var(--r)}
+.hero .meta{grid-column:3/6;margin-top:40px;font-size:14px}
+.hero .lead{grid-column:6/11;margin-top:40px;font-size:22px;line-height:1.25;font-weight:500;letter-spacing:-.01em}
+.hero .img1{grid-column:1/8;margin-top:48px;aspect-ratio:3/2}
+.hero .img2{grid-column:8/11;margin-top:180px;aspect-ratio:2/3}
+.hero .cap{grid-column:11/13;margin-top:180px;font-size:12px;align-self:end}
+.sec{border-top:2px solid var(--k);padding-top:16px;padding-bottom:96px;margin-top:40px}
+.sec>.n{grid-column:1/3;font-weight:700;font-size:56px;line-height:.9;letter-spacing:-.04em;color:var(--r)}
+.sec>h2{grid-column:3/7;font-weight:700;font-size:15px;padding-top:6px}
+.sec>.intro{grid-column:7/12;font-size:22px;line-height:1.25;font-weight:500;letter-spacing:-.01em}
+.filters{grid-column:3/13;display:flex;gap:0;margin-top:48px;border-top:1px solid var(--k);flex-wrap:wrap}
+.filters button{font:500 14px inherit;font-family:inherit;background:none;border:0;border-right:1px solid var(--k);padding:10px 20px 10px 0;margin-right:20px;cursor:pointer;text-align:left}
+.filters button:last-child{border:0}
+.filters button.on{color:var(--r)}
+.filters button::before{content:"○ "}.filters button.on::before{content:"● "}
+.works{grid-column:1/13;display:grid;grid-template-columns:repeat(12,1fr);column-gap:20px;row-gap:20px;margin-top:20px;grid-auto-flow:dense}
+.works figure{position:relative;transition:opacity .3s}
+.works figure.off{display:none}
+.works figcaption{font-size:12px;padding-top:6px;display:flex;justify-content:space-between}
+.works figcaption b{font-weight:700}
+.works .im{overflow:hidden;background:var(--g)}
+.a{grid-column:span 6}.a .im{aspect-ratio:3/2}
+.p{grid-column:span 3}.p .im{aspect-ratio:2/3}
+.s{grid-column:span 4}.s .im{aspect-ratio:1/1}
+.l{grid-column:span 5}.l .im{aspect-ratio:4/3}
+.o1{grid-column:2/span 4}
+.works figure:hover .im img{filter:grayscale(1) contrast(1.2)}
+.pr{grid-column:3/13;margin-top:48px;border-top:1px solid var(--k)}
+.row{display:grid;grid-template-columns:repeat(10,1fr);column-gap:20px;border-bottom:1px solid var(--k);padding:20px 0;align-items:baseline}
+.row .i{grid-column:1/2;font-weight:700;color:var(--r)}
+.row h3{grid-column:2/5;font-size:32px;font-weight:700;letter-spacing:-.03em;line-height:1}
+.row ul{grid-column:5/9;list-style:none;font-size:14px}
+.row li::before{content:"— "}
+.row .pz{grid-column:9/11;text-align:right;font-size:32px;font-weight:700;letter-spacing:-.03em}
+.row .pz small{display:block;font-size:12px;font-weight:400;letter-spacing:0}
+.about .img{grid-column:3/7;margin-top:48px;aspect-ratio:3/2}
+.about .tx{grid-column:8/12;margin-top:48px;columns:1;font-size:16px}
+.about .tx p+p{margin-top:1em}
+.about .small{grid-column:3/5;margin-top:20px;aspect-ratio:1/1}
+.about .small2{grid-column:5/7;margin-top:20px;aspect-ratio:2/3}
+.facts{grid-column:8/12;margin-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:20px;align-content:start}
+.facts div{border-top:1px solid var(--k);padding-top:8px}
+.facts b{display:block;font-size:48px;letter-spacing:-.04em;line-height:1;font-weight:700}
+.facts span{font-size:12px}
+.qs{grid-column:3/13;margin-top:48px;display:grid;grid-template-columns:repeat(10,1fr);column-gap:20px}
+.qs blockquote{grid-column:span 5;font-size:28px;font-weight:500;line-height:1.15;letter-spacing:-.02em;border-top:1px solid var(--k);padding-top:12px;margin-bottom:40px}
+.qs cite{display:block;font-style:normal;font-size:13px;margin-top:14px;color:var(--r)}
+.kontakt{background:var(--r);color:var(--w);border:0;margin-top:0;padding-top:40px;padding-bottom:80px}
+.kontakt>.n{color:var(--w)}
+.kontakt .big{grid-column:3/13;font-weight:700;font-size:clamp(40px,7vw,112px);letter-spacing:-.05em;line-height:.9;margin-top:24px;word-break:break-word}
+.kontakt form{grid-column:3/11;margin-top:56px;display:grid;grid-template-columns:repeat(8,1fr);column-gap:20px;row-gap:24px}
+.kontakt label{grid-column:span 4;font-size:13px;font-weight:700;display:block}
+.kontakt label.f{grid-column:1/-1}
+.kontakt input,.kontakt textarea,.kontakt select{display:block;width:100%;margin-top:6px;background:transparent;border:0;border-bottom:2px solid var(--w);color:var(--w);font:500 22px inherit;font-family:inherit;padding:6px 0;border-radius:0}
+.kontakt select option{color:#000}
+.kontakt textarea{min-height:90px;resize:vertical}
+.kontakt button{grid-column:1/4;background:var(--w);color:var(--r);border:0;font:700 18px inherit;font-family:inherit;padding:18px;text-align:left;cursor:pointer}
+.kontakt .ok{grid-column:3/11;margin-top:20px;font-size:22px;font-weight:700;display:none}
+.kontakt .addr{grid-column:11/13;margin-top:56px;font-size:13px}
+footer{padding-top:16px;padding-bottom:16px;font-size:12px;border-top:2px solid var(--k)}
+footer span:first-child{grid-column:1/7}footer span:last-child{grid-column:7/13;text-align:right}
+.back{position:fixed;right:16px;bottom:16px;z-index:40;background:var(--k);color:var(--w);font-size:12px;font-weight:700;padding:6px 10px}
+.back:hover{background:var(--r)}
+@media (max-width:900px){
+ .g,.gridlines{padding:0 16px;column-gap:12px;grid-template-columns:repeat(4,1fr)}
+ .top .b{grid-column:1/4}.top .t{grid-column:4/5}.top nav{display:none}
+ .hero .no{grid-column:1/-1}.hero h1{grid-column:1/-1}
+ .hero .meta{grid-column:1/3}.hero .lead{grid-column:1/-1;margin-top:20px;font-size:19px}
+ .hero .img1{grid-column:1/-1;margin-top:28px}.hero .img2{grid-column:2/5;margin-top:12px}.hero .cap{grid-column:1/2;margin-top:12px}
+ .sec>.n{grid-column:1/2;font-size:40px}.sec>h2{grid-column:2/5}.sec>.intro{grid-column:1/-1;margin-top:16px;font-size:19px}
+ .filters,.pr,.qs,.kontakt .big,.kontakt form,.kontakt .ok,.kontakt .addr{grid-column:1/-1}
+ .works{column-gap:12px;row-gap:16px;grid-template-columns:repeat(4,1fr)}
+ .a,.l{grid-column:span 4}.p{grid-column:span 2}.s{grid-column:span 2}.o1{grid-column:span 4}
+ .row{grid-template-columns:repeat(4,1fr);column-gap:12px}.row .i{grid-column:1/2}.row h3{grid-column:2/5;font-size:26px}.row ul{grid-column:2/5;margin-top:12px}.row .pz{grid-column:2/5;text-align:left;margin-top:12px;font-size:26px}
+ .about .img{grid-column:1/-1}.about .tx{grid-column:1/-1;margin-top:20px}.about .small{grid-column:1/3}.about .small2{grid-column:3/5}.facts{grid-column:1/-1}
+ .qs{grid-template-columns:1fr}.qs blockquote{grid-column:1/-1;font-size:22px}
+ .kontakt form{grid-template-columns:1fr}.kontakt label,.kontakt button{grid-column:1/-1}
+ footer span:first-child,footer span:last-child{grid-column:1/-1;text-align:left}
+ .sec{padding-bottom:64px}
+}
+</style>
+</head>
+<body>
+<div class="gridlines" id="gl"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+
+<header class="g top">
+ <div class="b">Hallgren Bröllopsfoto</div>
+ <nav><a href="#arbeten">1 Arbeten</a><a href="#priser">2 Priser</a><a href="#om">3 Om</a><a href="#ord">4 Ord</a><a href="#kontakt">5 Kontakt</a></nav>
+ <div class="t"><button id="gb" aria-pressed="false">Raster av/på</button></div>
+</header>
+
+<main>
+<section class="g hero">
+ <div class="no">0</div>
+ <h1>Bröllop.<br>Fotograferade<br>sakligt<span>.</span></h1>
+ <div class="meta">Göteborg<br>Västra Götaland<br>Sedan 2014</div>
+ <p class="lead">Ingen pose, inga filter, ingen dekor. Bara det som händer, i rätt ögonblick, i rätt beskärning. Resten är brus.</p>
+ <div class="img1"><img src="../../media/img/brollop-01.jpg" alt="Brudpar som går genom en allé"></div>
+ <div class="img2"><img src="../../media/img/brollop-51.jpg" alt="Brud fotograferad i profil"></div>
+ <div class="cap">Fig. 1–2<br>Vigsel, Särö<br>Juni 2026</div>
+</section>
+
+<section class="g sec" id="arbeten">
+ <div class="n">1</div>
+ <h2>Arbeten</h2>
+ <p class="intro">Ett urval ur arkivet 2022–2026. Ordnat efter typ, inte efter känsla.</p>
+ <div class="filters" role="group" aria-label="Filtrera">
+  <button class="on" data-f="alla">Alla</button><button data-f="vigsel">Vigsel</button><button data-f="portratt">Porträtt</button><button data-f="fest">Fest</button><button data-f="ovrigt">Övrigt</button>
+ </div>
+ <div class="works" id="works">
+  <figure class="a" data-t="vigsel"><div class="im"><img src="../../media/img/brollop-26.jpg" alt="Vigselceremoni utomhus" loading="lazy"></div><figcaption><b>01</b><span>Vigsel, Marstrand</span></figcaption></figure>
+  <figure class="p" data-t="portratt"><div class="im"><img src="../../media/img/brollop-05.jpg" alt="Brud med slöja" loading="lazy"></div><figcaption><b>02</b><span>Porträtt</span></figcaption></figure>
+  <figure class="p" data-t="portratt"><div class="im"><img src="../../media/img/brollop-08.jpg" alt="Brudgum i kostym" loading="lazy"></div><figcaption><b>03</b><span>Porträtt</span></figcaption></figure>
+  <figure class="s o1" data-t="ovrigt"><div class="im"><img src="../../media/img/brollop-12.jpg" alt="Detalj av brudbukett" loading="lazy"></div><figcaption><b>04</b><span>Detalj</span></figcaption></figure>
+  <figure class="l" data-t="fest"><div class="im"><img src="../../media/img/brollop-14.jpg" alt="Middag i festlokal" loading="lazy"></div><figcaption><b>05</b><span>Middag, Kungsbacka</span></figcaption></figure>
+  <figure class="p" data-t="portratt"><div class="im"><img src="../../media/img/brollop-16.jpg" alt="Brudpar i närbild" loading="lazy"></div><figcaption><b>06</b><span>Porträtt</span></figcaption></figure>
+  <figure class="a" data-t="vigsel"><div class="im"><img src="../../media/img/brollop-17.jpg" alt="Kyrkvigsel" loading="lazy"></div><figcaption><b>07</b><span>Vigsel, Haga kyrka</span></figcaption></figure>
+  <figure class="p" data-t="fest"><div class="im"><img src="../../media/img/brollop-18.jpg" alt="Dans på festen" loading="lazy"></div><figcaption><b>08</b><span>Första dansen</span></figcaption></figure>
+  <figure class="l" data-t="fest"><div class="im"><img src="../../media/img/brollop-23.jpg" alt="Gäster skålar" loading="lazy"></div><figcaption><b>09</b><span>Skål</span></figcaption></figure>
+  <figure class="s" data-t="vigsel"><div class="im"><img src="../../media/img/brollop-10.jpg" alt="Ringbyte" loading="lazy"></div><figcaption><b>10</b><span>Ringar</span></figcaption></figure>
+  <figure class="p" data-t="portratt"><div class="im"><img src="../../media/img/brollop-19.jpg" alt="Brud vid fönster" loading="lazy"></div><figcaption><b>11</b><span>Förberedelser</span></figcaption></figure>
+  <figure class="a" data-t="vigsel"><div class="im"><img src="../../media/img/brollop-29.jpg" alt="Brudpar lämnar kyrkan" loading="lazy"></div><figcaption><b>12</b><span>Utgång</span></figcaption></figure>
+  <figure class="p" data-t="portratt"><div class="im"><img src="../../media/img/brollop-22.jpg" alt="Brudpar i skogen" loading="lazy"></div><figcaption><b>13</b><span>Porträtt, Delsjön</span></figcaption></figure>
+  <figure class="a" data-t="fest"><div class="im"><img src="../../media/img/brollop-36.jpg" alt="Fest i trädgård" loading="lazy"></div><figcaption><b>14</b><span>Trädgårdsfest</span></figcaption></figure>
+  <figure class="s" data-t="ovrigt"><div class="im"><img src="../../media/img/familj-01.jpg" alt="Familjeporträtt" loading="lazy"></div><figcaption><b>15</b><span>Familj</span></figcaption></figure>
+  <figure class="p" data-t="ovrigt"><div class="im"><img src="../../media/img/familj-26.jpg" alt="Förälder med barn" loading="lazy"></div><figcaption><b>16</b><span>Familj</span></figcaption></figure>
+  <figure class="l" data-t="ovrigt"><div class="im"><img src="../../media/img/foretag-15.jpg" alt="Företagsevent" loading="lazy"></div><figcaption><b>17</b><span>Företag</span></figcaption></figure>
+  <figure class="a" data-t="ovrigt"><div class="im"><img src="../../media/img/foretag-40.jpg" alt="Konferens fotograferad för kund" loading="lazy"></div><figcaption><b>18</b><span>Företag</span></figcaption></figure>
+  <figure class="a" data-t="vigsel"><div class="im"><img src="../../media/img/brollop-40.jpg" alt="Brudpar vid havet" loading="lazy"></div><figcaption><b>19</b><span>Vigsel, Vinga</span></figcaption></figure>
+ </div>
+</section>
+
+<section class="g sec" id="priser">
+ <div class="n">2</div>
+ <h2>Priser</h2>
+ <p class="intro">Tre paket. Fasta priser inklusive moms. Resor inom 10 mil från Göteborg ingår.</p>
+ <div class="pr">
+  <div class="row"><span class="i">2.1</span><h3>Halvdag</h3><ul><li>4 timmar</li><li>Vigsel och porträtt</li><li>ca 300 bilder</li><li>Digitalt galleri</li></ul><div class="pz">16 500<small>kronor</small></div></div>
+  <div class="row"><span class="i">2.2</span><h3>Heldag</h3><ul><li>10 timmar</li><li>Förberedelser till dans</li><li>ca 700 bilder</li><li>Tryckt album 30×30</li></ul><div class="pz">29 900<small>kronor</small></div></div>
+  <div class="row"><span class="i">2.3</span><h3>Förlovning</h3><ul><li>1,5 timmar</li><li>Valfri plats i Göteborg</li><li>ca 60 bilder</li></ul><div class="pz">3 800<small>kronor</small></div></div>
+ </div>
+</section>
+
+<section class="g sec about" id="om">
+ <div class="n">3</div>
+ <h2>Om</h2>
+ <p class="intro">Viktor Hallgren. Fotograf, utbildad grafisk formgivare. Tror att ett bra fotografi är ett problem som har lösts.</p>
+ <div class="img"><img src="../../media/img/portratt-22.jpg" alt="Porträtt av fotografen Viktor Hallgren" loading="lazy"></div>
+ <div class="tx"><p>Jag började fotografera bröllop 2014, efter tio år på en designbyrå i Linnéstaden. Det jag tog med mig därifrån är en ovilja mot det onödiga. Jag arrangerar sällan. Jag letar efter linjer, ljus och människor som glömmer bort att jag finns.</p><p>Det mesta jag levererar är i färg, några få bilder i svartvitt. Jag redigerar varje bild själv. Ni får en sammanhållen serie, inte trehundra olika stämningar.</p></div>
+ <div class="small"><img src="../../media/img/foretag-65.jpg" alt="Fotografen i arbete" loading="lazy"></div>
+ <div class="small2"><img src="../../media/img/brollop-41.jpg" alt="Brud på trappa" loading="lazy"></div>
+ <div class="facts"><div><b>212</b><span>Bröllop sedan 2014</span></div><div><b>3</b><span>Veckors leveranstid</span></div><div><b>1</b><span>Fotograf. Inga underleverantörer</span></div><div><b>0</b><span>Instagramfilter</span></div></div>
+</section>
+
+<section class="g sec" id="ord">
+ <div class="n">4</div>
+ <h2>Ord</h2>
+ <p class="intro">Från par som gift sig 2024–2026.</p>
+ <div class="qs">
+  <blockquote>Vi var nervösa för att behöva posera. Vi behövde aldrig posera.<cite>Elin och David Strand, Särö</cite></blockquote>
+  <blockquote>Bilderna ser ut som vi minns dagen. Inte som en tidning tycker att den borde ha sett ut.<cite>Maja Karlsson och Noah Persson, Marstrand</cite></blockquote>
+  <blockquote>Viktor sa ungefär tio ord på hela dagen. Alla var rätt.<cite>Sofia och Leo Andersson, Göteborg</cite></blockquote>
+  <blockquote>Albumet är det vackraste objektet vi äger.<cite>Hanna Ljung och Petra Ny, Kungälv</cite></blockquote>
+ </div>
+</section>
+
+<section class="g sec kontakt" id="kontakt">
+ <div class="n">5</div>
+ <h2>Kontakt</h2>
+ <p class="big">viktor@<br>hallgrenfoto.se</p>
+ <form id="f">
+  <label>Namn<input required name="n"></label>
+  <label>E-post<input type="email" required name="e"></label>
+  <label>Datum<input type="date" name="d"></label>
+  <label>Paket<select name="p"><option>2.1 Halvdag</option><option selected>2.2 Heldag</option><option>2.3 Förlovning</option></select></label>
+  <label class="f">Meddelande<textarea name="m"></textarea></label>
+  <button type="submit">Skicka →</button>
+ </form>
+ <p class="ok" id="ok">Tack. Svar inom 48 timmar. (Demo, inget skickades.)</p>
+ <p class="addr">Hallgren Bröllopsfoto<br>Övre Husargatan 21<br>413 14 Göteborg<br>031-70 70 21</p>
+</section>
+</main>
+<footer class="g"><span>© 2026 Hallgren Bröllopsfoto. Fiktiv verksamhet.</span><span>Satt i Helvetica. Rutnät: 12 kolumner, 20 px.</span></footer>
+<a class="back" href="../../index.html">← Alla 25</a>
+<script>
+(function(){
+ var gb=document.getElementById('gb'),gl=document.getElementById('gl');
+ gb.addEventListener('click',function(){var on=gl.classList.toggle('on');gb.setAttribute('aria-pressed',on)});
+ document.addEventListener('keydown',function(e){if(e.key==='g'&&!/INPUT|TEXTAREA|SELECT/.test(e.target.tagName))gb.click()});
+ var bs=document.querySelectorAll('.filters button'),fs=document.querySelectorAll('#works figure');
+ bs.forEach(function(b){b.addEventListener('click',function(){bs.forEach(function(x){x.classList.remove('on')});b.classList.add('on');var f=b.dataset.f;fs.forEach(function(x){x.classList.toggle('off',f!=='alla'&&x.dataset.t!==f)})})});
+ document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();this.style.display='none';document.getElementById('ok').style.display='block'});
+})();
+</script>
+</body>
+</html>

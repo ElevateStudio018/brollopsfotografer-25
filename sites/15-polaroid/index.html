@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fia Fotar – bröllop i Göteborg med polaroidhjärta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Gaegu:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+<style>
+:root{--kraft:#c9a57a;--kraft2:#b88f60;--cork:#a8774a;--ink:#2b2622;--blue:#2a4fa8;--red:#c8423b;--w1:#f2b8c6;--w2:#a9d6c2;--w3:#f4d36b;--w4:#b9c6ef}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--kraft);color:var(--ink);font-family:'Patrick Hand',cursive;font-size:20px;line-height:1.5;overflow-x:hidden;
+background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.6' numOctaves='4'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .22 0 0 0 0 .1 0 0 0 .28 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+img{display:block;max-width:100%}
+a{color:var(--blue)}
+.hand{font-family:'Caveat',cursive}
+.back{position:fixed;left:12px;top:12px;z-index:900;font-family:'Caveat';font-weight:700;font-size:22px;color:var(--ink);text-decoration:none;background:var(--w3);padding:0 14px;transform:rotate(-3deg);box-shadow:0 2px 3px rgba(0,0,0,.2)}
+.washi{position:absolute;height:30px;width:110px;opacity:.88;z-index:2;
+background:repeating-linear-gradient(45deg,rgba(255,255,255,.35) 0 6px,transparent 6px 12px),var(--w1);
+clip-path:polygon(0 8%,4% 0,8% 10%,12% 0,100% 0,96% 50%,100% 100%,6% 100%,0 92%,3% 50%)}
+.washi.b{background:radial-gradient(circle,rgba(255,255,255,.6) 2px,transparent 3px) 0 0/12px 12px,var(--w2)}
+.washi.c{background:repeating-linear-gradient(90deg,rgba(0,0,0,.08) 0 3px,transparent 3px 9px),var(--w3)}
+.washi.d{background:repeating-linear-gradient(0deg,rgba(255,255,255,.4) 0 4px,transparent 4px 8px),var(--w4)}
+.pol{background:#fbfaf6;padding:12px 12px 0;box-shadow:0 3px 6px rgba(0,0,0,.25),0 10px 20px rgba(0,0,0,.12);position:relative;width:240px}
+.pol img{width:100%;aspect-ratio:1;object-fit:cover;filter:saturate(.85) contrast(.95) sepia(.08)}
+.pol p{font-family:'Caveat';font-size:24px;text-align:center;padding:8px 4px 12px;min-height:58px;line-height:1.05;color:#333}
+header{position:relative;min-height:92vh;padding:60px 5vw 40px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:4vw}
+header h1{font-family:'Caveat';font-weight:700;font-size:clamp(80px,12vw,180px);line-height:.85;color:var(--ink);transform:rotate(-4deg)}
+header h1 em{font-style:normal;color:var(--red);display:block;padding-left:.6em}
+.sticky{background:#fff7a8;display:inline-block;padding:18px 22px;transform:rotate(2deg);box-shadow:2px 4px 8px rgba(0,0,0,.2);max-width:360px;margin-top:30px;font-size:22px}
+.stack{position:relative;height:520px}
+.stack .pol{position:absolute;width:min(300px,62vw)}
+.stack .pol:nth-child(1){left:6%;top:4%;transform:rotate(-8deg)}
+.stack .pol:nth-child(2){left:36%;top:16%;transform:rotate(6deg)}
+.stack .pol:nth-child(3){left:14%;top:38%;transform:rotate(-2deg)}
+.doodle{position:absolute;pointer-events:none;stroke:var(--ink);fill:none;stroke-width:2.5;stroke-linecap:round}
+section{padding:80px 5vw;position:relative}
+h2{font-family:'Caveat';font-weight:700;font-size:clamp(52px,7vw,96px);line-height:.95;transform:rotate(-2deg);display:inline-block}
+h2 u{text-decoration:none;background:linear-gradient(transparent 62%,var(--w3) 62% 88%,transparent 88%)}
+/* corkboard */
+.cork{background:var(--cork);border:18px solid #6d4a2b;border-radius:6px;box-shadow:inset 0 0 40px rgba(0,0,0,.4),0 8px 20px rgba(0,0,0,.3);position:relative;height:820px;margin-top:30px;overflow:hidden;
+background-image:radial-gradient(rgba(0,0,0,.18) 1px,transparent 1.5px),radial-gradient(rgba(255,255,255,.08) 1px,transparent 1.5px);background-size:7px 7px,11px 11px}
+.cork .pol{position:absolute;cursor:grab;touch-action:none;user-select:none;width:220px;transition:box-shadow .2s}
+.cork .pol.drag{cursor:grabbing;box-shadow:0 18px 30px rgba(0,0,0,.4)}
+.cork .pol img{pointer-events:none}
+.pin{position:absolute;top:-6px;left:50%;width:18px;height:18px;margin-left:-9px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#ff8a80,var(--red) 60%,#7a1d18);box-shadow:2px 3px 3px rgba(0,0,0,.35);z-index:3}
+.hint{font-family:'Caveat';font-size:28px;color:var(--ink);margin-left:20px}
+.shuffle{font-family:'Caveat';font-weight:700;font-size:24px;background:#fff;border:2px dashed var(--ink);padding:2px 16px;cursor:pointer;margin-left:16px;transform:rotate(2deg)}
+/* about */
+.about{display:grid;grid-template-columns:auto 1fr;gap:60px;align-items:center;max-width:1100px}
+.about .pol{width:300px;transform:rotate(-4deg)}
+.letter{background:#fdfbf3;padding:40px 44px;box-shadow:0 4px 12px rgba(0,0,0,.2);background-image:repeating-linear-gradient(transparent 0 33px,#b6cbe8 33px 34px);line-height:34px;font-family:'Gaegu';font-size:22px;transform:rotate(1deg);position:relative}
+.letter::before{content:"";position:absolute;left:30px;top:0;bottom:0;border-left:2px solid #e8a3a3}
+.letter p{padding-left:16px;margin-bottom:34px}
+/* prices: tags */
+.tags{display:flex;flex-wrap:wrap;gap:40px;margin-top:40px;justify-content:center}
+.tagc{width:300px;background:#fdf6e3;padding:30px 26px 26px 50px;position:relative;box-shadow:0 4px 10px rgba(0,0,0,.2);clip-path:polygon(28px 0,100% 0,100% 100%,28px 100%,0 50%)}
+.tagc::before{content:"";position:absolute;left:16px;top:50%;width:14px;height:14px;border-radius:50%;background:var(--kraft);margin-top:-7px;box-shadow:inset 1px 1px 2px rgba(0,0,0,.4)}
+.tagc:nth-child(1){transform:rotate(-3deg)}.tagc:nth-child(2){transform:rotate(2deg);background:#fff}.tagc:nth-child(3){transform:rotate(-1deg)}
+.tagc h3{font-family:'Caveat';font-size:38px;line-height:1}
+.tagc .kr{font-family:'Caveat';font-weight:700;font-size:44px;color:var(--red)}
+.tagc ul{list-style:none;font-size:18px}
+.tagc li::before{content:"♡ ";color:var(--red)}
+/* also strip */
+.strip{display:flex;flex-wrap:wrap;gap:30px;justify-content:center;margin-top:40px}
+.strip .pol{width:210px}
+.strip .pol:nth-child(odd){transform:rotate(-3deg)}.strip .pol:nth-child(even){transform:rotate(4deg) translateY(16px)}
+/* notes */
+.notes{display:flex;flex-wrap:wrap;gap:30px;justify-content:center;margin-top:40px}
+.nt{width:290px;padding:24px;font-family:'Gaegu';font-size:21px;line-height:1.35;box-shadow:2px 5px 10px rgba(0,0,0,.2);position:relative}
+.nt:nth-child(1){background:#fff7a8;transform:rotate(-3deg)}.nt:nth-child(2){background:#ffd1dc;transform:rotate(2deg)}.nt:nth-child(3){background:#cdeedd;transform:rotate(-1deg)}
+.nt b{display:block;font-family:'Caveat';font-size:24px;margin-top:10px}
+/* contact */
+.env{max-width:880px;margin:40px auto 0;background:#f3ead7;padding:40px;box-shadow:0 6px 16px rgba(0,0,0,.25);position:relative;display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.env .stamp{position:absolute;top:18px;right:18px;width:84px;height:100px;border:3px dotted #aaa;background:#fff;padding:5px;transform:rotate(5deg)}
+.env .stamp img{width:100%;height:100%;object-fit:cover}
+form{display:grid;gap:12px}
+label{font-family:'Caveat';font-size:24px}
+input,textarea{width:100%;font:20px 'Gaegu';background:transparent;border:none;border-bottom:2px solid var(--ink);padding:4px 2px}
+textarea{border:2px solid var(--ink);min-height:100px;border-radius:6px}
+button.send{font-family:'Caveat';font-weight:700;font-size:28px;background:var(--red);color:#fff;border:none;padding:6px 20px;cursor:pointer;justify-self:start;transform:rotate(-2deg);box-shadow:2px 3px 0 var(--ink)}
+#ok{font-family:'Caveat';font-size:28px;color:var(--blue)}
+footer{text-align:center;padding:40px 20px 60px;font-family:'Caveat';font-size:24px}
+@media (max-width:860px){
+ header{grid-template-columns:1fr;min-height:auto;padding-top:70px}
+ .stack{height:440px}
+ .stack .pol:nth-child(2){left:30%}
+ .about,.env{grid-template-columns:1fr}
+ .about .pol{width:240px;margin:auto}
+ .cork{height:1500px;border-width:10px}
+ .cork .pol{width:150px}
+ .cork .pol p{font-size:19px;min-height:44px}
+ .letter{padding:30px 24px}
+ .env{padding:30px 22px}.env .stamp{width:60px;height:72px}
+ .hint{display:block;margin:10px 0 0}.shuffle{margin:10px 0 0}
+}
+</style>
+</head>
+<body>
+<a class="back" href="../../index.html">← Alla 25</a>
+<header>
+ <div>
+  <h1>Fia<em>fotar</em></h1>
+  <div class="sticky">Bröllopsfotograf i Göteborg som tycker att de bästa bilderna är de man vill sätta upp på kylskåpet. ♡</div>
+ </div>
+ <div class="stack">
+  <div class="pol"><span class="washi" style="top:-12px;left:30%;transform:rotate(-4deg)"></span><img src="../../media/img/brollop-14.jpg" alt="Brudpar vid havet"><p>Klippan, juli -25</p></div>
+  <div class="pol"><span class="washi b" style="top:-14px;left:20%;transform:rotate(6deg)"></span><img src="../../media/img/brollop-39.jpg" alt="Brudparet skrattar"><p>de skrattade hela dagen</p></div>
+  <div class="pol"><span class="washi c" style="top:-12px;left:34%;transform:rotate(-2deg)"></span><img src="../../media/img/brollop-07.jpg" alt="Brud i blomsteräng" style="object-position:50% 25%"><p>Saga ♡ Elias</p></div>
+ </div>
+ <svg class="doodle" style="right:4vw;bottom:2vh;width:120px" viewBox="0 0 120 60"><path d="M5 40 C30 5, 50 5, 60 30 S100 55, 115 15"/><path d="M105 12 L116 14 L112 25"/></svg>
+</header>
+
+<section id="tavlan">
+ <h2>Anslags<u>tavlan</u></h2>
+ <span class="hint">← dra runt bilderna!</span><button class="shuffle" id="shuffle">blanda om</button>
+ <div class="cork" id="cork"></div>
+</section>
+
+<section id="om">
+ <div class="about">
+  <div class="pol"><span class="washi d" style="top:-12px;left:28%;transform:rotate(3deg)"></span><img src="../../media/img/portratt-10.jpg" alt="Fotografen Fia Ekström" loading="lazy"><p>det här är jag!</p></div>
+  <div>
+   <h2>Hej hej!</h2>
+   <div class="letter" style="margin-top:30px">
+    <p>Jag heter Fia Ekström och har fotat bröllop i Göteborg och längs västkusten sedan 2014. Min första kamera var en gammal polaroid som jag hittade på farmors vind i Kungälv – och jag har aldrig riktigt slutat jaga den där känslan av en bild som växer fram i handen.</p>
+    <p>Jag tar med mig en instant-kamera till varje bröllop. Gästerna får skriva på bilderna och ni får dem i en egen scrapbook efteråt, tillsammans med alla digitala bilder.</p>
+    <p>Kram, Fia</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="priser" style="text-align:center">
+ <h2>Vad <u>kostar</u> det?</h2>
+ <div class="tags">
+  <div class="tagc"><h3>Lilla albumet</h3><div class="kr">9 800 kr</div><ul><li>3 timmar</li><li>200 digitala bilder</li><li>10 instantbilder</li></ul></div>
+  <div class="tagc"><h3>Scrapbooken</h3><div class="kr">19 500 kr</div><ul><li>8 timmar</li><li>500 digitala bilder</li><li>Gästernas polaroidbok</li><li>Handgjord scrapbook</li></ul></div>
+  <div class="tagc"><h3>Hela lådan</h3><div class="kr">27 000 kr</div><ul><li>Hela dagen</li><li>Förlovningsfoto</li><li>Två scrapbooks</li><li>Tryckt fotoalbum</li></ul></div>
+ </div>
+</section>
+
+<section style="text-align:center">
+ <h2>Jag fotar <u>också</u>…</h2>
+ <div class="strip">
+  <div class="pol"><img src="../../media/img/familj-14.jpg" alt="Familj på stranden" loading="lazy"><p>familjer</p></div>
+  <div class="pol"><img src="../../media/img/portratt-35.jpg" alt="Porträtt i park" loading="lazy"><p>porträtt</p></div>
+  <div class="pol"><img src="../../media/img/foretag-03.jpg" alt="Kaféägare i sitt kafé" loading="lazy"><p>små företag</p></div>
+  <div class="pol"><img src="../../media/img/foretag-28.jpg" alt="Personalfest" loading="lazy"><p>jobbfester</p></div>
+ </div>
+</section>
+
+<section style="text-align:center">
+ <h2>Snälla <u>lappar</u></h2>
+ <div class="notes">
+  <div class="nt">”Fia kändes som en kompis som råkade ha en kamera. Scrapbooken är det finaste vi äger.”<b>Amanda &amp; Linus, Majorna</b></div>
+  <div class="nt">”Alla gäster stod i kö för att få ta en polaroid med henne. Barnen älskade det!”<b>Sofie &amp; Emir, Mölndal</b></div>
+  <div class="nt">”Bilderna är så levande. Jag gråter varje gång.”<b>Clara &amp; Nils, Marstrand</b></div>
+ </div>
+</section>
+
+<section id="kontakt">
+ <div style="text-align:center"><h2>Skriv ett <u>brev</u></h2></div>
+ <div class="env">
+  <div class="stamp"><img src="../../media/img/foretag-53.jpg" alt="Frimärke med Göteborgsmotiv" loading="lazy"></div>
+  <div>
+   <p class="hand" style="font-size:30px">Till: Fia Ekström</p>
+   <p style="margin-top:14px">fia@fiafotar.se<br>031-711 20 40<br>Linnégatan 33, Göteborg</p>
+   <p style="margin-top:18px">Berätta om er dag så hör jag av mig inom ett par dagar!</p>
+  </div>
+  <form id="f">
+   <label>Från<input required></label>
+   <label>E-post<input type="email" required></label>
+   <label>Datum<input type="date"></label>
+   <label>Lite om er<textarea></textarea></label>
+   <button class="send">Posta!</button>
+   <p id="ok" aria-live="polite"></p>
+  </form>
+ </div>
+</section>
+<footer>gjord med lim, tejp &amp; kärlek · Fia Fotar 2026</footer>
+
+<script>
+const P='../../media/img/';
+const items=[['brollop-00.jpg','första blicken'],['brollop-05.jpg','slöjan i vinden','25% 30%'],['brollop-09.jpg','ringarna!!'],['brollop-10.jpg','tårtan'],['brollop-17.jpg','på väg'],['brollop-22.jpg','Sara ♡','50% 25%'],['brollop-23.jpg','kyssen'],['brollop-25.jpg','långbordet'],['brollop-30.jpg','dansgolvet 23:40'],['brollop-32.jpg','buketten','50% 30%'],['brollop-36.jpg','festen'],['brollop-40.jpg','skål!'],['brollop-41.jpg','farfar talar','50% 30%'],['brollop-42.jpg','kvällsljus'],['brollop-47.jpg','detaljer','50% 30%'],['brollop-50.jpg','sommaräng'],['brollop-57.jpg','Marstrand'],['portratt-35.jpg','förlovning, maj']];
+const washi=['','b','c','d'];
+const cork=document.getElementById('cork');
+items.forEach(([f,c,pos],i)=>{const d=document.createElement('div');d.className='pol';
+ d.innerHTML=(i%3? `<span class="washi ${washi[i%4]}" style="top:-12px;left:28%;width:80px;transform:rotate(${(i*7)%11-5}deg)"></span>`:'<span class="pin"></span>')+`<img src="${P}${f}" alt="${c}" loading="lazy" draggable="false" ${pos?`style="object-position:${pos}"`:''}><p>${c}</p>`;
+ cork.appendChild(d)});
+function layout(){const W=cork.clientWidth,H=cork.clientHeight,pols=[...cork.children];const pw=pols[0].offsetWidth,ph=pols[0].offsetHeight;
+ const cols=Math.max(2,Math.floor(W/(pw*0.9))),rows=Math.ceil(pols.length/cols);
+ pols.forEach((p,i)=>{const cx=i%cols,cy=Math.floor(i/cols);
+  const x=Math.min(W-pw,Math.max(0,cx*(W-pw)/(cols-1)+(Math.random()*30-15)));
+  const y=Math.min(H-ph,Math.max(0,cy*(H-ph)/Math.max(1,rows-1)+(Math.random()*30-15)));
+  p.style.left=x+'px';p.style.top=y+'px';p.style.transform=`rotate(${Math.random()*16-8}deg)`;p.style.zIndex=i+1})}
+let z=100;
+cork.addEventListener('pointerdown',e=>{const p=e.target.closest('.pol');if(!p)return;e.preventDefault();p.setPointerCapture(e.pointerId);p.classList.add('drag');p.style.zIndex=++z;
+ const sx=e.clientX-p.offsetLeft,sy=e.clientY-p.offsetTop;
+ const mv=ev=>{const W=cork.clientWidth-p.offsetWidth,H=cork.clientHeight-p.offsetHeight;p.style.left=Math.min(W,Math.max(0,ev.clientX-sx))+'px';p.style.top=Math.min(H,Math.max(0,ev.clientY-sy))+'px'};
+ const up=()=>{p.classList.remove('drag');p.removeEventListener('pointermove',mv);p.removeEventListener('pointerup',up);p.removeEventListener('pointercancel',up)};
+ p.addEventListener('pointermove',mv);p.addEventListener('pointerup',up);p.addEventListener('pointercancel',up)});
+document.getElementById('shuffle').onclick=layout;
+window.addEventListener('load',layout);
+let rw=innerWidth;addEventListener('resize',()=>{if(Math.abs(innerWidth-rw)>80){rw=innerWidth;layout()}});
+layout();
+document.getElementById('f').onsubmit=e=>{e.preventDefault();document.getElementById('ok').textContent='Brevet är postat! Tack ♡';e.target.reset()};
+</script>
+</body>
+</html>

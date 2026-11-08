@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MAISON VALLIN – Bröllopsfotografi, Stockholm · Nummer 14</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,700;0,6..96,900;1,6..96,400;1,6..96,700&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0e0d0c;--paper:#f3efe8;--blush:#c9a39a;--red:#8c1c13}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font-family:"Bodoni Moda",Didot,serif;overflow-x:hidden}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:inherit}
+.sans{font-family:Jost,sans-serif}
+.cover{position:relative;height:100vh;min-height:640px;overflow:hidden;background:#000;color:#fff}
+.cover>img{position:absolute;inset:0;object-position:50% 25%}
+.cover::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.25),transparent 30%,transparent 60%,rgba(0,0,0,.55))}
+.mast{position:absolute;top:2vh;left:0;right:0;text-align:center;z-index:2;font-weight:900;font-size:clamp(70px,17vw,270px);line-height:.85;letter-spacing:-.02em}
+.issue{position:absolute;top:calc(2vh + clamp(70px,17vw,270px)*.9);left:4vw;right:4vw;z-index:2;display:flex;justify-content:space-between;font:400 12px Jost;letter-spacing:.25em;text-transform:uppercase;border-top:1px solid rgba(255,255,255,.7);padding-top:8px}
+.lines{position:absolute;z-index:2;left:4vw;bottom:8vh;max-width:380px}
+.lines p{font-size:clamp(20px,2.2vw,30px);line-height:1.05;margin-bottom:18px}
+.lines p i{display:block;font:400 11px Jost;letter-spacing:.25em;text-transform:uppercase;font-style:normal;color:var(--blush);margin-bottom:4px}
+.coverline{position:absolute;z-index:2;right:4vw;bottom:8vh;text-align:right;font-style:italic;font-size:clamp(34px,5vw,80px);line-height:.92;max-width:560px}
+.coverline small{display:block;font:400 12px Jost;letter-spacing:.25em;text-transform:uppercase;font-style:normal;margin-top:14px}
+.barcode{position:absolute;z-index:2;right:4vw;top:50%;width:70px;height:40px;background:repeating-linear-gradient(90deg,#fff 0 2px,transparent 2px 4px,#fff 4px 5px,transparent 5px 8px);opacity:.85}
+.toc{display:grid;grid-template-columns:1fr 2fr;gap:6vw;padding:12vh 6vw;border-bottom:1px solid var(--ink)}
+.toc h2{font-size:clamp(48px,7vw,110px);font-weight:400;font-style:italic;line-height:.9}
+.toc h2 small{display:block;font:400 12px Jost;letter-spacing:.25em;text-transform:uppercase;font-style:normal;margin-top:20px}
+.toc ol{list-style:none;columns:2;column-gap:4vw}
+.toc li{break-inside:avoid;border-top:1px solid var(--ink);padding:14px 0 26px}
+.toc li b{font-size:44px;font-weight:400;display:block;line-height:1}
+.toc li a{text-decoration:none;font-size:22px}
+.toc li a:hover{font-style:italic}
+.toc li span{display:block;font:300 14px/1.5 Jost;margin-top:6px}
+.spread{display:grid;grid-template-columns:1fr 1fr;min-height:100vh;border-bottom:1px solid var(--ink)}
+.spread .ph{position:relative;overflow:hidden}
+.spread .ph figcaption{position:absolute;bottom:14px;left:14px;font:400 10px Jost;letter-spacing:.2em;text-transform:uppercase;color:#fff;mix-blend-mode:difference}
+.spread .tx{padding:10vh 5vw;display:flex;flex-direction:column;justify-content:center}
+.kicker{font:500 11px Jost;letter-spacing:.3em;text-transform:uppercase;color:var(--red);margin-bottom:24px}
+.spread h3{font-size:clamp(44px,6vw,96px);font-weight:400;line-height:.92;letter-spacing:-.01em}
+.spread h3 em{font-style:italic}
+.dek{font-style:italic;font-size:22px;line-height:1.35;margin:28px 0;max-width:520px}
+.body{font:300 16px/1.75 Jost;max-width:520px;columns:2;column-gap:28px}
+.body p+p{text-indent:1.5em}
+.dc::first-letter{float:left;font:900 92px/.8 "Bodoni Moda",serif;margin:6px 10px 0 0;color:var(--red)}
+.byline{font:400 11px Jost;letter-spacing:.2em;text-transform:uppercase;margin-top:28px}
+.pull{padding:16vh 10vw;text-align:center;border-bottom:1px solid var(--ink);background:var(--ink);color:var(--paper)}
+.pull q{font-size:clamp(36px,5.6vw,92px);font-style:italic;line-height:1.02;quotes:"”" "”";display:block}
+.pull q::before{content:open-quote;color:var(--blush)}
+.pull cite{display:block;font:400 12px Jost;letter-spacing:.3em;text-transform:uppercase;font-style:normal;margin-top:36px;color:var(--blush)}
+.story{display:grid;grid-template-columns:repeat(12,1fr);gap:16px;padding:12vh 4vw;border-bottom:1px solid var(--ink)}
+.story .h{grid-column:1/6;align-self:end}
+.story .h h3{font-size:clamp(40px,5vw,80px);font-weight:400;line-height:.95}
+.story .h h3 em{font-style:italic}
+.story figure{position:relative}
+.story figure figcaption{font:400 11px Jost;letter-spacing:.1em;margin-top:8px}
+.s1{grid-column:6/13;aspect-ratio:3/2}
+.s2{grid-column:1/5;aspect-ratio:2/3}
+.s3{grid-column:5/9;aspect-ratio:2/3;margin-top:14vh}
+.s4{grid-column:9/13;aspect-ratio:2/3}
+.s5{grid-column:2/8;aspect-ratio:3/2}
+.s6{grid-column:8/12;align-self:center;font-style:italic;font-size:26px;line-height:1.3}
+.story figure>div{height:100%;overflow:hidden}
+.story figure.s1,.story figure.s2,.story figure.s3,.story figure.s4,.story figure.s5{aspect-ratio:auto}
+.story figure>div{aspect-ratio:inherit}
+.r32{aspect-ratio:3/2}.r23{aspect-ratio:2/3}
+.sheet{padding:10vh 4vw;background:#1a1816;border-bottom:1px solid var(--ink)}
+.sheet .kicker{color:var(--blush)}
+.cs{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.cs img{aspect-ratio:2/3;border:6px solid #f3efe8;filter:grayscale(.3)}
+@media (max-width:860px){.cs{grid-template-columns:repeat(3,1fr)}}
+.price{padding:12vh 6vw;border-bottom:1px solid var(--ink)}
+.price h3{font-size:clamp(48px,7vw,110px);font-weight:400;font-style:italic;line-height:.9;margin-bottom:6vh}
+.price .grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid var(--ink)}
+.price .it{padding:28px 28px 28px 0;border-right:1px solid var(--ink)}
+.price .it+.it{padding-left:28px}.price .it:last-child{border:0}
+.price .it b{font:400 11px Jost;letter-spacing:.3em;text-transform:uppercase;color:var(--red)}
+.price .it h4{font-size:38px;font-weight:400;margin:10px 0}
+.price .it p{font:300 15px/1.7 Jost}
+.price .it .n{font-size:30px;margin-top:20px;font-style:italic}
+.also{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:8vh}
+.also figure>div{aspect-ratio:4/5;overflow:hidden}
+.also figcaption{font:400 12px Jost;letter-spacing:.1em;margin-top:8px;text-transform:uppercase}
+.letters{display:grid;grid-template-columns:repeat(3,1fr);gap:4vw;padding:12vh 6vw;border-bottom:1px solid var(--ink)}
+.letters h3{grid-column:1/-1;font:500 11px Jost;letter-spacing:.3em;text-transform:uppercase;color:var(--red)}
+.letters blockquote{font-size:22px;line-height:1.35;font-style:italic}
+.letters cite{display:block;font:400 11px Jost;letter-spacing:.2em;text-transform:uppercase;font-style:normal;margin-top:16px}
+.subs{display:grid;grid-template-columns:1fr 1fr;min-height:90vh}
+.subs .ph{overflow:hidden}
+.subs .f{padding:10vh 6vw;background:var(--blush)}
+.subs h3{font-size:clamp(44px,6vw,92px);font-weight:400;line-height:.92}
+.subs h3 em{font-style:italic}
+.subs p{font:300 16px/1.7 Jost;margin:20px 0 32px;max-width:440px}
+.subs label{display:block;font:500 11px Jost;letter-spacing:.25em;text-transform:uppercase;margin-bottom:20px}
+.subs input,.subs textarea{display:block;width:100%;background:transparent;border:0;border-bottom:1px solid var(--ink);font:400 22px "Bodoni Moda",serif;padding:8px 0;margin-top:4px;color:var(--ink);border-radius:0}
+.subs textarea{resize:vertical;min-height:70px}
+.subs button{background:var(--ink);color:var(--paper);border:0;font:500 12px Jost;letter-spacing:.3em;text-transform:uppercase;padding:18px 34px;cursor:pointer}
+.ok{display:none;font-style:italic;font-size:28px}
+footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:24px 4vw;font:400 11px Jost;letter-spacing:.2em;text-transform:uppercase}
+.back{position:fixed;left:16px;top:16px;z-index:30;font:500 11px Jost;letter-spacing:.2em;text-transform:uppercase;color:#fff;text-decoration:none;mix-blend-mode:difference}
+.rv{opacity:0;transform:translateY(24px);transition:opacity 1s,transform 1s}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+@media (max-width:860px){
+ .cover{height:auto;min-height:100svh;padding-bottom:40px}
+ .lines{display:none}
+ .coverline{left:6vw;right:6vw;text-align:left}
+ .barcode{display:none}
+ .toc,.spread,.subs{grid-template-columns:1fr}
+ .toc ol{columns:1}
+ .spread{min-height:0}.spread .ph{height:70vh}
+ .spread.rev .ph{order:-1}
+ .body{columns:1}
+ .story{grid-template-columns:repeat(2,1fr);gap:12px}
+ .story .h,.s1,.s5,.s6{grid-column:1/-1}.s2,.s3{grid-column:span 1;margin-top:0}.s4{grid-column:1/-1}
+ .price .grid,.letters{grid-template-columns:1fr}
+ .price .it,.price .it+.it{padding:24px 0;border-right:0;border-bottom:1px solid var(--ink)}
+ .also{grid-template-columns:1fr 1fr}
+ .subs .ph{height:60vh}
+}
+</style>
+</head>
+<body>
+<a class="back" href="../../index.html">← Alla 25</a>
+
+<header class="cover">
+ <img src="../../media/img/brollop-28.jpg" alt="Brud i siden mot mörk bakgrund – omslagsbild">
+ <div class="mast">VALLIN</div>
+ <div class="issue"><span>Nummer 14</span><span>Höst/Vinter 2026</span><span>Stockholm · 145 kr</span></div>
+ <div class="lines">
+  <p><i>Reportage</i>Ett bröllop i skärgården när stormen vände</p>
+  <p><i>Samtal</i>Hedvig Vallin om ljus, slöjor och tystnad</p>
+  <p><i>Kollektion</i>Säsongens tre paket</p>
+ </div>
+ <div class="coverline">Kärlek, i stort format.<small>Maison Vallin · Bröllopsfotografi</small></div>
+ <div class="barcode" aria-hidden="true"></div>
+</header>
+
+<section class="toc">
+ <h2>I detta nummer<small>Innehåll · Nr 14</small></h2>
+ <ol>
+  <li><b>12</b><a href="#reportage">Stormen på Utö</a><span>Ett skärgårdsbröllop, berättat i bilder.</span></li>
+  <li><b>28</b><a href="#samtal">Ett samtal med fotografen</a><span>Hedvig Vallin om att stå i bakgrunden.</span></li>
+  <li><b>44</b><a href="#portfolio">Portfolio: Stadshuset</a><span>Sex vigslar, en trappa.</span></li>
+  <li><b>60</b><a href="#kollektion">Kollektionen</a><span>Priser och paket för säsongen 2027.</span></li>
+  <li><b>72</b><a href="#brev">Brev från läsare</a><span>Par som gift sig 2025–26.</span></li>
+  <li><b>80</b><a href="#prenumerera">Prenumerera</a><span>Boka ert datum.</span></li>
+ </ol>
+</section>
+
+<article class="spread" id="reportage">
+ <figure class="ph"><img src="../../media/img/brollop-53.jpg" alt="Brudpar på en klippa i skärgården" loading="lazy"><figcaption>Foto: Hedvig Vallin · Utö, augusti</figcaption></figure>
+ <div class="tx rv">
+  <div class="kicker">Reportage · s. 12</div>
+  <h3>Stormen <em>på Utö</em></h3>
+  <p class="dek">Klockan tre började det blåsa. Klockan fyra stod Ebba och Karl på berget ändå, med slöjan rakt ut i luften.</p>
+  <div class="body">
+   <p class="dc">De hade planerat allt i två år: färjan, långbordet på gräset, stråkkvartetten från Nynäshamn. Det de inte hade planerat var den sydvästliga kulingen som drog in över Mysingen just när vigselförrättaren slog upp sin bok.</p>
+   <p>Vi flyttade inte inomhus. Gästerna höll i sina hattar, någon tappade en sko i ljungen, och prästen fick ropa. Det blev en av de vackraste vigslar jag har fotograferat, just för att ingenting gick som det skulle.</p>
+   <p>Middagen hölls till slut i den gamla gruvarbetarbostaden, med fönstren öppna mot havet.</p>
+  </div>
+  <div class="byline">Text &amp; foto: Hedvig Vallin</div>
+ </div>
+</article>
+
+<section class="pull"><q>Jag vill att ni ska se er själva om trettio år och tänka: precis så var det.</q><cite>Hedvig Vallin, s. 28</cite></section>
+
+<section class="story" id="portfolio">
+ <div class="h rv"><div class="kicker">Portfolio · s. 44</div><h3>Stadshuset, <em>sex lördagar</em></h3></div>
+ <figure class="s1 rv"><div class="r32"><img src="../../media/img/brollop-03.jpg" alt="Brudpar i Stadshusets arkader" loading="lazy"></div><figcaption>I. Arkaderna, maj</figcaption></figure>
+ <figure class="s2 rv"><div class="r23"><img src="../../media/img/brollop-47.jpg" alt="Brud i trappan" loading="lazy"></div><figcaption>II. Trappan</figcaption></figure>
+ <figure class="s3 rv"><div class="r23"><img src="../../media/img/brollop-48.jpg" alt="Brudgum som väntar" loading="lazy"></div><figcaption>III. Väntan</figcaption></figure>
+ <figure class="s4 rv"><div class="r23"><img src="../../media/img/brollop-49.jpg" alt="Kyss i vigselrummet" loading="lazy"></div><figcaption>IV. Ja</figcaption></figure>
+ <figure class="s5 rv"><div class="r32"><img src="../../media/img/brollop-54.jpg" alt="Brudpar vid Riddarfjärden" loading="lazy"></div><figcaption>V. Riddarfjärden</figcaption></figure>
+ <p class="s6 rv">”Stadshusvigslar är tolv minuter långa. Det är tolv minuter av fullständig koncentration.”</p>
+</section>
+
+<article class="spread rev" id="samtal">
+ <div class="tx rv">
+  <div class="kicker">Samtal · s. 28</div>
+  <h3>Fotografen <em>i bakgrunden</em></h3>
+  <p class="dek">Hedvig Vallin arbetade tio år med mode i Paris och Milano innan hon kom hem till Södermalm och började fotografera bröllop.</p>
+  <div class="body">
+   <p class="dc">– Modet lärde mig ljus och form, säger hon. Bröllopen lärde mig att det viktigaste händer när ingen poserar.</p>
+   <p>Hon arbetar med två kameror och nästan alltid i befintligt ljus. Paren får ett redigerat urval på 400 till 700 bilder, och de som vill får ett handbundet album i linne, tryckt i Italien.</p>
+   <p>– Jag vill att ett bröllopsalbum ska kännas som ett nummer av en tidning man sparar. Inte en fotobok från ett varuhus.</p>
+  </div>
+  <div class="byline">Intervju: redaktionen</div>
+ </div>
+ <figure class="ph"><img src="../../media/img/portratt-24.jpg" alt="Porträtt av fotografen Hedvig Vallin" loading="lazy"><figcaption>Hedvig Vallin, Södermalm</figcaption></figure>
+</article>
+
+<section class="story">
+ <figure class="s2 rv"><div class="r23"><img src="../../media/img/brollop-55.jpg" alt="Brud med bukett av pioner" loading="lazy"></div><figcaption>VI. Pioner</figcaption></figure>
+ <figure class="s1 rv"><div class="r32"><img src="../../media/img/brollop-56.jpg" alt="Middag i en orangeri" loading="lazy"></div><figcaption>VII. Orangeriet, Ulriksdal</figcaption></figure>
+ <figure class="s5 rv"><div class="r32"><img src="../../media/img/brollop-57.jpg" alt="Brudpar i bil på väg från kyrkan" loading="lazy"></div><figcaption>VIII. Avfärd</figcaption></figure>
+ <figure class="s4 rv"><div class="r23"><img src="../../media/img/brollop-04.jpg" alt="Brudpar i motljus" loading="lazy"></div><figcaption>IX. Motljus</figcaption></figure>
+</section>
+
+<section class="sheet">
+ <div class="kicker">Kontaktkarta · Utö, rulle 3</div>
+ <div class="cs">
+  <img class="rv" src="../../media/img/brollop-12.jpg" alt="Bukett på bordet" loading="lazy">
+  <img class="rv" src="../../media/img/brollop-20.jpg" alt="Gäster på bryggan" loading="lazy">
+  <img class="rv" src="../../media/img/brollop-31.jpg" alt="Långbord på gräset" loading="lazy">
+  <img class="rv" src="../../media/img/brollop-42.jpg" alt="Kväll vid havet" loading="lazy">
+  <img class="rv" src="../../media/img/brollop-24.jpg" alt="Brudgum i vinden" loading="lazy">
+  <img class="rv" src="../../media/img/brollop-08.jpg" alt="Brud med slöja i vinden" loading="lazy">
+ </div>
+</section>
+
+<section class="price" id="kollektion">
+ <div class="kicker">Kollektion · s. 60</div>
+ <h3>Säsongen 2027</h3>
+ <div class="grid">
+  <div class="it"><b>Look 01</b><h4>Stadshuset</h4><p>Vigsel och porträtt i stan. Två timmar, 150 redigerade bilder.</p><div class="n">9 800 kr</div></div>
+  <div class="it"><b>Look 02</b><h4>Heldagen</h4><p>Från påklädning till dans. Tio timmar, ca 600 bilder, onlinegalleri.</p><div class="n">34 000 kr</div></div>
+  <div class="it"><b>Look 03</b><h4>Haute couture</h4><p>Två dagar: förfest, bröllop och morgonpromenad. Handbundet album i linne.</p><div class="n">58 000 kr</div></div>
+ </div>
+ <div class="also">
+  <figure class="rv"><div><img src="../../media/img/familj-03.jpg" alt="Familj vid fönster" loading="lazy"></div><figcaption>Även: familj</figcaption></figure>
+  <figure class="rv"><div><img src="../../media/img/familj-28.jpg" alt="Nyfödd i förälders famn" loading="lazy"></div><figcaption>Även: nyfött</figcaption></figure>
+  <figure class="rv"><div><img src="../../media/img/foretag-17.jpg" alt="Modevisning för varumärke" loading="lazy"></div><figcaption>Även: varumärken</figcaption></figure>
+  <figure class="rv"><div><img src="../../media/img/foretag-42.jpg" alt="Galamiddag" loading="lazy"></div><figcaption>Även: galor</figcaption></figure>
+ </div>
+</section>
+
+<section class="letters" id="brev">
+ <h3>Brev från läsare · s. 72</h3>
+ <blockquote>”Vi bläddrar i albumet varje bröllopsdag. Det är som att läsa vår egen tidning.”<cite>Ebba &amp; Karl Ekdahl, Utö</cite></blockquote>
+ <blockquote>”Hedvig fick min mormor att känna sig som en filmstjärna. Hon pratar fortfarande om det.”<cite>Clara Lindh &amp; Amir Haddad, Djursholm</cite></blockquote>
+ <blockquote>”Varje bild ser ut som ett omslag. Och ändå är det bara vi.”<cite>Tove &amp; Isak Bern, Stadshuset</cite></blockquote>
+</section>
+
+<section class="subs" id="prenumerera">
+ <div class="ph"><img src="../../media/img/foretag-67.jpg" alt="Studiomiljö med ljusutrustning" loading="lazy"></div>
+ <div class="f">
+  <div class="kicker" style="color:var(--ink)">Prenumerera · s. 80</div>
+  <h3>Boka ert <em>nummer</em></h3>
+  <p>Vi tar emot ett begränsat antal par per säsong. Skriv några rader om er dag, så hör vi av oss inom två dagar. Eller mejla direkt: hedvig@maisonvallin.se</p>
+  <form id="f">
+   <label>Era namn<input required name="n"></label>
+   <label>E-post<input type="email" required name="e"></label>
+   <label>Datum &amp; plats<input name="d"></label>
+   <label>Berätta<textarea name="m"></textarea></label>
+   <button type="submit">Skicka förfrågan</button>
+  </form>
+  <p class="ok" id="ok">Tack – ert brev har nått redaktionen. (Demo, inget skickades.)</p>
+ </div>
+</section>
+<footer><span>Maison Vallin · Hornsgatan 64, Stockholm</span><span>© 2026 · Fiktiv publikation</span><span>Nästa nummer: mars 2027</span></footer>
+<script>
+(function(){
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});
+ document.querySelectorAll('.rv').forEach(function(e){io.observe(e)});
+ document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();this.style.display='none';document.getElementById('ok').style.display='block'});
+})();
+</script>
+</body>
+</html>
