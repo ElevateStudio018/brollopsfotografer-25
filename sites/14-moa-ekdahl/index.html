@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moa Ekdahl – fotograf på Södermalm, Stockholm</title>
+<meta name="description" content="Bröllop, familj och företag. Fotograf på Södermalm i Stockholm.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#ffffff;--bg2:#f4f4f2;--ink:#111111;--mut:#6b6b6b;--line:#e6e6e6;--navbg:rgba(255,255,255,.97);--navink:#111;--menubg:#fff;--menuink:#111;--serif:"Cormorant Garamond",Georgia,serif;--sans:"Urbanist",system-ui,sans-serif}
+
+*,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit;text-decoration:none}
+.wrap{max-width:1240px;margin:0 auto;padding:0 40px}
+.rv{opacity:0;transform:translateY(26px);transition:opacity 1s ease,transform 1s cubic-bezier(.2,.7,.2,1)}.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.12s}.rv.d2{transition-delay:.24s}.rv.d3{transition-delay:.36s}
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .4s,box-shadow .4s,padding .4s,color .4s;color:#fff}
+.nav .row{display:flex;align-items:center;justify-content:space-between;height:88px;transition:height .4s}
+.nav.solid{background:var(--navbg);color:var(--navink);box-shadow:0 1px 0 var(--line)}.nav.solid .row{height:70px}
+.nav ul{display:flex;gap:34px;list-style:none;margin:0;padding:0}
+.menu-btn{display:none;background:none;border:0;color:inherit;width:44px;height:44px;cursor:pointer;position:relative;z-index:70}
+.menu-btn span{position:absolute;left:11px;right:11px;height:1.5px;background:currentColor;transition:.3s}.menu-btn span:nth-child(1){top:17px}.menu-btn span:nth-child(2){top:26px}
+.menu-open .menu-btn span:nth-child(1){top:21px;transform:rotate(45deg)}.menu-open .menu-btn span:nth-child(2){top:21px;transform:rotate(-45deg)}
+.mobile-menu{position:fixed;inset:0;z-index:60;background:var(--menubg);color:var(--menuink);display:flex;flex-direction:column;justify-content:center;padding:0 32px;gap:14px;opacity:0;pointer-events:none;transition:opacity .4s}
+.mobile-menu a{font-family:var(--serif);font-size:34px;line-height:1.25}
+.menu-open .mobile-menu{opacity:1;pointer-events:auto}.menu-open .nav{color:var(--menuink);background:transparent;box-shadow:none}
+.hero{position:relative;height:100vh;height:100svh;min-height:600px;overflow:hidden;color:#fff;background:#111}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero .ov{position:absolute;inset:0}
+section{position:relative}
+.sec{padding:130px 0}
+.lb{position:fixed;inset:0;z-index:100;background:rgba(12,12,12,.94);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .35s}
+.lb.open{opacity:1;pointer-events:auto}.lb img{max-width:90vw;max-height:86vh;object-fit:contain}
+.lb button{position:absolute;background:none;border:0;color:#fff;font-size:15px;letter-spacing:.2em;text-transform:uppercase;cursor:pointer;padding:18px;font-family:var(--sans)}
+.lb-close{top:14px;right:14px}.lb-prev{left:10px;top:50%;transform:translateY(-50%)}.lb-next{right:10px;top:50%;transform:translateY(-50%)}
+details summary{list-style:none;cursor:pointer}details summary::-webkit-details-marker{display:none}
+form.book .ok{display:none}form.book.sent .fields{display:none}form.book.sent .ok{display:block}
+input,select,textarea{font:inherit;color:inherit}
+.back{opacity:.6;font-size:13px}.back:hover{opacity:1}
+@media(max-width:900px){.nav ul,.nav .cta-nav{display:none}.menu-btn{display:block}.wrap{padding:0 22px}.sec{padding:90px 0}}
+
+
+.mobile-menu a{font-family:var(--sans);font-weight:500}
+.logo{font-family:var(--sans);font-weight:600;font-size:22px;letter-spacing:-.02em;display:flex;align-items:baseline;gap:6px}.logo i{font-family:var(--serif);font-weight:400;font-size:24px;letter-spacing:0}
+.nav nav{position:absolute;left:50%;transform:translateX(-50%)}.nav ul a{font-size:15px;font-weight:400}
+.cta-nav{background:#fff;color:#111;border-radius:999px;padding:12px 22px;font-size:15px;font-weight:500;transition:.3s}.nav.solid .cta-nav{background:#111;color:#fff}
+h1,h2,h3{font-family:var(--sans);font-weight:500;margin:0;letter-spacing:-.025em}
+em.s{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:0}
+h2{font-size:clamp(36px,4.6vw,64px);line-height:1.05;margin:0 0 26px}
+.small{font-size:13px;font-weight:500;color:var(--mut);margin-bottom:22px;display:block}
+.hero .ov{background:linear-gradient(0deg,rgba(0,0,0,.55),rgba(0,0,0,.15) 55%,rgba(0,0,0,.25))}
+.hero .hin{position:absolute;left:0;right:0;bottom:70px}
+.hero h1{font-size:clamp(50px,7.4vw,112px);line-height:.98;max-width:11ch;font-weight:500}
+.hero h1 em.s{font-size:1.08em}
+.hero .row2{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-top:34px;flex-wrap:wrap}
+.hero .sub{font-size:18px;font-weight:300;max-width:440px;margin:0;opacity:.92}
+.pill{display:inline-flex;align-items:center;gap:10px;border-radius:999px;padding:15px 28px;font-size:15px;font-weight:500;transition:.3s}
+.pill.w{background:#fff;color:#111}.pill.w:hover{background:#eee}.pill.o{border:1px solid rgba(255,255,255,.7);color:#fff}.pill.o:hover{background:#fff;color:#111}
+.pill.b{background:#111;color:#fff}.pill.b:hover{background:#333}.pill.bo{border:1px solid #111}.pill.bo:hover{background:#111;color:#fff}
+.hero .btns{display:flex;gap:12px}
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:20px}
+.svc a{display:block}.svc .im{overflow:hidden;border-radius:14px}.svc img{width:100%;aspect-ratio:4/5;object-fit:cover;transition:transform 1s}.svc a:hover img{transform:scale(1.04)}
+.svc h3{font-size:24px;margin:18px 0 4px;display:flex;justify-content:space-between}.svc h3 span{font-weight:300;font-size:20px}.svc p{color:var(--mut);margin:0;font-size:15px}
+.hd{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:50px}.hd p{max-width:380px;color:var(--mut);margin:0}
+.sq{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}.sq a{aspect-ratio:1;overflow:hidden;display:block}.sq img{width:100%;height:100%;object-fit:cover;transition:transform 1s,opacity .4s}.sq a:hover img{transform:scale(1.05)}
+.fam{background:var(--bg2)}.famw{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.famw article{background:#fff;border-radius:18px;overflow:hidden;display:grid;grid-template-rows:auto 1fr}
+.famw .ims{display:grid;grid-template-columns:2fr 1fr;gap:4px}.famw .ims img{width:100%;height:100%;object-fit:cover;aspect-ratio:auto}.famw .ims .c{display:grid;grid-template-rows:1fr 1fr;gap:4px}
+.famw .ims>img{aspect-ratio:4/3.4}
+.famw .t{padding:34px 36px 38px}.famw h3{font-size:30px;margin-bottom:10px}.famw p{color:var(--mut);margin:0 0 22px}.famw ul{list-style:none;padding:0;margin:0 0 26px;display:flex;flex-wrap:wrap;gap:8px}.famw li{border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:13.5px}
+.prices{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.prices article{border:1px solid var(--line);border-radius:18px;padding:38px 34px;display:flex;flex-direction:column}.prices article.feat{background:#111;color:#fff;border-color:#111}
+.prices h3{font-size:22px}.prices .pr{font-size:44px;font-weight:500;letter-spacing:-.03em;margin:16px 0 4px}.prices .pr small{font-size:16px;font-weight:400}.prices .note{color:var(--mut);font-size:14px}.prices article.feat .note{color:#aaa}
+.prices ul{list-style:none;padding:0;margin:26px 0 30px;flex:1}.prices li{padding:9px 0;border-top:1px solid var(--line);font-size:15px}.prices article.feat li{border-color:#333}.prices article.feat .pill{background:#fff;color:#111}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:center}.about img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:18px}.about p{color:var(--mut);font-size:17px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}.steps div{border-top:1px solid #111;padding-top:22px}.steps b{font-size:13px;font-weight:600}.steps h3{font-size:22px;margin:30px 0 8px}.steps p{color:var(--mut);margin:0;font-size:15px}
+.tst{background:#111;color:#fff}.tst .small{color:#999}.tgr{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.tgr figure{margin:0;border:1px solid #2a2a2a;border-radius:18px;padding:34px}.tgr blockquote{margin:0;font-family:var(--serif);font-style:italic;font-size:24px;line-height:1.35}.tgr figcaption{margin-top:24px;font-size:14px;color:#aaa}
+.faqw{max-width:900px}.faqw details{border-bottom:1px solid var(--line);padding:24px 0}.faqw summary{display:flex;justify-content:space-between;gap:20px;font-size:20px;font-weight:500}.faqw details p{color:var(--mut);margin:12px 0 0}
+details summary i{width:14px;height:14px;position:relative;flex:none;margin-top:8px}details summary i::before,details summary i::after{content:"";position:absolute;left:0;right:0;top:6px;height:1px;background:#111;transition:.3s}details summary i::after{transform:rotate(90deg)}details[open] summary i::after{transform:none}
+.ctw{display:grid;grid-template-columns:1fr 1.1fr;gap:80px}.ctw .info p{color:var(--mut)}.ctw form{background:var(--bg2);border-radius:18px;padding:44px}
+
+form.book label{display:block;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;opacity:.75;margin-bottom:22px}
+form.book input,form.book select,form.book textarea{display:block;width:100%;margin-top:8px;background:transparent;border:0;border-bottom:1px solid #cfcfcf;padding:10px 0;font-size:16px;letter-spacing:0;text-transform:none;outline:none;border-radius:0}
+form.book select option{color:#222}
+form.book input:focus,form.book textarea:focus{border-color:#111}.two{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+form.book button{background:#111;color:#fff;border:0;padding:17px 40px;font:inherit;font-size:13px;letter-spacing:.16em;text-transform:uppercase;cursor:pointer;border-radius:999px}
+@media(max-width:900px){.two{grid-template-columns:1fr;gap:0}}
+
+form.book label{font-weight:500;letter-spacing:.06em}form.book button{text-transform:none;letter-spacing:0;font-size:15px;font-weight:500}.ok{font-family:var(--serif);font-style:italic;font-size:28px}
+footer{border-top:1px solid var(--line);padding:50px 0 40px;font-size:14px;color:var(--mut)}footer .row{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}footer .logo{color:#111}
+@media(max-width:900px){.nav nav{position:static;transform:none}.hero .hin{bottom:46px}.hero .btns{flex-wrap:wrap}
+.svc,.famw,.prices,.tgr,.about,.ctw{grid-template-columns:1fr;gap:30px}.sq{grid-template-columns:repeat(2,1fr);gap:4px}.hd{display:block}.hd p{margin-top:10px}
+.steps{grid-template-columns:1fr 1fr;gap:30px 18px}.ctw form{padding:28px 22px}.famw .t{padding:26px 22px}}
+
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap row">
+<a class="logo" href="#">moa ekdahl<i>foto</i></a>
+<nav aria-label="Huvudmeny"><ul><li><a href="#tjanster">Tjänster</a></li><li><a href="#galleri">Galleri</a></li><li><a href="#priser">Priser</a></li><li><a href="#om">Om mig</a></li></ul></nav>
+<a class="cta-nav" href="#kontakt">Kontakta mig</a>
+<button class="menu-btn" aria-label="Meny" aria-expanded="false"><span></span><span></span></button>
+</div></header>
+<div class="mobile-menu"><a href="#tjanster">Tjänster</a><a href="#galleri">Galleri</a><a href="#priser">Priser</a><a href="#om">Om mig</a><a href="#kontakt">Kontakt</a></div>
+<main>
+<section class="hero" id="top"><video autoplay muted loop playsinline preload="auto" poster="../../media/img/brollop-26.jpg"><source src="../../media/hero.mp4" type="video/mp4"></video><div class="ov"></div>
+<div class="hin"><div class="wrap">
+<h1 class="rv">Bilder som <em class="s">stannar</em> kvar.</h1>
+<div class="row2"><p class="sub rv d1">Jag heter Moa och är fotograf på Södermalm. Jag fotograferar bröllop, familjer och företag – i Stockholm och där ni är.</p>
+<div class="btns rv d2"><a class="pill w" href="#galleri">Se mina bilder</a><a class="pill o" href="#priser">Bröllopspaket</a></div></div>
+</div></div>
+</section>
+
+<section class="sec" id="tjanster"><div class="wrap">
+<div class="hd"><div><span class="small rv">Tjänster</span><h2 class="rv d1">Tre sorters <em class="s">dagar</em></h2></div><p class="rv d2">Bröllop är hjärtat i det jag gör, men jag fotograferar hela livet runtomkring också.</p></div>
+<div class="svc">
+<a class="rv" href="#priser"><div class="im"><img src="../../media/img/brollop-04.jpg" alt="Brudpar" loading="lazy"></div><h3>Bröllop <span>→</span></h3><p>Från små stadshusvigslar till heldagsfester i skärgården.</p></a>
+<a class="rv d1" href="#familj"><div class="im"><img src="../../media/img/familj-13.jpg" alt="Familj" loading="lazy"></div><h3>Familj <span>→</span></h3><p>Hemma, i parken eller på Långholmen. Avslappnat och lekfullt.</p></a>
+<a class="rv d2" href="#familj"><div class="im"><img src="../../media/img/foretag-63.jpg" alt="Företagsporträtt" loading="lazy"></div><h3>Företag <span>→</span></h3><p>Porträtt, team och arbetsplatsbilder som känns som ni.</p></a>
+</div></div></section>
+
+<section class="sec" id="galleri" style="padding-top:0"><div class="wrap">
+<div class="hd"><div><span class="small rv">Galleri</span><h2 class="rv d1">Senaste <em class="s">bröllopen</em></h2></div><p class="rv d2">Klicka på en bild för att se den större.</p></div>
+<div class="sq"><a href="../../media/img/brollop-13.jpg" data-lb class="rv"><img src="../../media/img/brollop-13.jpg" alt="Brudpar i kvällsljus" loading="lazy" ></a><a href="../../media/img/brollop-38.jpg" data-lb class="rv"><img src="../../media/img/brollop-38.jpg" alt="Vigsel under bar himmel" loading="lazy" ></a><a href="../../media/img/brollop-02.jpg" data-lb class="rv"><img src="../../media/img/brollop-02.jpg" alt="Första dansen" loading="lazy" ></a><a href="../../media/img/brollop-05.jpg" data-lb class="rv"><img src="../../media/img/brollop-05.jpg" alt="Detaljer från brudbuketten" loading="lazy" ></a><a href="../../media/img/brollop-12.jpg" data-lb class="rv"><img src="../../media/img/brollop-12.jpg" alt="Bröllopsgäster som skrattar" loading="lazy" ></a><a href="../../media/img/brollop-19.jpg" data-lb class="rv"><img src="../../media/img/brollop-19.jpg" alt="Brudparet på promenad" loading="lazy" ></a><a href="../../media/img/brollop-24.jpg" data-lb class="rv"><img src="../../media/img/brollop-24.jpg" alt="Ringar och händer" loading="lazy" ></a><a href="../../media/img/brollop-28.jpg" data-lb class="rv"><img src="../../media/img/brollop-28.jpg" alt="Tal under middagen" loading="lazy" ></a><a href="../../media/img/brollop-33.jpg" data-lb class="rv"><img src="../../media/img/brollop-33.jpg" alt="Bruden gör sig i ordning" loading="lazy" ></a><a href="../../media/img/brollop-37.jpg" data-lb class="rv"><img src="../../media/img/brollop-37.jpg" alt="Brudparet i närbild" loading="lazy" ></a><a href="../../media/img/brollop-43.jpg" data-lb class="rv"><img src="../../media/img/brollop-43.jpg" alt="Festen fortsätter" loading="lazy" ></a><a href="../../media/img/brollop-47.jpg" data-lb class="rv"><img src="../../media/img/brollop-47.jpg" alt="Kyss efter vigseln" loading="lazy" ></a><a href="../../media/img/brollop-49.jpg" data-lb class="rv"><img src="../../media/img/brollop-49.jpg" alt="Brudpar i kvällsljus" loading="lazy" ></a><a href="../../media/img/brollop-52.jpg" data-lb class="rv"><img src="../../media/img/brollop-52.jpg" alt="Vigsel under bar himmel" loading="lazy" ></a><a href="../../media/img/brollop-55.jpg" data-lb class="rv"><img src="../../media/img/brollop-55.jpg" alt="Första dansen" loading="lazy" ></a><a href="../../media/img/brollop-08.jpg" data-lb class="rv"><img src="../../media/img/brollop-08.jpg" alt="Detaljer från brudbuketten" loading="lazy" ></a></div>
+</div></section>
+
+<section class="sec fam" id="familj"><div class="wrap">
+<div class="hd"><div><span class="small rv">Familj &amp; företag</span><h2 class="rv d1">Inte bara <em class="s">bröllop</em></h2></div><p class="rv d2">Samma känsla för ljus och människor – för familjer som vill minnas och företag som vill synas.</p></div>
+<div class="famw">
+<article class="rv"><div class="ims"><img src="../../media/img/familj-14.jpg" alt="Familj i park" loading="lazy"><div class="c"><img src="../../media/img/familj-02.jpg" alt="Barn som leker" loading="lazy"><img src="../../media/img/portratt-13.jpg" alt="Porträtt" loading="lazy"></div></div>
+<div class="t"><h3>Familj</h3><p>En timme i ert hem eller på någon av Södermalms gröna platser. Jag leker med barnen, ni slappnar av.</p><ul><li>1 timme</li><li>30 bilder</li><li>från 3 900 kr</li></ul><a class="pill bo" href="#kontakt">Boka familjefoto</a></div></article>
+<article class="rv d1"><div class="ims"><img src="../../media/img/foretag-13.jpg" alt="Team på kontor" loading="lazy"><div class="c"><img src="../../media/img/foretag-38.jpg" alt="Medarbetare" loading="lazy"><img src="../../media/img/portratt-16.jpg" alt="Företagsporträtt" loading="lazy"></div></div>
+<div class="t"><h3>Företag</h3><p>Porträtt för webb och press, teambilder och miljöbilder. Jag kommer till er med mobil studio.</p><ul><li>Halvdag</li><li>Obegränsat antal porträtt</li><li>från 7 500 kr</li></ul><a class="pill bo" href="#kontakt">Begär offert</a></div></article>
+</div></div></section>
+
+<section class="sec" id="priser"><div class="wrap">
+<div class="hd"><div><span class="small rv">Priser</span><h2 class="rv d1">Bröllops<em class="s">paket</em></h2></div><p class="rv d2">Alla priser inkl. moms. Resor inom Storstockholm ingår.</p></div>
+<div class="prices">
+<article class="rv"><h3>Stadshuset</h3><p class="pr">7 900 <small>kr</small></p><p class="note">Perfekt för små vigslar</p><ul><li>1,5 timme</li><li>Vigsel + porträtt i Gamla stan</li><li>ca 120 bilder</li></ul><a class="pill bo" href="#kontakt">Välj</a></article>
+<article class="rv d1 feat"><h3>Halvdag</h3><p class="pr">17 900 <small>kr</small></p><p class="note">Vanligast</p><ul><li>5 timmar</li><li>Vigsel, mingel, porträtt, middag</li><li>ca 350 bilder</li><li>Smygtitt inom 48 h</li></ul><a class="pill" href="#kontakt">Välj</a></article>
+<article class="rv d2"><h3>Heldag</h3><p class="pr">27 500 <small>kr</small></p><p class="note">Hela berättelsen</p><ul><li>Upp till 10 timmar</li><li>Förberedelser till fest</li><li>ca 650 bilder</li><li>Fotobok 30×30</li></ul><a class="pill bo" href="#kontakt">Välj</a></article>
+</div></div></section>
+
+<section class="sec" id="om" style="padding-top:0"><div class="wrap about">
+<img class="rv" src="../../media/img/portratt-13.jpg" alt="Moa Ekdahl" loading="lazy" style="object-position:center 30%">
+<div><span class="small rv">Om mig</span><h2 class="rv d1">Hej, jag är <em class="s">Moa</em>.</h2>
+<p class="rv d1">Jag har bott på Söder i femton år och fotograferat i tio. Innan dess jobbade jag med film, och jag tror det är därför jag tänker i scener snarare än i poser.</p>
+<p class="rv d2">Mina bilder är ljusa, rena och ärliga. Jag gillar när det får vara lite stökigt – en knuffande syster, en hund som springer genom bilden. Det är ju så det ser ut på riktigt.</p>
+<a class="pill b rv d3" href="#kontakt" style="margin-top:14px">Säg hej</a></div>
+</div></section>
+
+<section class="sec" style="padding-top:0"><div class="wrap">
+<span class="small rv">Så funkar det</span><h2 class="rv d1" style="margin-bottom:50px">Enkelt från <em class="s">start</em></h2>
+<div class="steps"><div class="rv"><b>01</b><h3>Förfrågan</h3><p>Skicka datum och vad ni är ute efter.</p></div><div class="rv d1"><b>02</b><h3>Samtal</h3><p>Femton minuter i telefon eller en kaffe på Bysis.</p></div><div class="rv d2"><b>03</b><h3>Fotografering</h3><p>Avslappnat, med lätt guidning när det behövs.</p></div><div class="rv d3"><b>04</b><h3>Bilderna</h3><p>Ett snyggt onlinegalleri, redo att dela.</p></div></div>
+</div></section>
+
+<section class="sec tst"><div class="wrap">
+<span class="small rv">Omdömen</span><h2 class="rv d1" style="margin-bottom:50px">Vad folk <em class="s">säger</em></h2>
+<div class="tgr">
+<figure class="rv"><blockquote>”Moa fick oss att känna oss som oss själva. Inte en enda stel bild.”</blockquote><figcaption>Ida &amp; Mattias · Stadshuset</figcaption></figure>
+<figure class="rv d1"><blockquote>”Våra barn älskade henne. Vi har äntligen bilder där alla fyra ler samtidigt.”</blockquote><figcaption>Familjen Haddad · Tantolunden</figcaption></figure>
+<figure class="rv d2"><blockquote>”Nya porträtt till hela byrån på en förmiddag. Snabbt, roligt och riktigt snyggt.”</blockquote><figcaption>Linn, arkitektbyrå på Hornsgatan</figcaption></figure>
+</div></div></section>
+
+<section class="sec" id="fragor"><div class="wrap">
+<span class="small rv">FAQ</span><h2 class="rv d1">Vanliga <em class="s">frågor</em></h2>
+<div class="faqw"><details class="rv"><summary><span>När behöver vi boka?</span><i></i></summary><p>Sommarlördagar bokas 9–14 månader i förväg. Stadshusvigslar och familjefoto går ofta att lösa på några veckor.</p></details><details class="rv"><summary><span>Fotograferar du utanför Stockholm?</span><i></i></summary><p>Ja! Skärgården, Uppsala, Sörmland och längre bort. Resor utanför Storstockholm debiteras separat.</p></details><details class="rv"><summary><span>När får vi bilderna?</span><i></i></summary><p>En smygtitt inom 48 timmar och hela galleriet inom 3–5 veckor beroende på säsong.</p></details><details class="rv"><summary><span>Kan vi kombinera bröllop och familj?</span><i></i></summary><p>Absolut. Många par bokar en familjefotografering året efter – då får ni 15 % rabatt.</p></details><details class="rv"><summary><span>Hur betalar vi?</span><i></i></summary><p>Bokningsavgift på 25 % vid bokning, resten 14 dagar före fotograferingen. Företag faktureras efteråt.</p></details></div>
+</div></section>
+
+<section class="sec" id="kontakt" style="padding-top:0"><div class="wrap ctw">
+<div class="info"><span class="small rv">Kontakt</span><h2 class="rv d1">Hör av <em class="s">dig</em></h2><p class="rv d2">Berätta lite om vad du har i tankarna så återkommer jag inom en arbetsdag.</p><p class="rv d2">moa@moaekdahl.se<br>070-219 64 02<br>Studio: Krukmakargatan 31, Södermalm</p></div>
+<div class="rv d1"><form class="book">
+<div class="fields">
+<div class="two"><label>Namn<input required name="namn" autocomplete="name"></label><label>E-post<input required type="email" name="epost" autocomplete="email"></label></div>
+<div class="two"><label>Datum<input type="date" name="datum"></label><label>Plats<input name="plats" placeholder="t.ex. Stadshuset"></label></div>
+<label>Gäller<select name="paket"><option>Bröllop</option><option>Familj</option><option>Företag</option><option>Annat</option></select></label>
+<label>Berätta om er dag<textarea name="msg" rows="4" placeholder="Hur ni träffades, vad som är viktigt för er, vad ni drömmer om ..."></textarea></label>
+<button type="submit">Skicka meddelande</button>
+</div>
+<p class="ok">Tack! Ert meddelande har kommit fram. Jag hör av mig inom två vardagar, oftast snabbare.</p>
+</form></div>
+</div></section>
+</main>
+<footer><div class="wrap row"><a class="logo" href="#">moa ekdahl<i>foto</i></a><span>Instagram · moa@moaekdahl.se</span><span>© <span class="yr"></span> · <a class="back" href="../../index.html">← Alla sajter</a></span></div></footer>
+<div class="lb" role="dialog" aria-label="Bildvisning"><button class="lb-close">Stäng</button><button class="lb-prev">Föreg.</button><img src="" alt=""><button class="lb-next">Nästa</button></div>
+
+<script>
+(function(){
+var nav=document.querySelector('.nav');
+function onS(){nav.classList.toggle('solid',scrollY>40)}onS();addEventListener('scroll',onS,{passive:true});
+var mb=document.querySelector('.menu-btn');mb.addEventListener('click',function(){document.body.classList.toggle('menu-open');mb.setAttribute('aria-expanded',document.body.classList.contains('menu-open'))});
+document.querySelectorAll('.mobile-menu a').forEach(function(a){a.addEventListener('click',function(){document.body.classList.remove('menu-open')})});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+var lb=document.querySelector('.lb'),lbi=lb.querySelector('img'),items=[],idx=0;
+function refresh(){items=[].slice.call(document.querySelectorAll('[data-lb]')).filter(function(a){return a.offsetParent!==null})}
+function show(i){idx=(i+items.length)%items.length;lbi.src=items[idx].getAttribute('href');lbi.alt=items[idx].querySelector('img').alt}
+document.addEventListener('click',function(e){var a=e.target.closest('[data-lb]');if(!a)return;e.preventDefault();refresh();show(items.indexOf(a));lb.classList.add('open');document.body.style.overflow='hidden'});
+function close(){lb.classList.remove('open');document.body.style.overflow=''}
+lb.querySelector('.lb-close').onclick=close;lb.querySelector('.lb-prev').onclick=function(){show(idx-1)};lb.querySelector('.lb-next').onclick=function(){show(idx+1)};
+lb.addEventListener('click',function(e){if(e.target===lb)close()});
+addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')show(idx-1);if(e.key==='ArrowRight')show(idx+1)});
+var f=document.querySelector('form.book');if(f)f.addEventListener('submit',function(e){e.preventDefault();f.classList.add('sent')});
+var y=document.querySelector('.yr');if(y)y.textContent=new Date().getFullYear();
+})();
+</script>
+
+</body>
+</html>
