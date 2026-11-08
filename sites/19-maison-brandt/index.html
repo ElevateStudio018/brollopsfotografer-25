@@ -6,6 +6,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
 :root{--k:#0a0909;--k2:#151313;--wine:#7d0f26;--wine2:#a3143a;--w:#f7f2ef;--m:#a99f9a}
+html{overflow-x:clip}
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--k);color:var(--w);font-family:Manrope,system-ui,sans-serif;font-size:17px;line-height:1.55;overflow-x:hidden}
 img,video{display:block;max-width:100%}
@@ -85,7 +86,7 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;paddin
  .bgrid{grid-template-columns:1fr 1fr;gap:8px;margin-top:30px}
  .bgrid img:nth-child(odd){margin-top:0}.bgrid img:nth-child(even){margin-top:30px}
  .nums{grid-template-columns:1fr}.nums div{border-right:0;border-bottom:1px solid rgba(255,255,255,.2);padding:36px 16px}
- .feat{grid-template-columns:1fr}.feat>img{height:110vw}.feat .t{padding:50px 16px}
+ .feat{grid-template-columns:minmax(0,1fr)}.feat h3{font-size:38px}.feat>img{height:110vw}.feat .t{padding:50px 16px}
  .wall{grid-template-columns:1fr 1fr}
  .wh{padding:80px 16px 24px}
  .me{grid-template-columns:1fr}.me>img{min-height:0;height:115vw}.me .t{padding:60px 16px}

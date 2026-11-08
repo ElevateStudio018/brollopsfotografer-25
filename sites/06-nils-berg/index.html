@@ -34,7 +34,7 @@ body{background:var(--paper);color:var(--ink);font-family:"Inter Tight",system-u
 .cats img{width:100%;height:100%;object-fit:cover;transition:transform .7s}.cats a:hover img{transform:scale(1.06)}
 .cats b{position:absolute;left:16px;top:14px;font-size:clamp(24px,2.6vw,42px);font-weight:900;letter-spacing:-.04em;text-shadow:0 2px 16px rgba(0,0,0,.5)}
 .cats i{position:absolute;left:16px;bottom:14px;font-style:normal;font-weight:600;font-size:14px;text-shadow:0 1px 10px rgba(0,0,0,.6)}
-.wall{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:16vw;gap:4px;padding:4px 0}
+.wall{display:grid;grid-auto-flow:dense;grid-template-columns:repeat(6,1fr);grid-auto-rows:16vw;gap:4px;padding:4px 0}
 .wall img{width:100%;height:100%;object-fit:cover}
 .wall .w2{grid-column:span 2}.wall .h2{grid-row:span 2}
 .me{display:grid;grid-template-columns:1fr 1fr;background:var(--ink);color:#fff}
@@ -92,5 +92,5 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;paddin
 <section class="faqw"><h2>Snabba svar</h2><div class="faq"><details><summary>Hur långt i förväg bokar man?</summary><p>Lördagar maj–september går oftast 12–14 månader innan. Vardagar och vinter finns ofta kvar.</p></details><details><summary>När får vi bilderna?</summary><p>En smygtitt inom 48 timmar, hela galleriet inom fyra veckor.</p></details><details><summary>Fotar du utanför Stockholm?</summary><p>Ja, resor inom Mälardalen ingår. Längre bort tar jag tåget och skickar kvittot.</p></details></div></section>
 <section class="contact" id="kontakt"><img src="../../media/img/brollop-57.jpg" alt="Brudpar i Stockholm" loading="lazy"><div class="box"><h2>Är ert datum ledigt?</h2><p>Skicka datum och plats. Jag svarar samma dag, oftast inom en timme.</p><a class="m" href="mailto:hej@nilsberg.se">hej@nilsberg.se</a></div></section>
 <footer><span>Nils Berg Foto · Stockholm</span><a class="all" href="../../index.html">&larr; Alla sajter</a></footer>
-<script>(function(){const h=document.querySelector('.hero h1');function fit(){h.style.fontSize='';const cs=parseFloat(getComputedStyle(h).fontSize),pad=parseFloat(getComputedStyle(h).paddingLeft)*2,w=h.scrollWidth-pad,avail=h.clientWidth-pad;h.style.fontSize=(cs*avail/w)+'px'}document.fonts.ready.then(fit);addEventListener('resize',fit)})();document.querySelectorAll('.arrows button').forEach(b=>b.onclick=()=>{const s=document.getElementById('strip');s.scrollBy({left:b.dataset.d*s.clientWidth*.6,behavior:'smooth'})})</script>
+<script>(function(){const h=document.querySelector('.hero h1');function fit(){h.style.fontSize='';const cs=parseFloat(getComputedStyle(h).fontSize),pad=parseFloat(getComputedStyle(h).paddingLeft)*2,w=h.scrollWidth-pad,avail=h.clientWidth-pad;h.style.fontSize=(cs*avail/w*.97)+'px'}document.fonts.ready.then(fit);addEventListener('resize',fit)})();document.querySelectorAll('.arrows button').forEach(b=>b.onclick=()=>{const s=document.getElementById('strip');s.scrollBy({left:b.dataset.d*s.clientWidth*.6,behavior:'smooth'})})</script>
 </body></html>
