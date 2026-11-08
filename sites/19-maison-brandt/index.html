@@ -1,208 +1,191 @@
 <!doctype html>
 <html lang="sv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Maison Brandt – Bröllopsfotograf i Stockholm</title>
-<meta name="description" content="Maison Brandt – bröllopsfotograf i Stockholm. Stockholm & Djurgården.">
+<title>Maison Brandt – Bröllopsfotograf på Djurgården</title>
+<meta name="description" content="Maison Brandt – Vera Brandt, bröllopsfotograf på Djurgården, Stockholm.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Cormorant:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
-<style>:root{--bg:#0e0d0c;--bg2:#171513;--card:#1c1a17;--ink:#f2ede3;--muted:#a59f93;--accent:#d9cdb4;--on-accent:#0e0d0c;--line:rgba(242,237,227,.14);--navbg:#0e0d0c;--navink:#f2ede3;--serif:'Cormorant',serif;--sans:'Tenor Sans',sans-serif;--rb:0;--ri:0}
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--k:#0a0909;--k2:#151313;--wine:#7d0f26;--wine2:#a3143a;--w:#f7f2ef;--m:#a99f9a}
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:var(--sans);background:var(--bg);color:var(--ink);line-height:1.7;font-weight:400;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-img{display:block;max-width:100%}a{color:inherit;text-decoration:none}
-.wrap{max-width:1240px;margin:0 auto;padding:0 28px}
-h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.08}
-h2{font-size:clamp(34px,4.6vw,60px);letter-spacing:-.01em}
-h2 em,h1 em{font-style:italic;color:var(--accent)}
-.lbl{font-family:var(--sans);font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:18px}
-section{padding:120px 0}
-@media(max-width:760px){section{padding:76px 0}.wrap{padding:0 20px}}
-.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 30px;border-radius:var(--rb);font:500 14px/1 var(--sans);letter-spacing:.04em;border:1px solid transparent;cursor:pointer;transition:.3s}
-.btn-solid{background:var(--accent);color:var(--on-accent)}
-.btn-solid:hover{filter:brightness(1.1)}
-.btn-ghost{border-color:currentColor}
-.btn-ghost:hover{background:rgba(255,255,255,.12)}
-/* nav */
-.nav{position:fixed;inset:0 0 auto;z-index:50;transition:background .4s,padding .4s,box-shadow .4s;padding:26px 0;color:#fff}
-.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;max-width:1400px}
-.nav.solid{background:var(--navbg);color:var(--navink);padding:14px 0;box-shadow:0 1px 0 rgba(0,0,0,.06)}
-.links{display:flex;gap:34px;align-items:center;font-size:13.5px;letter-spacing:.05em}
-.links a{opacity:.92}.links a:hover{opacity:1}
-.links .btn{padding:11px 22px}
-.burger{display:none;background:none;border:0;color:inherit;width:34px;height:24px;position:relative;cursor:pointer}
-.burger span{position:absolute;left:0;right:0;height:1.5px;background:currentColor;transition:.3s}
-.burger span:nth-child(1){top:5px}.burger span:nth-child(2){top:16px}
-.menu-open .burger span:nth-child(1){top:11px;transform:rotate(45deg)}
-.menu-open .burger span:nth-child(2){top:11px;transform:rotate(-45deg)}
-@media(max-width:900px){.burger{display:block;z-index:60}
-.links{position:fixed;inset:0;background:var(--navbg);color:var(--navink);flex-direction:column;justify-content:center;gap:26px;font-size:20px;opacity:0;pointer-events:none;transition:opacity .35s}
-.menu-open .links{opacity:1;pointer-events:auto}.menu-open .nav{color:var(--navink)}}
-/* hero */
-.hero{padding:0;position:relative;height:100vh;height:100svh;min-height:560px;overflow:hidden;color:#fff;display:flex}
-.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.hero .ov{position:absolute;inset:0}
-.hero .in{position:relative;z-index:2;width:100%}
-.hero .sub{font-size:clamp(15px,1.3vw,17px);max-width:520px;opacity:.9;margin:22px 0 34px}
-.ctas{display:flex;gap:14px;flex-wrap:wrap}
-/* about */
-.about .grid{display:grid;grid-template-columns:5fr 6fr;gap:90px;align-items:center}
-.about img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--ri)}
-.about p{color:var(--muted);margin-top:20px;max-width:540px}
-.sig{font-family:var(--serif);font-style:italic;font-size:30px;color:var(--ink);margin-top:30px}
-.facts{display:flex;gap:44px;margin-top:38px;padding-top:30px;border-top:1px solid var(--line)}
-.facts b{display:block;font-family:var(--serif);font-weight:400;font-size:38px;line-height:1}
-.facts span{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
-@media(max-width:860px){.about .grid{grid-template-columns:1fr;gap:44px}.facts{gap:26px;flex-wrap:wrap}}
-/* packages */
-.pk{background:var(--bg2)}
-.head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:60px;flex-wrap:wrap}
-.head p{max-width:420px;color:var(--muted)}
-.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
-.pcard{background:var(--card);padding:44px 38px;border-radius:var(--ri);display:flex;flex-direction:column;border:1px solid var(--line)}
-.pcard.feat{background:var(--ink);color:var(--bg);border-color:var(--ink)}
-.pcard.feat li,.pcard.feat .ptag{color:inherit;opacity:.8}
-.pcard h3{font-size:30px}
-.ptag{font-size:13px;color:var(--muted);margin:6px 0 26px}
-.price{font-family:var(--serif);font-size:42px;line-height:1;margin-bottom:26px}
-.price small{font-family:var(--sans);font-size:13px;opacity:.7}
-.pcard ul{list-style:none;margin-bottom:34px;flex:1}
-.pcard li{padding:11px 0;border-top:1px solid var(--line);font-size:14.5px;color:var(--muted)}
-.pcard.feat li{border-color:rgba(255,255,255,.14)}
-.pcard .btn{align-self:flex-start}
-.pcard.feat .btn{background:var(--bg);color:var(--ink)}
-.pcard:not(.feat) .btn{border-color:var(--ink)}
-.also{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:26px;margin-top:70px;align-items:center}
-.also img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--ri)}
-.also h3{font-size:32px;margin-bottom:12px}.also p{color:var(--muted);font-size:15px}
-@media(max-width:900px){.pgrid,.also{grid-template-columns:1fr}}
-/* process */
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:40px;margin-top:64px}
-.step{border-top:1px solid var(--ink);padding-top:26px}
-.step i{font-family:var(--serif);font-style:italic;font-size:22px;color:var(--accent)}
-.step h3{font-size:25px;margin:10px 0 10px}.step p{font-size:14.5px;color:var(--muted)}
-@media(max-width:900px){.steps{grid-template-columns:1fr 1fr}}@media(max-width:520px){.steps{grid-template-columns:1fr}}
-/* quotes */
-.quotes{background:var(--bg2)}
-.qgrid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
-.qgrid img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:var(--ri)}
-.q{display:none}.q.on{display:block;animation:fd .7s}
-.q blockquote{font-family:var(--serif);font-size:clamp(24px,2.5vw,34px);line-height:1.35}
-.q cite{display:block;margin-top:26px;font-style:normal;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
-.dots{display:flex;gap:10px;margin-top:40px}
-.dots button{width:34px;height:2px;border:0;background:var(--line);cursor:pointer;padding:0}
-.dots button.on{background:var(--ink)}
-@keyframes fd{from{opacity:0;transform:translateY(8px)}}
-@media(max-width:860px){.qgrid{grid-template-columns:1fr;gap:40px}}
-/* faq */
-.fgrid{display:grid;grid-template-columns:1fr 1.5fr;gap:80px}
-details{border-bottom:1px solid var(--line)}
-summary{list-style:none;cursor:pointer;padding:26px 40px 26px 0;font-family:var(--serif);font-size:22px;position:relative}
-summary::-webkit-details-marker{display:none}
-summary::after{content:"+";position:absolute;right:4px;top:22px;font-family:var(--sans);font-weight:300;font-size:26px;transition:.3s}
-details[open] summary::after{transform:rotate(45deg)}
-details p{padding:0 40px 26px 0;color:var(--muted);font-size:15px}
-@media(max-width:860px){.fgrid{grid-template-columns:1fr;gap:30px}}
-/* contact */
-.contact{background:var(--ink);color:var(--bg)}
-.contact .lbl{color:inherit;opacity:.6}
-.cgrid{display:grid;grid-template-columns:1fr 1.2fr;gap:90px}
-.contact p{opacity:.75;margin-top:18px;max-width:400px}
-.cinfo{margin-top:40px;font-size:15px;line-height:2}
-form{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-form label{display:flex;flex-direction:column;gap:8px;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;opacity:.85}
-form .full{grid-column:1/-1}
-input,select,textarea{font:inherit;font-size:15px;letter-spacing:0;text-transform:none;background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.3);color:inherit;padding:10px 0;outline:none;border-radius:0}
-select option{color:#222}
-input:focus,textarea:focus,select:focus{border-color:var(--accent2,var(--accent))}
-textarea{min-height:110px;resize:vertical}
-form .btn{background:var(--bg);color:var(--ink);justify-self:start}
-.ok{display:none;grid-column:1/-1;font-family:var(--serif);font-size:22px}
-@media(max-width:860px){.cgrid{grid-template-columns:1fr;gap:50px}form{grid-template-columns:1fr}}
-footer{background:var(--ink);color:var(--bg);padding:0 0 40px;font-size:13px}
-footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.14);padding-top:30px;opacity:.7}
-footer a:hover{text-decoration:underline}
-/* lightbox */
-.lb{position:fixed;inset:0;background:rgba(10,10,10,.94);z-index:100;display:none;align-items:center;justify-content:center}
-.lb.on{display:flex}
-.lb img{max-width:90vw;max-height:86vh;object-fit:contain}
-.lb button{position:absolute;background:none;border:0;color:#fff;font-size:30px;cursor:pointer;padding:18px;font-family:var(--sans);font-weight:300}
-.lb .x{top:10px;right:16px}.lb .pv{left:10px;top:50%;transform:translateY(-50%)}.lb .nx{right:10px;top:50%;transform:translateY(-50%)}
-.minis{display:flex;gap:12px;margin-top:26px;justify-content:flex-end}.minis img{width:120px;aspect-ratio:3/2;object-fit:cover;border-radius:var(--ri);cursor:zoom-in}
-.rv{opacity:0;transform:translateY(26px);transition:opacity 1s ease,transform 1s ease}
-.rv.in{opacity:1;transform:none}
+body{background:var(--k);color:var(--w);font-family:Manrope,system-ui,sans-serif;font-size:17px;line-height:1.55;overflow-x:hidden}
+img,video{display:block;max-width:100%}
+a{color:inherit}
+.sy{font-family:Syne,sans-serif;font-weight:800;letter-spacing:-.035em;line-height:.9;text-transform:uppercase}
+header{position:fixed;z-index:30;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:20px 30px}
+.logo{font-family:Syne;font-weight:800;font-size:20px;text-decoration:none;letter-spacing:-.02em;text-shadow:0 1px 12px rgba(0,0,0,.5)}
+header a.b{background:var(--wine);padding:11px 20px;text-decoration:none;font-weight:700;font-size:14px}
+.hero{position:relative;height:100vh;min-height:620px;overflow:hidden}
+.hero video{width:100%;height:100%;object-fit:cover}
+.hero h1{position:absolute;left:30px;right:30px;bottom:24px;font-size:clamp(70px,15.5vw,270px);text-shadow:0 6px 40px rgba(0,0,0,.4)}
+.hero .side{position:absolute;right:30px;top:50%;transform:translateY(-50%);background:var(--wine);padding:22px 24px;max-width:280px;font-weight:500}
+.hero .side b{font-family:Syne;font-size:22px;display:block;line-height:1.05;margin-bottom:8px}
+.burst{position:relative;padding:120px 30px 140px;max-width:1500px;margin:0 auto}
+.burst h2{font-size:clamp(50px,8vw,140px);text-align:center;position:relative;z-index:2}
+.burst h2 span{color:var(--wine2)}
+.bgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:-40px}
+.bgrid img{width:100%;aspect-ratio:3/4;object-fit:cover;transform:scale(.6) rotate(var(--r));opacity:0;transition:transform .9s cubic-bezier(.2,1.4,.4,1),opacity .5s}
+.bgrid img:nth-child(odd){margin-top:60px}
+.bgrid.in img{transform:none;opacity:1}
+.bgrid.in img:nth-child(2){transition-delay:.08s}.bgrid.in img:nth-child(3){transition-delay:.16s}.bgrid.in img:nth-child(4){transition-delay:.24s}.bgrid.in img:nth-child(5){transition-delay:.32s}.bgrid.in img:nth-child(6){transition-delay:.4s}.bgrid.in img:nth-child(7){transition-delay:.48s}.bgrid.in img:nth-child(8){transition-delay:.56s}
+.nums{display:grid;grid-template-columns:repeat(3,1fr);background:var(--wine)}
+.nums div{padding:60px 30px;border-right:1px solid rgba(255,255,255,.2)}
+.nums div:last-child{border:0}
+.nums b{font-family:Syne;font-weight:800;font-size:clamp(80px,11vw,190px);line-height:.85;letter-spacing:-.05em;display:block}
+.nums span{font-weight:700;font-size:18px}
+.feat{display:grid;grid-template-columns:3fr 2fr;min-height:100vh}
+.feat>img{width:100%;height:100%;object-fit:cover}
+.feat .t{background:var(--w);color:var(--k);padding:70px 50px;display:flex;flex-direction:column;justify-content:space-between;gap:30px}
+.feat h3{font-size:clamp(44px,5vw,88px)}
+.feat .t .pair{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.feat .t .pair img{aspect-ratio:3/4;object-fit:cover;width:100%}
+.feat .t a{font-weight:700;color:var(--wine)}
+.wall{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-flow:dense;gap:4px;padding:4px}
+.wall img{width:100%;height:100%;object-fit:cover;aspect-ratio:1}
+.wall img.big{grid-column:span 2;grid-row:span 2}
+.wall img.tall{grid-row:span 2;aspect-ratio:auto}
+.wh{padding:110px 30px 30px;display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap}
+.wh h2{font-size:clamp(50px,8vw,140px)}
+.me{display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:stretch}
+.me img{width:100%;height:100%;object-fit:cover;min-height:700px}
+.me .t{padding:100px 6vw;display:flex;flex-direction:column;justify-content:center;gap:20px;background:var(--k2)}
+.me h2{font-size:clamp(50px,6vw,104px)}
+.me p{font-size:19px;color:#ddd3cf;max-width:540px}
+.me .sm{display:flex;gap:8px}.me .sm img{min-height:0;width:50%;aspect-ratio:4/3}
+.pk{padding:120px 30px;max-width:1400px;margin:0 auto}
+.pk h2{font-size:clamp(56px,9vw,150px);margin-bottom:40px}
+.pg{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #3a3333}
+.p{padding:36px 30px 40px 0;display:flex;flex-direction:column;gap:14px;border-right:1px solid #3a3333}
+.p+.p{padding-left:30px}.p:last-child{border:0}
+.p h3{font-family:Syne;font-weight:800;font-size:28px;text-transform:uppercase}
+.p .pr{font-family:Syne;font-weight:800;font-size:56px;letter-spacing:-.04em;line-height:1;color:var(--wine2)}
+.p p{color:var(--m)}
+.q{background:var(--w);color:var(--k);padding:110px 30px}
+.q p{max-width:1200px;margin:0 auto;font-family:Syne;font-weight:700;font-size:clamp(30px,4vw,62px);line-height:1.02;letter-spacing:-.03em}
+.q cite{display:block;max-width:1200px;margin:26px auto 0;font-style:normal;font-weight:700;color:var(--wine)}
+.press{max-width:1200px;margin:60px auto 0;display:flex;flex-wrap:wrap;gap:12px 46px;font-family:Syne;font-weight:800;font-size:24px;text-transform:uppercase;color:#7a706c}
+.faq{padding:110px 30px;max-width:1000px;margin:0 auto}
+.faq h2{font-size:clamp(50px,6vw,100px);margin-bottom:30px}
+details{border-top:1px solid #3a3333;padding:22px 0}
+details:last-child{border-bottom:1px solid #3a3333}
+summary{cursor:pointer;font-weight:700;font-size:21px}
+details p{color:var(--m);margin-top:8px}
+.ct{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:flex-end}
+.ct>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ct .box{position:relative;background:var(--wine);margin:30px;padding:46px;max-width:560px}
+.ct h2{font-size:clamp(48px,5vw,84px);margin-bottom:14px}
+form{display:grid;gap:10px;margin-top:20px}
+input,textarea{font:inherit;padding:14px;border:0;background:var(--w);color:var(--k)}
+button{font-family:Syne;font-weight:800;text-transform:uppercase;font-size:18px;background:var(--k);color:var(--w);border:0;padding:18px;cursor:pointer}
+footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:28px 30px;color:var(--m)}
+@media(max-width:800px){
+ header{padding:14px 16px}
+ .hero h1{left:16px;right:16px;font-size:19vw}
+ .hero .side{top:auto;right:16px;left:16px;bottom:auto;top:90px;transform:none;max-width:none;padding:16px}
+ .burst{padding:80px 16px 90px}
+ .bgrid{grid-template-columns:1fr 1fr;gap:8px;margin-top:30px}
+ .bgrid img:nth-child(odd){margin-top:0}.bgrid img:nth-child(even){margin-top:30px}
+ .nums{grid-template-columns:1fr}.nums div{border-right:0;border-bottom:1px solid rgba(255,255,255,.2);padding:36px 16px}
+ .feat{grid-template-columns:1fr}.feat>img{height:110vw}.feat .t{padding:50px 16px}
+ .wall{grid-template-columns:1fr 1fr}
+ .wh{padding:80px 16px 24px}
+ .me{grid-template-columns:1fr}.me>img{min-height:0;height:115vw}.me .t{padding:60px 16px}
+ .pk{padding:80px 16px}.pg{grid-template-columns:1fr}.p,.p+.p{padding:28px 0;border-right:0;border-bottom:1px solid #3a3333}
+ .q{padding:80px 16px}
+ .faq{padding:80px 16px}
+ .ct .box{margin:16px;padding:28px 20px}
+ footer{padding:22px 16px}
+}
+</style></head><body>
+<header><a class="logo" href="#">MAISON BRANDT</a><a class="b" href="#kontakt">Boka samtal</a></header>
 
-body{font-weight:400}h2{font-weight:300}.lbl{font-size:10.5px;letter-spacing:.34em}
-.mb{font-family:var(--sans);letter-spacing:.42em;font-size:13px}
-.hero{align-items:center;justify-content:center;text-align:center}.hero .ov{background:rgba(8,7,6,.55)}
-.hero .in{display:flex;flex-direction:column;align-items:center;padding:0 24px}
-.hlogo{font-family:var(--sans);font-size:clamp(22px,2.6vw,34px);letter-spacing:.5em;margin-right:-.5em}.hlogo span{margin:0 .3em;opacity:.5}
-.hero h1{font-family:var(--serif);font-weight:300;font-size:clamp(20px,1.9vw,26px);margin:24px 0 46px;letter-spacing:.02em}.hero h1 em{color:#fff;opacity:.85}
-.play{display:flex;align-items:center;gap:16px;background:none;border:0;color:#fff;font:13px var(--sans);letter-spacing:.3em;text-transform:uppercase;cursor:pointer}
-.play span{width:74px;height:74px;border:1px solid rgba(255,255,255,.6);border-radius:50%;display:grid;place-items:center;font-size:14px;letter-spacing:0;padding-left:4px;transition:.4s}
-.play:hover span{background:#fff;color:#000}
-.hfoot{position:absolute;bottom:30px;left:0;right:0;z-index:2;display:flex;justify-content:space-between;padding:0 32px;font-size:11px;letter-spacing:.3em;text-transform:uppercase;opacity:.8}
-.vlb{position:fixed;inset:0;z-index:110;background:rgba(0,0,0,.95);display:none;align-items:center;justify-content:center}.vlb.on{display:flex}
-.vlb video{width:min(1100px,92vw);max-height:84vh}.vlb .x{position:absolute;top:14px;right:22px;background:none;border:0;color:#fff;font-size:34px;cursor:pointer}
-.nav.solid{box-shadow:0 1px 0 rgba(255,255,255,.08)}
-.pcard.feat{background:var(--accent);color:var(--on-accent)}.pcard.feat .btn{background:#0e0d0c;color:#f2ede3}.pcard:not(.feat) .btn{border-color:var(--ink)}
-.contact{background:#f2ede3;color:#0e0d0c}footer{background:#f2ede3;color:#0e0d0c}footer .wrap{border-color:rgba(0,0,0,.12)}
-.contact input,.contact select,.contact textarea{border-color:rgba(0,0,0,.25)}.contact form .btn{background:#0e0d0c;color:#f2ede3}
-.step{border-color:var(--line)}
-.slider{position:relative;max-width:1300px;margin:0 auto;padding:0 28px}
-.stage{position:relative;aspect-ratio:16/9;overflow:hidden;background:#000}
-.stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1s;cursor:zoom-in}.stage img.on{opacity:1;z-index:1}
-.sbar{display:flex;justify-content:space-between;align-items:center;margin-top:26px;gap:20px}
-.cnt{font-family:var(--serif);font-size:30px;font-weight:300}.cnt small{font-size:16px;opacity:.5}
-.sbtns button{background:none;border:1px solid var(--line);color:var(--ink);width:56px;height:56px;font-size:18px;cursor:pointer;margin-left:8px;transition:.3s}.sbtns button:hover{background:var(--ink);color:var(--bg)}
-.prog{flex:1;height:1px;background:var(--line);position:relative;max-width:500px}.prog i{position:absolute;left:0;top:0;bottom:0;background:var(--ink);transition:width .6s}
-@media(max-width:760px){.stage{aspect-ratio:4/5}.hfoot{font-size:9.5px;padding:0 20px;letter-spacing:.2em}.prog{display:none}}
-</style></head>
-<body class="s19">
-<header class="nav"><div class="wrap"><a href="#" class="logo"><span class="mb">MAISON BRANDT</span></a>
-<button class="burger" aria-label="Meny"><span></span><span></span></button>
-<nav class="links"><a href="#om">Om mig</a><a href="#paket">Paket</a><a href="#galleri">Galleri</a><a href="#faq">Frågor</a><a href="#kontakt" class="btn btn-ghost">Boka</a></nav></div></header>
-<section class="hero"><video autoplay muted loop playsinline poster="../../media/img/brollop-43.jpg"><source src="../../media/hero.mp4" type="video/mp4"></video><div class="ov"></div><div class="in"><div class="hlogo">MAISON<span>—</span>BRANDT</div><h1>Bröllopsfotografi <em>för de som minns i bilder</em></h1><button class="play" aria-label="Se film"><span>▶</span>Se film</button></div><div class="hfoot"><span>Stockholm · Djurgården</span><a href="#kontakt">Förfrågningar 2027</a></div></section>
-<div class="vlb"><button class="x" aria-label="Stäng">×</button><video controls playsinline preload="none"><source src="../../media/hero.mp4" type="video/mp4"></video></div>
-<section class="about" id="om"><div class="wrap grid"><img class="rv" src="../../media/img/portratt-18.jpg" alt="Viktor Brandt, fotograf" loading="lazy">
-<div class="rv"><span class="lbl">Hej, jag heter Viktor</span><h2>Tidlösa bilder, <em>utan att posera</em></h2><p>Jag har arbetat med mode och porträtt i femton år, och fotograferar sedan 2018 ett fåtal bröllop per säsong – oftast på Djurgården, i Gamla stan och i skärgården.</p><p>Mitt uttryck är stillsamt och filmiskt. Jag regisserar lite, väntar mycket och lämnar utrymme för det som inte går att planera.</p>
-<div class="sig">Viktor Brandt</div><div class="facts"><div><b>15</b><span>år bakom kameran</span></div><div><b>18</b><span>bröllop per år</span></div><div><b>1</b><span>fotograf, alltid närvarande</span></div></div></div></div></section>
-<section class="pk" id="paket"><div class="wrap"><div class="head rv"><div><span class="lbl">Paket &amp; priser</span><h2>Ett fåtal bröllop, <em>fullt fokus</em></h2></div><p>Varje uppdrag skräddarsys. Priserna nedan är en utgångspunkt och inkluderar moms.</p></div>
-<div class="pgrid"><div class="pcard rv"><h3>Cérémonie</h3><div class="ptag">Vigsel och porträtt</div><div class="price">16 000 <small>kr</small></div><ul><li>3 timmar</li><li>Vigsel, mingel, porträtt</li><li>Ca 200 bilder</li><li>Handgjord USB-box</li></ul><a href="#kontakt" class="btn btn-ghost">Fråga om datum</a></div><div class="pcard rv feat"><h3>Maison</h3><div class="ptag">Den kompletta dagen</div><div class="price">42 000 <small>kr</small></div><ul><li>Hela dagen, utan tidsgräns</li><li>Två förmöten och platsbesök</li><li>Ca 700 bilder</li><li>Fine art-album i linne</li><li>Assisterande fotograf</li></ul><a href="#kontakt" class="btn btn-ghost">Fråga om datum</a></div><div class="pcard rv"><h3>Soirée</h3><div class="ptag">Från vigsel till middag</div><div class="price">28 000 <small>kr</small></div><ul><li>Upp till 6 timmar</li><li>Förmöte</li><li>Ca 420 bilder</li><li>Leverans inom fyra veckor</li></ul><a href="#kontakt" class="btn btn-ghost">Fråga om datum</a></div></div>
-<div class="also rv"><div><span class="lbl">Även familj &amp; företag</span><h3>Familj & företag</h3><p>Porträttsessioner för familjer i studion på Östermalm och redaktionella porträtt för ledningsgrupper. På förfrågan.</p></div><img src="../../media/img/familj-18.jpg" alt="Familjefotografering" loading="lazy" data-lb><img src="../../media/img/foretag-18.jpg" alt="Företagsporträtt" loading="lazy" data-lb></div></div></section>
-<section class="gal" id="galleri"><div class="wrap head rv" style="justify-content:center;text-align:center"><div><span class="lbl">Portfolio</span><h2>En bild <em>i taget</em></h2></div></div><div class="slider rv"><div class="stage"><img src="../../media/img/brollop-18.jpg" alt="Bröllopsbild" data-lb class=on><img src="../../media/img/brollop-43.jpg" alt="Bröllopsbild" data-lb><img src="../../media/img/brollop-00.jpg" alt="Bröllopsbild" loading=lazy data-lb><img src="../../media/img/brollop-07.jpg" alt="Bröllopsbild" loading=lazy data-lb><img src="../../media/img/brollop-11.jpg" alt="Bröllopsbild" loading=lazy data-lb><img src="../../media/img/brollop-15.jpg" alt="Bröllopsbild" loading=lazy data-lb><img src="../../media/img/brollop-19.jpg" alt="Bröllopsbild" loading=lazy data-lb><img src="../../media/img/brollop-21.jpg" alt="Bröllopsbild" loading=lazy data-lb><img src="../../media/img/brollop-24.jpg" alt="Bröllopsbild" loading=lazy data-lb><img src="../../media/img/brollop-28.jpg" alt="Bröllopsbild" loading=lazy data-lb><img src="../../media/img/brollop-37.jpg" alt="Bröllopsbild" loading=lazy data-lb><img src="../../media/img/brollop-38.jpg" alt="Bröllopsbild" loading=lazy data-lb><img src="../../media/img/brollop-44.jpg" alt="Bröllopsbild" loading=lazy data-lb><img src="../../media/img/brollop-57.jpg" alt="Bröllopsbild" loading=lazy data-lb><img src="../../media/img/brollop-12.jpg" alt="Bröllopsbild" loading=lazy data-lb><img src="../../media/img/brollop-04.jpg" alt="Bröllopsbild" loading=lazy data-lb><img src="../../media/img/brollop-46.jpg" alt="Bröllopsbild" loading=lazy data-lb></div><div class="sbar"><div class="cnt"><span id="ci">01</span> <small>/ 17</small></div><div class="prog"><i></i></div><div class="sbtns"><button aria-label="Föregående" data-s="-1">←</button><button aria-label="Nästa" data-s="1">→</button></div></div></div></section>
-<section class="proc"><div class="wrap"><div class="head rv"><div><span class="lbl">Så går det till</span><h2>Ett personligt <em>samarbete</em></h2></div><p>Jag tar emot ett begränsat antal förfrågningar per år och lägger tid på varje par.</p></div><div class="steps"><div class="step rv"><i>01</i><h3>Förfrågan</h3><p>Skicka datum, plats och några rader om er.</p></div><div class="step rv"><i>02</i><h3>Möte</h3><p>Vi ses i studion eller på Djurgården för en promenad.</p></div><div class="step rv"><i>03</i><h3>Dagen</h3><p>Diskret närvaro från första till sista minuten.</p></div><div class="step rv"><i>04</i><h3>Leverans</h3><p>Galleri på fyra veckor, album på tolv.</p></div></div></div></section>
-<section class="quotes"><div class="wrap qgrid"><img class="rv" src="../../media/img/brollop-49.jpg" alt="Brudpar" loading="lazy" data-lb><div class="rv"><span class="lbl">Ord från våra par</span><div class="q on"><blockquote>”Bilderna ser ut som stillbilder ur en film. Vi har dem uppförstorade i hallen och gäster stannar alltid till.”</blockquote><cite>Alexandra & Johan · Rosendals trädgård</cite></div><div class="q"><blockquote>”Viktor är lugn och exakt. Han visste var ljuset skulle vara innan vi ens kommit dit.”</blockquote><cite>Clara & David · Skeppsholmen</cite></div><div class="q"><blockquote>”Det kändes aldrig som att vi fotograferades. Ändå finns varje ögonblick där.”</blockquote><cite>Isabelle & Leo · Djurgården</cite></div><div class="dots"><button aria-label="Omdöme 1" class=on></button><button aria-label="Omdöme 2"></button><button aria-label="Omdöme 3"></button></div></div></div></section>
-<section id="faq"><div class="wrap fgrid"><div class="rv"><span class="lbl">Vanliga frågor</span><h2>Vanliga <em>frågor</em></h2><img src="../../media/img/foretag-43.jpg" alt="" loading="lazy" style="margin-top:40px;width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:var(--ri)"></div><div class="rv"><details><summary>Hur långt i förväg bör vi boka?</summary><p>De flesta par bokar 9–14 månader innan, särskilt för lördagar i juni–augusti. Fråga ändå om ni är ute senare – ibland finns det luckor.</p></details><details><summary>Reser du utanför Stockholm?</summary><p>Ja, gärna. Inom 10 mil ingår resan, längre bort tar jag milersättning och ibland en natts boende. Utomlands löser vi upplägget tillsammans.</p></details><details><summary>När får vi bilderna?</summary><p>Ett smakprov på ett tjugotal bilder får ni inom en vecka. Hela galleriet levereras inom sex veckor, i ett privat onlinegalleri som går att dela med gästerna.</p></details><details><summary>Hur många bilder blir det?</summary><p>Det beror på dagen, men räkna med ungefär 60–80 redigerade bilder per timme jag är med. Jag väljer hellre bort än levererar dubbletter.</p></details><details><summary>Hur fungerar betalningen?</summary><p>Ni betalar en bokningsavgift på 30 % när avtalet skrivs, resten senast två veckor före bröllopet. Faktura med 14 dagars betalningstid.</p></details></div></div></section>
-<section class="contact" id="kontakt"><div class="wrap cgrid"><div class="rv"><span class="lbl">Kontakt &amp; bokning</span><h2>Förfrågningar <em>2027</em></h2><p>Jag svarar inom två vardagar. Berätta gärna om platsen och känslan ni vill ha.</p><div class="cinfo">studio@maisonbrandt.se<br>08-660 41 20<br>Djurgårdsvägen 38, Stockholm</div></div>
-<form class="rv"><label>Namn<input required></label><label>E-post<input type="email" required></label><label>Bröllopsdatum<input type="date"></label><label>Plats<input placeholder="T.ex. Villa Källhagen"></label>
-<label class="full">Vad är du intresserad av?<select><option>Bröllop – heldag</option><option>Bröllop – halvdag</option><option>Vigsel / intimt bröllop</option><option>Familj</option><option>Företag</option></select></label>
-<label class="full">Berätta om er dag<textarea></textarea></label><button class="btn" type="submit">Skicka förfrågan</button><div class="ok">Tack! Jag hör av mig inom två vardagar.</div></form></div></section>
-<footer><div class="wrap"><span>© 2026 Maison Brandt · Stockholm & Djurgården</span><span>Instagram · Pinterest</span><a href="../../index.html">← Alla sajter</a></div></footer>
-<div class="lb"><button class="x" aria-label="Stäng">×</button><button class="pv" aria-label="Föregående">‹</button><img alt=""><button class="nx" aria-label="Nästa">›</button></div>
+<section class="hero">
+ <video src="../../media/video/film-bw.mp4" muted autoplay loop playsinline poster="../../media/img/brollop-43.jpg"></video>
+ <div class="side"><b>Djurgården, sedan 2011.</b>Bröllop på slott, sjökrogar och i en och annan växthusträdgård.</div>
+ <h1 class="sy">Maison<br>Brandt</h1>
+</section>
+
+<section class="burst">
+ <h2 class="sy">Svartvitt i filmen.<br><span>Full färg</span> på dagen.</h2>
+ <div class="bgrid" id="bg">
+  <img src="../../media/img/brollop-43.jpg" alt="Brudpar på Djurgården" style="--r:-8deg" loading="lazy">
+  <img src="../../media/img/brollop-18.jpg" alt="Brud" style="--r:6deg" loading="lazy">
+  <img src="../../media/img/brollop-04.jpg" alt="Bröllop" style="--r:-4deg" loading="lazy">
+  <img src="../../media/img/brollop-21.jpg" alt="Kyss" style="--r:9deg" loading="lazy">
+  <img src="../../media/img/brollop-05.jpg" alt="Brudbukett" style="--r:5deg" loading="lazy">
+  <img src="../../media/img/brollop-22.jpg" alt="Brudpar" style="--r:-7deg" loading="lazy">
+  <img src="../../media/img/brollop-07.jpg" alt="Brudgum" style="--r:4deg" loading="lazy">
+  <img src="../../media/img/brollop-33.jpg" alt="Dans" style="--r:-6deg" loading="lazy">
+ </div>
+</section>
+
+<section class="nums">
+ <div><b>420</b><span>bröllop fotograferade</span></div>
+ <div><b>15</b><span>år bakom kameran</span></div>
+ <div><b>230</b><span>femstjärniga recensioner</span></div>
+</section>
+
+<section class="feat">
+ <img src="../../media/img/brollop-44.jpg" alt="Middag i växthus" loading="lazy">
+ <div class="t">
+  <div><p style="font-weight:700;color:var(--wine);margin-bottom:12px">Utvalt bröllop</p><h3 class="sy">Ebba &amp; Noah, växthuset vid Rosendal</h3></div>
+  <p>160 gäster, 40 meter långbord mellan tomatplantorna och ett åskväder som drog förbi precis under förrätten. Ingen gick hem före tre.</p>
+  <div class="pair"><img src="../../media/img/brollop-35.jpg" alt="" loading="lazy"><img src="../../media/img/brollop-37.jpg" alt="" loading="lazy"></div>
+  <a href="#vagg">Se fler bröllop →</a>
+ </div>
+</section>
+
+<div class="wh" id="vagg"><h2 class="sy">Senaste<br>bilderna</h2><p style="color:var(--m);max-width:380px">Sommaren 2026 på och runt Djurgården. Mest färg, lite svartvitt, mycket champagne på fel ställen.</p></div>
+<section class="wall">
+ <img class="big" src="../../media/img/brollop-00.jpg" alt="" loading="lazy"><img src="../../media/img/brollop-01.jpg" alt="" loading="lazy"><img class="tall" src="../../media/img/brollop-08.jpg" alt="" loading="lazy"><img src="../../media/img/brollop-02.jpg" alt="" loading="lazy">
+ <img src="../../media/img/brollop-03.jpg" alt="" loading="lazy"><img class="tall" src="../../media/img/brollop-15.jpg" alt="" loading="lazy"><img src="../../media/img/brollop-06.jpg" alt="" loading="lazy"><img class="big" src="../../media/img/brollop-09.jpg" alt="" loading="lazy">
+ <img src="../../media/img/brollop-10.jpg" alt="" loading="lazy"><img src="../../media/img/brollop-11.jpg" alt="" loading="lazy"><img class="tall" src="../../media/img/brollop-16.jpg" alt="" loading="lazy"><img src="../../media/img/brollop-12.jpg" alt="" loading="lazy">
+ <img src="../../media/img/brollop-13.jpg" alt="" loading="lazy"><img src="../../media/img/foretag-43.jpg" alt="" loading="lazy" class="tall"><img src="../../media/img/brollop-14.jpg" alt="" loading="lazy"><img class="big" src="../../media/img/brollop-20.jpg" alt="" loading="lazy">
+ <img src="../../media/img/brollop-23.jpg" alt="" loading="lazy"><img src="../../media/img/brollop-25.jpg" alt="" loading="lazy"><img src="../../media/img/brollop-29.jpg" alt="" loading="lazy"><img src="../../media/img/brollop-30.jpg" alt="" loading="lazy">
+</section>
+
+<section class="me">
+ <img src="../../media/img/portratt-18.jpg" alt="Vera Brandt" loading="lazy">
+ <div class="t">
+  <h2 class="sy">Jag är Vera.</h2>
+  <p>Jag började som modefotograf i Paris och kom hem för att jag saknade människor som skrattar på riktigt. Nu bor jag tio minuter från Skansen och har fotat på i princip varje brygga på Djurgården.</p>
+  <p>Jag är rak: jag säger till om slöjan sitter snett och när ni ska sluta posera. Ni kommer tacka mig.</p>
+  <p>Förutom bröllop fotar jag porträtt, familjer och företag som vill se ut som om de har stil.</p>
+  <div class="sm"><img src="../../media/img/familj-18.jpg" alt="Familjefoto" loading="lazy"><img src="../../media/img/foretag-18.jpg" alt="Företagsfoto" loading="lazy"></div>
+ </div>
+</section>
+
+<section class="pk">
+ <h2 class="sy">Priser 2027</h2>
+ <div class="pg">
+  <div class="p"><h3>Ceremoni</h3><div class="pr">16 000 kr</div><p>3 timmar. Vigsel, gratulationer, porträtt på Djurgården. 250 bilder.</p></div>
+  <div class="p"><h3>Hela dagen</h3><div class="pr">38 000 kr</div><p>10 timmar. Från frisören till första dansen och lite till. 800+ bilder, fine art-galleri.</p></div>
+  <div class="p"><h3>Maison</h3><div class="pr">52 000 kr</div><p>Två dagar, två fotografer, handbunden album i linne och en svartvit kortfilm från dagen.</p></div>
+ </div>
+</section>
+
+<section class="q">
+ <p>"Vera fick oss att se ut som ett omslag och samtidigt exakt som oss själva. Min mamma grät när hon såg galleriet. Min pappa också, men han förnekar det."</p>
+ <cite>Ebba &amp; Noah, Rosendal, juni 2026</cite>
+ <div class="press"><span>Bröllopsmagasinet</span><span>Stil &amp; Stad</span><span>Nordisk Brud</span><span>Djurgårdsbladet</span></div>
+</section>
+
+<section class="faq">
+ <h2 class="sy">Frågor</h2>
+ <details><summary>Fotar du bara på Djurgården?</summary><p>Nej, hela Stockholm och gärna utomlands. Djurgården är bara där jag känner varje träd.</p></details>
+ <details><summary>Är allt i svartvitt?</summary><p>Tvärtom. Ni får allt i färg och ett urval i svartvitt där det gör bilden bättre.</p></details>
+ <details><summary>Hur många bröllop tar du per år?</summary><p>Max 24. Så att varje galleri får den tid det förtjänar.</p></details>
+</section>
+
+<section class="ct" id="kontakt">
+ <img src="../../media/img/brollop-45.jpg" alt="Brudpar i kvällsljus" loading="lazy">
+ <div class="box">
+  <h2 class="sy">Ett samtal först</h2>
+  <p>Berätta om er dag. Jag ringer upp inom 24 timmar.</p>
+  <form onsubmit="event.preventDefault();this.innerHTML='<p><b>Tack.</b> Jag ringer inom ett dygn. /Vera</p>'"><input placeholder="Era namn" required><input type="email" placeholder="E-post" required><input placeholder="Datum och plats"><textarea rows="3" placeholder="Meddelande"></textarea><button>Skicka</button></form>
+ </div>
+</section>
+<footer><span>Maison Brandt · Vera Brandt · Djurgården, Stockholm</span><a href="../../index.html">← Alla sajter</a></footer>
 <script>
-const nav=document.querySelector('.nav');
-const sc=()=>nav.classList.toggle('solid',scrollY>60);addEventListener('scroll',sc);sc();
-document.querySelector('.burger').onclick=()=>document.body.classList.toggle('menu-open');
-document.querySelectorAll('.links a').forEach(a=>a.onclick=()=>document.body.classList.remove('menu-open'));
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
-document.querySelectorAll('.rv').forEach(el=>io.observe(el));
-const lb=document.querySelector('.lb'),lbi=lb.querySelector('img');let L=[],li=0;
-const show=()=>{lbi.src=L[li].dataset.full||L[li].src};
-document.addEventListener('click',e=>{const t=e.target.closest('[data-lb]');if(!t)return;
-L=[...document.querySelectorAll('[data-lb]')].filter(x=>x.offsetParent!==null);li=L.indexOf(t);show();lb.classList.add('on')});
-lb.querySelector('.x').onclick=()=>lb.classList.remove('on');
-lb.querySelector('.pv').onclick=()=>{li=(li-1+L.length)%L.length;show()};
-lb.querySelector('.nx').onclick=()=>{li=(li+1)%L.length;show()};
-lb.onclick=e=>{if(e.target===lb)lb.classList.remove('on')};
-addEventListener('keydown',e=>{if(!lb.classList.contains('on'))return;if(e.key==='Escape')lb.classList.remove('on');if(e.key==='ArrowLeft')lb.querySelector('.pv').click();if(e.key==='ArrowRight')lb.querySelector('.nx').click()});
-const qs=document.querySelectorAll('.q'),ds=document.querySelectorAll('.dots button');let qi=0;
-const sq=i=>{qi=i;qs.forEach((q,j)=>q.classList.toggle('on',j==i));ds.forEach((d,j)=>d.classList.toggle('on',j==i))};
-ds.forEach((d,i)=>d.onclick=()=>sq(i));setInterval(()=>sq((qi+1)%qs.length),7000);
-document.querySelector('form').onsubmit=e=>{e.preventDefault();e.target.querySelector('.ok').style.display='block';e.target.querySelector('.btn').style.display='none'};
-
-const vl=document.querySelector('.vlb'),vv=vl.querySelector('video');
-document.querySelector('.play').onclick=()=>{vl.classList.add('on');vv.play()};
-vl.querySelector('.x').onclick=()=>{vv.pause();vl.classList.remove('on')};vl.onclick=e=>{if(e.target===vl){vv.pause();vl.classList.remove('on')}};
-const si=[...document.querySelectorAll('.stage img')];let sk=0;const pr=document.querySelector('.prog i');
-const ss=i=>{sk=(i+si.length)%si.length;si.forEach((m,j)=>m.classList.toggle('on',j==sk));document.getElementById('ci').textContent=String(sk+1).padStart(2,'0');pr.style.width=((sk+1)/si.length*100)+'%';const n=si[(sk+1)%si.length];n.loading='eager'};
-document.querySelectorAll('.sbtns button').forEach(bt=>bt.onclick=()=>ss(sk+ +bt.dataset.s));ss(0);
-</script></body></html>
+const bg=document.getElementById('bg');new IntersectionObserver((es,o)=>es.forEach(e=>{if(e.isIntersecting){bg.classList.add('in');o.disconnect()}}),{threshold:.15}).observe(bg);
+</script>
+</body></html>

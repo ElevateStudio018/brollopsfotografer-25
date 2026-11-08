@@ -1,189 +1,218 @@
 <!doctype html>
 <html lang="sv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Hanna Klint Fotografi – Bröllopsfotograf i Visby</title>
-<meta name="description" content="Hanna Klint Fotografi – bröllopsfotograf i Visby. Visby & Gotland.">
+<title>Hanna Klint – Bröllopsfotograf i Visby</title>
+<meta name="description" content="Hanna Klint, bröllopsfotograf på Gotland. Visby, Fårö, raukar och vallmo.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
-<style>:root{--bg:#eef1f3;--bg2:#e1e7ec;--card:#f7f9fa;--ink:#1b2a42;--muted:#5c6779;--accent:#1b2a42;--on-accent:#eef1f3;--line:rgba(27,42,66,.15);--navbg:#eef1f3;--navink:#1b2a42;--serif:'Newsreader',serif;--sans:'DM Sans',sans-serif;--rb:40px;--ri:0;--accent2:#9fb4cc}
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--lime:#f5f2eb;--sky:#1f8bf0;--sea:#0b3d7a;--pop:#ee3b2b;--ink:#141414}
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:var(--sans);background:var(--bg);color:var(--ink);line-height:1.7;font-weight:400;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-img{display:block;max-width:100%}a{color:inherit;text-decoration:none}
-.wrap{max-width:1240px;margin:0 auto;padding:0 28px}
-h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.08}
-h2{font-size:clamp(34px,4.6vw,60px);letter-spacing:-.01em}
-h2 em,h1 em{font-style:italic;color:var(--accent)}
-.lbl{font-family:var(--sans);font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:18px}
-section{padding:120px 0}
-@media(max-width:760px){section{padding:76px 0}.wrap{padding:0 20px}}
-.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 30px;border-radius:var(--rb);font:500 14px/1 var(--sans);letter-spacing:.04em;border:1px solid transparent;cursor:pointer;transition:.3s}
-.btn-solid{background:var(--accent);color:var(--on-accent)}
-.btn-solid:hover{filter:brightness(1.1)}
-.btn-ghost{border-color:currentColor}
-.btn-ghost:hover{background:rgba(255,255,255,.12)}
-/* nav */
-.nav{position:fixed;inset:0 0 auto;z-index:50;transition:background .4s,padding .4s,box-shadow .4s;padding:26px 0;color:#fff}
-.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;max-width:1400px}
-.nav.solid{background:var(--navbg);color:var(--navink);padding:14px 0;box-shadow:0 1px 0 rgba(0,0,0,.06)}
-.links{display:flex;gap:34px;align-items:center;font-size:13.5px;letter-spacing:.05em}
-.links a{opacity:.92}.links a:hover{opacity:1}
-.links .btn{padding:11px 22px}
-.burger{display:none;background:none;border:0;color:inherit;width:34px;height:24px;position:relative;cursor:pointer}
-.burger span{position:absolute;left:0;right:0;height:1.5px;background:currentColor;transition:.3s}
-.burger span:nth-child(1){top:5px}.burger span:nth-child(2){top:16px}
-.menu-open .burger span:nth-child(1){top:11px;transform:rotate(45deg)}
-.menu-open .burger span:nth-child(2){top:11px;transform:rotate(-45deg)}
-@media(max-width:900px){.burger{display:block;z-index:60}
-.links{position:fixed;inset:0;background:var(--navbg);color:var(--navink);flex-direction:column;justify-content:center;gap:26px;font-size:20px;opacity:0;pointer-events:none;transition:opacity .35s}
-.menu-open .links{opacity:1;pointer-events:auto}.menu-open .nav{color:var(--navink)}}
-/* hero */
-.hero{padding:0;position:relative;height:100vh;height:100svh;min-height:560px;overflow:hidden;color:#fff;display:flex}
-.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.hero .ov{position:absolute;inset:0}
-.hero .in{position:relative;z-index:2;width:100%}
-.hero .sub{font-size:clamp(15px,1.3vw,17px);max-width:520px;opacity:.9;margin:22px 0 34px}
-.ctas{display:flex;gap:14px;flex-wrap:wrap}
-/* about */
-.about .grid{display:grid;grid-template-columns:5fr 6fr;gap:90px;align-items:center}
-.about img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--ri)}
-.about p{color:var(--muted);margin-top:20px;max-width:540px}
-.sig{font-family:var(--serif);font-style:italic;font-size:30px;color:var(--ink);margin-top:30px}
-.facts{display:flex;gap:44px;margin-top:38px;padding-top:30px;border-top:1px solid var(--line)}
-.facts b{display:block;font-family:var(--serif);font-weight:400;font-size:38px;line-height:1}
-.facts span{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
-@media(max-width:860px){.about .grid{grid-template-columns:1fr;gap:44px}.facts{gap:26px;flex-wrap:wrap}}
-/* packages */
-.pk{background:var(--bg2)}
-.head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:60px;flex-wrap:wrap}
-.head p{max-width:420px;color:var(--muted)}
-.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
-.pcard{background:var(--card);padding:44px 38px;border-radius:var(--ri);display:flex;flex-direction:column;border:1px solid var(--line)}
-.pcard.feat{background:var(--ink);color:var(--bg);border-color:var(--ink)}
-.pcard.feat li,.pcard.feat .ptag{color:inherit;opacity:.8}
-.pcard h3{font-size:30px}
-.ptag{font-size:13px;color:var(--muted);margin:6px 0 26px}
-.price{font-family:var(--serif);font-size:42px;line-height:1;margin-bottom:26px}
-.price small{font-family:var(--sans);font-size:13px;opacity:.7}
-.pcard ul{list-style:none;margin-bottom:34px;flex:1}
-.pcard li{padding:11px 0;border-top:1px solid var(--line);font-size:14.5px;color:var(--muted)}
-.pcard.feat li{border-color:rgba(255,255,255,.14)}
-.pcard .btn{align-self:flex-start}
-.pcard.feat .btn{background:var(--bg);color:var(--ink)}
-.pcard:not(.feat) .btn{border-color:var(--ink)}
-.also{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:26px;margin-top:70px;align-items:center}
-.also img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--ri)}
-.also h3{font-size:32px;margin-bottom:12px}.also p{color:var(--muted);font-size:15px}
-@media(max-width:900px){.pgrid,.also{grid-template-columns:1fr}}
-/* process */
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:40px;margin-top:64px}
-.step{border-top:1px solid var(--ink);padding-top:26px}
-.step i{font-family:var(--serif);font-style:italic;font-size:22px;color:var(--accent)}
-.step h3{font-size:25px;margin:10px 0 10px}.step p{font-size:14.5px;color:var(--muted)}
-@media(max-width:900px){.steps{grid-template-columns:1fr 1fr}}@media(max-width:520px){.steps{grid-template-columns:1fr}}
-/* quotes */
-.quotes{background:var(--bg2)}
-.qgrid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
-.qgrid img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:var(--ri)}
-.q{display:none}.q.on{display:block;animation:fd .7s}
-.q blockquote{font-family:var(--serif);font-size:clamp(24px,2.5vw,34px);line-height:1.35}
-.q cite{display:block;margin-top:26px;font-style:normal;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
-.dots{display:flex;gap:10px;margin-top:40px}
-.dots button{width:34px;height:2px;border:0;background:var(--line);cursor:pointer;padding:0}
-.dots button.on{background:var(--ink)}
-@keyframes fd{from{opacity:0;transform:translateY(8px)}}
-@media(max-width:860px){.qgrid{grid-template-columns:1fr;gap:40px}}
-/* faq */
-.fgrid{display:grid;grid-template-columns:1fr 1.5fr;gap:80px}
-details{border-bottom:1px solid var(--line)}
-summary{list-style:none;cursor:pointer;padding:26px 40px 26px 0;font-family:var(--serif);font-size:22px;position:relative}
-summary::-webkit-details-marker{display:none}
-summary::after{content:"+";position:absolute;right:4px;top:22px;font-family:var(--sans);font-weight:300;font-size:26px;transition:.3s}
-details[open] summary::after{transform:rotate(45deg)}
-details p{padding:0 40px 26px 0;color:var(--muted);font-size:15px}
-@media(max-width:860px){.fgrid{grid-template-columns:1fr;gap:30px}}
-/* contact */
-.contact{background:var(--ink);color:var(--bg)}
-.contact .lbl{color:inherit;opacity:.6}
-.cgrid{display:grid;grid-template-columns:1fr 1.2fr;gap:90px}
-.contact p{opacity:.75;margin-top:18px;max-width:400px}
-.cinfo{margin-top:40px;font-size:15px;line-height:2}
-form{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-form label{display:flex;flex-direction:column;gap:8px;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;opacity:.85}
-form .full{grid-column:1/-1}
-input,select,textarea{font:inherit;font-size:15px;letter-spacing:0;text-transform:none;background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.3);color:inherit;padding:10px 0;outline:none;border-radius:0}
-select option{color:#222}
-input:focus,textarea:focus,select:focus{border-color:var(--accent2,var(--accent))}
-textarea{min-height:110px;resize:vertical}
-form .btn{background:var(--bg);color:var(--ink);justify-self:start}
-.ok{display:none;grid-column:1/-1;font-family:var(--serif);font-size:22px}
-@media(max-width:860px){.cgrid{grid-template-columns:1fr;gap:50px}form{grid-template-columns:1fr}}
-footer{background:var(--ink);color:var(--bg);padding:0 0 40px;font-size:13px}
-footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.14);padding-top:30px;opacity:.7}
-footer a:hover{text-decoration:underline}
-/* lightbox */
-.lb{position:fixed;inset:0;background:rgba(10,10,10,.94);z-index:100;display:none;align-items:center;justify-content:center}
-.lb.on{display:flex}
-.lb img{max-width:90vw;max-height:86vh;object-fit:contain}
-.lb button{position:absolute;background:none;border:0;color:#fff;font-size:30px;cursor:pointer;padding:18px;font-family:var(--sans);font-weight:300}
-.lb .x{top:10px;right:16px}.lb .pv{left:10px;top:50%;transform:translateY(-50%)}.lb .nx{right:10px;top:50%;transform:translateY(-50%)}
-.minis{display:flex;gap:12px;margin-top:26px;justify-content:flex-end}.minis img{width:120px;aspect-ratio:3/2;object-fit:cover;border-radius:var(--ri);cursor:zoom-in}
-.rv{opacity:0;transform:translateY(26px);transition:opacity 1s ease,transform 1s ease}
-.rv.in{opacity:1;transform:none}
+body{background:var(--lime);color:var(--ink);font-family:Inter,system-ui,sans-serif;font-size:17px;line-height:1.55;overflow-x:hidden}
+img,video{display:block;max-width:100%}
+a{color:inherit}
+.blk{font-family:"Archivo Black",Impact,sans-serif;text-transform:uppercase;letter-spacing:-.025em;line-height:.9}
+header{position:absolute;z-index:20;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:20px 28px}
+.logo{background:var(--lime);padding:8px 14px;font-family:"Archivo Black";font-size:18px;text-decoration:none;text-transform:uppercase}
+.logo span{color:var(--pop)}
+header nav{display:flex;gap:8px}
+header nav a{background:var(--lime);padding:8px 14px;text-decoration:none;font-weight:700;font-size:14px}
+header nav a.b{background:var(--pop);color:#fff}
+.hero{position:relative;height:100vh;min-height:600px;overflow:hidden;background:var(--sea)}
+.sl{position:absolute;inset:0;opacity:0;animation:fade 30s infinite}
+.sl img{width:100%;height:100%;object-fit:cover;animation:kb 30s infinite}
+.sl:nth-child(1),.sl:nth-child(1) img{animation-delay:0s}
+.sl:nth-child(2),.sl:nth-child(2) img{animation-delay:6s}
+.sl:nth-child(3),.sl:nth-child(3) img{animation-delay:12s}
+.sl:nth-child(4),.sl:nth-child(4) img{animation-delay:18s}
+.sl:nth-child(5),.sl:nth-child(5) img{animation-delay:24s}
+@keyframes fade{0%{opacity:0}3%{opacity:1}20%{opacity:1}24%{opacity:0}100%{opacity:0}}
+@keyframes kb{0%{transform:scale(1.02) translate(0,0)}24%{transform:scale(1.14) translate(-2%,-1.5%)}100%{transform:scale(1.14)}}
+.htext{position:absolute;left:0;bottom:0;z-index:5;padding:0 28px 30px}
+.htext h1{font-size:clamp(64px,13.5vw,230px);color:#fff;text-shadow:0 4px 30px rgba(0,0,0,.35)}
+.tag{display:inline-block;background:var(--sky);color:#fff;font-weight:700;padding:10px 16px;margin-bottom:14px;font-size:16px}
+.dots{position:absolute;right:28px;bottom:36px;z-index:5;display:flex;gap:6px}
+.dots i{width:28px;height:5px;background:rgba(255,255,255,.5)}
+.strip{background:var(--sky);color:#fff;padding:22px 28px;display:flex;gap:40px;overflow:hidden;white-space:nowrap}
+.strip span{font-family:"Archivo Black";text-transform:uppercase;font-size:28px;animation:mq 26s linear infinite}
+.strip b{color:var(--lime);-webkit-text-stroke:0}
+@keyframes mq{to{transform:translateX(-100%)}}
+.pad{padding:110px 28px}
+.lead{max-width:1300px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr;gap:50px;align-items:end}
+.lead h2{font-size:clamp(46px,7vw,116px)}
+.lead h2 em{font-style:normal;color:var(--pop)}
+.lead p{font-size:19px}
+.places{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.places a{position:relative;aspect-ratio:3/4;overflow:hidden;text-decoration:none;display:block}
+.places img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.places a:hover img{transform:scale(1.07)}
+.places b{position:absolute;left:0;bottom:0;background:var(--lime);padding:12px 16px;font-family:"Archivo Black";text-transform:uppercase;font-size:clamp(20px,2vw,30px)}
+.places a:nth-child(2) b{background:var(--pop);color:#fff}
+.places a:nth-child(3) b{background:var(--sky);color:#fff}
+.wall{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:16vw;gap:6px;padding:6px}
+.wall img{width:100%;height:100%;object-fit:cover}
+.wall .t{grid-row:span 2}.wall .w{grid-column:span 2}.wall .x{grid-column:span 2;grid-row:span 2}
+.whead{display:flex;justify-content:space-between;align-items:end;flex-wrap:wrap;gap:20px;padding:110px 28px 28px}
+.whead h2{font-size:clamp(50px,8vw,140px)}
+.whead h2 span{color:var(--sky)}
+.me{display:grid;grid-template-columns:1fr 1fr;background:var(--pop);color:#fff}
+.me .ph{position:relative}
+.me .ph img{width:100%;height:100%;object-fit:cover;min-height:640px}
+.me .t{padding:90px 6vw;display:flex;flex-direction:column;justify-content:center;gap:20px}
+.me h2{font-size:clamp(48px,6vw,100px)}
+.me p{font-size:19px;max-width:540px}
+.me .sm{display:flex;gap:6px;margin-top:10px}
+.me .sm img{width:33%;aspect-ratio:1;object-fit:cover}
+.pk{max-width:1300px;margin:0 auto}
+.pk h2{font-size:clamp(50px,8vw,130px);margin-bottom:40px}
+.pg{display:grid;grid-template-columns:1fr 1.3fr 1fr;gap:16px;align-items:stretch}
+.p{background:#fff;padding:34px;display:flex;flex-direction:column;gap:14px;border-top:10px solid var(--sky)}
+.p.h{background:var(--sea);color:#fff;border-color:var(--pop)}
+.p h3{font-family:"Archivo Black";text-transform:uppercase;font-size:30px;line-height:1}
+.p .pr{font-family:"Archivo Black";font-size:44px;line-height:1}
+.p ul{list-style:none;display:grid;gap:6px}
+.p li::before{content:"— "}
+.rev{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.rev .q{padding:80px 6vw;background:var(--sky);color:#fff;display:flex;flex-direction:column;justify-content:center;gap:20px}
+.rev .q p{font-family:"Archivo Black";font-size:clamp(26px,2.8vw,42px);line-height:1.08;text-transform:uppercase}
+.rev img{width:100%;height:100%;object-fit:cover;min-height:500px}
+.stats{display:flex;flex-wrap:wrap;gap:20px 60px;padding:50px 28px;justify-content:center;font-weight:700}
+.stats span{font-family:"Archivo Black";font-size:44px;color:var(--pop);display:block;line-height:1}
+.faq{max-width:900px;margin:0 auto}
+.faq h2{font-size:clamp(44px,6vw,90px);margin-bottom:24px}
+details{border-top:3px solid var(--ink);padding:20px 0}
+details:last-child{border-bottom:3px solid var(--ink)}
+summary{cursor:pointer;font-weight:700;font-size:21px}
+details p{margin-top:8px;max-width:700px}
+.contact{display:grid;grid-template-columns:1fr 1fr;background:var(--sea);color:#fff}
+.contact img{width:100%;height:100%;object-fit:cover;min-height:560px}
+.contact .t{padding:80px 6vw}
+.contact h2{font-size:clamp(48px,6vw,96px);margin-bottom:16px}
+form{display:grid;gap:10px;margin-top:22px}
+input,textarea{font:inherit;padding:14px;border:0;background:#fff;color:var(--ink)}
+button{font-family:"Archivo Black";text-transform:uppercase;font-size:18px;background:var(--pop);color:#fff;border:0;padding:18px;cursor:pointer}
+footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:28px;font-weight:500}
+@media(max-width:800px){
+ header{padding:14px 16px}header nav a:not(.b){display:none}
+ .htext{padding:0 16px 24px}.dots{display:none}
+ .strip{padding:16px}.strip span{font-size:20px}
+ .pad{padding:80px 16px}
+ .lead{grid-template-columns:1fr;gap:20px}
+ .places{grid-template-columns:1fr 1fr}
+ .wall{grid-template-columns:repeat(2,1fr);grid-auto-rows:44vw;gap:4px;padding:4px}
+ .wall .x{grid-column:span 2}
+ .whead{padding:80px 16px 22px}
+ .me,.rev,.contact{grid-template-columns:1fr}
+ .me .ph img{min-height:0;height:120vw}.me .t,.rev .q,.contact .t{padding:56px 16px}
+ .rev img{min-height:0;height:100vw}.contact img{min-height:0;height:80vw}
+ .pg{grid-template-columns:1fr}
+ .stats{padding:40px 16px;gap:24px 36px}
+ footer{padding:22px 16px}
+}
+</style></head><body>
+<header><a class="logo" href="#">Hanna <span>Klint</span></a><nav><a href="#bilder">Bilder</a><a href="#hanna">Hanna</a><a href="#priser">Priser</a><a class="b" href="#kontakt">Boka 2027</a></nav></header>
 
-.logo{display:flex;align-items:center;gap:14px}.mono{width:42px;height:42px;border:1px solid currentColor;border-radius:50%;display:grid;place-items:center;font-family:var(--serif);font-size:16px;letter-spacing:.06em}.lname{font-family:var(--sans);font-size:13px;letter-spacing:.28em;text-transform:uppercase}
-.hero{align-items:center;text-align:center}.hero .ov{background:linear-gradient(180deg,rgba(15,27,46,.45),rgba(15,27,46,.25) 45%,rgba(15,27,46,.6))}
-.hero .in{display:flex;flex-direction:column;align-items:center}.hero .lbl{color:#fff;opacity:.85}
-.hero h1{font-size:clamp(34px,4.4vw,64px);font-weight:300;max-width:1000px}.hero h1 em{display:block;color:#fff;font-size:1.55em;font-weight:300;margin-top:6px;letter-spacing:-.02em}
-.hero .sub{margin-left:auto;margin-right:auto}.hero .ctas{justify-content:center}.hero .btn-solid{background:#fff;color:var(--ink)}
-.scroll{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);z-index:2;font-size:11px;letter-spacing:.3em;text-transform:uppercase;padding-bottom:44px}
-.scroll::after{content:"";position:absolute;left:50%;bottom:0;width:1px;height:36px;background:#fff;animation:sl 2s infinite}
-@keyframes sl{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
-.gal{padding-left:0;padding-right:0}.gal .head{margin-bottom:40px}
-.row{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 28px 18px;scrollbar-width:thin;scrollbar-color:var(--ink) transparent}
-.row+.row{margin-top:14px}.row .g{flex:0 0 auto;scroll-snap-align:start;height:440px}.row.r2 .g{height:320px}
-.row img{height:100%;width:auto;cursor:zoom-in}
-.arrows{display:flex;gap:10px}.arrows button{width:50px;height:50px;border-radius:50%;border:1px solid var(--ink);background:none;color:var(--ink);font-size:18px;cursor:pointer}.arrows button:hover{background:var(--ink);color:var(--bg)}
-@media(max-width:760px){.row .g{height:300px}.row.r2 .g{height:220px}.row{padding:0 20px 14px}}
-</style></head>
-<body class="s17">
-<header class="nav"><div class="wrap"><a href="#" class="logo"><span class="mono">HK</span><span class="lname">Hanna Klint</span></a>
-<button class="burger" aria-label="Meny"><span></span><span></span></button>
-<nav class="links"><a href="#om">Om mig</a><a href="#paket">Paket</a><a href="#galleri">Galleri</a><a href="#faq">Frågor</a><a href="#kontakt" class="btn btn-ghost">Boka</a></nav></div></header>
-<section class="hero"><video autoplay muted loop playsinline poster="../../media/img/brollop-41.jpg"><source src="../../media/hero.mp4" type="video/mp4"></video><div class="ov"></div><div class="in wrap"><span class="lbl">Bröllopsfotograf på Gotland</span><h1>Kalksten, ljus och havsbris<em>– ert bröllop på ön</em></h1><p class="sub">Jag fotograferar bröllop innanför ringmuren, på raukfälten och i lador på landet. Avslappnat, ljust och med blicken för detaljerna.</p><div class="ctas"><a href="#kontakt" class="btn btn-solid">Boka ett samtal</a><a href="#galleri" class="btn btn-ghost">Utforska galleriet</a></div></div><a href="#om" class="scroll">Scrolla</a></section>
-<section class="about" id="om"><div class="wrap grid"><img class="rv" src="../../media/img/portratt-16.jpg" alt="Hanna Klint, fotograf" loading="lazy">
-<div class="rv"><span class="lbl">Hej, jag heter Hanna</span><h2>Hej! Jag är fotografen <em>som flyttade till ön</em></h2><p>Efter tio år som bildredaktör i Stockholm packade jag bilen och tog färjan till Visby. Det var 2017, och jag har inte ångrat mig en dag.</p><p>Mina bilder är ljusa men inte överexponerade, nära men inte påträngande. Jag vill att ni ska känna igen er själva – och vinden från havet – när ni bläddrar i albumet om tjugo år.</p>
-<div class="sig">Hanna Klint</div><div class="facts"><div><b>2017</b><span>på Gotland</span></div><div><b>140+</b><span>bröllop på ön</span></div><div><b>4,9</b><span>snittbetyg av paren</span></div></div></div></div></section>
-<section class="pk" id="paket"><div class="wrap"><div class="head rv"><div><span class="lbl">Paket &amp; priser</span><h2>Paket för <em>öbröllop</em></h2></div><p>Alla paket inkluderar resor på Gotland, förmöte och onlinegalleri. Kommer ni från fastlandet hjälper jag gärna till med tips på boende och platser.</p></div>
-<div class="pgrid"><div class="pcard rv"><h3>Liten vigsel</h3><div class="ptag">Ringmuren, Ljugarn eller strandkanten</div><div class="price">11 500 <small>kr</small></div><ul><li>2,5 timmar</li><li>Vigsel och porträtt</li><li>Ca 180 bilder</li><li>Tips på vigselplatser</li></ul><a href="#kontakt" class="btn btn-ghost">Fråga om datum</a></div><div class="pcard rv feat"><h3>Hela dagen</h3><div class="ptag">Mest valda paketet</div><div class="price">29 900 <small>kr</small></div><ul><li>Upp till 10 timmar</li><li>Förmöte och tidsplanering</li><li>Ca 650 redigerade bilder</li><li>Smakprov inom 5 dagar</li><li>Linneinbunden fotobok</li></ul><a href="#kontakt" class="btn btn-ghost">Fråga om datum</a></div><div class="pcard rv"><h3>Halva dagen</h3><div class="ptag">Vigsel, mingel och middag</div><div class="price">19 800 <small>kr</small></div><ul><li>Upp till 5 timmar</li><li>Förmöte via video</li><li>Ca 380 bilder</li><li>Leverans inom fyra veckor</li></ul><a href="#kontakt" class="btn btn-ghost">Fråga om datum</a></div></div>
-<div class="also rv"><div><span class="lbl">Även familj &amp; företag</span><h3>Familj & företag</h3><p>Familjefotografering i kvällsljus vid Högklint och porträtt för gotländska företag. Från 3 900 kr.</p></div><img src="../../media/img/familj-16.jpg" alt="Familjefotografering" loading="lazy" data-lb><img src="../../media/img/foretag-16.jpg" alt="Företagsporträtt" loading="lazy" data-lb></div><div class="minis"><img src="../../media/img/foretag-66.jpg" alt="" loading="lazy" data-lb></div></div></section>
-<section class="gal" id="galleri"><div class="wrap head rv"><div><span class="lbl">Galleri</span><h2>Sommar på <em>Gotland</em></h2></div><div class="arrows"><button aria-label="Bakåt" data-d="-1">←</button><button aria-label="Framåt" data-d="1">→</button></div></div><div class="row r1"><figure class="g "><img src="../../media/img/brollop-16.jpg" alt="Bröllopsbild" loading="lazy" data-lb></figure><figure class="g "><img src="../../media/img/brollop-01.jpg" alt="Bröllopsbild" loading="lazy" data-lb></figure><figure class="g "><img src="../../media/img/brollop-04.jpg" alt="Bröllopsbild" loading="lazy" data-lb></figure><figure class="g "><img src="../../media/img/brollop-09.jpg" alt="Bröllopsbild" loading="lazy" data-lb></figure><figure class="g "><img src="../../media/img/brollop-21.jpg" alt="Bröllopsbild" loading="lazy" data-lb></figure><figure class="g "><img src="../../media/img/brollop-06.jpg" alt="Bröllopsbild" loading="lazy" data-lb></figure><figure class="g "><img src="../../media/img/brollop-24.jpg" alt="Bröllopsbild" loading="lazy" data-lb></figure><figure class="g "><img src="../../media/img/brollop-29.jpg" alt="Bröllopsbild" loading="lazy" data-lb></figure><figure class="g "><img src="../../media/img/brollop-31.jpg" alt="Bröllopsbild" loading="lazy" data-lb></figure></div><div class="row r2"><figure class="g "><img src="../../media/img/brollop-41.jpg" alt="Bröllopsbild" loading="lazy" data-lb></figure><figure class="g "><img src="../../media/img/brollop-11.jpg" alt="Bröllopsbild" loading="lazy" data-lb></figure><figure class="g "><img src="../../media/img/brollop-13.jpg" alt="Bröllopsbild" loading="lazy" data-lb></figure><figure class="g "><img src="../../media/img/brollop-26.jpg" alt="Bröllopsbild" loading="lazy" data-lb></figure><figure class="g "><img src="../../media/img/brollop-34.jpg" alt="Bröllopsbild" loading="lazy" data-lb></figure><figure class="g "><img src="../../media/img/brollop-46.jpg" alt="Bröllopsbild" loading="lazy" data-lb></figure><figure class="g "><img src="../../media/img/brollop-49.jpg" alt="Bröllopsbild" loading="lazy" data-lb></figure><figure class="g "><img src="../../media/img/brollop-51.jpg" alt="Bröllopsbild" loading="lazy" data-lb></figure><figure class="g "><img src="../../media/img/brollop-54.jpg" alt="Bröllopsbild" loading="lazy" data-lb></figure></div></section>
-<section class="proc"><div class="wrap"><div class="head rv"><div><span class="lbl">Så går det till</span><h2>Enkelt, från början <em>till slut</em></h2></div><p>Jag har hjälpt många par som bor på fastlandet. Det mesta sköter vi digitalt, resten ordnar sig.</p></div><div class="steps"><div class="step rv"><i>01</i><h3>Förfrågan</h3><p>Berätta när och var. Jag svarar inom 48 timmar.</p></div><div class="step rv"><i>02</i><h3>Videosamtal</h3><p>Vi lär känna varandra och går igenom era önskemål.</p></div><div class="step rv"><i>03</i><h3>Planering</h3><p>Jag hjälper till med tidsplan och ljusets bästa timmar.</p></div><div class="step rv"><i>04</i><h3>Leverans</h3><p>Galleri inom sex veckor, bok inom tio.</p></div></div></div></section>
-<section class="quotes"><div class="wrap qgrid"><img class="rv" src="../../media/img/brollop-04.jpg" alt="Brudpar" loading="lazy" data-lb><div class="rv"><span class="lbl">Ord från våra par</span><div class="q on"><blockquote>”Vi bor i Göteborg och kände ingen på ön. Hanna tipsade om allt från frisör till solnedgångsplats vid Fårö. Bilderna är magiska.”</blockquote><cite>Emma & Jonas · Fårö</cite></div><div class="q"><blockquote>”Hon hittade ljus mellan husen i Visby som vi aldrig sett, trots att vi bott här i tio år.”</blockquote><cite>Karin & Oskar · Visby</cite></div><div class="q"><blockquote>”Lugn, rolig och otroligt noggrann. Vi har skickat henne till tre vänner sedan dess.”</blockquote><cite>Tove & Samir · Ljugarn</cite></div><div class="dots"><button aria-label="Omdöme 1" class=on></button><button aria-label="Omdöme 2"></button><button aria-label="Omdöme 3"></button></div></div></div></section>
-<section id="faq"><div class="wrap fgrid"><div class="rv"><span class="lbl">Vanliga frågor</span><h2>Frågor <em>&amp; svar</em></h2><img src="../../media/img/foretag-41.jpg" alt="" loading="lazy" style="margin-top:40px;width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:var(--ri)"></div><div class="rv"><details><summary>Hur långt i förväg bör vi boka?</summary><p>De flesta par bokar 9–14 månader innan, särskilt för lördagar i juni–augusti. Fråga ändå om ni är ute senare – ibland finns det luckor.</p></details><details><summary>Reser du utanför Gotland?</summary><p>Ja, gärna. Inom 10 mil ingår resan, längre bort tar jag milersättning och ibland en natts boende. Utomlands löser vi upplägget tillsammans.</p></details><details><summary>När får vi bilderna?</summary><p>Ett smakprov på ett tjugotal bilder får ni inom en vecka. Hela galleriet levereras inom sex veckor, i ett privat onlinegalleri som går att dela med gästerna.</p></details><details><summary>Hur många bilder blir det?</summary><p>Det beror på dagen, men räkna med ungefär 60–80 redigerade bilder per timme jag är med. Jag väljer hellre bort än levererar dubbletter.</p></details><details><summary>Hur fungerar betalningen?</summary><p>Ni betalar en bokningsavgift på 30 % när avtalet skrivs, resten senast två veckor före bröllopet. Faktura med 14 dagars betalningstid.</p></details></div></div></section>
-<section class="contact" id="kontakt"><div class="wrap cgrid"><div class="rv"><span class="lbl">Kontakt &amp; bokning</span><h2>Ska ni gifta er <em>på ön?</em></h2><p>Skriv några rader om er och er dag. Jag svarar personligen, oftast samma dag.</p><div class="cinfo">hanna@hannaklint.se<br>070-881 22 47<br>Adelsgatan 31, Visby</div></div>
-<form class="rv"><label>Namn<input required></label><label>E-post<input type="email" required></label><label>Bröllopsdatum<input type="date"></label><label>Plats<input placeholder="T.ex. Visby domkyrka"></label>
-<label class="full">Vad är du intresserad av?<select><option>Bröllop – heldag</option><option>Bröllop – halvdag</option><option>Vigsel / intimt bröllop</option><option>Familj</option><option>Företag</option></select></label>
-<label class="full">Berätta om er dag<textarea></textarea></label><button class="btn" type="submit">Skicka förfrågan</button><div class="ok">Tack! Jag hör av mig inom två vardagar.</div></form></div></section>
-<footer><div class="wrap"><span>© 2026 Hanna Klint Fotografi · Visby & Gotland</span><span>Instagram · Pinterest</span><a href="../../index.html">← Alla sajter</a></div></footer>
-<div class="lb"><button class="x" aria-label="Stäng">×</button><button class="pv" aria-label="Föregående">‹</button><img alt=""><button class="nx" aria-label="Nästa">›</button></div>
-<script>
-const nav=document.querySelector('.nav');
-const sc=()=>nav.classList.toggle('solid',scrollY>60);addEventListener('scroll',sc);sc();
-document.querySelector('.burger').onclick=()=>document.body.classList.toggle('menu-open');
-document.querySelectorAll('.links a').forEach(a=>a.onclick=()=>document.body.classList.remove('menu-open'));
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
-document.querySelectorAll('.rv').forEach(el=>io.observe(el));
-const lb=document.querySelector('.lb'),lbi=lb.querySelector('img');let L=[],li=0;
-const show=()=>{lbi.src=L[li].dataset.full||L[li].src};
-document.addEventListener('click',e=>{const t=e.target.closest('[data-lb]');if(!t)return;
-L=[...document.querySelectorAll('[data-lb]')].filter(x=>x.offsetParent!==null);li=L.indexOf(t);show();lb.classList.add('on')});
-lb.querySelector('.x').onclick=()=>lb.classList.remove('on');
-lb.querySelector('.pv').onclick=()=>{li=(li-1+L.length)%L.length;show()};
-lb.querySelector('.nx').onclick=()=>{li=(li+1)%L.length;show()};
-lb.onclick=e=>{if(e.target===lb)lb.classList.remove('on')};
-addEventListener('keydown',e=>{if(!lb.classList.contains('on'))return;if(e.key==='Escape')lb.classList.remove('on');if(e.key==='ArrowLeft')lb.querySelector('.pv').click();if(e.key==='ArrowRight')lb.querySelector('.nx').click()});
-const qs=document.querySelectorAll('.q'),ds=document.querySelectorAll('.dots button');let qi=0;
-const sq=i=>{qi=i;qs.forEach((q,j)=>q.classList.toggle('on',j==i));ds.forEach((d,j)=>d.classList.toggle('on',j==i))};
-ds.forEach((d,i)=>d.onclick=()=>sq(i));setInterval(()=>sq((qi+1)%qs.length),7000);
-document.querySelector('form').onsubmit=e=>{e.preventDefault();e.target.querySelector('.ok').style.display='block';e.target.querySelector('.btn').style.display='none'};
-document.querySelectorAll('.arrows button').forEach(bt=>bt.onclick=()=>document.querySelectorAll('.row').forEach(r=>r.scrollBy({left:bt.dataset.d*r.clientWidth*.6,behavior:'smooth'})));</script></body></html>
+<section class="hero">
+ <div class="sl"><img src="../../media/img/brollop-41.jpg" alt="Brudpar på Gotland"></div>
+ <div class="sl"><img src="../../media/img/brollop-02.jpg" alt="Bröllop i sommarljus"></div>
+ <div class="sl"><img src="../../media/img/brollop-16.jpg" alt="Brud vid havet"></div>
+ <div class="sl"><img src="../../media/img/brollop-26.jpg" alt="Gäster jublar"></div>
+ <div class="sl"><img src="../../media/img/brollop-45.jpg" alt="Brudpar i kvällssol"></div>
+ <div class="htext"><span class="tag">Bröllopsfotograf · Visby, Gotland</span><h1 class="blk">Sommar<br>på Gotland</h1></div>
+ <div class="dots"><i></i><i></i><i></i><i></i><i></i></div>
+</section>
+
+<div class="strip" aria-hidden="true"><span>Visby ringmur <b>/</b> Fårö raukar <b>/</b> Vallmo i Roma <b>/</b> Kalkbrott i Slite <b>/</b> Långbord på gården <b>/</b></span><span>Visby ringmur <b>/</b> Fårö raukar <b>/</b> Vallmo i Roma <b>/</b> Kalkbrott i Slite <b>/</b> Långbord på gården <b>/</b></span></div>
+
+<section class="pad">
+ <div class="lead">
+  <h2 class="blk">Ljuset här är <em>orimligt</em> bra. Jag har bott i det i 31 år.</h2>
+  <p>Jag är Hanna, född på Gotland och har fotat 160 bröllop på ön. Jag vet vilken strand som är tom klockan sju, vilken kyrka som har bäst ljus efter tre och var vallmon blommar i år.</p>
+ </div>
+</section>
+
+<section class="places" id="bilder">
+ <a href="#vagg"><img src="../../media/img/brollop-05.jpg" alt="Bröllop i Visby" loading="lazy"><b>Visby</b></a>
+ <a href="#vagg"><img src="../../media/img/brollop-07.jpg" alt="Bröllop på Fårö" loading="lazy"><b>Fårö</b></a>
+ <a href="#vagg"><img src="../../media/img/brollop-15.jpg" alt="Bröllop på landet" loading="lazy"><b>Gårdsbröllop</b></a>
+ <a href="#vagg"><img src="../../media/img/brollop-18.jpg" alt="Liten vigsel" loading="lazy"><b>Elopement</b></a>
+</section>
+
+<section id="vagg">
+ <div class="whead"><h2 class="blk">Juli, <span>augusti</span>, ja.</h2><p style="max-width:380px">Ett urval från säsongen 2026. Mest sol, en del blåst, en storm på Fårö som blev årets bästa bilder.</p></div>
+ <div class="wall">
+  <img class="x" src="../../media/img/brollop-00.jpg" alt="Bröllop" loading="lazy">
+  <img class="t" src="../../media/img/brollop-04.jpg" alt="Brud" loading="lazy">
+  <img src="../../media/img/brollop-01.jpg" alt="Brudpar" loading="lazy">
+  <img class="t" src="../../media/img/brollop-08.jpg" alt="Brudgum" loading="lazy">
+  <img src="../../media/img/brollop-03.jpg" alt="Middag" loading="lazy">
+  <img class="w" src="../../media/img/brollop-06.jpg" alt="Gäster" loading="lazy">
+  <img src="../../media/img/brollop-10.jpg" alt="Detalj" loading="lazy">
+  <img class="t" src="../../media/img/brollop-19.jpg" alt="Brud" loading="lazy">
+  <img src="../../media/img/brollop-12.jpg" alt="Ringar" loading="lazy">
+  <img class="w" src="../../media/img/brollop-09.jpg" alt="Kyrka" loading="lazy">
+  <img src="../../media/img/brollop-11.jpg" alt="Fest" loading="lazy">
+  <img class="t" src="../../media/img/brollop-21.jpg" alt="Kyss" loading="lazy">
+  <img class="x" src="../../media/img/brollop-13.jpg" alt="Brudpar på strand" loading="lazy">
+  <img src="../../media/img/brollop-14.jpg" alt="Tal" loading="lazy">
+  <img class="t" src="../../media/img/brollop-22.jpg" alt="Dans" loading="lazy">
+  <img src="../../media/img/brollop-17.jpg" alt="Skål" loading="lazy">
+  <img class="w" src="../../media/img/brollop-20.jpg" alt="Långbord" loading="lazy">
+  <img src="../../media/img/brollop-23.jpg" alt="Kvällsljus" loading="lazy">
+  <img class="t" src="../../media/img/brollop-24.jpg" alt="Brud" loading="lazy">
+  <img class="w" src="../../media/img/brollop-25.jpg" alt="Brudpar" loading="lazy">
+  <img src="../../media/img/foretag-41.jpg" alt="Event" loading="lazy">
+  <img src="../../media/img/brollop-27.jpg" alt="Gäster" loading="lazy">
+  <img class="w" src="../../media/img/foretag-66.jpg" alt="Fest" loading="lazy">
+  <img src="../../media/img/brollop-29.jpg" alt="Brudpar" loading="lazy">
+  <img src="../../media/img/brollop-30.jpg" alt="Dansgolv" loading="lazy">
+ </div>
+</section>
+
+<section class="me" id="hanna">
+ <div class="ph"><img src="../../media/img/portratt-16.jpg" alt="Hanna Klint" loading="lazy"></div>
+ <div class="t">
+  <h2 class="blk">Hej! Hanna här.</h2>
+  <p>Jag fotar med två kameror, ett par gympaskor och en nödväska med plåster, säkerhetsnålar och Gotlandsdricka. Den har räddat fler bröllop än jag kan räkna.</p>
+  <p>Jag är bäst när det händer saker. Säg till mig om ni vill ha 40 minuter uppställda gruppbilder. Då är jag kanske inte er fotograf. Vill ni ha er moster mitt i ett skratt? Då är jag det.</p>
+  <p>På vintern fotar jag familjer och lokala företag, typ glassfabriken i Slite.</p>
+  <div class="sm"><img src="../../media/img/familj-16.jpg" alt="Familjefoto" loading="lazy"><img src="../../media/img/foretag-16.jpg" alt="Företagsfoto" loading="lazy"><img src="../../media/img/brollop-28.jpg" alt="Bröllop" loading="lazy"></div>
+ </div>
+</section>
+
+<section class="pad" id="priser">
+ <div class="pk">
+  <h2 class="blk">Priser 2027</h2>
+  <div class="pg">
+   <div class="p"><h3>Liten dag</h3><div class="pr">13 500 kr</div><ul><li>4 timmar</li><li>Vigsel + porträtt</li><li>300 bilder</li></ul></div>
+   <div class="p h"><h3>Hela kalaset</h3><div class="pr">29 900 kr</div><ul><li>10 timmar, förberedelser till dans</li><li>700+ bilder</li><li>Porträtt i solnedgången</li><li>Galleri att dela med gästerna</li></ul></div>
+   <div class="p"><h3>Hela helgen</h3><div class="pr">38 000 kr</div><ul><li>Mingel fredag</li><li>Hela lördagen</li><li>Bilder från båda</li></ul></div>
+  </div>
+  <p style="margin-top:20px">Fastlandsbröllop? Jag kommer gärna. Färjan står ni för.</p>
+ </div>
+</section>
+
+<section class="rev">
+ <div class="q"><p>"Hanna sprang ut i havet med kameran över huvudet för att få bilden. Hon fick den."</p><span>Sara &amp; Johan, Fårö, augusti 2026</span></div>
+ <img src="../../media/img/brollop-31.jpg" alt="Brudpar vid havet" loading="lazy">
+</section>
+<div class="stats"><div><span>160</span>bröllop på Gotland</div><div><span>5,0</span>98 omdömen</div><div><span>9</span>år i yrket</div><div><span>Gotlands Allehanda</span>Månadens företagare</div></div>
+
+<section class="pad">
+ <div class="faq">
+  <h2 class="blk">Frågor</h2>
+  <details><summary>Hur långt i förväg ska vi boka?</summary><p>Juli-lördagar går 12–18 månader i förväg. Fredagar och september har oftast plats.</p></details>
+  <details><summary>Vad händer om det regnar?</summary><p>Då fotar vi i regnet. Jag har genomskinliga paraplyer i bilen och vet varje valv i Visby innerstad.</p></details>
+  <details><summary>Leveranstid?</summary><p>Smakprov inom 3 dagar, hela galleriet inom 4 veckor.</p></details>
+ </div>
+</section>
+
+<section class="contact" id="kontakt">
+ <img src="../../media/img/brollop-32.jpg" alt="Brud i sommarljus" loading="lazy">
+ <div class="t">
+  <h2 class="blk">Har ni datum?</h2>
+  <p>Skriv några rader. Jag svarar samma dag, utom när jag står i en åker med vallmo.</p>
+  <form onsubmit="event.preventDefault();this.innerHTML='<p><b>Tack!</b> Jag hör av mig snart. /Hanna</p>'"><input placeholder="Era namn" required><input type="email" placeholder="E-post" required><input placeholder="Datum och plats"><textarea rows="3" placeholder="Berätta!"></textarea><button>Skicka</button></form>
+ </div>
+</section>
+<footer><span>Hanna Klint Fotografi · Visby · hanna@hannaklint.se</span><a href="../../index.html">← Alla sajter</a></footer>
+</body></html>

@@ -1,189 +1,175 @@
 <!doctype html>
 <html lang="sv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Klarälv Fotografi – Bröllopsfotograf i Karlstad</title>
-<meta name="description" content="Klarälv Fotografi – bröllopsfotograf i Karlstad. Karlstad & Värmland.">
+<title>Klarälv Fotografi – Ladbröllop i Värmland</title>
+<meta name="description" content="Klarälv Fotografi – Frida Lund, bröllopsfotograf för lada- och gårdsbröllop i Värmland.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Hanken+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
-<style>:root{--bg:#f4eee0;--bg2:#ebe3d0;--card:#faf6ec;--ink:#1f3a2b;--muted:#5d6a5f;--accent:#1f3a2b;--on-accent:#f4eee0;--line:rgba(31,58,43,.16);--navbg:#f4eee0;--navink:#1f3a2b;--serif:'Gloock',serif;--sans:'Hanken Grotesk',sans-serif;--rb:999px;--ri:0;--accent2:#c9b98f}
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<style>
+:root{--cr:#fff5e4;--tc:#d2532a;--gr:#3c9a3c;--sun:#ffc93c;--ink:#2a1c14}
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:var(--sans);background:var(--bg);color:var(--ink);line-height:1.7;font-weight:400;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-img{display:block;max-width:100%}a{color:inherit;text-decoration:none}
-.wrap{max-width:1240px;margin:0 auto;padding:0 28px}
-h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.08}
-h2{font-size:clamp(34px,4.6vw,60px);letter-spacing:-.01em}
-h2 em,h1 em{font-style:italic;color:var(--accent)}
-.lbl{font-family:var(--sans);font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:18px}
-section{padding:120px 0}
-@media(max-width:760px){section{padding:76px 0}.wrap{padding:0 20px}}
-.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 30px;border-radius:var(--rb);font:500 14px/1 var(--sans);letter-spacing:.04em;border:1px solid transparent;cursor:pointer;transition:.3s}
-.btn-solid{background:var(--accent);color:var(--on-accent)}
-.btn-solid:hover{filter:brightness(1.1)}
-.btn-ghost{border-color:currentColor}
-.btn-ghost:hover{background:rgba(255,255,255,.12)}
-/* nav */
-.nav{position:fixed;inset:0 0 auto;z-index:50;transition:background .4s,padding .4s,box-shadow .4s;padding:26px 0;color:#fff}
-.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;max-width:1400px}
-.nav.solid{background:var(--navbg);color:var(--navink);padding:14px 0;box-shadow:0 1px 0 rgba(0,0,0,.06)}
-.links{display:flex;gap:34px;align-items:center;font-size:13.5px;letter-spacing:.05em}
-.links a{opacity:.92}.links a:hover{opacity:1}
-.links .btn{padding:11px 22px}
-.burger{display:none;background:none;border:0;color:inherit;width:34px;height:24px;position:relative;cursor:pointer}
-.burger span{position:absolute;left:0;right:0;height:1.5px;background:currentColor;transition:.3s}
-.burger span:nth-child(1){top:5px}.burger span:nth-child(2){top:16px}
-.menu-open .burger span:nth-child(1){top:11px;transform:rotate(45deg)}
-.menu-open .burger span:nth-child(2){top:11px;transform:rotate(-45deg)}
-@media(max-width:900px){.burger{display:block;z-index:60}
-.links{position:fixed;inset:0;background:var(--navbg);color:var(--navink);flex-direction:column;justify-content:center;gap:26px;font-size:20px;opacity:0;pointer-events:none;transition:opacity .35s}
-.menu-open .links{opacity:1;pointer-events:auto}.menu-open .nav{color:var(--navink)}}
-/* hero */
-.hero{padding:0;position:relative;height:100vh;height:100svh;min-height:560px;overflow:hidden;color:#fff;display:flex}
-.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.hero .ov{position:absolute;inset:0}
-.hero .in{position:relative;z-index:2;width:100%}
-.hero .sub{font-size:clamp(15px,1.3vw,17px);max-width:520px;opacity:.9;margin:22px 0 34px}
-.ctas{display:flex;gap:14px;flex-wrap:wrap}
-/* about */
-.about .grid{display:grid;grid-template-columns:5fr 6fr;gap:90px;align-items:center}
-.about img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--ri)}
-.about p{color:var(--muted);margin-top:20px;max-width:540px}
-.sig{font-family:var(--serif);font-style:italic;font-size:30px;color:var(--ink);margin-top:30px}
-.facts{display:flex;gap:44px;margin-top:38px;padding-top:30px;border-top:1px solid var(--line)}
-.facts b{display:block;font-family:var(--serif);font-weight:400;font-size:38px;line-height:1}
-.facts span{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
-@media(max-width:860px){.about .grid{grid-template-columns:1fr;gap:44px}.facts{gap:26px;flex-wrap:wrap}}
-/* packages */
-.pk{background:var(--bg2)}
-.head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:60px;flex-wrap:wrap}
-.head p{max-width:420px;color:var(--muted)}
-.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
-.pcard{background:var(--card);padding:44px 38px;border-radius:var(--ri);display:flex;flex-direction:column;border:1px solid var(--line)}
-.pcard.feat{background:var(--ink);color:var(--bg);border-color:var(--ink)}
-.pcard.feat li,.pcard.feat .ptag{color:inherit;opacity:.8}
-.pcard h3{font-size:30px}
-.ptag{font-size:13px;color:var(--muted);margin:6px 0 26px}
-.price{font-family:var(--serif);font-size:42px;line-height:1;margin-bottom:26px}
-.price small{font-family:var(--sans);font-size:13px;opacity:.7}
-.pcard ul{list-style:none;margin-bottom:34px;flex:1}
-.pcard li{padding:11px 0;border-top:1px solid var(--line);font-size:14.5px;color:var(--muted)}
-.pcard.feat li{border-color:rgba(255,255,255,.14)}
-.pcard .btn{align-self:flex-start}
-.pcard.feat .btn{background:var(--bg);color:var(--ink)}
-.pcard:not(.feat) .btn{border-color:var(--ink)}
-.also{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:26px;margin-top:70px;align-items:center}
-.also img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--ri)}
-.also h3{font-size:32px;margin-bottom:12px}.also p{color:var(--muted);font-size:15px}
-@media(max-width:900px){.pgrid,.also{grid-template-columns:1fr}}
-/* process */
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:40px;margin-top:64px}
-.step{border-top:1px solid var(--ink);padding-top:26px}
-.step i{font-family:var(--serif);font-style:italic;font-size:22px;color:var(--accent)}
-.step h3{font-size:25px;margin:10px 0 10px}.step p{font-size:14.5px;color:var(--muted)}
-@media(max-width:900px){.steps{grid-template-columns:1fr 1fr}}@media(max-width:520px){.steps{grid-template-columns:1fr}}
-/* quotes */
-.quotes{background:var(--bg2)}
-.qgrid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
-.qgrid img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:var(--ri)}
-.q{display:none}.q.on{display:block;animation:fd .7s}
-.q blockquote{font-family:var(--serif);font-size:clamp(24px,2.5vw,34px);line-height:1.35}
-.q cite{display:block;margin-top:26px;font-style:normal;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
-.dots{display:flex;gap:10px;margin-top:40px}
-.dots button{width:34px;height:2px;border:0;background:var(--line);cursor:pointer;padding:0}
-.dots button.on{background:var(--ink)}
-@keyframes fd{from{opacity:0;transform:translateY(8px)}}
-@media(max-width:860px){.qgrid{grid-template-columns:1fr;gap:40px}}
-/* faq */
-.fgrid{display:grid;grid-template-columns:1fr 1.5fr;gap:80px}
-details{border-bottom:1px solid var(--line)}
-summary{list-style:none;cursor:pointer;padding:26px 40px 26px 0;font-family:var(--serif);font-size:22px;position:relative}
-summary::-webkit-details-marker{display:none}
-summary::after{content:"+";position:absolute;right:4px;top:22px;font-family:var(--sans);font-weight:300;font-size:26px;transition:.3s}
-details[open] summary::after{transform:rotate(45deg)}
-details p{padding:0 40px 26px 0;color:var(--muted);font-size:15px}
-@media(max-width:860px){.fgrid{grid-template-columns:1fr;gap:30px}}
-/* contact */
-.contact{background:var(--ink);color:var(--bg)}
-.contact .lbl{color:inherit;opacity:.6}
-.cgrid{display:grid;grid-template-columns:1fr 1.2fr;gap:90px}
-.contact p{opacity:.75;margin-top:18px;max-width:400px}
-.cinfo{margin-top:40px;font-size:15px;line-height:2}
-form{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-form label{display:flex;flex-direction:column;gap:8px;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;opacity:.85}
-form .full{grid-column:1/-1}
-input,select,textarea{font:inherit;font-size:15px;letter-spacing:0;text-transform:none;background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.3);color:inherit;padding:10px 0;outline:none;border-radius:0}
-select option{color:#222}
-input:focus,textarea:focus,select:focus{border-color:var(--accent2,var(--accent))}
-textarea{min-height:110px;resize:vertical}
-form .btn{background:var(--bg);color:var(--ink);justify-self:start}
-.ok{display:none;grid-column:1/-1;font-family:var(--serif);font-size:22px}
-@media(max-width:860px){.cgrid{grid-template-columns:1fr;gap:50px}form{grid-template-columns:1fr}}
-footer{background:var(--ink);color:var(--bg);padding:0 0 40px;font-size:13px}
-footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.14);padding-top:30px;opacity:.7}
-footer a:hover{text-decoration:underline}
-/* lightbox */
-.lb{position:fixed;inset:0;background:rgba(10,10,10,.94);z-index:100;display:none;align-items:center;justify-content:center}
-.lb.on{display:flex}
-.lb img{max-width:90vw;max-height:86vh;object-fit:contain}
-.lb button{position:absolute;background:none;border:0;color:#fff;font-size:30px;cursor:pointer;padding:18px;font-family:var(--sans);font-weight:300}
-.lb .x{top:10px;right:16px}.lb .pv{left:10px;top:50%;transform:translateY(-50%)}.lb .nx{right:10px;top:50%;transform:translateY(-50%)}
-.minis{display:flex;gap:12px;margin-top:26px;justify-content:flex-end}.minis img{width:120px;aspect-ratio:3/2;object-fit:cover;border-radius:var(--ri);cursor:zoom-in}
-.rv{opacity:0;transform:translateY(26px);transition:opacity 1s ease,transform 1s ease}
-.rv.in{opacity:1;transform:none}
+body{background:var(--cr);color:var(--ink);font-family:"Bricolage Grotesque",system-ui,sans-serif;font-size:18px;line-height:1.5;overflow-x:hidden}
+img,video{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-weight:800;letter-spacing:-.035em;line-height:.92}
+header{position:absolute;z-index:20;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:20px 28px;color:#fff}
+.logo{font-weight:800;font-size:24px;text-decoration:none;letter-spacing:-.03em;text-shadow:0 2px 14px rgba(0,0,0,.4)}
+header nav{display:flex;gap:10px}
+header nav a{background:#fff;color:var(--ink);text-decoration:none;font-weight:600;padding:9px 16px;border-radius:99px;font-size:15px}
+header nav a.b{background:var(--tc);color:#fff}
+.hero{position:relative;height:100vh;min-height:600px;overflow:hidden}
+.hero video{width:100%;height:100%;object-fit:cover}
+.hero h1{position:absolute;left:28px;bottom:30px;color:#fff;font-size:clamp(64px,11vw,190px);text-shadow:0 4px 30px rgba(0,0,0,.35);max-width:11ch}
+.sticker{position:absolute;right:6vw;top:22vh;width:190px;height:190px;border-radius:50%;background:var(--sun);color:var(--ink);display:grid;place-items:center;text-align:center;font-weight:800;font-size:28px;line-height:.95;letter-spacing:-.03em;animation:spin 14s linear infinite;box-shadow:0 10px 30px rgba(0,0,0,.25);text-decoration:none}
+.sticker::before{content:"";position:absolute;inset:8px;border:3px dashed var(--tc);border-radius:50%}
+.sticker small{display:block;font-size:15px;font-weight:600;margin-top:6px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hi{padding:110px 28px;display:grid;grid-template-columns:1fr 1.3fr;gap:60px;max-width:1300px;margin:0 auto;align-items:center}
+.hi img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:24px;transform:rotate(-2deg)}
+.hi h2{font-size:clamp(46px,6vw,96px);margin-bottom:24px}
+.hi h2 span{color:var(--tc)}
+.hi p{font-size:20px;margin-bottom:14px;max-width:560px}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.pills span{background:var(--gr);color:#fff;font-weight:600;padding:8px 16px;border-radius:99px}
+.pills span:nth-child(2){background:var(--tc)}.pills span:nth-child(3){background:var(--sun);color:var(--ink)}
+.cats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:0 12px}
+.cats a{position:relative;height:78vh;border-radius:22px;overflow:hidden;text-decoration:none}
+.cats img{width:100%;height:100%;object-fit:cover;transition:transform 1s}
+.cats a:hover img{transform:scale(1.06)}
+.cats b{position:absolute;left:18px;bottom:18px;background:var(--cr);padding:12px 20px;border-radius:99px;font-size:24px;font-weight:800;letter-spacing:-.02em}
+.cats a:nth-child(2) b{background:var(--gr);color:#fff}.cats a:nth-child(3) b{background:var(--tc);color:#fff}
+.wh{padding:110px 28px 30px;display:flex;justify-content:space-between;align-items:end;flex-wrap:wrap;gap:20px}
+.wh h2{font-size:clamp(52px,8vw,140px)}
+.wh h2 span{color:var(--gr)}
+.wall{columns:4 240px;column-gap:10px;padding:0 10px}
+.wall img{width:100%;margin-bottom:10px;border-radius:14px;break-inside:avoid}
+.band{background:var(--gr);color:#fff;margin-top:100px;display:grid;grid-template-columns:1fr 1fr}
+.band img{width:100%;height:100%;object-fit:cover;min-height:620px}
+.band .t{padding:90px 6vw;display:flex;flex-direction:column;justify-content:center;gap:18px}
+.band h2{font-size:clamp(48px,6vw,100px)}
+.band p{font-size:20px;max-width:540px}
+.band .sm{display:flex;gap:10px;margin-top:10px}.band .sm img{min-height:0;width:50%;aspect-ratio:1;border-radius:14px}
+.pk{padding:120px 28px;max-width:1300px;margin:0 auto}
+.pk h2{font-size:clamp(52px,8vw,130px);margin-bottom:14px}
+.pg{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:40px}
+.p{border-radius:24px;padding:36px;background:#fff;display:flex;justify-content:space-between;gap:20px;align-items:flex-start}
+.p h3{font-size:34px;margin-bottom:8px}
+.p .pr{font-weight:800;font-size:30px;white-space:nowrap;color:var(--tc)}
+.p.big{grid-column:span 2;background:var(--tc);color:#fff}.p.big .pr{color:var(--sun)}
+.rv{background:var(--sun);padding:110px 28px}
+.rv .in{max-width:1300px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.rv h2{grid-column:1/-1;font-size:clamp(46px,6vw,96px);margin-bottom:10px}
+.rv blockquote{background:var(--cr);border-radius:22px;padding:30px;font-size:19px}
+.rv cite{display:block;margin-top:14px;font-style:normal;font-weight:800;color:var(--tc)}
+.rv .press{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:10px 36px;font-weight:800;font-size:24px;letter-spacing:-.02em;margin-top:20px}
+.faq{padding:110px 28px;max-width:900px;margin:0 auto}
+.faq h2{font-size:clamp(46px,6vw,96px);margin-bottom:30px}
+details{background:#fff;border-radius:18px;padding:22px 26px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:800;font-size:22px}
+details p{margin-top:8px}
+.ct{position:relative;min-height:100vh;display:flex;align-items:center;padding:28px}
+.ct>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ct .box{position:relative;background:var(--cr);padding:44px;border-radius:28px;max-width:580px}
+.ct h2{font-size:clamp(48px,5vw,86px);margin-bottom:12px}
+form{display:grid;gap:10px;margin-top:20px}
+input,textarea{font:inherit;padding:14px 18px;border:2px solid #e8d8be;background:#fff;border-radius:14px}
+button{font:inherit;font-weight:800;background:var(--tc);color:#fff;border:0;padding:16px;border-radius:99px;cursor:pointer;font-size:20px}
+footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:28px;font-weight:600}
+@media(max-width:800px){
+ header{padding:14px 16px}header nav a:not(.b){display:none}
+ .hero h1{left:16px;right:16px;bottom:24px;font-size:16vw}
+ .sticker{width:130px;height:130px;font-size:19px;right:16px;top:90px}.sticker small{font-size:12px}
+ .hi{grid-template-columns:1fr;padding:70px 16px;gap:30px}
+ .cats{grid-template-columns:1fr;padding:0 10px}.cats a{height:62vh}
+ .wh{padding:80px 16px 24px}
+ .wall{columns:2;column-gap:6px;padding:0 6px}.wall img{margin-bottom:6px;border-radius:10px}
+ .band{grid-template-columns:1fr;margin-top:70px}.band>img{min-height:0;height:110vw}.band .t{padding:56px 16px}
+ .pk{padding:80px 16px}.pg{grid-template-columns:1fr}.p.big{grid-column:auto}.p{flex-direction:column;padding:28px 22px}
+ .rv{padding:80px 16px}.rv .in{grid-template-columns:1fr}
+ .faq{padding:80px 16px}
+ .ct{padding:16px}.ct .box{padding:28px 20px}
+ footer{padding:22px 16px}
+}
+</style></head><body>
+<header><a class="logo" href="#">klarälv.</a><nav><a href="#bilder">Bilder</a><a href="#frida">Om mig</a><a href="#priser">Priser</a><a class="b" href="#kontakt">Kontakt</a></nav></header>
 
-.kl{font-family:var(--serif);font-size:28px}.kl sup{font-family:var(--sans);font-size:10px;margin-left:2px}
-.hero{align-items:flex-end}.hero .ov{background:linear-gradient(0deg,rgba(14,28,20,.7),rgba(14,28,20,.15) 55%,rgba(14,28,20,.35))}
-.hero .in{display:flex;flex-direction:column;padding-bottom:26px}
-.hero .top{display:flex;align-items:end;justify-content:space-between;gap:30px;width:100%;max-width:none;padding:0 32px;flex-wrap:wrap}.hero .lbl{color:#fff;opacity:.8;margin:0}.hero .sub{margin:0;max-width:420px}
-.hero .btn-solid{background:#f4eee0;color:#1f3a2b}
-.hero h1{font-size:clamp(56px,12.5vw,210px);line-height:.92;letter-spacing:-.03em;padding:0 26px;margin:24px 0 22px}.hero h1 span{display:block}.hero h1 span:last-child{text-align:right}.hero h1 em{color:#e3d6b0}
-.brow{display:flex;justify-content:space-between;padding:16px 32px 0;border-top:1px solid rgba(255,255,255,.3);margin:0 32px;padding-left:0;padding-right:0;font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;opacity:.85}
-@media(max-width:760px){.hero .top{flex-direction:column;align-items:flex-start;padding:0 20px}.hero h1{padding:0 16px}.brow{margin:0 20px;flex-wrap:wrap;gap:8px 18px;justify-content:flex-start;font-size:10px}.brow span:nth-child(n+4){display:none}}
-.filters{display:flex;gap:10px;flex-wrap:wrap}.filters button{font:500 13px var(--sans);padding:10px 20px;border-radius:999px;border:1px solid var(--ink);background:none;color:var(--ink);cursor:pointer}.filters button.on{background:var(--ink);color:var(--bg)}
-.tgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;padding:0 4px}
-.tgrid .g{aspect-ratio:1;overflow:hidden;position:relative}.tgrid .g.hide{display:none}
-.tgrid img{width:100%;height:100%;object-fit:cover;cursor:zoom-in;transition:transform .8s,filter .5s}.tgrid .g:hover img{transform:scale(1.05)}
-@media(max-width:760px){.tgrid{grid-template-columns:repeat(2,1fr)}}
-</style></head>
-<body class="s20">
-<header class="nav"><div class="wrap"><a href="#" class="logo"><span class="kl">Klarälv<sup>®</sup></span></a>
-<button class="burger" aria-label="Meny"><span></span><span></span></button>
-<nav class="links"><a href="#om">Om mig</a><a href="#paket">Paket</a><a href="#galleri">Galleri</a><a href="#faq">Frågor</a><a href="#kontakt" class="btn btn-ghost">Boka</a></nav></div></header>
-<section class="hero"><video autoplay muted loop playsinline poster="../../media/img/brollop-44.jpg"><source src="../../media/hero.mp4" type="video/mp4"></video><div class="ov"></div><div class="in"><div class="top wrap"><span class="lbl">Bröllopsfotograf · Värmland</span><p class="sub">Ärliga, varma bilder från bröllop längs Klarälven, vid Vänern och i de värmländska skogarna. Bokar nu för 2027.</p><div class="ctas"><a href="#kontakt" class="btn btn-solid">Boka ert datum</a><a href="#galleri" class="btn btn-ghost">Se arbeten</a></div></div>
-<h1><span>Kärlek vid</span><span><em>älven</em> &amp; sjön</span></h1><div class="brow"><span>Karlstad</span><span>Sunne</span><span>Arvika</span><span>Hammarö</span><span>Hela Sverige</span></div></div></section>
-<section class="about" id="om"><div class="wrap grid"><img class="rv" src="../../media/img/portratt-19.jpg" alt="Sara Lindqvist, fotograf" loading="lazy">
-<div class="rv"><span class="lbl">Hej, jag heter Sara</span><h2>Värmländska, <em>nyfiken</em> och lite för pratig</h2><p>Jag är född och uppvuxen i Karlstad och har fotograferat bröllop sedan 2015, mest i Värmland men också i Norge och på Västkusten.</p><p>Jag tror på bilder som känns – inte bara ser fina ut. Därför fotograferar jag mest som det är, och hjälper bara till när ljuset behöver lite hjälp.</p>
-<div class="sig">Sara Lindqvist</div><div class="facts"><div><b>11</b><span>säsonger</span></div><div><b>200+</b><span>bröllop</span></div><div><b>8</b><span>mil älv att välja platser längs</span></div></div></div></div></section>
-<section class="pk" id="paket"><div class="wrap"><div class="head rv"><div><span class="lbl">Paket &amp; priser</span><h2>Tydliga priser, <em>inga överraskningar</em></h2></div><p>Alla paket inkluderar förmöte, resor inom Värmland och privat onlinegalleri. Moms ingår.</p></div>
-<div class="pgrid"><div class="pcard rv"><h3>Vigsel</h3><div class="ptag">Kyrka, rådhus eller strand</div><div class="price">9 500 <small>kr</small></div><ul><li>2 timmar</li><li>Vigsel och porträtt</li><li>Ca 150 bilder</li><li>Leverans inom tre veckor</li></ul><a href="#kontakt" class="btn btn-ghost">Fråga om datum</a></div><div class="pcard rv feat"><h3>Heldag</h3><div class="ptag">Hela berättelsen</div><div class="price">25 900 <small>kr</small></div><ul><li>Upp till 10 timmar</li><li>Förmöte och platsbesök</li><li>Ca 600 bilder</li><li>Smakprov inom en vecka</li><li>Förlovningsfotografering</li></ul><a href="#kontakt" class="btn btn-ghost">Fråga om datum</a></div><div class="pcard rv"><h3>Halvdag</h3><div class="ptag">Vigsel och middag</div><div class="price">17 900 <small>kr</small></div><ul><li>Upp till 5 timmar</li><li>Förmöte</li><li>Ca 350 bilder</li><li>Leverans inom fyra veckor</li></ul><a href="#kontakt" class="btn btn-ghost">Fråga om datum</a></div></div>
-<div class="also rv"><div><span class="lbl">Även familj &amp; företag</span><h3>Familj & företag</h3><p>Familjefotografering vid Vänerns stränder och porträtt för värmländska företag. Från 3 500 kr.</p></div><img src="../../media/img/familj-19.jpg" alt="Familjefotografering" loading="lazy" data-lb><img src="../../media/img/foretag-19.jpg" alt="Företagsporträtt" loading="lazy" data-lb></div></div></section>
-<section class="gal" id="galleri"><div class="wrap head rv"><div><span class="lbl">Arbeten</span><h2>Från <em>skogen</em> till festsalen</h2></div><div class="filters"><button class="on" data-f="all">Alla</button><button data-f="b">Bröllop</button><button data-f="f">Familj</button><button data-f="c">Företag</button></div></div><div class="tgrid rv"><figure class="g" data-c="b"><img src="../../media/img/brollop-19.jpg" alt="Fotografi" loading="lazy" data-lb></figure><figure class="g" data-c="f"><img src="../../media/img/familj-19.jpg" alt="Fotografi" loading="lazy" data-lb></figure><figure class="g" data-c="b"><img src="../../media/img/brollop-44.jpg" alt="Fotografi" loading="lazy" data-lb></figure><figure class="g" data-c="c"><img src="../../media/img/foretag-19.jpg" alt="Fotografi" loading="lazy" data-lb></figure><figure class="g" data-c="b"><img src="../../media/img/brollop-01.jpg" alt="Fotografi" loading="lazy" data-lb></figure><figure class="g" data-c="b"><img src="../../media/img/brollop-06.jpg" alt="Fotografi" loading="lazy" data-lb></figure><figure class="g" data-c="f"><img src="../../media/img/familj-16.jpg" alt="Fotografi" loading="lazy" data-lb></figure><figure class="g" data-c="b"><img src="../../media/img/brollop-09.jpg" alt="Fotografi" loading="lazy" data-lb></figure><figure class="g" data-c="c"><img src="../../media/img/foretag-44.jpg" alt="Fotografi" loading="lazy" data-lb></figure><figure class="g" data-c="b"><img src="../../media/img/brollop-13.jpg" alt="Fotografi" loading="lazy" data-lb></figure><figure class="g" data-c="b"><img src="../../media/img/brollop-16.jpg" alt="Fotografi" loading="lazy" data-lb></figure><figure class="g" data-c="b"><img src="../../media/img/brollop-20.jpg" alt="Fotografi" loading="lazy" data-lb></figure><figure class="g" data-c="f"><img src="../../media/img/familj-04.jpg" alt="Fotografi" loading="lazy" data-lb></figure><figure class="g" data-c="b"><img src="../../media/img/brollop-22.jpg" alt="Fotografi" loading="lazy" data-lb></figure><figure class="g" data-c="b"><img src="../../media/img/brollop-23.jpg" alt="Fotografi" loading="lazy" data-lb></figure><figure class="g" data-c="c"><img src="../../media/img/foretag-41.jpg" alt="Fotografi" loading="lazy" data-lb></figure><figure class="g" data-c="b"><img src="../../media/img/brollop-25.jpg" alt="Fotografi" loading="lazy" data-lb></figure><figure class="g" data-c="b"><img src="../../media/img/brollop-29.jpg" alt="Fotografi" loading="lazy" data-lb></figure><figure class="g" data-c="b"><img src="../../media/img/brollop-33.jpg" alt="Fotografi" loading="lazy" data-lb></figure><figure class="g" data-c="f"><img src="../../media/img/familj-09.jpg" alt="Fotografi" loading="lazy" data-lb></figure><figure class="g" data-c="b"><img src="../../media/img/brollop-39.jpg" alt="Fotografi" loading="lazy" data-lb></figure><figure class="g" data-c="b"><img src="../../media/img/brollop-42.jpg" alt="Fotografi" loading="lazy" data-lb></figure><figure class="g" data-c="b"><img src="../../media/img/brollop-48.jpg" alt="Fotografi" loading="lazy" data-lb></figure><figure class="g" data-c="b"><img src="../../media/img/brollop-50.jpg" alt="Fotografi" loading="lazy" data-lb></figure></div></section>
-<section class="proc"><div class="wrap"><div class="head rv"><div><span class="lbl">Så går det till</span><h2>Fyra steg <em>till era bilder</em></h2></div><p>Tydligt och personligt hela vägen.</p></div><div class="steps"><div class="step rv"><i>01</i><h3>Kontakt</h3><p>Skicka en förfrågan med datum och plats.</p></div><div class="step rv"><i>02</i><h3>Träff</h3><p>Vi ses på kafé i Karlstad eller via video.</p></div><div class="step rv"><i>03</i><h3>Bröllopet</h3><p>Jag är med och fångar dagen som den blir.</p></div><div class="step rv"><i>04</i><h3>Galleri</h3><p>Smakprov på en vecka, allt inom sex.</p></div></div></div></section>
-<section class="quotes"><div class="wrap qgrid"><img class="rv" src="../../media/img/brollop-53.jpg" alt="Brudpar" loading="lazy" data-lb><div class="rv"><span class="lbl">Ord från våra par</span><div class="q on"><blockquote>”Sara var så avslappnad att vi glömde att vi var nervösa. Bilderna från bryggan vid Vänern är helt fantastiska.”</blockquote><cite>Hanna & Fredrik · Hammarö</cite></div><div class="q"><blockquote>”Vi fick bilder på alla våra gäster, inte bara på oss. Det betyder så mycket i efterhand.”</blockquote><cite>Lisa & Anton · Sunne</cite></div><div class="q"><blockquote>”Snabb leverans, superfin kommunikation och bilder vi kommer älska för alltid.”</blockquote><cite>Maja & Simon · Karlstad</cite></div><div class="dots"><button aria-label="Omdöme 1" class=on></button><button aria-label="Omdöme 2"></button><button aria-label="Omdöme 3"></button></div></div></div></section>
-<section id="faq"><div class="wrap fgrid"><div class="rv"><span class="lbl">Vanliga frågor</span><h2>Det här <em>undrar många</em></h2><img src="../../media/img/foretag-44.jpg" alt="" loading="lazy" style="margin-top:40px;width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:var(--ri)"></div><div class="rv"><details><summary>Hur långt i förväg bör vi boka?</summary><p>De flesta par bokar 9–14 månader innan, särskilt för lördagar i juni–augusti. Fråga ändå om ni är ute senare – ibland finns det luckor.</p></details><details><summary>Reser du utanför Värmland?</summary><p>Ja, gärna. Inom 10 mil ingår resan, längre bort tar jag milersättning och ibland en natts boende. Utomlands löser vi upplägget tillsammans.</p></details><details><summary>När får vi bilderna?</summary><p>Ett smakprov på ett tjugotal bilder får ni inom en vecka. Hela galleriet levereras inom sex veckor, i ett privat onlinegalleri som går att dela med gästerna.</p></details><details><summary>Hur många bilder blir det?</summary><p>Det beror på dagen, men räkna med ungefär 60–80 redigerade bilder per timme jag är med. Jag väljer hellre bort än levererar dubbletter.</p></details><details><summary>Hur fungerar betalningen?</summary><p>Ni betalar en bokningsavgift på 30 % när avtalet skrivs, resten senast två veckor före bröllopet. Faktura med 14 dagars betalningstid.</p></details></div></div></section>
-<section class="contact" id="kontakt"><div class="wrap cgrid"><div class="rv"><span class="lbl">Kontakt &amp; bokning</span><h2>Hör av <em>er</em></h2><p>Jag svarar på alla förfrågningar inom två vardagar. Berätta gärna lite om er!</p><div class="cinfo">sara@klaralvfoto.se<br>070-334 91 58<br>Västra Torggatan 5, Karlstad</div></div>
-<form class="rv"><label>Namn<input required></label><label>E-post<input type="email" required></label><label>Bröllopsdatum<input type="date"></label><label>Plats<input placeholder="T.ex. Selma Spa, Sunne"></label>
-<label class="full">Vad är du intresserad av?<select><option>Bröllop – heldag</option><option>Bröllop – halvdag</option><option>Vigsel / intimt bröllop</option><option>Familj</option><option>Företag</option></select></label>
-<label class="full">Berätta om er dag<textarea></textarea></label><button class="btn" type="submit">Skicka förfrågan</button><div class="ok">Tack! Jag hör av mig inom två vardagar.</div></form></div></section>
-<footer><div class="wrap"><span>© 2026 Klarälv Fotografi · Karlstad & Värmland</span><span>Instagram · Pinterest</span><a href="../../index.html">← Alla sajter</a></div></footer>
-<div class="lb"><button class="x" aria-label="Stäng">×</button><button class="pv" aria-label="Föregående">‹</button><img alt=""><button class="nx" aria-label="Nästa">›</button></div>
-<script>
-const nav=document.querySelector('.nav');
-const sc=()=>nav.classList.toggle('solid',scrollY>60);addEventListener('scroll',sc);sc();
-document.querySelector('.burger').onclick=()=>document.body.classList.toggle('menu-open');
-document.querySelectorAll('.links a').forEach(a=>a.onclick=()=>document.body.classList.remove('menu-open'));
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
-document.querySelectorAll('.rv').forEach(el=>io.observe(el));
-const lb=document.querySelector('.lb'),lbi=lb.querySelector('img');let L=[],li=0;
-const show=()=>{lbi.src=L[li].dataset.full||L[li].src};
-document.addEventListener('click',e=>{const t=e.target.closest('[data-lb]');if(!t)return;
-L=[...document.querySelectorAll('[data-lb]')].filter(x=>x.offsetParent!==null);li=L.indexOf(t);show();lb.classList.add('on')});
-lb.querySelector('.x').onclick=()=>lb.classList.remove('on');
-lb.querySelector('.pv').onclick=()=>{li=(li-1+L.length)%L.length;show()};
-lb.querySelector('.nx').onclick=()=>{li=(li+1)%L.length;show()};
-lb.onclick=e=>{if(e.target===lb)lb.classList.remove('on')};
-addEventListener('keydown',e=>{if(!lb.classList.contains('on'))return;if(e.key==='Escape')lb.classList.remove('on');if(e.key==='ArrowLeft')lb.querySelector('.pv').click();if(e.key==='ArrowRight')lb.querySelector('.nx').click()});
-const qs=document.querySelectorAll('.q'),ds=document.querySelectorAll('.dots button');let qi=0;
-const sq=i=>{qi=i;qs.forEach((q,j)=>q.classList.toggle('on',j==i));ds.forEach((d,j)=>d.classList.toggle('on',j==i))};
-ds.forEach((d,i)=>d.onclick=()=>sq(i));setInterval(()=>sq((qi+1)%qs.length),7000);
-document.querySelector('form').onsubmit=e=>{e.preventDefault();e.target.querySelector('.ok').style.display='block';e.target.querySelector('.btn').style.display='none'};
-document.querySelectorAll('.filters button').forEach(bt=>bt.onclick=()=>{document.querySelectorAll('.filters button').forEach(x=>x.classList.toggle('on',x==bt));document.querySelectorAll('.tgrid .g').forEach(g=>g.classList.toggle('hide',bt.dataset.f!='all'&&g.dataset.c!=bt.dataset.f))});</script></body></html>
+<section class="hero">
+ <video src="../../media/video/montage-natur.mp4" muted autoplay loop playsinline poster="../../media/img/brollop-44.jpg"></video>
+ <a class="sticker" href="#kontakt"><span>Lediga datum 2027<small>kolla ert →</small></span></a>
+ <h1>Bröllop i ladan, hela natten.</h1>
+</section>
+
+<section class="hi">
+ <img src="../../media/img/brollop-19.jpg" alt="Brudpar på en äng i Värmland" loading="lazy">
+ <div>
+  <h2>Hej! Jag heter Frida och jag <span>älskar</span> lador.</h2>
+  <p>Höbalar, ljusslingor, en farbror som spelar dragspel och ett dansgolv av gamla plankor. Det är där jag är som bäst. Jag har fotat 140 bröllop i Värmland, de flesta på gårdar längs Klarälven.</p>
+  <p>Jag har gummistövlar i bilen och klänningsklämmor i fickan. Ni behöver inte oroa er för något.</p>
+  <div class="pills"><span>Sunne</span><span>Torsby</span><span>Hagfors</span><span>Karlstad</span></div>
+ </div>
+</section>
+
+<section class="cats" id="bilder">
+ <a href="#vagg"><img src="../../media/img/brollop-44.jpg" alt="Ladbröllop" loading="lazy"><b>Ladan</b></a>
+ <a href="#vagg"><img src="../../media/img/brollop-24.jpg" alt="Vigsel på äng" loading="lazy"><b>Ängen</b></a>
+ <a href="#vagg"><img src="../../media/img/brollop-46.jpg" alt="Festen" loading="lazy"><b>Festen</b></a>
+</section>
+
+<div class="wh" id="vagg"><h2>Sommaren <span>2026</span></h2><p style="max-width:380px">Mest sol. En storm i Ekshärad. En häst som åt upp brudbuketten. Alla fick bra bilder.</p></div>
+<section class="wall">
+ <img src="../../media/img/brollop-00.jpg" alt="" loading="lazy"><img src="../../media/img/brollop-28.jpg" alt="" loading="lazy"><img src="../../media/img/brollop-01.jpg" alt="" loading="lazy"><img src="../../media/img/brollop-32.jpg" alt="" loading="lazy">
+ <img src="../../media/img/brollop-02.jpg" alt="" loading="lazy"><img src="../../media/img/brollop-03.jpg" alt="" loading="lazy"><img src="../../media/img/brollop-47.jpg" alt="" loading="lazy"><img src="../../media/img/brollop-06.jpg" alt="" loading="lazy">
+ <img src="../../media/img/brollop-48.jpg" alt="" loading="lazy"><img src="../../media/img/brollop-09.jpg" alt="" loading="lazy"><img src="../../media/img/brollop-10.jpg" alt="" loading="lazy"><img src="../../media/img/brollop-49.jpg" alt="" loading="lazy">
+ <img src="../../media/img/brollop-11.jpg" alt="" loading="lazy"><img src="../../media/img/brollop-51.jpg" alt="" loading="lazy"><img src="../../media/img/brollop-13.jpg" alt="" loading="lazy"><img src="../../media/img/brollop-14.jpg" alt="" loading="lazy">
+ <img src="../../media/img/brollop-52.jpg" alt="" loading="lazy"><img src="../../media/img/foretag-44.jpg" alt="" loading="lazy"><img src="../../media/img/brollop-17.jpg" alt="" loading="lazy"><img src="../../media/img/brollop-55.jpg" alt="" loading="lazy">
+ <img src="../../media/img/brollop-20.jpg" alt="" loading="lazy"><img src="../../media/img/brollop-23.jpg" alt="" loading="lazy"><img src="../../media/img/brollop-53.jpg" alt="" loading="lazy"><img src="../../media/img/brollop-54.jpg" alt="" loading="lazy">
+ <img src="../../media/img/brollop-56.jpg" alt="" loading="lazy"><img src="../../media/img/brollop-57.jpg" alt="" loading="lazy">
+</section>
+
+<section class="band" id="frida">
+ <img src="../../media/img/portratt-19.jpg" alt="Frida Lund" loading="lazy">
+ <div class="t">
+  <h2>Lite mer om mig</h2>
+  <p>Uppvuxen på en gård utanför Sunne, med tre syskon och 40 kor. Jag lånade pappas kamera när jag var tolv och lämnade aldrig tillbaka den.</p>
+  <p>Jag skrattar högt, gråter på varje vigsel och dansar med när ni tvingar mig. (Ni kommer tvinga mig.)</p>
+  <p>Vintertid fotar jag familjer och värmländska företag.</p>
+  <div class="sm"><img src="../../media/img/familj-19.jpg" alt="Familjefoto" loading="lazy"><img src="../../media/img/foretag-19.jpg" alt="Företagsfoto" loading="lazy"></div>
+ </div>
+</section>
+
+<section class="pk" id="priser">
+ <h2>Vad kostar det?</h2>
+ <p style="font-size:20px">Raka priser, inga överraskningar. Resor i hela Värmland ingår.</p>
+ <div class="pg">
+  <div class="p big"><div><h3>Hela dagen på gården</h3><p>10 timmar, från påklädning till dansgolv. 700+ bilder, galleri att dela, och jag stannar tills bandet tar paus.</p></div><div class="pr">27 500 kr</div></div>
+  <div class="p"><div><h3>Halvdag</h3><p>5 timmar. Vigsel, porträtt och middag. 350 bilder.</p></div><div class="pr">16 900 kr</div></div>
+  <div class="p"><div><h3>Liten vigsel</h3><p>2 timmar på ängen eller i kyrkan. 150 bilder.</p></div><div class="pr">8 500 kr</div></div>
+ </div>
+</section>
+
+<section class="rv">
+ <div class="in">
+  <h2>Snälla ord</h2>
+  <blockquote>"Frida klev rakt ut i leran för att få bilden på oss i solnedgången. Hon kom tillbaka i strumplästen och skrattade."<cite>Malin &amp; Oskar, Rottneros</cite></blockquote>
+  <blockquote>"Vår farmor sa att det var de finaste bilderna hon sett. Hon har sett många bröllop."<cite>Ida &amp; Tobias, Ekshärad</cite></blockquote>
+  <blockquote>"Vi fick 20 bilder dagen efter. Vi satt i bilen på väg hem och grät."<cite>Nora &amp; Leo, Torsby</cite></blockquote>
+  <div class="press"><span>140 bröllop</span><span>4,9 av 5 (112 omdömen)</span><span>Syns i Värmlandsbladet</span><span>Bröllopsmagasinet</span></div>
+ </div>
+</section>
+
+<section class="faq">
+ <h2>Frågor jag ofta får</h2>
+ <details><summary>Fotar du utanför Värmland?</summary><p>Ja! Dalsland, Dalarna, Norge. En liten reseavgift bara.</p></details>
+ <details><summary>Vad händer om det regnar?</summary><p>Regn i en lada är mysigt. Och jag har paraplyer.</p></details>
+ <details><summary>Hur bokar vi?</summary><p>Mejla mig, vi fikar (på riktigt eller via video) och sen säkrar ni datumet med 3 000 kr.</p></details>
+</section>
+
+<section class="ct" id="kontakt">
+ <img src="../../media/img/brollop-50.jpg" alt="Brudpar på gård" loading="lazy">
+ <div class="box">
+  <h2>Säg hej!</h2>
+  <p>Skriv ert datum, så kollar jag direkt. 2027 har fortfarande några lördagar kvar.</p>
+  <form onsubmit="event.preventDefault();this.innerHTML='<p><b>Tack!</b> Jag hör av mig idag eller i morgon. /Frida</p>'"><input placeholder="Era namn" required><input type="email" placeholder="E-post" required><input placeholder="Datum och gård"><textarea rows="3" placeholder="Berätta om er dag"></textarea><button>Skicka</button></form>
+ </div>
+</section>
+<footer><span>Klarälv Fotografi · Frida Lund · Sunne, Värmland</span><a href="../../index.html">← Alla sajter</a></footer>
+</body></html>

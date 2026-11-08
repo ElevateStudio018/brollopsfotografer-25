@@ -1,0 +1,96 @@
+<!doctype html><html lang="sv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nils Berg Foto</title><meta name="description" content="Bröllopsfotograf i Stockholm. Stadsbröllop, fester och folk – med full färg.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>*{box-sizing:border-box;margin:0;padding:0}html{-webkit-text-size-adjust:100%}img,video{display:block;max-width:100%}a{color:inherit}body{overflow-x:hidden}
+
+:root{--ink:#0d0d0d;--paper:#f2f0eb;--red:#e8321e}
+body{background:var(--paper);color:var(--ink);font-family:"Inter Tight",system-ui,sans-serif}
+.hero{position:relative;height:100svh;min-height:560px;overflow:hidden;background:#111}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero h1{position:absolute;left:0;right:0;top:0;padding:1.2vw 1.6vw 0;color:#fff;font-weight:900;font-size:21.5vw;line-height:.82;letter-spacing:-.065em;text-transform:uppercase;text-shadow:0 2px 30px rgba(0,0,0,.25);white-space:nowrap}
+.hero nav{position:absolute;left:1.6vw;right:1.6vw;bottom:22px;display:flex;justify-content:space-between;align-items:end;gap:20px;color:#fff;font-weight:600;font-size:15px;text-shadow:0 1px 10px rgba(0,0,0,.5)}
+.hero nav .l{display:flex;gap:22px;flex-wrap:wrap}.hero nav a{text-decoration:none}
+.hero nav .cta{background:var(--red);color:#fff;padding:12px 18px;text-shadow:none}
+.intro{display:grid;grid-template-columns:1.3fr 1fr;gap:4vw;padding:80px 1.6vw 60px;align-items:end}
+.intro p.big{font-size:clamp(28px,3.6vw,56px);line-height:1.02;font-weight:800;letter-spacing:-.035em}
+.intro p.big span{color:var(--red)}
+.intro p.s{font-size:17px;line-height:1.5;max-width:440px}
+.strip-h{display:flex;justify-content:space-between;align-items:end;padding:0 1.6vw 16px}
+.strip-h h2{font-size:clamp(34px,5vw,80px);font-weight:900;letter-spacing:-.05em;line-height:.9}
+.arrows button{width:52px;height:52px;border:2px solid var(--ink);background:none;font-size:22px;cursor:pointer;margin-left:6px}
+.arrows button:hover{background:var(--ink);color:#fff}
+.strip{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 1.6vw 10px;scrollbar-width:none}
+.strip::-webkit-scrollbar{display:none}
+.card{flex:0 0 min(42vw,620px);scroll-snap-align:start;text-decoration:none}
+.card .im{position:relative;aspect-ratio:4/5;overflow:hidden;background:#ddd}
+.card img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
+.card:hover img{transform:scale(1.04)}
+.card .im b{position:absolute;left:14px;bottom:12px;color:#fff;font-size:clamp(26px,3vw,46px);font-weight:900;letter-spacing:-.04em;line-height:.9;text-shadow:0 2px 18px rgba(0,0,0,.45)}
+.card .meta{display:flex;justify-content:space-between;padding:10px 2px 0;font-size:14px;font-weight:600}
+.card .meta span{color:#777;font-weight:500}
+.cats{display:grid;grid-template-columns:repeat(4,1fr);margin-top:90px}
+.cats a{position:relative;aspect-ratio:3/4;overflow:hidden;text-decoration:none;color:#fff}
+.cats img{width:100%;height:100%;object-fit:cover;transition:transform .7s}.cats a:hover img{transform:scale(1.06)}
+.cats b{position:absolute;left:16px;top:14px;font-size:clamp(24px,2.6vw,42px);font-weight:900;letter-spacing:-.04em;text-shadow:0 2px 16px rgba(0,0,0,.5)}
+.cats i{position:absolute;left:16px;bottom:14px;font-style:normal;font-weight:600;font-size:14px;text-shadow:0 1px 10px rgba(0,0,0,.6)}
+.wall{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:16vw;gap:4px;padding:4px 0}
+.wall img{width:100%;height:100%;object-fit:cover}
+.wall .w2{grid-column:span 2}.wall .h2{grid-row:span 2}
+.me{display:grid;grid-template-columns:1fr 1fr;background:var(--ink);color:#fff}
+.me img{width:100%;height:100%;object-fit:cover;min-height:520px}
+.me .t{padding:70px 5vw;display:flex;flex-direction:column;justify-content:center;gap:18px}
+.me h2{font-size:clamp(40px,5.4vw,88px);font-weight:900;letter-spacing:-.055em;line-height:.88}
+.me p{font-size:18px;line-height:1.55;max-width:520px;color:#e7e7e7}
+.me .sign{font-weight:800;color:var(--red);font-size:20px}
+.press{padding:60px 1.6vw;border-bottom:2px solid var(--ink)}
+.press h3{font-size:14px;font-weight:700;margin-bottom:18px}
+.press ul{list-style:none;display:flex;flex-wrap:wrap;gap:10px 40px;font-size:clamp(22px,2.6vw,40px);font-weight:900;letter-spacing:-.04em}
+.press li:nth-child(even){color:#9a9a9a}
+.pk{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:2px solid var(--ink)}
+.pk div{padding:40px 1.6vw 44px;border-right:2px solid var(--ink)}.pk div:last-child{border:0}
+.pk h3{font-size:22px;font-weight:800}.pk .pr{font-size:clamp(44px,5vw,76px);font-weight:900;letter-spacing:-.05em;margin:10px 0 14px}
+.pk p{font-size:16px;line-height:1.5;color:#333}.pk .hot{background:var(--red);color:#fff}.pk .hot p{color:#fff}
+.rev{display:grid;grid-template-columns:1fr 1fr;gap:4vw;padding:80px 1.6vw}
+.rev blockquote{font-size:clamp(22px,2.2vw,32px);font-weight:700;letter-spacing:-.025em;line-height:1.18}
+.rev cite{display:block;margin-top:14px;font-size:15px;font-style:normal;font-weight:600;color:#777}
+.faqw{display:grid;grid-template-columns:1fr 2fr;gap:4vw;padding:20px 1.6vw 80px}
+.faqw h2{font-size:clamp(34px,4vw,64px);font-weight:900;letter-spacing:-.05em;line-height:.9}
+.faq details{border-top:2px solid var(--ink);padding:18px 0}.faq details:last-child{border-bottom:2px solid var(--ink)}
+.faq summary{font-weight:800;font-size:20px;cursor:pointer;list-style:none}.faq summary::after{content:"+";float:right}
+.faq details[open] summary::after{content:"–"}.faq p{margin-top:10px;font-size:17px;line-height:1.5;max-width:640px}
+.contact{position:relative;min-height:80vh;display:flex;align-items:end;overflow:hidden;color:#fff}
+.contact>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.contact .box{position:relative;background:var(--paper);color:var(--ink);margin:1.6vw;padding:36px;max-width:560px;width:100%}
+.contact h2{font-size:clamp(36px,4.4vw,68px);font-weight:900;letter-spacing:-.05em;line-height:.9;margin-bottom:16px}
+.contact p{font-size:17px;line-height:1.5}.contact a.m{display:inline-block;margin-top:18px;background:var(--red);color:#fff;padding:14px 20px;font-weight:800;text-decoration:none;font-size:18px}
+footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:22px 1.6vw;font-size:14px;font-weight:600}
+@media(max-width:800px){.hero h1{font-size:22vw;padding:14px 12px 0}.hero nav{left:16px;right:16px;font-size:14px}.hero nav .l a:not(:first-child){display:none}
+.intro,.rev,.faqw,.me,.pk{grid-template-columns:1fr}.intro{padding:56px 16px 40px}.strip-h,.press,.rev,.faqw,footer{padding-left:16px;padding-right:16px}
+.strip{padding:0 16px 10px}.card{flex-basis:78vw}.arrows{display:none}.cats{grid-template-columns:1fr 1fr}
+.wall{grid-template-columns:repeat(2,1fr);grid-auto-rows:46vw}.wall .w2{grid-column:span 2}
+.me .t{padding:48px 16px}.me img{min-height:420px}.pk div{border-right:0;border-bottom:2px solid var(--ink);padding:32px 16px}
+.contact .box{margin:16px;padding:26px}}
+</style></head><body>
+<header class="hero"><video class="" src="../../media/video/montage-stad.mp4" autoplay muted loop playsinline preload="auto"></video><h1>Nils Berg</h1>
+<nav><div class="l"><a href="#brollop">Bröllop</a><a href="#om">Om mig</a><a href="#priser">Priser</a></div><a class="cta" href="#kontakt">Kolla mitt datum</a></nav></header>
+<section class="intro"><p class="big">Bröllop i Stockholm. Stadshuset kl 11, tunnelbana kl 12, <span>dansgolv till 03.</span> Jag är med hela vägen.</p>
+<p class="s">Jag heter Nils och har fotat 180+ bröllop i stan sedan 2015. Ingen posering i en kvart vid en fontän – jag följer er genom kvarteren och tar bilderna medan det händer.</p></section>
+<div class="strip-h" id="brollop"><h2>Senaste bröllopen</h2><div class="arrows"><button aria-label="Föregående" data-d="-1">&larr;</button><button aria-label="Nästa" data-d="1">&rarr;</button></div></div>
+<div class="strip" id="strip"><a class="card" href="#kontakt"><div class="im"><img src="../../media/img/brollop-05.jpg" alt="Ellen och Omar" loading="lazy"><b>Ellen &amp; Omar</b></div><div class="meta">Stadshuset → Hornstull<span>Se bröllopet →</span></div></a><a class="card" href="#kontakt"><div class="im"><img src="../../media/img/brollop-30.jpg" alt="Saga och Viktor" loading="lazy"><b>Saga &amp; Viktor</b></div><div class="meta">Skeppsholmen, maj<span>Se bröllopet →</span></div></a><a class="card" href="#kontakt"><div class="im"><img src="../../media/img/brollop-55.jpg" alt="Nora och Liam" loading="lazy"><b>Nora &amp; Liam</b></div><div class="meta">Söder, takterrass<span>Se bröllopet →</span></div></a><a class="card" href="#kontakt"><div class="im"><img src="../../media/img/brollop-12.jpg" alt="Alva och Sami" loading="lazy"><b>Alva &amp; Sami</b></div><div class="meta">Djurgården, juni<span>Se bröllopet →</span></div></a><a class="card" href="#kontakt"><div class="im"><img src="../../media/img/brollop-22.jpg" alt="Hedda och Jonas" loading="lazy"><b>Hedda &amp; Jonas</b></div><div class="meta">Rålambshov, augusti<span>Se bröllopet →</span></div></a><a class="card" href="#kontakt"><div class="im"><img src="../../media/img/brollop-37.jpg" alt="Tove och Ali" loading="lazy"><b>Tove &amp; Ali</b></div><div class="meta">Gamla stan, oktober<span>Se bröllopet →</span></div></a><a class="card" href="#kontakt"><div class="im"><img src="../../media/img/brollop-44.jpg" alt="Maja och Erik" loading="lazy"><b>Maja &amp; Erik</b></div><div class="meta">Fotografiska-kajen<span>Se bröllopet →</span></div></a></div>
+<div class="cats"><a href="#kontakt"><img src="../../media/img/brollop-48.jpg" alt="Bröllop" loading="lazy"><b>Bröllop</b><i>Från 24 500 kr</i></a><a href="#kontakt"><img src="../../media/img/familj-05.jpg" alt="Familj" loading="lazy"><b>Familj</b><i>Lekpark, inte studio</i></a><a href="#kontakt"><img src="../../media/img/portratt-30.jpg" alt="Porträtt" loading="lazy"><b>Porträtt</b><i>Par &amp; förlovning</i></a><a href="#kontakt"><img src="../../media/img/foretag-55.jpg" alt="Företag" loading="lazy"><b>Företag</b><i>Fest &amp; event</i></a></div>
+<div class="wall"><div class="w2 h2"><img src="../../media/img/brollop-01.jpg" alt="Bröllop i Stockholm" loading="lazy"></div><div class=""><img src="../../media/img/brollop-03.jpg" alt="Bröllop i Stockholm" loading="lazy"></div><div class="h2"><img src="../../media/img/brollop-04.jpg" alt="Bröllop i Stockholm" loading="lazy"></div><div class=""><img src="../../media/img/brollop-09.jpg" alt="Bröllop i Stockholm" loading="lazy"></div><div class=""><img src="../../media/img/brollop-14.jpg" alt="Bröllop i Stockholm" loading="lazy"></div><div class="w2"><img src="../../media/img/brollop-17.jpg" alt="Bröllop i Stockholm" loading="lazy"></div><div class=""><img src="../../media/img/brollop-20.jpg" alt="Bröllop i Stockholm" loading="lazy"></div><div class="h2"><img src="../../media/img/brollop-26.jpg" alt="Bröllop i Stockholm" loading="lazy"></div><div class=""><img src="../../media/img/brollop-27.jpg" alt="Bröllop i Stockholm" loading="lazy"></div><div class="w2"><img src="../../media/img/brollop-29.jpg" alt="Bröllop i Stockholm" loading="lazy"></div><div class=""><img src="../../media/img/brollop-31.jpg" alt="Bröllop i Stockholm" loading="lazy"></div><div class=""><img src="../../media/img/brollop-34.jpg" alt="Bröllop i Stockholm" loading="lazy"></div><div class="w2"><img src="../../media/img/brollop-39.jpg" alt="Bröllop i Stockholm" loading="lazy"></div><div class=""><img src="../../media/img/brollop-41.jpg" alt="Bröllop i Stockholm" loading="lazy"></div><div class=""><img src="../../media/img/brollop-46.jpg" alt="Bröllop i Stockholm" loading="lazy"></div><div class="w2"><img src="../../media/img/brollop-50.jpg" alt="Bröllop i Stockholm" loading="lazy"></div><div class=""><img src="../../media/img/brollop-53.jpg" alt="Bröllop i Stockholm" loading="lazy"></div></div>
+<section class="me" id="om"><img src="../../media/img/portratt-05.jpg" alt="Nils Berg, fotograf" loading="lazy"><div class="t"><h2>Hej, jag är Nils.</h2>
+<p>Uppvuxen i Hägersten, numera på Södermalm med en sambo, en cykel och för många objektiv. Jag började fota konserter på Debaser och fastnade för samma sak på bröllop: ljuset, svetten, ögonblicket när farmor tar över dansgolvet.</p>
+<p>Jag pratar mycket på förmötet och nästan inget under dagen. Det är så det ska vara.</p><span class="sign">– Nils</span></div></section>
+<section class="press"><h3>Syns i &amp; litar på mig</h3><ul><li>Bröllopsmagasinet</li><li>Stadsliv</li><li>Nordisk Fest</li><li>Hotell Kajen</li><li>Söderhallen</li><li>Bröllopsguiden Sthlm</li></ul></section>
+<section class="pk" id="priser"><div><h3>Vigseln</h3><p class="pr">9 800 kr</p><p>2 timmar. Stadshuset eller kyrkan, par­porträtt på stan efteråt. 150+ bilder.</p></div>
+<div class="hot"><h3>Hela dagen</h3><p class="pr">24 500 kr</p><p>10 timmar från förberedelser till första dansen. 600+ bilder, webbgalleri, förmöte.</p></div>
+<div><h3>Till sista låten</h3><p class="pr">32 000 kr</p><p>Obegränsat. Andra fotograf ingår. Fotobok 30×30 i linne.</p></div></section>
+<section class="rev"><blockquote>"Nils fick med när min pappa grät i tunnelbanan. Vi visste inte ens att han tog bilden."<cite>Ellen &amp; Omar, Stadshuset 2025</cite></blockquote>
+<blockquote>"Vi hatar att bli fotade. Han löste det med två skämt och en promenad över Västerbron."<cite>Saga &amp; Viktor, Skeppsholmen 2025</cite></blockquote></section>
+<section class="faqw"><h2>Snabba svar</h2><div class="faq"><details><summary>Hur långt i förväg bokar man?</summary><p>Lördagar maj–september går oftast 12–14 månader innan. Vardagar och vinter finns ofta kvar.</p></details><details><summary>När får vi bilderna?</summary><p>En smygtitt inom 48 timmar, hela galleriet inom fyra veckor.</p></details><details><summary>Fotar du utanför Stockholm?</summary><p>Ja, resor inom Mälardalen ingår. Längre bort tar jag tåget och skickar kvittot.</p></details></div></section>
+<section class="contact" id="kontakt"><img src="../../media/img/brollop-57.jpg" alt="Brudpar i Stockholm" loading="lazy"><div class="box"><h2>Är ert datum ledigt?</h2><p>Skicka datum och plats. Jag svarar samma dag, oftast inom en timme.</p><a class="m" href="mailto:hej@nilsberg.se">hej@nilsberg.se</a></div></section>
+<footer><span>Nils Berg Foto · Stockholm</span><a class="all" href="../../index.html">&larr; Alla sajter</a></footer>
+<script>(function(){const h=document.querySelector('.hero h1');function fit(){h.style.fontSize='';const cs=parseFloat(getComputedStyle(h).fontSize),pad=parseFloat(getComputedStyle(h).paddingLeft)*2,w=h.scrollWidth-pad,avail=h.clientWidth-pad;h.style.fontSize=(cs*avail/w)+'px'}document.fonts.ready.then(fit);addEventListener('resize',fit)})();document.querySelectorAll('.arrows button').forEach(b=>b.onclick=()=>{const s=document.getElementById('strip');s.scrollBy({left:b.dataset.d*s.clientWidth*.6,behavior:'smooth'})})</script>
+</body></html>

@@ -1,0 +1,95 @@
+<!doctype html><html lang="sv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Juni Sol Fotografi</title><meta name="description" content="Bröllopsfotograf i Västerås och Mälardalen. Varma färger, mycket skratt.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
+<style>*{box-sizing:border-box;margin:0;padding:0}html{-webkit-text-size-adjust:100%}img,video{display:block;max-width:100%}a{color:inherit}body{overflow-x:hidden}
+
+:root{--cream:#fbf3e6;--ink:#2a1608;--or:#ff6a2b;--co:#ff4f5e;--sun:#ffb627}
+body{background:var(--cream);color:var(--ink);font-family:"Bricolage Grotesque",system-ui,sans-serif}
+.top{display:flex;justify-content:space-between;align-items:center;padding:18px 24px;font-weight:700}
+.logo{font-size:26px;letter-spacing:-.04em;font-weight:800}.logo span{color:var(--or)}
+.top nav{display:flex;gap:22px;font-size:16px}.top nav a{text-decoration:none}.top nav a.b{background:var(--ink);color:var(--cream);padding:9px 16px;border-radius:30px}
+.hero{display:grid;grid-template-columns:1fr 1.25fr;gap:24px;padding:10px 24px 40px;align-items:center}
+.hero h1{font-size:clamp(52px,7.4vw,124px);font-weight:800;letter-spacing:-.055em;line-height:.86}
+.hero h1 .o{color:var(--or)}.hero h1 .c{color:var(--co)}
+.hero p{font-size:19px;line-height:1.45;margin:22px 0 26px;max-width:460px}
+.btn{display:inline-block;background:var(--or);color:#fff;font-weight:800;padding:16px 26px;border-radius:40px;text-decoration:none;font-size:18px;transform:rotate(-2deg);box-shadow:4px 4px 0 var(--ink)}
+.btn:hover{transform:rotate(0)}
+.mosaic{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;aspect-ratio:1/1}
+.mosaic .t{position:relative;overflow:hidden;border-radius:14px;background:var(--sun)}
+.mosaic .t img,.mosaic .t video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .8s}
+.mosaic .t img.out{opacity:0}
+.mosaic .t.mid video{opacity:0}.mosaic .t.mid.live video{opacity:1}
+.mosaic .t.mid .tag{position:absolute;left:10px;top:10px;background:var(--co);color:#fff;font-weight:800;font-size:13px;padding:5px 10px;border-radius:20px;z-index:2;opacity:0;transition:opacity .5s}
+.mosaic .t.mid.live .tag{opacity:1}
+.mosaic .t:nth-child(2){transform:rotate(1.5deg)}.mosaic .t:nth-child(4){transform:rotate(-1.5deg)}.mosaic .t:nth-child(9){transform:rotate(2deg)}
+.ticker{background:var(--or);color:#fff;overflow:hidden;white-space:nowrap;padding:16px 0;font-weight:800;font-size:clamp(22px,2.6vw,36px);letter-spacing:-.03em}
+.ticker div{display:inline-block;animation:tk 30s linear infinite}
+@keyframes tk{to{transform:translateX(-50%)}}
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;padding:60px 24px}
+.cats a{position:relative;border-radius:20px;overflow:hidden;aspect-ratio:3/4;text-decoration:none}
+.cats img{width:100%;height:100%;object-fit:cover;transition:transform .6s}.cats a:hover img{transform:scale(1.07) rotate(1deg)}
+.cats b{position:absolute;left:12px;bottom:12px;background:var(--cream);padding:8px 14px;border-radius:30px;font-size:20px;font-weight:800}
+.cats a:nth-child(2) b{background:var(--sun)}.cats a:nth-child(3) b{background:var(--co);color:#fff}.cats a:nth-child(4) b{background:var(--or);color:#fff}
+.h2{font-size:clamp(40px,5.6vw,92px);font-weight:800;letter-spacing:-.055em;line-height:.88;padding:0 24px 24px}
+.h2 span{color:var(--co)}
+.wall{columns:4 240px;column-gap:10px;padding:0 24px}
+.wall img{width:100%;margin-bottom:10px;border-radius:12px;break-inside:avoid}
+.me{display:grid;grid-template-columns:.9fr 1.1fr;gap:5vw;padding:100px 24px;align-items:center}
+.me .ph{position:relative}.me .ph img{border-radius:28px;width:100%;aspect-ratio:4/5;object-fit:cover}
+.me .ph .st{position:absolute;right:-14px;top:-14px;width:120px;height:120px;border-radius:50%;background:var(--sun);display:grid;place-items:center;text-align:center;font-weight:800;font-size:15px;line-height:1.1;transform:rotate(12deg)}
+.me h2{font-size:clamp(40px,5vw,80px);font-weight:800;letter-spacing:-.05em;line-height:.9;margin-bottom:22px}
+.me p{font-size:19px;line-height:1.55;margin-bottom:14px;max-width:560px}
+.me ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.me li{border:2px solid var(--ink);border-radius:30px;padding:7px 14px;font-weight:700}
+.num{display:grid;grid-template-columns:repeat(4,1fr);background:var(--ink);color:var(--cream)}
+.num div{padding:44px 24px;border-right:1px solid #4a3020}.num b{display:block;font-size:clamp(48px,6vw,96px);font-weight:800;letter-spacing:-.05em;color:var(--sun);line-height:1}
+.num span{font-weight:600}
+.pk{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding:90px 24px}
+.pk div{border-radius:24px;padding:32px;background:#fff}.pk div:nth-child(2){background:var(--co);color:#fff;transform:rotate(-1deg)}.pk div:nth-child(3){background:var(--sun)}
+.pk h3{font-size:26px;font-weight:800}.pk .pr{font-size:clamp(44px,4.4vw,68px);font-weight:800;letter-spacing:-.05em;margin:8px 0 12px}.pk p{font-size:17px;line-height:1.45}
+.rev{padding:0 24px 90px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+.rev figure{display:flex;flex-direction:column;gap:14px}.rev img{border-radius:16px;aspect-ratio:1;object-fit:cover;width:100%}
+.rev blockquote{font-size:21px;font-weight:700;line-height:1.25;letter-spacing:-.02em}.rev figcaption{font-weight:600;color:var(--or)}
+.faqw{padding:0 24px 90px;max-width:900px}
+.faq details{background:#fff;border-radius:18px;padding:20px 24px;margin-bottom:10px}
+.faq summary{font-weight:800;font-size:20px;cursor:pointer}.faq p{margin-top:10px;font-size:17px;line-height:1.5}
+.contact{background:var(--or);color:#fff;display:grid;grid-template-columns:1.2fr 1fr;gap:5vw;padding:90px 24px;align-items:center}
+.contact h2{font-size:clamp(52px,7vw,120px);font-weight:800;letter-spacing:-.06em;line-height:.85}
+.contact p{font-size:19px;line-height:1.5;margin:20px 0}.contact a.m{display:inline-block;background:var(--ink);color:#fff;padding:16px 24px;border-radius:40px;font-weight:800;font-size:19px;text-decoration:none}
+.contact .pics{display:grid;grid-template-columns:1fr 1fr;gap:10px}.contact .pics img{border-radius:16px;aspect-ratio:3/4;object-fit:cover;width:100%}.contact .pics img:nth-child(2){margin-top:40px}
+footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:22px 24px;font-weight:700}
+@media(max-width:820px){.top{padding:14px 16px}.top nav a:not(.b){display:none}.hero{grid-template-columns:1fr;padding:6px 16px 32px}
+.cats{grid-template-columns:1fr 1fr;padding:44px 16px;gap:10px}.h2{padding:0 16px 18px}.wall{padding:0 16px;columns:2;column-gap:8px}.wall img{margin-bottom:8px}
+.me,.contact{grid-template-columns:1fr;padding:64px 16px}.me .ph .st{right:8px;width:96px;height:96px;font-size:13px}
+.num{grid-template-columns:1fr 1fr}.num div{padding:28px 16px}.pk,.rev{grid-template-columns:1fr;padding-left:16px;padding-right:16px}.pk{padding-top:60px;padding-bottom:60px}
+.faqw{padding:0 16px 60px}footer{padding:20px 16px}}
+</style></head><body>
+<div class="top"><span class="logo">juni<span>sol</span></span><nav><a href="#brollop">Bröllop</a><a href="#om">Om mig</a><a href="#priser">Priser</a><a class="b" href="#kontakt">Boka</a></nav></div>
+<header class="hero"><div><h1>Bröllop med <span class="o">solsting</span> och <span class="c">glitter</span> i håret.</h1>
+<p>Jag är Juni, bröllopsfotograf i Västerås. Jag fotar varmt, nära och lite stökigt – precis som era bästa fester.</p><a class="btn" href="#kontakt">Är vårt datum ledigt?</a></div>
+<div class="mosaic" id="mosaic"><div class="t"><img src="../../media/img/brollop-06.jpg" alt="Bröllop"></div><div class="t"><img src="../../media/img/brollop-31.jpg" alt="Bröllop"></div><div class="t"><img src="../../media/img/brollop-56.jpg" alt="Bröllop"></div><div class="t"><img src="../../media/img/brollop-10.jpg" alt="Bröllop"></div><div class="t mid"><img src="../../media/img/brollop-00.jpg" alt="Bröllop"><video muted loop playsinline preload="auto" data-src="../../media/video/film-a.mp4"></video><span class="tag">● Live från bröllopet</span></div><div class="t"><img src="../../media/img/brollop-24.jpg" alt="Bröllop"></div><div class="t"><img src="../../media/img/brollop-45.jpg" alt="Bröllop"></div><div class="t"><img src="../../media/img/brollop-19.jpg" alt="Bröllop"></div><div class="t"><img src="../../media/img/brollop-52.jpg" alt="Bröllop"></div></div></header>
+<div class="ticker"><div>Västerås · Mälaren · Kokpunkten · Vallby · Tidö · Sigtuna · Engsö · Köping · Västerås · Mälaren · Kokpunkten · Vallby · Tidö · Sigtuna · Engsö · Köping · Västerås · Mälaren · Kokpunkten · Vallby · Tidö · Sigtuna · Engsö · Köping · Västerås · Mälaren · Kokpunkten · Vallby · Tidö · Sigtuna · Engsö · Köping · </div></div>
+<section class="cats" id="brollop"><a href="#kontakt"><img src="../../media/img/brollop-01.jpg" alt="Bröllop" loading="lazy"><b>Bröllop</b></a><a href="#kontakt"><img src="../../media/img/familj-06.jpg" alt="Familj" loading="lazy"><b>Familj</b></a><a href="#kontakt"><img src="../../media/img/portratt-31.jpg" alt="Porträtt" loading="lazy"><b>Förlovning</b></a><a href="#kontakt"><img src="../../media/img/foretag-56.jpg" alt="Företag" loading="lazy"><b>Företag</b></a></section>
+<h2 class="h2">Sommaren <span>2025</span> i bilder</h2>
+<div class="wall"><img src="../../media/img/brollop-03.jpg" alt="Bröllop i Västerås" loading="lazy"><img src="../../media/img/brollop-05.jpg" alt="Bröllop i Västerås" loading="lazy"><img src="../../media/img/brollop-07.jpg" alt="Bröllop i Västerås" loading="lazy"><img src="../../media/img/brollop-11.jpg" alt="Bröllop i Västerås" loading="lazy"><img src="../../media/img/brollop-15.jpg" alt="Bröllop i Västerås" loading="lazy"><img src="../../media/img/brollop-18.jpg" alt="Bröllop i Västerås" loading="lazy"><img src="../../media/img/brollop-20.jpg" alt="Bröllop i Västerås" loading="lazy"><img src="../../media/img/brollop-23.jpg" alt="Bröllop i Västerås" loading="lazy"><img src="../../media/img/brollop-26.jpg" alt="Bröllop i Västerås" loading="lazy"><img src="../../media/img/brollop-30.jpg" alt="Bröllop i Västerås" loading="lazy"><img src="../../media/img/brollop-32.jpg" alt="Bröllop i Västerås" loading="lazy"><img src="../../media/img/brollop-35.jpg" alt="Bröllop i Västerås" loading="lazy"><img src="../../media/img/brollop-38.jpg" alt="Bröllop i Västerås" loading="lazy"><img src="../../media/img/brollop-42.jpg" alt="Bröllop i Västerås" loading="lazy"><img src="../../media/img/brollop-46.jpg" alt="Bröllop i Västerås" loading="lazy"><img src="../../media/img/brollop-50.jpg" alt="Bröllop i Västerås" loading="lazy"><img src="../../media/img/brollop-53.jpg" alt="Bröllop i Västerås" loading="lazy"><img src="../../media/img/brollop-57.jpg" alt="Bröllop i Västerås" loading="lazy"></div>
+<section class="me" id="om"><div class="ph"><img src="../../media/img/portratt-06.jpg" alt="Juni Åkesson, fotograf" loading="lazy"><span class="st">Har gråtit på 94 bröllop</span></div>
+<div><h2>Hej! Jag heter Juni.</h2><p>Jag bor i ett gult hus i Kungsör med två barn, en tax som heter Kaffe och en frys full av bröllopstårta jag fått med mig hem.</p>
+<p>Jag älskar golden hour vid Mälaren, kusiner som klättrar i träd och tal som spårar ur. Jag dirigerar så lite som möjligt – men jag säger till om slipsen sitter snett.</p>
+<ul><li>Västerås</li><li>Mälardalen</li><li>Reser gärna</li><li>Sedan 2016</li></ul></div></section>
+<section class="num"><div><b>212</b><span>bröllop</span></div><div><b>48 h</b><span>till smygtitt</span></div><div><b>5,0</b><span>snittbetyg</span></div><div><b>1</b><span>tax på kontoret</span></div></section>
+<section class="pk" id="priser"><div><h3>Liten &amp; fin</h3><p class="pr">8 900 kr</p><p>Vigsel + porträtt, 2 timmar. Perfekt för rådhus och små kalas.</p></div>
+<div><h3>Hela härligheten</h3><p class="pr">22 900 kr</p><p>Förberedelser till tårtan, 9 timmar. 500+ bilder och förmöte på café.</p></div>
+<div><h3>Till sista dansen</h3><p class="pr">29 900 kr</p><p>Obegränsat, extra fotograf och en tjock fotobok att bläddra i när ni är 80.</p></div></section>
+<section class="rev"><figure><img src="../../media/img/brollop-09.jpg" alt="Brudpar" loading="lazy"><blockquote>"Juni fick hela släkten att skratta på gruppbilden. Det har aldrig hänt."</blockquote><figcaption>Klara &amp; Adam, Tidö</figcaption></figure>
+<figure><img src="../../media/img/brollop-27.jpg" alt="Brudpar" loading="lazy"><blockquote>"Bilderna är så färgstarka att mormor trodde det var en film."</blockquote><figcaption>Ida &amp; Hampus, Vallby</figcaption></figure>
+<figure><img src="../../media/img/familj-31.jpg" alt="Familj" loading="lazy"><blockquote>"Vi bokade henne igen för familjebilder. Kaffe var med."</blockquote><figcaption>Leila &amp; Johan, Västerås</figcaption></figure></section>
+<section class="faqw"><h2 class="h2" style="padding-left:0">Frågor?</h2><div class="faq"><details><summary>Hur bokar vi?</summary><p>Mejla datum och plats. Ledigt? Då ses vi på en fika och skriver avtal. 30 % i bokningsavgift.</p></details><details><summary>Vad händer om det regnar?</summary><p>Då blir bilderna ännu bättre. Jag har paraplyer i tre färger i bilen.</p></details><details><summary>Kan vi välja bilder själva?</summary><p>Ni får alla bra bilder – jag sorterar bort blinkningar, inte känslor.</p></details></div></section>
+<section class="contact" id="kontakt"><div><h2>Säg hej!</h2><p>Berätta om er dag, även om ni inte har datum än. Jag svarar inom ett dygn.</p><a class="m" href="mailto:hej@junisol.se">hej@junisol.se</a></div>
+<div class="pics"><img src="../../media/img/brollop-34.jpg" alt="Bröllop" loading="lazy"><img src="../../media/img/brollop-04.jpg" alt="Bröllop" loading="lazy"></div></section>
+<footer><span>Juni Sol Fotografi · Västerås</span><a class="all" href="../../index.html">&larr; Alla sajter</a></footer>
+<script>
+const pool=['../../media/img/brollop-02.jpg', '../../media/img/brollop-08.jpg', '../../media/img/brollop-13.jpg', '../../media/img/brollop-16.jpg', '../../media/img/brollop-21.jpg', '../../media/img/brollop-25.jpg', '../../media/img/brollop-28.jpg', '../../media/img/brollop-33.jpg', '../../media/img/brollop-36.jpg', '../../media/img/brollop-40.jpg', '../../media/img/brollop-43.jpg', '../../media/img/brollop-47.jpg', '../../media/img/brollop-49.jpg', '../../media/img/brollop-54.jpg'];const tiles=[...document.querySelectorAll('#mosaic .t:not(.mid)')];let k=0;
+setInterval(()=>{const t=tiles[Math.floor(Math.random()*tiles.length)];const old=t.querySelector('img');const n=new Image();n.alt='Bröllop';n.src=pool[k++%pool.length];n.className='out';n.onload=()=>{t.appendChild(n);requestAnimationFrame(()=>requestAnimationFrame(()=>n.classList.remove('out')));setTimeout(()=>old.remove(),900)}},2200);
+const mid=document.querySelector('#mosaic .mid'),v=mid.querySelector('video');
+setTimeout(()=>{v.src=v.dataset.src;v.play().then(()=>mid.classList.add('live')).catch(()=>{})},1600);
+</script></body></html>
