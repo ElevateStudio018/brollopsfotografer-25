@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Holm Foto 98 – bröllopsfotograf Jonas Holm, Västerås</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<style>
+:root{--desk:#2a8a8a;--g:#c0c0c0;--lt:#fff;--dk:#808080;--xdk:#000;--navy:#000080;--navy2:#1084d0}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{font:13px/1.45 Tahoma,Verdana,"Segoe UI",sans-serif;background:var(--desk);color:#000;overflow:hidden;
+ background-image:radial-gradient(circle at 70% 40%,rgba(255,255,255,.08),transparent 40%)}
+img{display:block;max-width:100%}
+button{font:inherit}
+.bevel{background:var(--g);box-shadow:inset -1px -1px var(--xdk),inset 1px 1px var(--lt),inset -2px -2px var(--dk),inset 2px 2px #dfdfdf}
+.sunk{box-shadow:inset 1px 1px var(--dk),inset -1px -1px var(--lt),inset 2px 2px var(--xdk),inset -2px -2px #dfdfdf;background:#fff}
+.btn{background:var(--g);border:0;padding:4px 14px;box-shadow:inset -1px -1px var(--xdk),inset 1px 1px var(--lt),inset -2px -2px var(--dk),inset 2px 2px #dfdfdf;cursor:pointer;min-width:74px}
+.btn:active{box-shadow:inset 1px 1px var(--xdk),inset -1px -1px var(--lt),inset 2px 2px var(--dk)}
+.btn:focus-visible{outline:1px dotted #000;outline-offset:-5px}
+/* desktop */
+#desk{position:fixed;inset:0 0 34px 0}
+.wall{position:absolute;right:4%;bottom:6%;font-family:VT323,monospace;color:rgba(255,255,255,.22);font-size:clamp(3rem,8vw,8rem);line-height:.85;text-align:right;pointer-events:none}
+.icons{position:absolute;left:10px;top:10px;display:grid;grid-auto-flow:column;grid-template-rows:repeat(auto-fill,88px);height:calc(100% - 20px);gap:6px}
+.ic{width:84px;display:flex;flex-direction:column;align-items:center;gap:4px;background:none;border:0;color:#fff;cursor:pointer;padding:4px;text-align:center}
+.ic span{padding:0 3px;font-size:12px;text-shadow:1px 1px #000}
+.ic:focus span,.ic.sel span{background:var(--navy);outline:1px dotted #fff}
+.ic svg{width:36px;height:36px}
+/* windows */
+.win{position:absolute;padding:3px;display:flex;flex-direction:column;min-width:220px}
+.win.hidden{display:none}
+.tb{background:linear-gradient(90deg,var(--navy),var(--navy2));color:#fff;font-weight:bold;padding:3px 3px 3px 6px;display:flex;align-items:center;gap:6px;cursor:move;user-select:none;touch-action:none}
+.win:not(.active) .tb{background:linear-gradient(90deg,#808080,#b5b5b5);color:#d4d0c8}
+.tb .t{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tb button{width:18px;height:16px;padding:0;font-size:11px;line-height:1;font-weight:bold;background:var(--g);border:0;box-shadow:inset -1px -1px var(--xdk),inset 1px 1px var(--lt),inset -2px -2px var(--dk);cursor:pointer;color:#000}
+.mb{display:flex;gap:12px;padding:3px 6px}
+.mb span:first-letter{text-decoration:underline}
+.body{flex:1;overflow:auto;margin:2px}
+.sb{display:flex;gap:3px;margin-top:2px}
+.sb div{flex:1;padding:1px 6px;box-shadow:inset 1px 1px var(--dk),inset -1px -1px var(--lt);font-size:12px}
+/* gallery */
+#w-gal{left:130px;top:24px;width:min(620px,52vw);height:min(470px,64vh)}
+.thumbs{display:grid;grid-template-columns:repeat(auto-fill,minmax(104px,1fr));gap:10px;padding:10px}
+.th{background:none;border:0;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;font-size:11px;padding:3px}
+.th img{width:96px;height:72px;object-fit:cover;border:1px solid #000}
+.th:focus span,.th:hover span{background:var(--navy);color:#fff}
+/* viewer */
+#w-view{left:28vw;top:12vh;width:min(560px,60vw)}
+#w-view .body{background:#000;display:grid;place-items:center;min-height:300px}
+#w-view img{max-height:60vh;width:auto;object-fit:contain}
+/* notepad */
+#w-om{left:58vw;top:40px;width:min(430px,38vw);height:min(440px,58vh)}
+.np{padding:8px;font-family:"Courier New",monospace;font-size:13px;white-space:pre-wrap;height:100%}
+.np img{float:right;width:120px;margin:0 0 8px 10px;border:1px solid #000}
+/* excel */
+#w-pris{left:22vw;top:44vh;width:min(600px,56vw)}
+.xl-f{display:flex;gap:4px;padding:3px;align-items:center}
+.xl-f .fx{flex:1;padding:2px 4px;font-family:"Courier New",monospace;font-size:12px}
+table{border-collapse:collapse;width:100%;font-size:12px;background:#fff}
+th,td{border:1px solid #c6c6c6;padding:3px 6px;text-align:left;white-space:nowrap}
+thead th,tbody th{background:var(--g);font-weight:normal;text-align:center;box-shadow:inset -1px -1px var(--dk),inset 1px 1px var(--lt);border-color:#888}
+tbody th{width:28px}
+td.num{text-align:right;font-family:"Courier New",monospace}
+td.hd{font-weight:bold;background:#ffffcc}
+td.sel{outline:2px solid #000;outline-offset:-2px}
+tr.tot td{font-weight:bold;border-top:2px double #000}
+.tabs{display:flex;gap:0;padding:0 4px;font-size:12px}
+.tabs span{padding:1px 10px;background:#fff;border:1px solid #808080;border-top:0}
+.tabs span+span{background:var(--g)}
+/* video */
+#w-vid{left:62vw;top:46vh;width:min(420px,36vw)}
+#w-vid video{width:100%;display:block;background:#000;aspect-ratio:16/9;object-fit:cover}
+.ctrl{display:flex;gap:4px;align-items:center;padding:4px}
+.ctrl .btn{min-width:30px;padding:2px 8px}
+.seek{flex:1;height:14px;position:relative}
+.seek i{position:absolute;left:0;top:0;bottom:0;background:var(--navy);width:0}
+.ctrl .time{font-family:VT323,monospace;font-size:16px;background:#000;color:#0f0;padding:0 6px}
+/* boka */
+#w-boka{left:40vw;top:20vh;width:min(470px,46vw)}
+.wiz{display:flex;gap:12px;padding:12px}
+.wiz .side{width:120px;flex:none;background:linear-gradient(180deg,var(--navy),#1084d0);position:relative;overflow:hidden}
+.wiz .side img{width:100%;height:100%;object-fit:cover;mix-blend-mode:luminosity;opacity:.75}
+.wiz form{flex:1;display:grid;gap:8px}
+.wiz h3{font-size:15px}
+.wiz label{display:grid;gap:2px;font-size:12px}
+.wiz input,.wiz select,.wiz textarea{font:inherit;padding:3px 4px;border:0;box-shadow:inset 1px 1px var(--dk),inset -1px -1px var(--lt),inset 2px 2px var(--xdk);width:100%;background:#fff}
+.prog{height:18px;padding:2px;display:flex;gap:2px}
+.prog i{width:10px;background:var(--navy);display:none}
+.btns{display:flex;justify-content:flex-end;gap:6px;border-top:1px solid var(--dk);padding-top:8px;box-shadow:0 -1px 0 #fff inset}
+/* reviews */
+#w-rec{left:4vw;top:58vh;width:min(330px,30vw)}
+.rec{padding:8px;display:grid;gap:8px}
+.rec p{background:#ffffe1;border:1px solid #000;padding:6px 8px}
+.rec b{display:block;font-size:11px;margin-top:3px}
+/* taskbar */
+#task{position:fixed;left:0;right:0;bottom:0;height:34px;display:flex;align-items:center;gap:4px;padding:3px;z-index:1000}
+#startbtn{font-weight:bold;display:flex;align-items:center;gap:5px;min-width:0;padding:3px 8px}
+#startbtn.on{box-shadow:inset 1px 1px var(--xdk),inset -1px -1px var(--lt),inset 2px 2px var(--dk)}
+#tasks{flex:1;display:flex;gap:3px;overflow:hidden}
+#tasks button{min-width:0;max-width:150px;flex:1;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:3px 8px}
+#tasks button.on{box-shadow:inset 1px 1px var(--xdk),inset -1px -1px var(--lt),inset 2px 2px var(--dk);background:#dcdcdc;font-weight:bold}
+#tray{padding:3px 10px;box-shadow:inset 1px 1px var(--dk),inset -1px -1px var(--lt);display:flex;gap:8px;align-items:center}
+#tray a{color:#000;text-decoration:none;font-size:12px}
+#tray a:hover{text-decoration:underline}
+#menu{position:fixed;left:2px;bottom:34px;width:250px;display:none;z-index:1001;padding:3px}
+#menu.open{display:flex}
+#menu .stripe{width:26px;background:linear-gradient(0deg,var(--navy),var(--navy2));color:#c0c0c0;writing-mode:vertical-rl;transform:rotate(180deg);font-weight:bold;font-size:16px;padding:6px 3px;letter-spacing:.05em}
+#menu .stripe b{color:#fff}
+#menu ul{list-style:none;flex:1}
+#menu li button,#menu li a{display:flex;gap:10px;align-items:center;width:100%;background:none;border:0;padding:7px 10px;text-align:left;cursor:pointer;color:#000;text-decoration:none;font:inherit}
+#menu li button:hover,#menu li a:hover,#menu li button:focus{background:var(--navy);color:#fff}
+#menu hr{border:0;border-top:1px solid var(--dk);border-bottom:1px solid #fff;margin:3px 2px}
+#menu svg{width:22px;height:22px;flex:none}
+@media (max-width:760px){
+ body{overflow:auto;height:auto}
+ html{height:auto}
+ #desk{position:static;padding:10px 10px 60px;display:flex;flex-direction:column;gap:14px}
+ .wall{position:static;text-align:left;font-size:3.4rem;color:rgba(255,255,255,.35);order:-2}
+ .icons{position:static;display:flex;flex-wrap:wrap;height:auto;gap:2px;order:-1}
+ .ic{width:calc(33.3% - 2px)}
+ .win{position:static!important;width:100%!important;height:auto!important;min-width:0}
+ .win.hidden{display:flex}
+ .win.collapsed .body,.win.collapsed .mb,.win.collapsed .sb,.win.collapsed .xl-f,.win.collapsed .tabs,.win.collapsed .ctrl{display:none}
+ .tb{cursor:pointer}
+ .tb .mx,.tb .mn{display:none}
+ #w-gal .body{max-height:none}
+ #w-view{display:none!important}
+ #w-view.show{display:flex!important;position:fixed!important;inset:10px 10px 44px 10px;z-index:900;width:auto!important}
+ #w-view.show .body{flex:1}
+ .np{height:auto}
+ .wiz .side{display:none}
+ .thumbs{grid-template-columns:repeat(3,1fr);gap:6px;padding:6px}
+ .th img{width:100%;height:auto;aspect-ratio:4/3}
+ #w-pris .body{overflow-x:auto}
+ #tasks{display:none}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <defs>
+  <symbol id="i-folder" viewBox="0 0 32 32"><path d="M2 8h11l3 3h14v17H2z" fill="#f5d36b" stroke="#000"/><path d="M2 12h28v16H2z" fill="#ffe58f" stroke="#000"/></symbol>
+  <symbol id="i-txt" viewBox="0 0 32 32"><path d="M6 2h15l6 6v22H6z" fill="#fff" stroke="#000"/><path d="M21 2v6h6" fill="#ddd" stroke="#000"/><path d="M9 12h14M9 16h14M9 20h14M9 24h9" stroke="#000080"/></symbol>
+  <symbol id="i-xls" viewBox="0 0 32 32"><path d="M5 3h22v26H5z" fill="#fff" stroke="#000"/><path d="M5 9h22M5 15h22M5 21h22M12 3v26M19 3v26" stroke="#1a7f37"/><rect x="5" y="3" width="22" height="6" fill="#1a7f37"/></symbol>
+  <symbol id="i-vid" viewBox="0 0 32 32"><rect x="2" y="6" width="28" height="20" fill="#333" stroke="#000"/><rect x="4" y="8" width="24" height="14" fill="#1084d0"/><path d="M13 11l7 4-7 4z" fill="#fff"/></symbol>
+  <symbol id="i-exe" viewBox="0 0 32 32"><rect x="3" y="5" width="26" height="22" fill="#c0c0c0" stroke="#000"/><rect x="3" y="5" width="26" height="5" fill="#000080"/><path d="M9 15l6 6 9-9" stroke="#d00" stroke-width="3" fill="none"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 32 32"><path d="M16 28S3 19 3 11a6.5 6.5 0 0113-2 6.5 6.5 0 0113 2c0 8-13 17-13 17z" fill="#e33" stroke="#000"/></symbol>
+  <symbol id="i-back" viewBox="0 0 32 32"><rect x="2" y="4" width="28" height="22" fill="#fff" stroke="#000"/><path d="M20 15H9m4-5l-5 5 5 5" stroke="#000080" stroke-width="3" fill="none"/></symbol>
+ </defs>
+</svg>
+
+<main id="desk">
+ <div class="wall">HOLM<br>FOTO 98</div>
+ <nav class="icons" aria-label="Skrivbordsikoner">
+  <button class="ic" data-open="w-gal"><svg><use href="#i-folder"/></svg><span>Galleri</span></button>
+  <button class="ic" data-open="w-om"><svg><use href="#i-txt"/></svg><span>Om mig.txt</span></button>
+  <button class="ic" data-open="w-pris"><svg><use href="#i-xls"/></svg><span>Priser.xls</span></button>
+  <button class="ic" data-open="w-vid"><svg><use href="#i-vid"/></svg><span>hero.mp4</span></button>
+  <button class="ic" data-open="w-boka"><svg><use href="#i-exe"/></svg><span>Boka.exe</span></button>
+  <button class="ic" data-open="w-rec"><svg><use href="#i-heart"/></svg><span>Gästbok</span></button>
+ </nav>
+
+ <section class="win bevel" id="w-gal" data-title="Galleri">
+  <div class="tb"><svg width="16" height="16"><use href="#i-folder"/></svg><span class="t">C:\Bröllop\Galleri</span><button class="mn" aria-label="Minimera">_</button><button class="mx" aria-label="Maximera">□</button><button class="cl" aria-label="Stäng">×</button></div>
+  <div class="mb"><span>Arkiv</span><span>Redigera</span><span>Visa</span><span>Hjälp</span></div>
+  <div class="body sunk"><div class="thumbs" id="thumbs"></div></div>
+  <div class="sb"><div id="gal-count">0 objekt</div><div>Bilder från 2019–2026</div></div>
+ </section>
+
+ <section class="win bevel hidden" id="w-view" data-title="Bildvisaren">
+  <div class="tb"><span class="t" id="view-t">Bildvisaren</span><button class="cl" aria-label="Stäng">×</button></div>
+  <div class="body"><img id="view-img" src="../../media/img/brollop-43.jpg" alt=""></div>
+  <div class="sb"><div id="view-s">–</div><div><button class="btn" id="prev">◄ Föreg.</button> <button class="btn" id="next">Nästa ►</button></div></div>
+ </section>
+
+ <section class="win bevel" id="w-om" data-title="Om mig.txt">
+  <div class="tb"><svg width="16" height="16"><use href="#i-txt"/></svg><span class="t">Om mig.txt – Anteckningar</span><button class="mn" aria-label="Minimera">_</button><button class="mx" aria-label="Maximera">□</button><button class="cl" aria-label="Stäng">×</button></div>
+  <div class="mb"><span>Arkiv</span><span>Redigera</span><span>Sök</span><span>Hjälp</span></div>
+  <div class="body sunk"><div class="np"><img src="../../media/img/portratt-14.jpg" alt="Fotografen Jonas Holm" loading="lazy">HEJ! JAG HETER JONAS.
+=======================
+
+Bröllopsfotograf i Västerås sedan 1998
+(ja, på riktigt – första bröllopet
+plåtades på diafilm och en lånad
+Pentax).
+
+Jag gillar:
+ - Ärliga skratt, inte stela poser
+ - Långa sommarkvällar vid Mälaren
+ - Tal som spårar ur
+ - Bra kaffe, gamla datorer
+
+Jag fotar även familj, porträtt och
+företag. Samma lugna stil, inga
+krångliga instruktioner.
+
+Över 400 par. Ingen dag har kraschat.
+(Datorn däremot... det är en annan
+historia.)
+
+<img src="../../media/img/familj-18.jpg" alt="Familjefotografering i park" loading="lazy" style="float:none;width:100%;margin:6px 0">
+<img src="../../media/img/foretag-32.jpg" alt="Företagsuppdrag" loading="lazy" style="float:none;width:100%;margin:6px 0">
+-- Jonas
+jonas@holmfoto98.se
+021-12 98 98</div></div>
+ </section>
+
+ <section class="win bevel" id="w-pris" data-title="Priser.xls">
+  <div class="tb"><svg width="16" height="16"><use href="#i-xls"/></svg><span class="t">Priser.xls – Kalkyl</span><button class="mn" aria-label="Minimera">_</button><button class="mx" aria-label="Maximera">□</button><button class="cl" aria-label="Stäng">×</button></div>
+  <div class="mb"><span>Arkiv</span><span>Redigera</span><span>Infoga</span><span>Format</span><span>Data</span></div>
+  <div class="xl-f"><span class="sunk" style="padding:2px 6px;width:46px">D4</span><span>=</span><span class="fx sunk" id="fx">=SUMMA(D2:D3)</span></div>
+  <div class="body sunk">
+   <table id="xls">
+    <thead><tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th></tr></thead>
+    <tbody>
+     <tr><th>1</th><td class="hd">Paket</td><td class="hd">Timmar</td><td class="hd">Bilder</td><td class="hd">Pris (kr)</td></tr>
+     <tr><th>2</th><td>Disketten</td><td class="num">2</td><td class="num">120</td><td class="num">8 500</td></tr>
+     <tr><th>3</th><td>Hårddisken</td><td class="num">7</td><td class="num">450</td><td class="num">18 900</td></tr>
+     <tr><th>4</th><td>Servern</td><td class="num">11</td><td class="num">750</td><td class="num">26 400</td></tr>
+     <tr><th>5</th><td>+ Förlovningsfoto</td><td class="num">1</td><td class="num">60</td><td class="num">2 900</td></tr>
+     <tr><th>6</th><td>+ Fotobok 30 s.</td><td class="num">–</td><td class="num">–</td><td class="num">3 400</td></tr>
+     <tr><th>7</th><td>+ Andra fotograf</td><td class="num">/tim</td><td class="num">–</td><td class="num">950</td></tr>
+     <tr class="tot"><th>8</th><td>Resor inom Västmanland</td><td></td><td></td><td class="num">0</td></tr>
+    </tbody>
+   </table>
+  </div>
+  <div class="tabs"><span>Blad1</span><span>Blad2</span><span>Blad3</span></div>
+  <div class="sb"><div>Klar</div><div>Alla priser inkl. moms</div></div>
+ </section>
+
+ <section class="win bevel" id="w-vid" data-title="Mediespelaren">
+  <div class="tb"><svg width="16" height="16"><use href="#i-vid"/></svg><span class="t">Mediespelaren – hero.mp4</span><button class="mn" aria-label="Minimera">_</button><button class="mx" aria-label="Maximera">□</button><button class="cl" aria-label="Stäng">×</button></div>
+  <div class="body" style="margin:4px"><video id="vid" src="../../media/hero.mp4" muted loop playsinline preload="metadata" poster="../../media/img/brollop-43.jpg" aria-label="Bröllopsfilm"></video></div>
+  <div class="ctrl"><button class="btn" id="play" aria-label="Spela">►</button><button class="btn" id="stop" aria-label="Stopp">■</button><div class="seek sunk"><i id="bar"></i></div><span class="time" id="time">00:00</span></div>
+ </section>
+
+ <section class="win bevel" id="w-boka" data-title="Boka.exe">
+  <div class="tb"><svg width="16" height="16"><use href="#i-exe"/></svg><span class="t">Boka.exe – Installationsguiden</span><button class="mn" aria-label="Minimera">_</button><button class="cl" aria-label="Stäng">×</button></div>
+  <div class="body">
+   <div class="wiz">
+    <div class="side"><img src="../../media/img/brollop-18.jpg" alt="" loading="lazy"></div>
+    <form id="bf">
+     <h3 id="wiz-h">Välkommen till Boka-guiden</h3>
+     <p id="wiz-p" style="font-size:12px">Den här guiden installerar en fotograf på ert bröllop. Fyll i uppgifterna och klicka på Nästa.</p>
+     <label>Era namn:<input name="n" required></label>
+     <label>E-post:<input type="email" name="e" required></label>
+     <label>Datum:<input type="date" name="d"></label>
+     <label>Paket:<select name="p"><option>Disketten</option><option selected>Hårddisken</option><option>Servern</option></select></label>
+     <div class="prog sunk" id="prog" aria-hidden="true"></div>
+     <div class="btns"><button type="button" class="btn" id="cancel">Avbryt</button><button class="btn" id="go"><u>N</u>ästa &gt;</button></div>
+    </form>
+   </div>
+  </div>
+ </section>
+
+ <section class="win bevel" id="w-rec" data-title="Gästbok">
+  <div class="tb"><svg width="16" height="16"><use href="#i-heart"/></svg><span class="t">Gästbok.htm</span><button class="mn" aria-label="Minimera">_</button><button class="cl" aria-label="Stäng">×</button></div>
+  <div class="body sunk"><div class="rec">
+   <p>Jonas var lugn när allt annat var kaos. Bilderna kom på USB med en liten diskettetikett. Vi dog.<b>– Emma &amp; Viktor, Västerås</b></p>
+   <p>Bästa beslutet vi tog. Han fångade pappas tal och mammas min samtidigt.<b>– Nora &amp; Filip, Sala</b></p>
+   <p>Proffsig, rolig och helt osynlig under vigseln. 10/10, skulle gifta oss igen.<b>– Lejla &amp; Anton, Köping</b></p>
+  </div></div>
+ </section>
+</main>
+
+<div id="menu" class="bevel" role="menu">
+ <div class="stripe"><b>Holm</b>Foto 98</div>
+ <ul>
+  <li><button data-open="w-gal" role="menuitem"><svg><use href="#i-folder"/></svg>Galleri</button></li>
+  <li><button data-open="w-om" role="menuitem"><svg><use href="#i-txt"/></svg>Om mig.txt</button></li>
+  <li><button data-open="w-pris" role="menuitem"><svg><use href="#i-xls"/></svg>Priser.xls</button></li>
+  <li><button data-open="w-vid" role="menuitem"><svg><use href="#i-vid"/></svg>Mediespelaren</button></li>
+  <li><button data-open="w-rec" role="menuitem"><svg><use href="#i-heart"/></svg>Gästbok</button></li>
+  <li><hr></li>
+  <li><button data-open="w-boka" role="menuitem"><svg><use href="#i-exe"/></svg><b>Boka.exe</b></button></li>
+  <li><hr></li>
+  <li><a href="../../index.html" role="menuitem"><svg><use href="#i-back"/></svg>← Alla 25 (stäng av)</a></li>
+ </ul>
+</div>
+
+<footer id="task" class="bevel">
+ <button class="btn" id="startbtn" aria-expanded="false" aria-controls="menu"><svg width="18" height="18" viewBox="0 0 32 32"><use href="#i-heart"/></svg>Start</button>
+ <div id="tasks"></div>
+ <div id="tray"><a href="../../index.html">← Alla 25</a><span id="clock">00:00</span></div>
+</footer>
+
+<script>
+const imgs=[
+ ['brollop-43','Vigsel vid Mälaren'],['brollop-18','Brud i fönsterljus'],['brollop-07','Brudpar i trädgård'],['brollop-08','Bruden gör sig i ordning'],
+ ['brollop-51','Brudgum knyter slipsen'],['brollop-52','Paret i kvällsljus'],['brollop-54','Middag i lada'],['brollop-55','Brudbukett'],
+ ['brollop-56','Första dansen'],['brollop-57','Gäster skålar'],['brollop-00','Promenad i parken'],['brollop-06','Kyss på bryggan'],
+ ['brollop-19','Porträtt vid stenmur'],['foretag-07','Företagsporträtt'],['foretag-57','Konferens i Västerås'],['brollop-28','Bruden skrattar']];
+const thumbs=document.getElementById('thumbs');
+imgs.forEach(([f,a],i)=>{const b=document.createElement('button');b.className='th';b.innerHTML=`<img src="../../media/img/${f}.jpg" alt="${a}" loading="lazy"><span>${f.toUpperCase()}.JPG</span>`;b.addEventListener('dblclick',()=>view(i));b.addEventListener('click',()=>{if(matchMedia('(max-width:760px)').matches||b.dataset.c)view(i);b.dataset.c=1;setTimeout(()=>delete b.dataset.c,400)});thumbs.appendChild(b)});
+document.getElementById('gal-count').textContent=imgs.length+' objekt';
+let cur=0;const vw=document.getElementById('w-view');
+function view(i){cur=(i+imgs.length)%imgs.length;const [f,a]=imgs[cur];const im=document.getElementById('view-img');im.src=`../../media/img/${f}.jpg`;im.alt=a;document.getElementById('view-t').textContent=f+'.jpg – Bildvisaren';document.getElementById('view-s').textContent=a;open('w-view');vw.classList.add('show')}
+document.getElementById('prev').onclick=()=>view(cur-1);document.getElementById('next').onclick=()=>view(cur+1);
+// windows
+let z=10;const wins=[...document.querySelectorAll('.win')];const tasks=document.getElementById('tasks');
+const mobile=()=>matchMedia('(max-width:760px)').matches;
+function focusWin(w){wins.forEach(x=>x.classList.remove('active'));w.classList.add('active');w.style.zIndex=++z;renderTasks()}
+function open(id){const w=document.getElementById(id);w.classList.remove('hidden','min','collapsed');w.style.display='';focusWin(w);if(mobile())w.scrollIntoView({behavior:'smooth',block:'start'})}
+function renderTasks(){tasks.innerHTML='';wins.filter(w=>!w.classList.contains('hidden')).forEach(w=>{const b=document.createElement('button');b.className='btn'+(w.classList.contains('active')&&!w.classList.contains('min')?' on':'');b.textContent=w.dataset.title;b.onclick=()=>{if(w.classList.contains('min')){w.classList.remove('min');w.style.display='';focusWin(w)}else if(w.classList.contains('active')){w.classList.add('min');w.style.display='none';w.classList.remove('active');renderTasks()}else focusWin(w)};tasks.appendChild(b)})}
+wins.forEach(w=>{
+ w.addEventListener('pointerdown',()=>focusWin(w));
+ const tb=w.querySelector('.tb');
+ w.querySelector('.cl').addEventListener('click',e=>{e.stopPropagation();if(mobile()&&w.id!=='w-view'){w.classList.toggle('collapsed');return}w.classList.add('hidden');w.classList.remove('show');if(w.id==='w-vid')vid.pause();renderTasks()});
+ const mn=w.querySelector('.mn');if(mn)mn.addEventListener('click',e=>{e.stopPropagation();w.classList.add('min');w.style.display='none';w.classList.remove('active');renderTasks()});
+ const mx=w.querySelector('.mx');if(mx)mx.addEventListener('click',e=>{e.stopPropagation();if(w.dataset.max){Object.assign(w.style,JSON.parse(w.dataset.max));delete w.dataset.max}else{w.dataset.max=JSON.stringify({left:w.style.left,top:w.style.top,width:w.style.width,height:w.style.height});Object.assign(w.style,{left:'0px',top:'0px',width:'100%',height:'100%'})}});
+ tb.addEventListener('click',e=>{if(mobile()&&e.target===tb||mobile()&&e.target.classList.contains('t'))w.classList.toggle('collapsed')});
+ tb.addEventListener('pointerdown',e=>{if(mobile()||e.target.tagName==='BUTTON')return;const r=w.getBoundingClientRect();const ox=e.clientX-r.left,oy=e.clientY-r.top;tb.setPointerCapture(e.pointerId);
+  const mv=ev=>{w.style.left=Math.max(-r.width+80,Math.min(innerWidth-80,ev.clientX-ox))+'px';w.style.top=Math.max(0,Math.min(innerHeight-70,ev.clientY-oy))+'px'};
+  const up=()=>{tb.removeEventListener('pointermove',mv);tb.removeEventListener('pointerup',up)};tb.addEventListener('pointermove',mv);tb.addEventListener('pointerup',up)});
+});
+document.querySelectorAll('[data-open]').forEach(b=>{
+ const go=()=>{open(b.dataset.open);menu.classList.remove('open');sb.classList.remove('on')};
+ if(b.classList.contains('ic')){b.addEventListener('dblclick',go);b.addEventListener('click',()=>{document.querySelectorAll('.ic').forEach(x=>x.classList.remove('sel'));b.classList.add('sel');if(mobile())go()});b.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();go()}})}
+ else b.addEventListener('click',go)});
+const menu=document.getElementById('menu'),sb=document.getElementById('startbtn');
+sb.addEventListener('click',e=>{e.stopPropagation();const o=menu.classList.toggle('open');sb.classList.toggle('on',o);sb.setAttribute('aria-expanded',o)});
+document.addEventListener('click',e=>{if(!menu.contains(e.target)){menu.classList.remove('open');sb.classList.remove('on')}});
+focusWin(document.getElementById('w-om'));focusWin(document.getElementById('w-gal'));
+// clock
+const ck=document.getElementById('clock');const tick=()=>{const d=new Date();ck.textContent=d.toLocaleTimeString('sv-SE',{hour:'2-digit',minute:'2-digit'})};tick();setInterval(tick,10000);
+// video
+const vid=document.getElementById('vid'),pl=document.getElementById('play');
+pl.onclick=()=>{vid.paused?vid.play():vid.pause()};document.getElementById('stop').onclick=()=>{vid.pause();vid.currentTime=0};
+vid.addEventListener('play',()=>pl.textContent='❚❚');vid.addEventListener('pause',()=>pl.textContent='►');
+vid.addEventListener('timeupdate',()=>{const t=vid.currentTime;document.getElementById('time').textContent=String(Math.floor(t/60)).padStart(2,'0')+':'+String(Math.floor(t%60)).padStart(2,'0');if(vid.duration)document.getElementById('bar').style.width=(t/vid.duration*100)+'%'});
+if(!matchMedia('(prefers-reduced-motion: reduce)').matches&&!mobile())vid.play().catch(()=>{});
+// excel cell select
+document.querySelectorAll('#xls td').forEach(td=>td.addEventListener('click',()=>{document.querySelectorAll('#xls td').forEach(x=>x.classList.remove('sel'));td.classList.add('sel');document.getElementById('fx').textContent=td.textContent||''}));
+// wizard
+const bf=document.getElementById('bf'),prog=document.getElementById('prog');
+bf.addEventListener('submit',e=>{e.preventDefault();document.getElementById('wiz-h').textContent='Installerar fotograf…';document.getElementById('wiz-p').textContent='Kopierar kamera.dll, kärlek.sys och tårta.ini';prog.innerHTML='';let n=0;const iv=setInterval(()=>{const i=document.createElement('i');i.style.display='block';prog.appendChild(i);if(++n>=22){clearInterval(iv);document.getElementById('wiz-h').textContent='Klart!';document.getElementById('wiz-p').textContent='Jonas har tagit emot er förfrågan och svarar inom två arbetsdagar. Ingen omstart krävs.';bf.reset()}},80)});
+document.getElementById('cancel').onclick=()=>{bf.reset();document.getElementById('wiz-h').textContent='Välkommen till Boka-guiden';prog.innerHTML=''};
+</script>
+</body>
+</html>
