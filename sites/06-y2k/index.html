@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>~*~ Annikas Bröllopsbilder ~*~ Välkommen till min hemsida!</title>
+<style>
+  body{
+    margin:0;font-family:Verdana,Geneva,Tahoma,sans-serif;font-size:13px;color:#1a1a4a;
+    background-color:#c8d8ff;
+    background-image:
+      radial-gradient(circle at 25% 25%, #fff 1.5px, transparent 2px),
+      radial-gradient(circle at 75% 75%, #ffd6ef 1.5px, transparent 2px),
+      linear-gradient(45deg, #b9ccff 25%, transparent 25%, transparent 75%, #b9ccff 75%),
+      linear-gradient(45deg, #b9ccff 25%, transparent 25%, transparent 75%, #b9ccff 75%);
+    background-size:40px 40px,40px 40px,40px 40px,40px 40px;
+    background-position:0 0,0 0,0 0,20px 20px;
+  }
+  a{color:#0000ee}a:visited{color:#551a8b}a:hover{color:#ff0080;background:#ffff99}
+  .wrap{max-width:900px;margin:12px auto;padding:0 8px}
+  .comic{font-family:"Comic Sans MS","Comic Sans","Chalkboard SE","Comic Neue",cursive}
+  .header{background:#000080;color:#fff;border:3px outset #8888ff;padding:10px;text-align:center}
+  .header h1{margin:4px 0;font-family:"Comic Sans MS","Comic Neue",cursive;font-size:clamp(22px,5vw,40px);
+    color:#ffff00;text-shadow:2px 2px 0 #ff0080,4px 4px 0 #000}
+  .header .sub{color:#aaffff;font-size:12px}
+  .rainbow{height:6px;background:linear-gradient(90deg,red,orange,yellow,lime,cyan,blue,violet,red)}
+  .mq{background:#000;color:#00ff00;font-family:"Courier New",monospace;border:2px inset #888;overflow:hidden;white-space:nowrap;padding:3px 0}
+  .mq span{display:inline-block;padding-left:100%;animation:mq 22s linear infinite}
+  @keyframes mq{to{transform:translateX(-100%)}}
+  .layout{display:grid;grid-template-columns:190px 1fr;gap:10px;margin-top:10px}
+  .box{background:#fff;border:2px solid #000080;margin-bottom:10px}
+  .box h2,.box h3{margin:0;background:linear-gradient(90deg,#000080,#1084d0);color:#fff;font-size:13px;padding:3px 6px;font-family:Verdana,sans-serif;display:flex;justify-content:space-between}
+  .box h2 i,.box h3 i{font-style:normal;background:#c0c0c0;color:#000;border:2px outset #fff;padding:0 4px;font-size:10px;line-height:12px}
+  .box .in{padding:8px}
+  nav ul{list-style:none;margin:0;padding:6px}
+  nav li{margin:4px 0}
+  .btn{display:block;background:#c0c0c0;border:3px outset #eee;padding:4px 6px;color:#000;text-decoration:none;font-weight:bold;font-size:12px;text-align:center;cursor:pointer;font-family:Verdana,sans-serif}
+  .btn:visited{color:#000}
+  .btn:hover{background:#d8d8d8;color:#000080}
+  .btn:active{border-style:inset}
+  .counter{font-family:"Courier New",monospace;background:#000;color:#ff3030;font-size:20px;letter-spacing:3px;padding:2px 6px;border:2px inset #666;display:inline-block}
+  .blink{animation:blink 1s steps(1) infinite}
+  @keyframes blink{50%{visibility:hidden}}
+  .new{color:#ff0000;font-weight:bold;font-size:10px}
+  .center{text-align:center}
+  .welcome{display:flex;gap:10px;align-items:flex-start}
+  .welcome img{width:150px;border:4px ridge #ff66cc;flex-shrink:0}
+  hr.fancy{border:0;height:14px;background:repeating-linear-gradient(90deg,#ff66cc 0 10px,transparent 10px 14px,#66ccff 14px 24px,transparent 24px 28px);margin:12px 0}
+  .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+  .gallery button{padding:3px;background:#c0c0c0;border:2px outset #fff;cursor:pointer}
+  .gallery button:active{border-style:inset}
+  .gallery img{width:100%;aspect-ratio:1;object-fit:cover;display:block}
+  .tabs{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:6px}
+  .tabs .btn{display:inline-block}
+  .tabs .btn[aria-pressed=true]{border-style:inset;background:#a8a8a8}
+  table.priser{width:100%;border-collapse:collapse;font-size:12px}
+  table.priser th{background:#ffff99;border:1px solid #999;padding:4px}
+  table.priser td{border:1px solid #999;padding:5px;vertical-align:top;background:#fff}
+  table.priser tr:nth-child(even) td{background:#eef4ff}
+  .price{font-weight:bold;color:#cc0066;white-space:nowrap}
+  .gb-entry{border:1px dashed #6666cc;background:#fffef0;padding:6px;margin-bottom:6px}
+  .gb-entry b{color:#000080}
+  .gb-entry small{color:#777}
+  form label{display:block;margin-top:6px;font-weight:bold}
+  input,textarea,select{font-family:Verdana,sans-serif;font-size:12px;border:2px inset #ccc;padding:3px;width:100%;box-sizing:border-box;background:#fff}
+  .webring{background:#ffffcc;border:3px double #cc9900;text-align:center;padding:8px;font-size:12px}
+  .webring .r{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin-top:6px}
+  .webring .r a{background:#c0c0c0;border:2px outset #fff;padding:2px 8px;color:#000;text-decoration:none}
+  .badges{display:flex;flex-wrap:wrap;gap:4px;justify-content:center}
+  .badge{width:88px;height:31px;box-sizing:border-box;border:1px solid #000;font:bold 9px/1.1 Verdana,sans-serif;display:flex;align-items:center;justify-content:center;text-align:center;padding:2px}
+  .lb{position:fixed;inset:0;background:rgba(0,0,64,.75);display:none;align-items:center;justify-content:center;z-index:50;padding:10px}
+  .lb.open{display:flex}
+  .win{background:#c0c0c0;border:3px outset #fff;max-width:720px;width:100%}
+  .win .bar{background:linear-gradient(90deg,#000080,#1084d0);color:#fff;font-weight:bold;padding:3px 6px;display:flex;justify-content:space-between;align-items:center;font-size:12px}
+  .win .bar button{background:#c0c0c0;border:2px outset #fff;font-weight:bold;cursor:pointer;width:22px;height:20px;padding:0}
+  .win img{display:block;max-width:100%;max-height:75vh;margin:6px auto;border:2px inset #fff}
+  .win p{margin:0 8px 8px;font-size:12px;text-align:center}
+  .back{position:fixed;left:6px;bottom:6px;z-index:40;background:#c0c0c0;border:2px outset #fff;padding:2px 8px;font:bold 11px Verdana,sans-serif;color:#000;text-decoration:none}
+  .back:visited{color:#000}
+  .uc{display:inline-block;background:repeating-linear-gradient(45deg,#ffcc00 0 8px,#000 8px 16px);color:#fff;padding:2px;font-weight:bold}
+  .uc span{background:#000;padding:0 6px}
+  .familj{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px}
+  .familj img{width:100%;height:120px;object-fit:cover;border:3px ridge #66ccff}
+  footer{text-align:center;font-size:11px;color:#333;padding:10px 0 40px}
+  @media (max-width:700px){
+    .layout{grid-template-columns:1fr}
+    nav ul{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+    nav li{margin:0}
+    .gallery{grid-template-columns:repeat(3,1fr)}
+    .welcome{flex-direction:column;align-items:center}
+    .familj{grid-template-columns:1fr 1fr}
+    table.priser,table.priser tbody,table.priser tr,table.priser td{display:block;width:100%;box-sizing:border-box}
+    table.priser thead{display:none}
+  }
+  @media (prefers-reduced-motion:reduce){.mq span{animation:none;padding-left:8px}.blink{animation:none}}
+</style>
+</head>
+<body>
+<a class="back" href="../../index.html">&larr; Alla 25</a>
+<div class="wrap">
+  <div class="header">
+    <div class="sub">*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*</div>
+    <h1>Annikas Bröllopsbilder</h1>
+    <div class="sub">Bröllopsfotograf i Västerås med omnejd &bull; sedan 1999 &bull; ny design!!</div>
+  </div>
+  <div class="rainbow"></div>
+  <div class="mq" aria-label="Nyheter"><span>+++ VÄLKOMMEN!!! +++ Nu bokar jag bröllop för sommaren 2027 +++ Glöm inte att skriva i gästboken :-) +++ Senast uppdaterad 8 nov 2026 +++ Sidan ser bäst ut i 1024x768 men funkar i mobilen också (!!) +++</span></div>
+
+  <div class="layout">
+    <aside>
+      <div class="box"><h2>Meny <i>_ □ x</i></h2>
+        <nav><ul>
+          <li><a class="btn" href="#valkommen">&raquo; Startsidan</a></li>
+          <li><a class="btn" href="#galleri">&raquo; Galleri</a></li>
+          <li><a class="btn" href="#priser">&raquo; Priser</a></li>
+          <li><a class="btn" href="#mer">&raquo; Familj &amp; porträtt</a></li>
+          <li><a class="btn" href="#gastbok">&raquo; Gästbok</a></li>
+          <li><a class="btn" href="#kontakt">&raquo; Kontakt</a></li>
+        </ul></nav>
+      </div>
+      <div class="box"><h3>Besökare <i>?</i></h3>
+        <div class="in center">Du är besökare nr<br><span class="counter" id="counter">0048213</span><br><small>sedan 14 feb 1999</small></div>
+      </div>
+      <div class="box"><h3>Om mig <i>!</i></h3>
+        <div class="in center"><img src="../../media/img/portratt-01.jpg" alt="Porträtt av fotografen Annika" style="width:100%;border:2px inset #ccc" loading="lazy">
+        <p style="margin:6px 0 0;font-size:11px">Annika Holm, 52 år, kaffeberoende, kör en röd Volvo kombi full av stegar och reflexskärmar.</p></div>
+      </div>
+      <div class="box"><h3>Status <i>*</i></h3>
+        <div class="in" style="font-size:11px">
+          <b>Lediga lördagar 2027:</b><br>
+          maj: 3 st<br>juni: <span style="color:red">1 st!!</span><br>juli: 4 st<br>aug: 5 st<br>
+          <span class="blink new">UPPDATERAT</span>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <section class="box" id="valkommen"><h2>Välkommen!! <i>_ □ x</i></h2>
+        <div class="in">
+          <div class="welcome">
+            <img src="../../media/img/brollop-05.jpg" alt="Brudpar under ett träd i sommarljus">
+            <div>
+              <p class="comic" style="font-size:16px;margin-top:0">Hej och välkommen till min lilla hörna av internet! <span aria-hidden="true">:-)</span></p>
+              <p>Jag heter Annika och har fotograferat bröllop i Västmanland sedan 1999 &ndash; först på film, numera digitalt, men med samma pirr i magen varje gång. Över 400 brudpar har litat på mig vid det här laget, och flera av dem har kommit tillbaka med barnen!</p>
+              <p>Den här hemsidan gjorde min son åt mig när han gick i nian. Jag har vägrat byta ut den. Han har lagt till "mobilläge" nu i alla fall, så du kan titta på telefonen.</p>
+              <p>Klicka runt, titta på bilderna och <a href="#gastbok">skriv gärna en hälsning i gästboken</a>!</p>
+              <p class="uc"><span>Galleriet uppdateras ständigt</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="box" id="galleri"><h2>Galleri <i>_ □ x</i></h2>
+        <div class="in">
+          <p style="margin-top:0">Klicka på en bild så blir den stor! <small>(tar en sekund på modem, hehe)</small></p>
+          <div class="tabs" role="group" aria-label="Filtrera galleri">
+            <button class="btn" aria-pressed="true" data-f="alla">Alla</button>
+            <button class="btn" aria-pressed="false" data-f="vigsel">Vigseln</button>
+            <button class="btn" aria-pressed="false" data-f="par">Parbilder</button>
+            <button class="btn" aria-pressed="false" data-f="fest">Festen</button>
+          </div>
+          <div class="gallery" id="gal"></div>
+        </div>
+      </section>
+
+      <hr class="fancy">
+
+      <section class="box" id="priser"><h2>Priser 2027 <i>_ □ x</i></h2>
+        <div class="in">
+          <table class="priser">
+            <thead><tr><th>Paket</th><th>Det här ingår</th><th>Pris</th></tr></thead>
+            <tbody>
+              <tr><td><b>Lilla paketet</b><br><small>"Rådhuset"</small></td><td>2 timmar, vigsel + parbilder, ca 120 redigerade bilder i webbgalleri</td><td class="price">8 900 kr</td></tr>
+              <tr><td><b>Mellanpaketet</b><br><small>populärast!</small></td><td>6 timmar från förberedelser till tårtan, ca 400 bilder, USB i trälåda</td><td class="price">18 500 kr</td></tr>
+              <tr><td><b>Hela kalaset</b></td><td>Hela dagen till första dansen, provfotografering, fotobok 30x30 cm, 600+ bilder</td><td class="price">27 900 kr</td></tr>
+              <tr><td><b>Extra</b></td><td>Förlovningsfotografering i Vasaparken eller på Djäkneberget</td><td class="price">2 400 kr</td></tr>
+            </tbody>
+          </table>
+          <p style="font-size:11px">Alla priser inkl. moms. Resor inom 6 mil från Västerås ingår. Längre bort? Då bjuder ni på fika och milersättning, så löser vi det!</p>
+        </div>
+      </section>
+
+      <section class="box" id="mer"><h2>Även familj, porträtt &amp; företag <i>_ □ x</i></h2>
+        <div class="in">
+          <p style="margin-top:0">När det inte är bröllopssäsong fotograferar jag gärna annat också. Nyfödda, syskon, nya porträtt till jobbet eller personalfesten på kontoret.</p>
+          <div class="familj">
+            <img src="../../media/img/familj-05.jpg" alt="Familj på promenad utomhus" loading="lazy">
+            <img src="../../media/img/familj-30.jpg" alt="Familjebild med barn" loading="lazy">
+            <img src="../../media/img/portratt-26.jpg" alt="Porträtt i naturligt ljus" loading="lazy">
+            <img src="../../media/img/foretag-19.jpg" alt="Företagsfotografering på kontor" loading="lazy">
+            <img src="../../media/img/foretag-44.jpg" alt="Personalporträtt" loading="lazy" style="object-position:50% 20%">
+            <img src="../../media/img/brollop-30.jpg" alt="Gäster som skålar på bröllopsfesten" loading="lazy">
+          </div>
+        </div>
+      </section>
+
+      <section class="box" id="gastbok"><h2>Gästbok <i>_ □ x</i></h2>
+        <div class="in">
+          <div id="gb">
+            <div class="gb-entry"><b>Lina &amp; Oskar</b> <small>&ndash; 2026-09-14</small><br>Annika!!! Vi har tittat på bilderna typ hundra gånger. Mormor grät när hon såg den på henne och morfar på dansgolvet. TACK!!</div>
+            <div class="gb-entry"><b>Maria Lundqvist</b> <small>&ndash; 2026-07-02</small><br>Bästa beslutet vi tog inför bröllopet. Du fick till och med Jonas att slappna av framför kameran, och det är ingen liten bedrift.</div>
+            <div class="gb-entry"><b>Kent (brudens pappa)</b> <small>&ndash; 2026-06-21</small><br>Mycket proffsigt. Trevlig hemsida också, påminner om den jag hade på Passagen en gång i tiden.</div>
+            <div class="gb-entry"><b>Sofie &amp; Amira</b> <small>&ndash; 2025-08-30</small><br>Hon fixade bilderna trots att det spöregnade hela dagen. Paraplybilderna är våra favoriter! &lt;3</div>
+          </div>
+          <form id="gbform">
+            <b class="comic">Skriv i gästboken!</b>
+            <label for="gbn">Ditt namn:</label><input id="gbn" required maxlength="40">
+            <label for="gbt">Meddelande:</label><textarea id="gbt" rows="3" required maxlength="300"></textarea>
+            <p><button class="btn" type="submit" style="display:inline-block">Skicka in!</button></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="box" id="kontakt"><h2>Kontakt <i>_ □ x</i></h2>
+        <div class="in">
+          <p style="margin-top:0">Maila mig på <a href="mailto:annika@annikasbrollopsbilder.se">annika@annikasbrollopsbilder.se</a> eller fyll i formuläret. Jag svarar oftast samma kväll (efter att Rapport är slut).</p>
+          <form id="kform">
+            <label for="kn">Era namn:</label><input id="kn" required>
+            <label for="km">E-post:</label><input id="km" type="email" required>
+            <label for="kd">Datum för bröllopet:</label><input id="kd" type="date">
+            <label for="kp">Paket:</label><select id="kp"><option>Vet inte än</option><option>Lilla paketet</option><option>Mellanpaketet</option><option>Hela kalaset</option></select>
+            <label for="kt">Berätta lite om er!</label><textarea id="kt" rows="4"></textarea>
+            <p><button class="btn" type="submit" style="display:inline-block">Skicka</button> <button class="btn" type="reset" style="display:inline-block">Rensa</button></p>
+            <p id="kok" class="comic" style="color:#008000;font-weight:bold" hidden>Tack!! Jag hör av mig så snart jag kan :-)</p>
+          </form>
+        </div>
+      </section>
+
+      <div class="webring">
+        <b>~ Svenska Bröllopsfotografers Webbring ~</b><br>Den här sidan är medlem nr 17 av 42
+        <div class="r"><a href="#" onclick="return ring(-1)">&laquo; Förra</a><a href="#" onclick="return ring(0)">Slumpa!</a><a href="#" onclick="return ring(1)">Nästa &raquo;</a><a href="#" onclick="return ring(2)">Lista</a></div>
+        <p id="ringmsg" style="margin:6px 0 0;font-size:11px" aria-live="polite"></p>
+      </div>
+      <p></p>
+      <div class="badges" aria-label="Knappar">
+        <span class="badge" style="background:#ffcc00">Bäst i 1024x768</span>
+        <span class="badge" style="background:#000;color:#0f0">HTML 4.01 ish</span>
+        <span class="badge" style="background:#ff66cc;color:#fff">Gjord med kärlek &amp; Anteckningar</span>
+        <span class="badge" style="background:#3366ff;color:#fff">Brudpar ♥ Annika</span>
+      </div>
+    </main>
+  </div>
+  <footer>&copy; 1999&ndash;2026 Annika Holm Foto &bull; Västerås &bull; Org.nr finns på begäran &bull; <a href="#valkommen">Tillbaka upp ^</a></footer>
+</div>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Bildvisare">
+  <div class="win"><div class="bar"><span id="lbt">bild.jpg</span><button id="lbx" aria-label="Stäng">x</button></div>
+  <img id="lbi" alt=""><p><button class="btn" id="lbp" style="display:inline-block">&laquo; Förra</button> <button class="btn" id="lbn" style="display:inline-block">Nästa &raquo;</button></p></div>
+</div>
+
+<script>
+const imgs=[
+ ['brollop-55','vigsel','Bruden går mot altaret'],['brollop-00','vigsel','Vigsel i kyrkan'],['brollop-01','par','Brudparet i parken'],
+ ['brollop-02','fest','Tal under middagen'],['brollop-03','par','Kyss vid sjön'],['brollop-04','vigsel','Bruden gör sig i ordning'],
+ ['brollop-10','fest','Detaljer på festbordet'],['brollop-11','par','Promenad i gräset'],['brollop-12','fest','Bröllopstårtan'],
+ ['brollop-13','vigsel','Ringarna byts'],['brollop-14','fest','Första dansen'],['brollop-15','par','Bruden i motljus'],
+ ['brollop-16','par','Händer som håller varandra'],['brollop-17','fest','Gäster på dansgolvet'],['brollop-18','vigsel','Brudbuketten'],
+ ['brollop-19','par','Skratt mellan brudparet'],['brollop-20','fest','Skål för brudparet'],['brollop-21','vigsel','Brudgummen väntar']
+];
+const gal=document.getElementById('gal');let cur=[],idx=0;
+function render(f){gal.innerHTML='';cur=imgs.filter(i=>f==='alla'||i[1]===f);
+ cur.forEach((i,n)=>{const b=document.createElement('button');b.innerHTML=`<img src="../../media/img/${i[0]}.jpg" alt="${i[2]}" loading="lazy">`;b.onclick=()=>open(n);gal.appendChild(b);});}
+document.querySelectorAll('.tabs .btn').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tabs .btn').forEach(x=>x.setAttribute('aria-pressed','false'));b.setAttribute('aria-pressed','true');render(b.dataset.f);});
+render('alla');
+const lb=document.getElementById('lb'),lbi=document.getElementById('lbi');
+function open(n){idx=(n+cur.length)%cur.length;const i=cur[idx];lbi.src=`../../media/img/${i[0]}.jpg`;lbi.alt=i[2];document.getElementById('lbt').textContent=i[0].toUpperCase()+'.JPG - '+i[2];lb.classList.add('open');document.getElementById('lbx').focus();}
+document.getElementById('lbx').onclick=()=>lb.classList.remove('open');
+document.getElementById('lbp').onclick=()=>open(idx-1);document.getElementById('lbn').onclick=()=>open(idx+1);
+lb.onclick=e=>{if(e.target===lb)lb.classList.remove('open')};
+document.addEventListener('keydown',e=>{if(!lb.classList.contains('open'))return;if(e.key==='Escape')lb.classList.remove('open');if(e.key==='ArrowRight')open(idx+1);if(e.key==='ArrowLeft')open(idx-1);});
+// counter
+let c=48213;try{c=parseInt(localStorage.getItem('annika-c')||'48213',10)+1;localStorage.setItem('annika-c',c)}catch(e){}
+document.getElementById('counter').textContent=String(c).padStart(7,'0');
+// guestbook (local only)
+document.getElementById('gbform').onsubmit=e=>{e.preventDefault();const d=document.createElement('div');d.className='gb-entry';
+ const b=document.createElement('b');b.textContent=document.getElementById('gbn').value;const s=document.createElement('small');s.textContent=' – '+new Date().toISOString().slice(0,10);
+ d.append(b,s,document.createElement('br'),document.createTextNode(document.getElementById('gbt').value));document.getElementById('gb').prepend(d);e.target.reset();};
+document.getElementById('kform').onsubmit=e=>{e.preventDefault();document.getElementById('kok').hidden=false;};
+const ringNames=['Fotograf Bosse i Örebro','Bröllopsbilder av Lotta','Kamerakarin.se','Sigtuna Foto & Ram'];
+function ring(d){document.getElementById('ringmsg').textContent=d===2?'Medlemmar: '+ringNames.join(', ')+' m.fl.':'Webbringen är tyvärr nere för underhåll. Försök igen senare! ('+ringNames[Math.floor(Math.random()*ringNames.length)]+' väntar)';return false;}
+</script>
+</body>
+</html>

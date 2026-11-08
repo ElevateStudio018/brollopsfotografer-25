@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nattfilm – Viktor Åström, bröllopsfoto &amp; film, Stockholm</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;500&family=Cormorant:ital,wght@0,300;0,500;1,300&family=Oswald:wght@300;500&display=swap" rel="stylesheet">
+<style>
+  :root{--black:#070707;--ink:#e8e2d6;--dim:#8d877c;--gold:#c9a45c;--bar:clamp(30px,7vh,70px)}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--black);color:var(--ink);font-family:"Cormorant",serif;font-size:19px;line-height:1.6;overflow-x:hidden}
+  .wide{font-family:"Oswald",sans-serif;text-transform:uppercase;letter-spacing:.42em;font-weight:300;font-size:11px}
+  .film{font-family:"Cormorant SC",serif;font-weight:300;letter-spacing:.3em}
+  a{color:inherit}
+  .bars::before,.bars::after{content:"";position:fixed;left:0;right:0;height:var(--bar);background:#000;z-index:30;pointer-events:none;transition:height .8s ease}
+  .bars::before{top:0}.bars::after{bottom:0}
+  body.scrolled.bars::before,body.scrolled.bars::after{height:0}
+  .topnav{position:fixed;top:0;left:0;right:0;height:var(--bar);z-index:31;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(16px,4vw,50px);transition:background .6s}
+  body.scrolled .topnav{background:#070707e6;height:54px}
+  .topnav nav{display:flex;gap:28px}
+  .topnav a{text-decoration:none;color:var(--dim)}
+  .topnav a:hover{color:var(--ink)}
+  .logo{color:var(--ink)!important}
+  .hero{position:relative;height:100vh;min-height:520px;overflow:hidden;display:grid;place-items:center;text-align:center}
+  .hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.55) contrast(1.1) saturate(.85)}
+  .hero::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at center,transparent 30%,#000c 100%)}
+  .hero .t{position:relative;z-index:2;padding:0 16px}
+  .presents{opacity:0;animation:fade 2s .5s forwards}
+  .hero h1{font-family:"Cormorant SC",serif;font-weight:300;font-size:clamp(52px,12vw,170px);letter-spacing:.18em;margin:.2em 0 .1em;line-height:1;opacity:0;animation:fade 2.4s 1.4s forwards;padding-left:.18em}
+  .hero .tag{font-style:italic;font-size:clamp(18px,2.4vw,26px);color:#d8d0c2;opacity:0;animation:fade 2s 2.6s forwards}
+  .hero .gold{width:60px;height:1px;background:var(--gold);margin:22px auto;opacity:0;animation:fade 2s 2.2s forwards}
+  .scroll{position:absolute;bottom:calc(var(--bar) + 20px);left:50%;transform:translateX(-50%);z-index:2;color:var(--dim)}
+  @keyframes fade{to{opacity:1}}
+  section{padding:clamp(70px,12vw,160px) clamp(16px,5vw,60px)}
+  .sh{text-align:center;margin-bottom:clamp(40px,6vw,80px)}
+  .sh h2{font-family:"Cormorant SC",serif;font-weight:300;font-size:clamp(34px,5vw,64px);letter-spacing:.2em;margin:10px 0 0;padding-left:.2em}
+  .sh .wide{color:var(--gold)}
+  .intro{max-width:760px;margin:0 auto;text-align:center;font-size:clamp(22px,2.8vw,32px);font-weight:300;line-height:1.45}
+  .intro em{color:var(--gold);font-style:italic}
+  .stills{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(8px,1.4vw,18px);max-width:1400px;margin:0 auto}
+  .still{position:relative;overflow:hidden;cursor:pointer;background:#111}
+  .still img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.4s ease,filter .8s;filter:brightness(.85) saturate(.8)}
+  .still:hover img{transform:scale(1.04);filter:brightness(1) saturate(1)}
+  .still .cap{position:absolute;left:0;right:0;bottom:0;padding:30px 14px 10px;background:linear-gradient(transparent,#000c);font-style:italic;font-size:15px;opacity:0;transition:opacity .6s}
+  .still:hover .cap{opacity:1}
+  .s1{grid-column:span 8;aspect-ratio:2.39/1}.s2{grid-column:span 4}.s3{grid-column:span 4}.s4{grid-column:span 4}.s5{grid-column:span 4}.s6{grid-column:span 12;aspect-ratio:2.39/1}.s7{grid-column:span 6;aspect-ratio:16/9}.s8{grid-column:span 6;aspect-ratio:16/9}
+  .s2,.s3,.s4,.s5{aspect-ratio:4/3}
+  .s2{aspect-ratio:auto}
+  .trailers{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1300px;margin:0 auto}
+  .trailer{background:none;border:0;color:inherit;text-align:left;padding:0;cursor:pointer;font:inherit}
+  .trailer .poster{position:relative;aspect-ratio:2/3;overflow:hidden;margin-bottom:14px}
+  .trailer .poster img{width:100%;height:100%;object-fit:cover;filter:brightness(.6) saturate(.7);transition:filter .6s,transform 1.2s}
+  .trailer:hover .poster img,.trailer:focus-visible .poster img{filter:brightness(.85);transform:scale(1.03)}
+  .trailer .poster .ttl{position:absolute;inset:auto 0 0 0;padding:20px;text-align:center}
+  .trailer .poster .ttl b{display:block;font-family:"Cormorant SC",serif;font-weight:300;font-size:clamp(26px,3vw,38px);letter-spacing:.14em;line-height:1.1}
+  .play{position:absolute;top:50%;left:50%;width:64px;height:64px;border:1px solid var(--gold);border-radius:50%;transform:translate(-50%,-50%);display:grid;place-items:center;opacity:.8}
+  .play::after{content:"";border-left:14px solid var(--gold);border-top:9px solid transparent;border-bottom:9px solid transparent;margin-left:4px}
+  .trailer .meta{color:var(--dim);font-size:16px}
+  .credits{position:relative;height:clamp(560px,80vh,760px);overflow:hidden;max-width:900px;margin:0 auto;mask:linear-gradient(transparent,#000 18%,#000 82%,transparent);-webkit-mask:linear-gradient(transparent,#000 18%,#000 82%,transparent)}
+  .roll{position:absolute;left:0;right:0;text-align:center;animation:roll 48s linear infinite}
+  .credits:hover .roll{animation-play-state:paused}
+  @keyframes roll{from{transform:translateY(80vh)}to{transform:translateY(-100%)}}
+  .roll .role{color:var(--dim);margin-top:34px}
+  .roll .name{font-family:"Cormorant SC",serif;font-size:clamp(24px,3vw,34px);letter-spacing:.14em;font-weight:300}
+  .roll p{max-width:560px;margin:30px auto;font-style:italic;font-size:21px}
+  .roll img{width:min(280px,70%);aspect-ratio:1;object-fit:cover;margin:40px auto 10px;display:block;filter:grayscale(.4)}
+  .tickets{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;max-width:1200px;margin:0 auto;background:#ffffff18;border:1px solid #ffffff18}
+  .tk{background:var(--black);padding:clamp(26px,3vw,44px);display:flex;flex-direction:column}
+  .tk .film{font-size:30px;margin:8px 0 2px}
+  .tk .runtime{color:var(--dim);font-style:italic}
+  .tk .price{font-family:"Oswald",sans-serif;font-weight:300;font-size:30px;letter-spacing:.06em;margin:18px 0}
+  .tk ul{list-style:none;padding:0;margin:0 0 20px;flex:1}
+  .tk li{padding:8px 0;border-bottom:1px solid #ffffff14}
+  .tk.feature{outline:1px solid var(--gold);outline-offset:-1px}
+  .tk.feature .wide{color:var(--gold)}
+  .btn{display:inline-block;border:1px solid var(--ink);padding:14px 26px;text-decoration:none;font-family:"Oswald",sans-serif;font-weight:300;text-transform:uppercase;letter-spacing:.3em;font-size:11px;background:none;color:var(--ink);cursor:pointer;text-align:center}
+  .btn:hover{background:var(--ink);color:#000}
+  .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;max-width:1200px;margin:0 auto;text-align:center}
+  .stars{color:var(--gold);letter-spacing:.3em;font-size:14px}
+  .reviews p{font-size:22px;font-style:italic;font-weight:300;margin:12px 0}
+  .reviews cite{font-style:normal}
+  .also{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;max-width:1300px;margin:0 auto}
+  .also img{width:100%;aspect-ratio:3/4;object-fit:cover;filter:brightness(.8) saturate(.75)}
+  .also figure{margin:0}.also figcaption{color:var(--dim);font-size:14px;font-style:italic;margin-top:4px}
+  form{max-width:720px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:26px 30px}
+  form label{display:flex;flex-direction:column;gap:6px}
+  form .full{grid-column:1/-1}
+  input,select,textarea{background:transparent;border:0;border-bottom:1px solid #ffffff40;color:var(--ink);font:20px "Cormorant",serif;padding:8px 0;outline:none}
+  input:focus,select:focus,textarea:focus{border-color:var(--gold)}
+  select option{background:#111}
+  .modal{position:fixed;inset:0;background:#000;z-index:60;display:none;align-items:center;justify-content:center;flex-direction:column}
+  .modal.open{display:flex}
+  .modal video{width:100%;max-height:calc(100vh - 2*var(--bar) - 60px);aspect-ratio:2.39/1;object-fit:cover;background:#000}
+  .modal .mt{position:absolute;top:calc(var(--bar) + 10px);left:0;right:0;text-align:center}
+  .modal button.x{position:absolute;top:14px;right:16px;z-index:70;background:none;border:0;color:var(--ink);font-size:30px;cursor:pointer}
+  .modal .lb{max-width:100%;max-height:calc(100vh - 2*var(--bar) - 40px);object-fit:contain}
+  footer{text-align:center;padding:60px 16px calc(var(--bar) + 40px);color:var(--dim)}
+  footer .film{color:var(--ink);font-size:28px;margin-bottom:10px}
+  .back{position:fixed;left:clamp(16px,4vw,50px);bottom:calc(var(--bar)/2 - 8px);z-index:32;text-decoration:none;color:var(--dim)}
+  body.scrolled .back{bottom:16px}
+  .back:hover{color:var(--gold)}
+  @media (max-width:860px){
+    .topnav nav{display:none}
+    .stills>.still{grid-column:span 12!important;aspect-ratio:16/10!important}
+    .trailers,.tickets,.reviews{grid-template-columns:1fr}
+    .trailer .poster{aspect-ratio:4/5}
+    .also{grid-template-columns:repeat(3,1fr)}
+    form{grid-template-columns:1fr}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .roll{animation:none;position:static}
+    .credits{height:auto;mask:none;-webkit-mask:none}
+    .presents,.hero h1,.hero .tag,.hero .gold{animation:none;opacity:1}
+  }
+</style>
+</head>
+<body class="bars">
+<header class="topnav">
+  <a href="#" class="logo film" style="font-size:18px;letter-spacing:.3em;text-decoration:none">NATTFILM</a>
+  <nav class="wide"><a href="#stills">Stillbilder</a><a href="#trailers">Trailers</a><a href="#credits">Eftertexter</a><a href="#biljetter">Biljetter</a><a href="#premiar">Boka premiär</a></nav>
+</header>
+
+<section class="hero" style="padding:0">
+  <video id="hv" src="../../media/hero.mp4" autoplay muted loop playsinline aria-label="Bröllopsfilm i bakgrunden"></video>
+  <div class="t">
+    <div class="wide presents">Viktor Åström presenterar</div>
+    <h1>Nattfilm</h1>
+    <div class="gold"></div>
+    <div class="tag">Bröllop, berättade som långfilm. Stockholm &amp; världen.</div>
+  </div>
+  <div class="scroll wide">Rulla ned</div>
+</section>
+
+<section>
+  <p class="intro">Varje bröllop har en öppningsscen, en vändpunkt och ett slut som får salongen att gråta. <em>Jag filmar och fotograferar dem</em> som om de vore de enda i världen – för det är de.</p>
+</section>
+
+<section id="stills" style="padding-top:0">
+  <div class="sh"><div class="wide">Akt I</div><h2>Stillbilder</h2></div>
+  <div class="stills" id="st"></div>
+</section>
+
+<section id="trailers">
+  <div class="sh"><div class="wide">Nu på bio</div><h2>Trailers</h2></div>
+  <div class="trailers">
+    <button class="trailer" data-t="Sommaren på Grinda"><div class="poster"><img src="../../media/img/brollop-09.jpg" alt="Affisch: Sommaren på Grinda" loading="lazy"><span class="play"></span><div class="ttl"><span class="wide">Ebba &amp; Carl i</span><b>Sommaren på Grinda</b></div></div><div class="meta">Skärgårdsbröllop · 4 min 12 s · Barntillåten</div></button>
+    <button class="trailer" data-t="Midnatt i Gamla stan"><div class="poster"><img src="../../media/img/brollop-34.jpg" alt="Affisch: Midnatt i Gamla stan" loading="lazy"><span class="play"></span><div class="ttl"><span class="wide">Sara &amp; Leon i</span><b>Midnatt i Gamla stan</b></div></div><div class="meta">Stadsbröllop · 3 min 48 s · Från 7 år (tal av best man)</div></button>
+    <button class="trailer" data-t="Ljuset över Sörmland"><div class="poster"><img src="../../media/img/brollop-11.jpg" alt="Affisch: Ljuset över Sörmland" loading="lazy"><span class="play"></span><div class="ttl"><span class="wide">Nora &amp; Adam i</span><b>Ljuset över Sörmland</b></div></div><div class="meta">Herrgårdsbröllop · 5 min 02 s · Barntillåten</div></button>
+  </div>
+</section>
+
+<section id="credits">
+  <div class="sh"><div class="wide">Eftertexter</div><h2>Om produktionen</h2></div>
+  <div class="credits"><div class="roll">
+    <div class="wide role">Regi, foto &amp; klippning</div><div class="name">Viktor Åström</div>
+    <img src="../../media/img/portratt-05.jpg" alt="Viktor Åström, fotograf och filmare">
+    <p>Utbildad på filmskola i Göteborg, tio år som B-fotograf på svenska långfilmer och reklam. 2017 filmade jag min systers bröllop – och lämnade aldrig festen.</p>
+    <div class="wide role">Andrafotograf</div><div class="name">Ida Söderlund</div>
+    <div class="wide role">Ljud</div><div class="name">Ett trådlöst mikrofonsystem, gömt i brudgummens kavaj</div>
+    <div class="wide role">Ljussättning</div><div class="name">Solen, mestadels</div>
+    <p>Jag arbetar med två kameror och så lite extrautrustning som möjligt. Inga drönare som surrar under vigseln, inga regisserade kyssar. Bara tålamod, ljus och känsla för tajming.</p>
+    <div class="wide role">Kontinuitet</div><div class="name">Brudens mamma</div>
+    <div class="wide role">Specialeffekter</div><div class="name">Konfetti, tårar, en spontan tango</div>
+    <div class="wide role">Inspelningsplatser</div><div class="name">Grinda · Gamla stan · Ulriksdal · Toscana · Fårö</div>
+    <div class="wide role">Ett särskilt tack till</div><div class="name">Alla som någonsin sagt ja</div>
+    <p style="color:var(--gold)">Ingen brudgum skadades under inspelningen.</p>
+  </div></div>
+</section>
+
+<section id="biljetter">
+  <div class="sh"><div class="wide">Akt II</div><h2>Biljetter</h2></div>
+  <div class="tickets">
+    <div class="tk"><span class="wide">Kortfilm</span><div class="film">Vigseln</div><span class="runtime">3 timmar på plats</span><div class="price">16 000 kr</div><ul><li>Foto, ca 200 bilder</li><li>Kortfilm 2 min</li><li>Digitalt galleri</li></ul><a class="btn" href="#premiar" data-pk="Kortfilm">Välj</a></div>
+    <div class="tk feature"><span class="wide">Långfilm</span><div class="film">Hela dagen</div><span class="runtime">10 timmar på plats</span><div class="price">44 000 kr</div><ul><li>Foto + film, två fotografer</li><li>Trailer 4 min + långfilm 20 min</li><li>Privat premiärvisning</li></ul><a class="btn" href="#premiar" data-pk="Långfilm">Välj</a></div>
+    <div class="tk"><span class="wide">Epos</span><div class="film">Destination</div><span class="runtime">Två dagar, valfri plats</span><div class="price">från 68 000 kr</div><ul><li>Allt i Långfilm</li><li>Förlovningsfilm på plats</li><li>Handbunden bok 40 × 30</li></ul><a class="btn" href="#premiar" data-pk="Epos">Välj</a></div>
+  </div>
+</section>
+
+<section>
+  <div class="sh"><div class="wide">Kritikerna säger</div></div>
+  <div class="reviews">
+    <div><div class="stars">★★★★★</div><p>”Vi har sett vår film elva gånger. Det är det finaste vi äger.”</p><cite class="wide">Ebba &amp; Carl</cite></div>
+    <div><div class="stars">★★★★★</div><p>”Viktor är osynlig och överallt på samma gång. Hur?”</p><cite class="wide">Sara Mbeki</cite></div>
+    <div><div class="stars">★★★★★</div><p>”Pappa, som aldrig gråter, bad om att få se trailern igen.”</p><cite class="wide">Nora Hellström</cite></div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="sh"><div class="wide">Bonusmaterial</div><h2>Även porträtt &amp; uppdrag</h2></div>
+  <div class="also">
+    <figure><img src="../../media/img/portratt-30.jpg" alt="Porträtt i dramatiskt ljus"><figcaption>Porträtt</figcaption></figure>
+    <figure><img src="../../media/img/familj-09.jpg" alt="Familjeporträtt"><figcaption>Familj</figcaption></figure>
+    <figure><img src="../../media/img/familj-34.jpg" alt="Familj vid havet"><figcaption>Familj</figcaption></figure>
+    <figure><img src="../../media/img/foretag-23.jpg" alt="Företagsevent"><figcaption>Gala</figcaption></figure>
+    <figure><img src="../../media/img/foretag-48.jpg" alt="Reklamuppdrag"><figcaption>Reklam</figcaption></figure>
+    <figure><img src="../../media/img/brollop-13.jpg" alt="Brudpar i kvällsljus"><figcaption>Förlovning</figcaption></figure>
+  </div>
+</section>
+
+<section id="premiar">
+  <div class="sh"><div class="wide">Akt III</div><h2>Boka er premiär</h2></div>
+  <form id="f">
+    <label class="wide">Huvudrollerna<input required placeholder="Era namn"></label>
+    <label class="wide">E-post<input type="email" required placeholder="namn@exempel.se"></label>
+    <label class="wide">Premiärdatum<input type="date"></label>
+    <label class="wide">Biljett<select id="pk"><option>Kortfilm</option><option selected>Långfilm</option><option>Epos</option></select></label>
+    <label class="wide full">Synopsis<textarea rows="3" placeholder="Var, hur många gäster, vad gör er dag till er?"></textarea></label>
+    <div class="full" style="text-align:center"><button class="btn" type="submit">Skicka manus</button><p id="ok" hidden style="font-style:italic;color:var(--gold)">Tack. Ni hör av mig inom 24 timmar – kameran står redo.</p></div>
+  </form>
+</section>
+
+<footer>
+  <div class="film">NATTFILM</div>
+  <div class="wide">Viktor Åström · Södermalm, Stockholm · <a href="mailto:viktor@nattfilm.se">viktor@nattfilm.se</a></div>
+  <p style="font-style:italic">© 2026 Nattfilm AB. Alla rättigheter förbehållna brudparen.</p>
+</footer>
+<a class="back wide" href="../../index.html">← Alla 25</a>
+
+<div class="modal" id="m" role="dialog" aria-modal="true" aria-label="Trailer">
+  <button class="x" id="mx" aria-label="Stäng">×</button>
+  <div class="mt"><div class="wide" style="color:var(--gold)">Trailer</div><div class="film" id="mtt" style="font-size:clamp(22px,3vw,34px)"></div></div>
+  <video id="mv" playsinline controls></video>
+  <img class="lb" id="mi" alt="" hidden>
+</div>
+
+<script>
+const S=[['brollop-14','s1','Öppningsscen – kyrkdörrarna öppnas'],['brollop-17','s2','Väntan'],['brollop-20','s3','Ringarna'],['brollop-23','s4','Tal under middagen'],['brollop-25','s5','Gyllene timmen'],['brollop-26','s6','Finalen – sista dansen'],['brollop-27','s7','Ute i natten'],['brollop-29','s8','Skålen'],['brollop-36','s3','Detaljer'],['brollop-38','s4','Nattscen'],['brollop-39','s5','Brudparets flykt'],['brollop-40','s1','Konfetti'],['brollop-34','s2','Gamla stan'],['brollop-09','s7','Skärgårdsljus'],['brollop-11','s8','Herrgården']];
+const st=document.getElementById('st');
+S.forEach(s=>{const d=document.createElement('div');d.className='still '+s[1];d.tabIndex=0;d.innerHTML=`<img src="../../media/img/${s[0]}.jpg" alt="${s[2]}" loading="lazy"><div class="cap">${s[2]}</div>`;d.onclick=()=>openImg(s);d.onkeydown=e=>{if(e.key==='Enter')openImg(s)};st.appendChild(d)});
+const m=document.getElementById('m'),mv=document.getElementById('mv'),mi=document.getElementById('mi');
+function openImg(s){mv.hidden=true;mv.pause();mi.hidden=false;mi.src=`../../media/img/${s[0]}.jpg`;mi.alt=s[2];document.getElementById('mtt').textContent=s[2];m.classList.add('open')}
+document.querySelectorAll('.trailer').forEach(b=>b.onclick=()=>{mi.hidden=true;mv.hidden=false;if(!mv.src)mv.src='../../media/hero.mp4';mv.currentTime=0;mv.play().catch(()=>{});document.getElementById('mtt').textContent=b.dataset.t;m.classList.add('open');document.getElementById('mx').focus()});
+function close(){m.classList.remove('open');mv.pause()}
+document.getElementById('mx').onclick=close;document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});
+addEventListener('scroll',()=>document.body.classList.toggle('scrolled',scrollY>innerHeight*.6),{passive:true});
+document.querySelectorAll('[data-pk]').forEach(a=>a.addEventListener('click',()=>{document.getElementById('pk').value=a.dataset.pk}));
+document.getElementById('f').onsubmit=e=>{e.preventDefault();document.getElementById('ok').hidden=false};
+if(matchMedia('(prefers-reduced-motion: reduce)').matches){const v=document.getElementById('hv');v.removeAttribute('autoplay');v.pause()}
+</script>
+</body>
+</html>
